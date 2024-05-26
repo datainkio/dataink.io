@@ -1,0 +1,511 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title></title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  <script src="/_assets/scripts/flavor.js" defer></script>
+
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+<meta property="og:url" content="https://dataink.io" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Russell Lebo" />
+
+<meta property="og:image" content="https://dataink.io/assets/images/opengraph-default.jpg" />
+
+<meta property="og:description"
+  content="I am a full-stack experience designer working with teams to build digital human-centered tools." />
+<meta property="og:site_name" content="Russell Lebo - Full-Stack Experience Designer" />
+<meta property="article:author" content="Russell Lebo" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+
+  <body class="">
+    <!-- NAVIGATION -->
+    <div class="navbar bg-none">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a href="/now/">Now</a>
+        </li>
+        
+        <li>
+          <a href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a href="/projects/">Work</a>
+        </li>
+        
+      </ul>
+    </div>
+    <a href="/" class="btn btn-ghost text-xl">Russ Lebo</a>
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
+      
+      <li>
+        <a href="/now/">Now</a>
+      </li>
+      
+      <li>
+        <a href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a href="/projects/">Work</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+
+  </div>
+  <div class="navbar-end">
+
+  </div>
+</div>
+    
+    <p>No specific banner defined</p>
+    
+    <!-- CONTENT -->
+    <main tabindex=" -1" class=" ">
+      
+
+<ol>
+  
+  <li><a class="link link-hover " href="/activities/a-b-testing/">A/B Testing</a></li>
+  
+  <li><a class="link link-hover " href="/activities/acceptance-criteria/">Acceptance Criteria</a></li>
+  
+  <li><a class="link link-hover " href="/activities/accessibility-analysis/">Accessibility Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/accessibility-standards-and-best-practices/">Accessibility Standards &amp; Best Practices</a></li>
+  
+  <li><a class="link link-hover " href="/activities/accessible-spaces/">Accessible Spaces</a></li>
+  
+  <li><a class="link link-hover " href="/activities/actionable-insight/">Actionable Insight</a></li>
+  
+  <li><a class="link link-hover " href="/activities/aesthetics/">Aesthetics</a></li>
+  
+  <li><a class="link link-hover " href="/activities/affinity-map/">Affinity Map</a></li>
+  
+  <li><a class="link link-hover " href="/activities/agile/">Agile</a></li>
+  
+  <li><a class="link link-hover " href="/activities/analysis/">Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/analytics/">Analytics</a></li>
+  
+  <li><a class="link link-hover " href="/activities/artifact-mapping/">Artifact Mapping</a></li>
+  
+  <li><a class="link link-hover " href="/activities/atomic-research/">Atomic Research</a></li>
+  
+  <li><a class="link link-hover " href="/activities/backlog/">Backlog</a></li>
+  
+  <li><a class="link link-hover " href="/activities/bilingual-content-strategy/">Bilingual Content Strategy</a></li>
+  
+  <li><a class="link link-hover " href="/activities/brand-perception/">Brand Perception</a></li>
+  
+  <li><a class="link link-hover " href="/activities/branding-requirements/">Branding Requirements</a></li>
+  
+  <li><a class="link link-hover " href="/activities/business-alignment/">Business Alignment</a></li>
+  
+  <li><a class="link link-hover " href="/activities/call-center/">Call Center</a></li>
+  
+  <li><a class="link link-hover " href="/activities/card-sorting/">Card Sorting</a></li>
+  
+  <li><a class="link link-hover " href="/activities/central-knowledge-repository/">Central Knowledge Repository</a></li>
+  
+  <li><a class="link link-hover " href="/activities/code-of-conduct/">Code of Conduct</a></li>
+  
+  <li><a class="link link-hover " href="/activities/cognitive-walkthrough/">Cognitive Walkthrough</a></li>
+  
+  <li><a class="link link-hover " href="/activities/collaborative-content-creation/">Collaborative Content Creation</a></li>
+  
+  <li><a class="link link-hover " href="/activities/collaborative-exploration/">Collaborative Exploration</a></li>
+  
+  <li><a class="link link-hover " href="/activities/collaborative-ideation/">Collaborative Ideation</a></li>
+  
+  <li><a class="link link-hover " href="/activities/competitive-analysis/">Competitive Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/concept-validation/">Concept Validation</a></li>
+  
+  <li><a class="link link-hover " href="/activities/content-and-information-flow/">Content &amp; Information Flow</a></li>
+  
+  <li><a class="link link-hover " href="/activities/content-management/">Content Management</a></li>
+  
+  <li><a class="link link-hover " href="/activities/content-strategy/">Content Strategy</a></li>
+  
+  <li><a class="link link-hover " href="/activities/contextual-inquiry/">Contextual Inquiry</a></li>
+  
+  <li><a class="link link-hover " href="/activities/contextual-understanding/">Contextual Understanding</a></li>
+  
+  <li><a class="link link-hover " href="/activities/continuity/">Continuity</a></li>
+  
+  <li><a class="link link-hover " href="/activities/continuous-improvement/">Continuous Improvement</a></li>
+  
+  <li><a class="link link-hover " href="/activities/continuous-learning/">Continuous Learning</a></li>
+  
+  <li><a class="link link-hover " href="/activities/cross-functional-engagement/">Cross-Functional Engagement</a></li>
+  
+  <li><a class="link link-hover " href="/activities/cross-functional-workshops/">Cross-Functional Workshops</a></li>
+  
+  <li><a class="link link-hover " href="/activities/cross-training/">Cross-Training</a></li>
+  
+  <li><a class="link link-hover " href="/activities/customer-service-standards/">Customer Service Standards</a></li>
+  
+  <li><a class="link link-hover " href="/activities/data-analysis-and-visualization/">Data Analysis &amp; Visualization</a></li>
+  
+  <li><a class="link link-hover " href="/activities/data-synthesis/">Data Synthesis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/definition-of-success/">Definition of Success</a></li>
+  
+  <li><a class="link link-hover " href="/activities/design-brief/">Design Brief</a></li>
+  
+  <li><a class="link link-hover " href="/activities/design-process/">Design Process</a></li>
+  
+  <li><a class="link link-hover " href="/activities/design-system/">Design System</a></li>
+  
+  <li><a class="link link-hover " href="/activities/development/">Development</a></li>
+  
+  <li><a class="link link-hover " href="/activities/development-environment/">Development Environment</a></li>
+  
+  <li><a class="link link-hover " href="/activities/development-process/">Development Process</a></li>
+  
+  <li><a class="link link-hover " href="/activities/digital-strategy/">Digital Strategy</a></li>
+  
+  <li><a class="link link-hover " href="/activities/discoverability/">Discoverability</a></li>
+  
+  <li><a class="link link-hover " href="/activities/diverse-leadership/">Diverse Leadership</a></li>
+  
+  <li><a class="link link-hover " href="/activities/documentation/">Documentation</a></li>
+  
+  <li><a class="link link-hover " href="/activities/early-problem-identification/">Early Problem Identification</a></li>
+  
+  <li><a class="link link-hover " href="/activities/emotional-design-analysis/">Emotional Design Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/empathy/">Empathy</a></li>
+  
+  <li><a class="link link-hover " href="/activities/empathy-map/">Empathy Map</a></li>
+  
+  <li><a class="link link-hover " href="/activities/empowerment-and-autonomy/">Empowerment &amp; Autonomy</a></li>
+  
+  <li><a class="link link-hover " href="/activities/experience-design/">Experience Design</a></li>
+  
+  <li><a class="link link-hover " href="/activities/experience-design-analysis/">Experience Design Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/feedback-loops/">Feedback Loops</a></li>
+  
+  <li><a class="link link-hover " href="/activities/file-sharing/">File Sharing</a></li>
+  
+  <li><a class="link link-hover " href="/activities/game-design/">Game Design</a></li>
+  
+  <li><a class="link link-hover " href="/activities/goals-and-direction/">Goals &amp; Direction</a></li>
+  
+  <li><a class="link link-hover " href="/activities/graphic-design/">Graphic Design</a></li>
+  
+  <li><a class="link link-hover " href="/activities/heuristic-analysis/">Heuristic Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/historical-record/">Historical Record</a></li>
+  
+  <li><a class="link link-hover " href="/activities/holistic-design-considerations/">Holistic Design Considerations</a></li>
+  
+  <li><a class="link link-hover " href="/activities/human-centered-research/">Human-Centered Research</a></li>
+  
+  <li><a class="link link-hover " href="/activities/industry-trends/">Industry Trends</a></li>
+  
+  <li><a class="link link-hover " href="/activities/information-architecture/">Information Architecture</a></li>
+  
+  <li><a class="link link-hover " href="/activities/information-needs/">Information Needs</a></li>
+  
+  <li><a class="link link-hover " href="/activities/informed-decision-making/">Informed Decision-Making</a></li>
+  
+  <li><a class="link link-hover " href="/activities/infrastructure-constraints/">Infrastructure Constraints</a></li>
+  
+  <li><a class="link link-hover " href="/activities/inspiration/">Inspiration</a></li>
+  
+  <li><a class="link link-hover " href="/activities/institutional-knowledge/">Institutional Knowledge</a></li>
+  
+  <li><a class="link link-hover " href="/activities/interaction-design/">Interaction Design</a></li>
+  
+  <li><a class="link link-hover " href="/activities/interactivity/">Interactivity</a></li>
+  
+  <li><a class="link link-hover " href="/activities/iterative-design/">Iterative Design</a></li>
+  
+  <li><a class="link link-hover " href="/activities/iterative-prototyping/">Iterative Prototyping</a></li>
+  
+  <li><a class="link link-hover " href="/activities/iterative-research/">Iterative Research</a></li>
+  
+  <li><a class="link link-hover " href="/activities/iterative-testing/">Iterative Testing</a></li>
+  
+  <li><a class="link link-hover " href="/activities/iterative-understanding/">Iterative Understanding</a></li>
+  
+  <li><a class="link link-hover " href="/activities/journey-mapping/">Journey Mapping</a></li>
+  
+  <li><a class="link link-hover " href="/activities/kiosk-design/">Kiosk Design</a></li>
+  
+  <li><a class="link link-hover " href="/activities/knowledge-base-management/">Knowledge Base Management</a></li>
+  
+  <li><a class="link link-hover " href="/activities/knowledge-management/">Knowledge Management</a></li>
+  
+  <li><a class="link link-hover " href="/activities/knowledge-sharing/">Knowledge Sharing</a></li>
+  
+  <li><a class="link link-hover " href="/activities/knowledge-transfer/">Knowledge Transfer</a></li>
+  
+  <li><a class="link link-hover " href="/activities/learning-and-improvement/">Learning &amp; Improvement</a></li>
+  
+  <li><a class="link link-hover " href="/activities/market-research/">Market Research</a></li>
+  
+  <li><a class="link link-hover " href="/activities/mentoring-and-peer-support/">Mentoring &amp; Peer Support</a></li>
+  
+  <li><a class="link link-hover " href="/activities/methodology/">Methodology</a></li>
+  
+  <li><a class="link link-hover " href="/activities/metrics/">Metrics</a></li>
+  
+  <li><a class="link link-hover " href="/activities/mindset/">Mindset</a></li>
+  
+  <li><a class="link link-hover " href="/activities/mtp-minimum-testable-product/">MTP (Minimum Testable Product)</a></li>
+  
+  <li><a class="link link-hover " href="/activities/natural-language-processing/">Natural Language Processing</a></li>
+  
+  <li><a class="link link-hover " href="/activities/north-star/">North Star</a></li>
+  
+  <li><a class="link link-hover " href="/activities/onboarding/">Onboarding</a></li>
+  
+  <li><a class="link link-hover " href="/activities/pair-programming-design/">Pair Programming/Design</a></li>
+  
+  <li><a class="link link-hover " href="/activities/peer-review/">Peer Review</a></li>
+  
+  <li><a class="link link-hover " href="/activities/persona-development/">Persona Development</a></li>
+  
+  <li><a class="link link-hover " href="/activities/personas/">Personas</a></li>
+  
+  <li><a class="link link-hover " href="/activities/predictive-analysis/">Predictive Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/presentations/">Presentations</a></li>
+  
+  <li><a class="link link-hover " href="/activities/prioritized-findings/">Prioritized Findings</a></li>
+  
+  <li><a class="link link-hover " href="/activities/project-biography/">Project Biography</a></li>
+  
+  <li><a class="link link-hover " href="/activities/project-management/">Project Management</a></li>
+  
+  <li><a class="link link-hover " href="/activities/project-scrapbook/">Project Scrapbook</a></li>
+  
+  <li><a class="link link-hover " href="/activities/prototype/">Prototype</a></li>
+  
+  <li><a class="link link-hover " href="/activities/prototype-demonstration/">Prototype Demonstration</a></li>
+  
+  <li><a class="link link-hover " href="/activities/public-commitment-to-diversity/">Public Commitment to Diversity</a></li>
+  
+  <li><a class="link link-hover " href="/activities/qualitative-data/">Qualitative Data</a></li>
+  
+  <li><a class="link link-hover " href="/activities/quantifiable-decisions/">Quantifiable Decisions</a></li>
+  
+  <li><a class="link link-hover " href="/activities/quantitative-data/">Quantitative Data</a></li>
+  
+  <li><a class="link link-hover " href="/activities/questions-and-assumptions/">Questions &amp; Assumptions</a></li>
+  
+  <li><a class="link link-hover " href="/activities/release-plan/">Release Plan</a></li>
+  
+  <li><a class="link link-hover " href="/activities/reports/">Reports</a></li>
+  
+  <li><a class="link link-hover " href="/activities/research-plan/">Research Plan</a></li>
+  
+  <li><a class="link link-hover " href="/activities/research-recap/">Research Recap</a></li>
+  
+  <li><a class="link link-hover " href="/activities/responsive-protocol/">Responsive Protocol</a></li>
+  
+  <li><a class="link link-hover " href="/activities/retrospective/">Retrospective</a></li>
+  
+  <li><a class="link link-hover " href="/activities/roadmap/">Roadmap</a></li>
+  
+  <li><a class="link link-hover " href="/activities/rotation-of-roles/">Rotation of Roles</a></li>
+  
+  <li><a class="link link-hover " href="/activities/scenario/">Scenario</a></li>
+  
+  <li><a class="link link-hover " href="/activities/search-and-retrieval/">Search &amp; Retrieval</a></li>
+  
+  <li><a class="link link-hover " href="/activities/shared-knowledge-base/">Shared Knowledge Base</a></li>
+  
+  <li><a class="link link-hover " href="/activities/strategy/">Strategy</a></li>
+  
+  <li><a class="link link-hover " href="/activities/synthesis-of-findings/">Synthesis of Findings</a></li>
+  
+  <li><a class="link link-hover " href="/activities/tactics/">Tactics</a></li>
+  
+  <li><a class="link link-hover " href="/activities/tangibility/">Tangibility</a></li>
+  
+  <li><a class="link link-hover " href="/activities/task-analysis/">Task Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/team-feedback-documentation/">Team Feedback Documentation</a></li>
+  
+  <li><a class="link link-hover " href="/activities/testing-plan/">Testing Plan</a></li>
+  
+  <li><a class="link link-hover " href="/activities/thematic-analysis/">Thematic Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/touchpoint/">Touchpoint</a></li>
+  
+  <li><a class="link link-hover " href="/activities/transparency/">Transparency</a></li>
+  
+  <li><a class="link link-hover " href="/activities/turnover/">Turnover</a></li>
+  
+  <li><a class="link link-hover " href="/activities/usability/">Usability</a></li>
+  
+  <li><a class="link link-hover " href="/activities/usability-analysis/">Usability Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/usability-testing/">Usability Testing</a></li>
+  
+  <li><a class="link link-hover " href="/activities/user-engagement/">User Engagement</a></li>
+  
+  <li><a class="link link-hover " href="/activities/user-feedback-analysis/">User Feedback Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/user-flow-analysis/">User Flow Analysis</a></li>
+  
+  <li><a class="link link-hover " href="/activities/user-research/">User Research</a></li>
+  
+  <li><a class="link link-hover " href="/activities/user-testing/">User Testing</a></li>
+  
+  <li><a class="link link-hover " href="/activities/user-centric-design/">User-Centric Design</a></li>
+  
+  <li><a class="link link-hover " href="/activities/user-focused-design/">User-focused Design</a></li>
+  
+  <li><a class="link link-hover " href="/activities/version-control/">Version Control</a></li>
+  
+  <li><a class="link link-hover " href="/activities/visibility/">Visibility</a></li>
+  
+  <li><a class="link link-hover " href="/activities/voice-of-the-customer/">Voice of the Customer</a></li>
+  
+  <li><a class="link link-hover " href="/activities/wiki/">Wiki</a></li>
+  
+  <li><a class="link link-hover " href="/activities/working-agreement/">Working Agreement</a></li>
+  
+  <li><a class="link link-hover " href="/activities/workshop/">Workshop</a></li>
+  
+</ol>
+
+
+    </main>
+    <!-- FOOTER -->
+    
+    <p>No specific footer defined</p>
+    
+    <footer class="footer p-10 bg-neutral-950 text-neutral">
+  <aside>
+    
+    <div class="byline flex items-center my-4">
+
+      <div class="pl-4">
+        <p class="prose-2xl">Russell Lebo</p>
+        <p class="prose">I am a dad, a perpetual tinkerer, and a full-stack experience designer. I am always looking for
+          interesting
+          challenges to solve. If you are looking for new talent, let's talk.</p>
+      </div>
+    </div>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Contact</h6>
+    <div class="grid grid-flow-col gap-4">
+      
+      <a class="w-12" href="https://github.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/LhOh3bGqqW-400.webp 400w, /assets/content/images/logos/LhOh3bGqqW-600.webp 600w, /assets/content/images/logos/LhOh3bGqqW-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/LhOh3bGqqW-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/LhOh3bGqqW-400.jpeg 400w, /assets/content/images/logos/LhOh3bGqqW-600.jpeg 600w, /assets/content/images/logos/LhOh3bGqqW-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://linkedin.com/rslebo"><picture><source type="image/webp" srcset="/assets/content/images/logos/0DRapI9up2-400.webp 400w, /assets/content/images/logos/0DRapI9up2-600.webp 600w, /assets/content/images/logos/0DRapI9up2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/0DRapI9up2-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/0DRapI9up2-400.jpeg 400w, /assets/content/images/logos/0DRapI9up2-600.jpeg 600w, /assets/content/images/logos/0DRapI9up2-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://www.threads.net/@dataink.io"><picture><source type="image/webp" srcset="/assets/content/images/logos/ME9Iab4Je3-400.webp 400w, /assets/content/images/logos/ME9Iab4Je3-600.webp 600w, /assets/content/images/logos/ME9Iab4Je3-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/ME9Iab4Je3-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/ME9Iab4Je3-400.jpeg 400w, /assets/content/images/logos/ME9Iab4Je3-600.jpeg 600w, /assets/content/images/logos/ME9Iab4Je3-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://dribbble.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/L5L2ptBua3-400.webp 400w, /assets/content/images/logos/L5L2ptBua3-600.webp 600w, /assets/content/images/logos/L5L2ptBua3-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/L5L2ptBua3-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/L5L2ptBua3-400.jpeg 400w, /assets/content/images/logos/L5L2ptBua3-600.jpeg 600w, /assets/content/images/logos/L5L2ptBua3-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://mastodon.design/@datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/e2ZHCM3p_W-400.webp 400w, /assets/content/images/logos/e2ZHCM3p_W-600.webp 600w, /assets/content/images/logos/e2ZHCM3p_W-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/e2ZHCM3p_W-400.jpeg" width="800" height="860" srcset="/assets/content/images/logos/e2ZHCM3p_W-400.jpeg 400w, /assets/content/images/logos/e2ZHCM3p_W-600.jpeg 600w, /assets/content/images/logos/e2ZHCM3p_W-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://behance.net/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/2xW6gLRUkc-400.webp 400w, /assets/content/images/logos/2xW6gLRUkc-600.webp 600w, /assets/content/images/logos/2xW6gLRUkc-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/2xW6gLRUkc-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/2xW6gLRUkc-400.jpeg 400w, /assets/content/images/logos/2xW6gLRUkc-600.jpeg 600w, /assets/content/images/logos/2xW6gLRUkc-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://www.flickr.com/photos/twosixseven/"><picture><source type="image/webp" srcset="/assets/content/images/logos/K0h_gQKTJ9-400.webp 400w, /assets/content/images/logos/K0h_gQKTJ9-600.webp 600w, /assets/content/images/logos/K0h_gQKTJ9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/K0h_gQKTJ9-400.jpeg" width="800" height="371" srcset="/assets/content/images/logos/K0h_gQKTJ9-400.jpeg 400w, /assets/content/images/logos/K0h_gQKTJ9-600.jpeg 600w, /assets/content/images/logos/K0h_gQKTJ9-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://www.instagram.com/dataink.io/"><picture><source type="image/webp" srcset="/assets/content/images/logos/CjQ44UJc_K-400.webp 400w, /assets/content/images/logos/CjQ44UJc_K-600.webp 600w, /assets/content/images/logos/CjQ44UJc_K-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/CjQ44UJc_K-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/CjQ44UJc_K-400.jpeg 400w, /assets/content/images/logos/CjQ44UJc_K-600.jpeg 600w, /assets/content/images/logos/CjQ44UJc_K-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+    </div>
+  </nav>
+</footer>
+  </body>
+
+</html>

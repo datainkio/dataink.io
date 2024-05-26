@@ -1,0 +1,409 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title></title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  <script src="/_assets/scripts/flavor.js" defer></script>
+
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+<meta property="og:url" content="https://dataink.io" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Russell Lebo" />
+
+<meta property="og:image" content="https://dataink.io/assets/images/opengraph-default.jpg" />
+
+<meta property="og:description"
+  content="I am a full-stack experience designer working with teams to build digital human-centered tools." />
+<meta property="og:site_name" content="Russell Lebo - Full-Stack Experience Designer" />
+<meta property="article:author" content="Russell Lebo" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+
+  <body class="">
+    <!-- NAVIGATION -->
+    <div class="navbar bg-none">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a href="/now/">Now</a>
+        </li>
+        
+        <li>
+          <a href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a href="/projects/">Work</a>
+        </li>
+        
+      </ul>
+    </div>
+    <a href="/" class="btn btn-ghost text-xl">Russ Lebo</a>
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
+      
+      <li>
+        <a href="/now/">Now</a>
+      </li>
+      
+      <li>
+        <a href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a href="/projects/">Work</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+
+  </div>
+  <div class="navbar-end">
+
+  </div>
+</div>
+    
+    <p>No specific banner defined</p>
+    
+    <!-- CONTENT -->
+    <main tabindex=" -1" class=" ">
+      
+Title
+<h1>MuralFarm</h1>
+
+<ul>
+
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/6FtEysxjZf-400.webp 400w, /assets/content/images/6FtEysxjZf-600.webp 600w, /assets/content/images/6FtEysxjZf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/6FtEysxjZf-400.jpeg" width="800" height="619" srcset="/assets/content/images/6FtEysxjZf-400.jpeg 400w, /assets/content/images/6FtEysxjZf-600.jpeg 600w, /assets/content/images/6FtEysxjZf-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/XvV5T8J48c-400.webp 400w, /assets/content/images/XvV5T8J48c-600.webp 600w, /assets/content/images/XvV5T8J48c-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/XvV5T8J48c-400.jpeg" width="800" height="400" srcset="/assets/content/images/XvV5T8J48c-400.jpeg 400w, /assets/content/images/XvV5T8J48c-600.jpeg 600w, /assets/content/images/XvV5T8J48c-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/VJn7so3-E3-400.webp 400w, /assets/content/images/VJn7so3-E3-600.webp 600w, /assets/content/images/VJn7so3-E3-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/VJn7so3-E3-400.jpeg" width="800" height="542" srcset="/assets/content/images/VJn7so3-E3-400.jpeg 400w, /assets/content/images/VJn7so3-E3-600.jpeg 600w, /assets/content/images/VJn7so3-E3-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/asIK7EL1OG-400.webp 400w, /assets/content/images/asIK7EL1OG-600.webp 600w, /assets/content/images/asIK7EL1OG-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/asIK7EL1OG-400.jpeg" width="800" height="571" srcset="/assets/content/images/asIK7EL1OG-400.jpeg 400w, /assets/content/images/asIK7EL1OG-600.jpeg 600w, /assets/content/images/asIK7EL1OG-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/9ljJbLbyv3-400.webp 400w, /assets/content/images/9ljJbLbyv3-600.webp 600w, /assets/content/images/9ljJbLbyv3-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/9ljJbLbyv3-400.jpeg" width="800" height="542" srcset="/assets/content/images/9ljJbLbyv3-400.jpeg 400w, /assets/content/images/9ljJbLbyv3-600.jpeg 600w, /assets/content/images/9ljJbLbyv3-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/HXgn4osEBa-400.webp 400w, /assets/content/images/HXgn4osEBa-600.webp 600w, /assets/content/images/HXgn4osEBa-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/HXgn4osEBa-400.jpeg" width="800" height="484" srcset="/assets/content/images/HXgn4osEBa-400.jpeg 400w, /assets/content/images/HXgn4osEBa-600.jpeg 600w, /assets/content/images/HXgn4osEBa-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/jRRQcNY8oG-400.webp 400w, /assets/content/images/jRRQcNY8oG-600.webp 600w, /assets/content/images/jRRQcNY8oG-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/jRRQcNY8oG-400.jpeg" width="800" height="619" srcset="/assets/content/images/jRRQcNY8oG-400.jpeg 400w, /assets/content/images/jRRQcNY8oG-600.jpeg 600w, /assets/content/images/jRRQcNY8oG-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/1TCaZNoa7I-400.webp 400w, /assets/content/images/1TCaZNoa7I-600.webp 600w, /assets/content/images/1TCaZNoa7I-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/1TCaZNoa7I-400.jpeg" width="800" height="571" srcset="/assets/content/images/1TCaZNoa7I-400.jpeg 400w, /assets/content/images/1TCaZNoa7I-600.jpeg 600w, /assets/content/images/1TCaZNoa7I-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/rcXmFVtP7G-400.webp 400w, /assets/content/images/rcXmFVtP7G-600.webp 600w, /assets/content/images/rcXmFVtP7G-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/rcXmFVtP7G-400.jpeg" width="800" height="619" srcset="/assets/content/images/rcXmFVtP7G-400.jpeg 400w, /assets/content/images/rcXmFVtP7G-600.jpeg 600w, /assets/content/images/rcXmFVtP7G-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/C_JGgL6D9O-400.webp 400w, /assets/content/images/C_JGgL6D9O-600.webp 600w, /assets/content/images/C_JGgL6D9O-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/C_JGgL6D9O-400.jpeg" width="800" height="571" srcset="/assets/content/images/C_JGgL6D9O-400.jpeg 400w, /assets/content/images/C_JGgL6D9O-600.jpeg 600w, /assets/content/images/C_JGgL6D9O-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/w9lZ_IBfmA-400.webp 400w, /assets/content/images/w9lZ_IBfmA-600.webp 600w, /assets/content/images/w9lZ_IBfmA-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/w9lZ_IBfmA-400.jpeg" width="800" height="484" srcset="/assets/content/images/w9lZ_IBfmA-400.jpeg 400w, /assets/content/images/w9lZ_IBfmA-600.jpeg 600w, /assets/content/images/w9lZ_IBfmA-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/Yfr_a0oWLd-400.webp 400w, /assets/content/images/Yfr_a0oWLd-600.webp 600w, /assets/content/images/Yfr_a0oWLd-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/Yfr_a0oWLd-400.jpeg" width="800" height="571" srcset="/assets/content/images/Yfr_a0oWLd-400.jpeg 400w, /assets/content/images/Yfr_a0oWLd-600.jpeg 600w, /assets/content/images/Yfr_a0oWLd-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/ePmnEBvoPp-400.webp 400w, /assets/content/images/ePmnEBvoPp-600.webp 600w, /assets/content/images/ePmnEBvoPp-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/ePmnEBvoPp-400.jpeg" width="800" height="523" srcset="/assets/content/images/ePmnEBvoPp-400.jpeg 400w, /assets/content/images/ePmnEBvoPp-600.jpeg 600w, /assets/content/images/ePmnEBvoPp-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/z7zyxPPQx2-400.webp 400w, /assets/content/images/z7zyxPPQx2-600.webp 600w, /assets/content/images/z7zyxPPQx2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/z7zyxPPQx2-400.jpeg" width="800" height="627" srcset="/assets/content/images/z7zyxPPQx2-400.jpeg 400w, /assets/content/images/z7zyxPPQx2-600.jpeg 600w, /assets/content/images/z7zyxPPQx2-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/QIYI-Wm4ZY-400.webp 400w, /assets/content/images/QIYI-Wm4ZY-600.webp 600w, /assets/content/images/QIYI-Wm4ZY-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/QIYI-Wm4ZY-400.jpeg" width="800" height="618" srcset="/assets/content/images/QIYI-Wm4ZY-400.jpeg 400w, /assets/content/images/QIYI-Wm4ZY-600.jpeg 600w, /assets/content/images/QIYI-Wm4ZY-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/wbEDHxtVcA-400.webp 400w, /assets/content/images/wbEDHxtVcA-600.webp 600w, /assets/content/images/wbEDHxtVcA-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/wbEDHxtVcA-400.jpeg" width="800" height="484" srcset="/assets/content/images/wbEDHxtVcA-400.jpeg 400w, /assets/content/images/wbEDHxtVcA-600.jpeg 600w, /assets/content/images/wbEDHxtVcA-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/j5KkQ4_U1i-400.webp 400w, /assets/content/images/j5KkQ4_U1i-600.webp 600w, /assets/content/images/j5KkQ4_U1i-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/j5KkQ4_U1i-400.jpeg" width="800" height="619" srcset="/assets/content/images/j5KkQ4_U1i-400.jpeg 400w, /assets/content/images/j5KkQ4_U1i-600.jpeg 600w, /assets/content/images/j5KkQ4_U1i-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/xo7S5zpz3J-400.webp 400w, /assets/content/images/xo7S5zpz3J-600.webp 600w, /assets/content/images/xo7S5zpz3J-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/xo7S5zpz3J-400.jpeg" width="800" height="484" srcset="/assets/content/images/xo7S5zpz3J-400.jpeg 400w, /assets/content/images/xo7S5zpz3J-600.jpeg 600w, /assets/content/images/xo7S5zpz3J-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/SFWx9CxqFX-400.webp 400w, /assets/content/images/SFWx9CxqFX-600.webp 600w, /assets/content/images/SFWx9CxqFX-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/SFWx9CxqFX-400.jpeg" width="800" height="454" srcset="/assets/content/images/SFWx9CxqFX-400.jpeg 400w, /assets/content/images/SFWx9CxqFX-600.jpeg 600w, /assets/content/images/SFWx9CxqFX-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/ZOiOuf4E08-400.webp 400w, /assets/content/images/ZOiOuf4E08-600.webp 600w, /assets/content/images/ZOiOuf4E08-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/ZOiOuf4E08-400.jpeg" width="800" height="542" srcset="/assets/content/images/ZOiOuf4E08-400.jpeg 400w, /assets/content/images/ZOiOuf4E08-600.jpeg 600w, /assets/content/images/ZOiOuf4E08-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/w-2TcH0rZq-400.webp 400w, /assets/content/images/w-2TcH0rZq-600.webp 600w, /assets/content/images/w-2TcH0rZq-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/w-2TcH0rZq-400.jpeg" width="800" height="685" srcset="/assets/content/images/w-2TcH0rZq-400.jpeg 400w, /assets/content/images/w-2TcH0rZq-600.jpeg 600w, /assets/content/images/w-2TcH0rZq-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/xY0LqMA_4d-400.webp 400w, /assets/content/images/xY0LqMA_4d-600.webp 600w, /assets/content/images/xY0LqMA_4d-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/xY0LqMA_4d-400.jpeg" width="800" height="764" srcset="/assets/content/images/xY0LqMA_4d-400.jpeg 400w, /assets/content/images/xY0LqMA_4d-600.jpeg 600w, /assets/content/images/xY0LqMA_4d-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/c9ELdMMSPA-400.webp 400w, /assets/content/images/c9ELdMMSPA-600.webp 600w, /assets/content/images/c9ELdMMSPA-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/c9ELdMMSPA-400.jpeg" width="800" height="864" srcset="/assets/content/images/c9ELdMMSPA-400.jpeg 400w, /assets/content/images/c9ELdMMSPA-600.jpeg 600w, /assets/content/images/c9ELdMMSPA-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/zGF0rjaZUo-400.webp 400w, /assets/content/images/zGF0rjaZUo-600.webp 600w, /assets/content/images/zGF0rjaZUo-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/zGF0rjaZUo-400.jpeg" width="800" height="864" srcset="/assets/content/images/zGF0rjaZUo-400.jpeg 400w, /assets/content/images/zGF0rjaZUo-600.jpeg 600w, /assets/content/images/zGF0rjaZUo-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/pl2MNR7S3K-400.webp 400w, /assets/content/images/pl2MNR7S3K-600.webp 600w, /assets/content/images/pl2MNR7S3K-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/pl2MNR7S3K-400.jpeg" width="800" height="1022" srcset="/assets/content/images/pl2MNR7S3K-400.jpeg 400w, /assets/content/images/pl2MNR7S3K-600.jpeg 600w, /assets/content/images/pl2MNR7S3K-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/TUjlFJy6Un-400.webp 400w, /assets/content/images/TUjlFJy6Un-600.webp 600w, /assets/content/images/TUjlFJy6Un-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/TUjlFJy6Un-400.jpeg" width="800" height="800" srcset="/assets/content/images/TUjlFJy6Un-400.jpeg 400w, /assets/content/images/TUjlFJy6Un-600.jpeg 600w, /assets/content/images/TUjlFJy6Un-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/sN4swRB3Hh-400.webp 400w, /assets/content/images/sN4swRB3Hh-600.webp 600w, /assets/content/images/sN4swRB3Hh-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/sN4swRB3Hh-400.jpeg" width="800" height="1155" srcset="/assets/content/images/sN4swRB3Hh-400.jpeg 400w, /assets/content/images/sN4swRB3Hh-600.jpeg 600w, /assets/content/images/sN4swRB3Hh-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/PIyT5lnyqv-400.webp 400w, /assets/content/images/PIyT5lnyqv-600.webp 600w, /assets/content/images/PIyT5lnyqv-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/PIyT5lnyqv-400.jpeg" width="800" height="711" srcset="/assets/content/images/PIyT5lnyqv-400.jpeg 400w, /assets/content/images/PIyT5lnyqv-600.jpeg 600w, /assets/content/images/PIyT5lnyqv-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/dCrxIqj_d7-400.webp 400w, /assets/content/images/dCrxIqj_d7-600.webp 600w, /assets/content/images/dCrxIqj_d7-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/dCrxIqj_d7-400.jpeg" width="800" height="1022" srcset="/assets/content/images/dCrxIqj_d7-400.jpeg 400w, /assets/content/images/dCrxIqj_d7-600.jpeg 600w, /assets/content/images/dCrxIqj_d7-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/wIoHshjiiS-400.webp 400w, /assets/content/images/wIoHshjiiS-600.webp 600w, /assets/content/images/wIoHshjiiS-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/wIoHshjiiS-400.jpeg" width="800" height="928" srcset="/assets/content/images/wIoHshjiiS-400.jpeg 400w, /assets/content/images/wIoHshjiiS-600.jpeg 600w, /assets/content/images/wIoHshjiiS-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/U0pIpW5CwT-400.webp 400w, /assets/content/images/U0pIpW5CwT-600.webp 600w, /assets/content/images/U0pIpW5CwT-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/U0pIpW5CwT-400.jpeg" width="800" height="711" srcset="/assets/content/images/U0pIpW5CwT-400.jpeg 400w, /assets/content/images/U0pIpW5CwT-600.jpeg 600w, /assets/content/images/U0pIpW5CwT-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/kC8ArHUdzr-400.webp 400w, /assets/content/images/kC8ArHUdzr-600.webp 600w, /assets/content/images/kC8ArHUdzr-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/kC8ArHUdzr-400.jpeg" width="800" height="311" srcset="/assets/content/images/kC8ArHUdzr-400.jpeg 400w, /assets/content/images/kC8ArHUdzr-600.jpeg 600w, /assets/content/images/kC8ArHUdzr-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/V9ietJvZY5-400.webp 400w, /assets/content/images/V9ietJvZY5-600.webp 600w, /assets/content/images/V9ietJvZY5-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/V9ietJvZY5-400.jpeg" width="800" height="623" srcset="/assets/content/images/V9ietJvZY5-400.jpeg 400w, /assets/content/images/V9ietJvZY5-600.jpeg 600w, /assets/content/images/V9ietJvZY5-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/fLJtsZd-bu-400.webp 400w, /assets/content/images/fLJtsZd-bu-600.webp 600w, /assets/content/images/fLJtsZd-bu-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/fLJtsZd-bu-400.jpeg" width="800" height="623" srcset="/assets/content/images/fLJtsZd-bu-400.jpeg 400w, /assets/content/images/fLJtsZd-bu-600.jpeg 600w, /assets/content/images/fLJtsZd-bu-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/qW58SScehh-400.webp 400w, /assets/content/images/qW58SScehh-600.webp 600w, /assets/content/images/qW58SScehh-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/qW58SScehh-400.jpeg" width="800" height="623" srcset="/assets/content/images/qW58SScehh-400.jpeg 400w, /assets/content/images/qW58SScehh-600.jpeg 600w, /assets/content/images/qW58SScehh-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/TdSwRsY_tv-400.webp 400w, /assets/content/images/TdSwRsY_tv-600.webp 600w, /assets/content/images/TdSwRsY_tv-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/TdSwRsY_tv-400.jpeg" width="800" height="623" srcset="/assets/content/images/TdSwRsY_tv-400.jpeg 400w, /assets/content/images/TdSwRsY_tv-600.jpeg 600w, /assets/content/images/TdSwRsY_tv-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/Jw0xzxaMRl-400.webp 400w, /assets/content/images/Jw0xzxaMRl-600.webp 600w, /assets/content/images/Jw0xzxaMRl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/Jw0xzxaMRl-400.jpeg" width="800" height="623" srcset="/assets/content/images/Jw0xzxaMRl-400.jpeg 400w, /assets/content/images/Jw0xzxaMRl-600.jpeg 600w, /assets/content/images/Jw0xzxaMRl-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/jqRbsrh0EN-400.webp 400w, /assets/content/images/jqRbsrh0EN-600.webp 600w, /assets/content/images/jqRbsrh0EN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/jqRbsrh0EN-400.jpeg" width="800" height="617" srcset="/assets/content/images/jqRbsrh0EN-400.jpeg 400w, /assets/content/images/jqRbsrh0EN-600.jpeg 600w, /assets/content/images/jqRbsrh0EN-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/yGGywIzfEv-400.webp 400w, /assets/content/images/yGGywIzfEv-600.webp 600w, /assets/content/images/yGGywIzfEv-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/yGGywIzfEv-400.jpeg" width="800" height="623" srcset="/assets/content/images/yGGywIzfEv-400.jpeg 400w, /assets/content/images/yGGywIzfEv-600.jpeg 600w, /assets/content/images/yGGywIzfEv-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/kKTwuOZAaj-400.webp 400w, /assets/content/images/kKTwuOZAaj-600.webp 600w, /assets/content/images/kKTwuOZAaj-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/kKTwuOZAaj-400.jpeg" width="800" height="623" srcset="/assets/content/images/kKTwuOZAaj-400.jpeg 400w, /assets/content/images/kKTwuOZAaj-600.jpeg 600w, /assets/content/images/kKTwuOZAaj-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/V3Jv9Jpebe-400.webp 400w, /assets/content/images/V3Jv9Jpebe-600.webp 600w, /assets/content/images/V3Jv9Jpebe-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/V3Jv9Jpebe-400.jpeg" width="800" height="640" srcset="/assets/content/images/V3Jv9Jpebe-400.jpeg 400w, /assets/content/images/V3Jv9Jpebe-600.jpeg 600w, /assets/content/images/V3Jv9Jpebe-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/FEvi1pa0yg-400.webp 400w, /assets/content/images/FEvi1pa0yg-600.webp 600w, /assets/content/images/FEvi1pa0yg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/FEvi1pa0yg-400.jpeg" width="800" height="623" srcset="/assets/content/images/FEvi1pa0yg-400.jpeg 400w, /assets/content/images/FEvi1pa0yg-600.jpeg 600w, /assets/content/images/FEvi1pa0yg-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/-u6-0p7oKX-400.webp 400w, /assets/content/images/-u6-0p7oKX-600.webp 600w, /assets/content/images/-u6-0p7oKX-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/-u6-0p7oKX-400.jpeg" width="800" height="468" srcset="/assets/content/images/-u6-0p7oKX-400.jpeg 400w, /assets/content/images/-u6-0p7oKX-600.jpeg 600w, /assets/content/images/-u6-0p7oKX-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/E5uEXHI1WM-400.webp 400w, /assets/content/images/E5uEXHI1WM-600.webp 600w, /assets/content/images/E5uEXHI1WM-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/E5uEXHI1WM-400.jpeg" width="800" height="483" srcset="/assets/content/images/E5uEXHI1WM-400.jpeg 400w, /assets/content/images/E5uEXHI1WM-600.jpeg 600w, /assets/content/images/E5uEXHI1WM-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/npK_KfeCkX-400.webp 400w, /assets/content/images/npK_KfeCkX-600.webp 600w, /assets/content/images/npK_KfeCkX-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/npK_KfeCkX-400.jpeg" width="800" height="599" srcset="/assets/content/images/npK_KfeCkX-400.jpeg 400w, /assets/content/images/npK_KfeCkX-600.jpeg 600w, /assets/content/images/npK_KfeCkX-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/ypqchtxUAl-400.webp 400w, /assets/content/images/ypqchtxUAl-600.webp 600w, /assets/content/images/ypqchtxUAl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/ypqchtxUAl-400.jpeg" width="800" height="599" srcset="/assets/content/images/ypqchtxUAl-400.jpeg 400w, /assets/content/images/ypqchtxUAl-600.jpeg 600w, /assets/content/images/ypqchtxUAl-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/-CSPOX6yxu-400.webp 400w, /assets/content/images/-CSPOX6yxu-600.webp 600w, /assets/content/images/-CSPOX6yxu-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/-CSPOX6yxu-400.jpeg" width="800" height="599" srcset="/assets/content/images/-CSPOX6yxu-400.jpeg 400w, /assets/content/images/-CSPOX6yxu-600.jpeg 600w, /assets/content/images/-CSPOX6yxu-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/msha1qUy4S-400.webp 400w, /assets/content/images/msha1qUy4S-600.webp 600w, /assets/content/images/msha1qUy4S-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/msha1qUy4S-400.jpeg" width="800" height="599" srcset="/assets/content/images/msha1qUy4S-400.jpeg 400w, /assets/content/images/msha1qUy4S-600.jpeg 600w, /assets/content/images/msha1qUy4S-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/S10qC2R0s4-400.webp 400w, /assets/content/images/S10qC2R0s4-600.webp 600w, /assets/content/images/S10qC2R0s4-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/S10qC2R0s4-400.jpeg" width="800" height="599" srcset="/assets/content/images/S10qC2R0s4-400.jpeg 400w, /assets/content/images/S10qC2R0s4-600.jpeg 600w, /assets/content/images/S10qC2R0s4-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/juOGti35JB-400.webp 400w, /assets/content/images/juOGti35JB-600.webp 600w, /assets/content/images/juOGti35JB-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/juOGti35JB-400.jpeg" width="800" height="599" srcset="/assets/content/images/juOGti35JB-400.jpeg 400w, /assets/content/images/juOGti35JB-600.jpeg 600w, /assets/content/images/juOGti35JB-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+  <li>
+    <picture><source type="image/webp" srcset="/assets/content/images/MFjfhLOjb7-400.webp 400w, /assets/content/images/MFjfhLOjb7-600.webp 600w, /assets/content/images/MFjfhLOjb7-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/MFjfhLOjb7-400.jpeg" width="800" height="599" srcset="/assets/content/images/MFjfhLOjb7-400.jpeg 400w, /assets/content/images/MFjfhLOjb7-600.jpeg 600w, /assets/content/images/MFjfhLOjb7-800.jpeg 800w" sizes="100vw"></picture>
+  </li>
+  
+</ul>
+
+    </main>
+    <!-- FOOTER -->
+    
+    <p>No specific footer defined</p>
+    
+    <footer class="footer p-10 bg-neutral-950 text-neutral">
+  <aside>
+    
+    <div class="byline flex items-center my-4">
+
+      <div class="pl-4">
+        <p class="prose-2xl">Russell Lebo</p>
+        <p class="prose">I am a dad, a perpetual tinkerer, and a full-stack experience designer. I am always looking for
+          interesting
+          challenges to solve. If you are looking for new talent, let's talk.</p>
+      </div>
+    </div>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Contact</h6>
+    <div class="grid grid-flow-col gap-4">
+      
+      <a class="w-12" href="https://github.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/LhOh3bGqqW-400.webp 400w, /assets/content/images/logos/LhOh3bGqqW-600.webp 600w, /assets/content/images/logos/LhOh3bGqqW-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/LhOh3bGqqW-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/LhOh3bGqqW-400.jpeg 400w, /assets/content/images/logos/LhOh3bGqqW-600.jpeg 600w, /assets/content/images/logos/LhOh3bGqqW-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://linkedin.com/rslebo"><picture><source type="image/webp" srcset="/assets/content/images/logos/0DRapI9up2-400.webp 400w, /assets/content/images/logos/0DRapI9up2-600.webp 600w, /assets/content/images/logos/0DRapI9up2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/0DRapI9up2-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/0DRapI9up2-400.jpeg 400w, /assets/content/images/logos/0DRapI9up2-600.jpeg 600w, /assets/content/images/logos/0DRapI9up2-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://www.threads.net/@dataink.io"><picture><source type="image/webp" srcset="/assets/content/images/logos/ME9Iab4Je3-400.webp 400w, /assets/content/images/logos/ME9Iab4Je3-600.webp 600w, /assets/content/images/logos/ME9Iab4Je3-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/ME9Iab4Je3-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/ME9Iab4Je3-400.jpeg 400w, /assets/content/images/logos/ME9Iab4Je3-600.jpeg 600w, /assets/content/images/logos/ME9Iab4Je3-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://dribbble.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/L5L2ptBua3-400.webp 400w, /assets/content/images/logos/L5L2ptBua3-600.webp 600w, /assets/content/images/logos/L5L2ptBua3-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/L5L2ptBua3-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/L5L2ptBua3-400.jpeg 400w, /assets/content/images/logos/L5L2ptBua3-600.jpeg 600w, /assets/content/images/logos/L5L2ptBua3-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://mastodon.design/@datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/e2ZHCM3p_W-400.webp 400w, /assets/content/images/logos/e2ZHCM3p_W-600.webp 600w, /assets/content/images/logos/e2ZHCM3p_W-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/e2ZHCM3p_W-400.jpeg" width="800" height="860" srcset="/assets/content/images/logos/e2ZHCM3p_W-400.jpeg 400w, /assets/content/images/logos/e2ZHCM3p_W-600.jpeg 600w, /assets/content/images/logos/e2ZHCM3p_W-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://behance.net/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/2xW6gLRUkc-400.webp 400w, /assets/content/images/logos/2xW6gLRUkc-600.webp 600w, /assets/content/images/logos/2xW6gLRUkc-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/2xW6gLRUkc-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/2xW6gLRUkc-400.jpeg 400w, /assets/content/images/logos/2xW6gLRUkc-600.jpeg 600w, /assets/content/images/logos/2xW6gLRUkc-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://www.flickr.com/photos/twosixseven/"><picture><source type="image/webp" srcset="/assets/content/images/logos/K0h_gQKTJ9-400.webp 400w, /assets/content/images/logos/K0h_gQKTJ9-600.webp 600w, /assets/content/images/logos/K0h_gQKTJ9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/K0h_gQKTJ9-400.jpeg" width="800" height="371" srcset="/assets/content/images/logos/K0h_gQKTJ9-400.jpeg 400w, /assets/content/images/logos/K0h_gQKTJ9-600.jpeg 600w, /assets/content/images/logos/K0h_gQKTJ9-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+      <a class="w-12" href="https://www.instagram.com/dataink.io/"><picture><source type="image/webp" srcset="/assets/content/images/logos/CjQ44UJc_K-400.webp 400w, /assets/content/images/logos/CjQ44UJc_K-600.webp 600w, /assets/content/images/logos/CjQ44UJc_K-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/CjQ44UJc_K-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/CjQ44UJc_K-400.jpeg 400w, /assets/content/images/logos/CjQ44UJc_K-600.jpeg 600w, /assets/content/images/logos/CjQ44UJc_K-800.jpeg 800w" sizes="100vw"></picture></a>
+      
+    </div>
+  </nav>
+</footer>
+  </body>
+
+</html>
