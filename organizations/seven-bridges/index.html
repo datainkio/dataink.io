@@ -1,0 +1,299 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title></title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  <script src="/_assets/scripts/flavor.js" defer></script>
+
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+<meta property="og:url" content="https://dataink.io" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Russell Lebo" />
+
+<meta property="og:image" content="https://dataink.io/assets/images/opengraph-default.jpg" />
+
+<meta property="og:description"
+  content="I am a full-stack experience designer working with teams to build digital human-centered tools." />
+<meta property="og:site_name" content="Russell Lebo - Full-Stack Experience Designer" />
+<meta property="article:author" content="Russell Lebo" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQX1Z8XSWY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-GQX1Z8XSWY');
+</script>
+
+  <body class="">
+    <!-- NAVIGATION -->
+    <div class="navbar bg-none">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a href="/now/">Now</a>
+        </li>
+        
+        <li>
+          <a href="/recognition/">Recognition</a>
+        </li>
+        
+        <li>
+          <a href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a href="/projects/">Work</a>
+        </li>
+        
+      </ul>
+    </div>
+    <a href="/" class="btn btn-ghost text-xl">Russ Lebo</a>
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
+      
+      <li>
+        <a href="/now/">Now</a>
+      </li>
+      
+      <li>
+        <a href="/recognition/">Recognition</a>
+      </li>
+      
+      <li>
+        <a href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a href="/projects/">Work</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+
+  </div>
+  <div class="navbar-end">
+
+  </div>
+</div>
+    <!-- CONTENT -->
+    <main tabindex=" -1" class="p-12 md:grid md:grid-cols-12 md:gap-8">
+      
+<h1 class="md:col-span-12">Seven Bridges: Pioneering Genomic Data Science</h1>
+
+      
+<article class="prose md:col-span-8">
+  
+  <p>Seven Bridges is a leading biomedical data analysis company that specializes in genomics and bioinformatics. By providing powerful cloud-based solutions, Seven Bridges enables researchers, scientists, and healthcare professionals to accelerate discoveries, enhance precision medicine, and drive advancements in biomedical research.</p>
+<h2><strong>Comprehensive Genomics Platform</strong></h2>
+<p>Seven Bridges offers a robust and scalable platform for managing and analyzing large-scale genomic data. Their platform integrates a wide array of bioinformatics tools, workflows, and data management capabilities, allowing users to efficiently process and interpret complex genomic datasets.</p>
+<h2><strong>Advanced Data Analysis Tools</strong></h2>
+<p>The company provides cutting-edge analytical tools that support a wide range of genomic research, including DNA sequencing, RNA sequencing, epigenomics, and proteomics. These tools facilitate the discovery of genetic variants, gene expression patterns, and other critical biomarkers, empowering researchers to uncover new insights into human health and disease.</p>
+<h2><strong>Collaborative Research Environment</strong></h2>
+<p>Seven Bridges fosters collaboration by enabling researchers to share data, tools, and workflows securely within their platform. This collaborative environment enhances data reproducibility, streamlines project management, and promotes scientific collaboration across institutions and disciplines.</p>
+<h2><strong>Focus on Precision Medicine</strong></h2>
+<p>By leveraging their advanced genomic analysis capabilities, Seven Bridges plays a pivotal role in advancing precision medicine. Their platform supports the identification of genetic mutations and variants associated with diseases, enabling the development of targeted therapies and personalized treatment plans.</p>
+<h2><strong>Compliance and Security</strong></h2>
+<p>Seven Bridges prioritizes data security and regulatory compliance. Their platform adheres to stringent standards, including HIPAA and GDPR, ensuring that sensitive genomic data is protected and managed according to the highest industry standards.</p>
+<h2><strong>Extensive Partnerships</strong></h2>
+<p>The company collaborates with leading research institutions, healthcare organizations, and government agencies to drive innovation in genomics and bioinformatics. These partnerships enable Seven Bridges to stay at the forefront of scientific research and technology development.</p>
+<h2><strong>What Makes Seven Bridges Stand Out?</strong></h2>
+<h3>Robust Genomics Platform</h3>
+<p>Seven Bridges offers a comprehensive and scalable platform for genomic data analysis, integrating a wide range of bioinformatics tools and workflows</p>
+<h3>Cutting-Edge Analytical Tools</h3>
+<p>The company provides advanced tools that support diverse genomic research applications, empowering researchers to make significant scientific discoveries</p>
+<h3>Collaborative Environment</h3>
+<p>Seven Bridges fosters collaboration by enabling secure data sharing and workflow management, enhancing research reproducibility and efficiency</p>
+<h3>Precision Medicine Focus</h3>
+<p>The company’s capabilities in genomic analysis support the advancement of precision medicine, facilitating the development of targeted therapies and personalized treatments</p>
+<h3>Commitment to Security and Compliance</h3>
+<p>Seven Bridges prioritizes data security and compliance, ensuring that sensitive genomic data is protected and managed responsibly</p>
+<h3>Strategic Partnerships</h3>
+<p>Collaborations with leading research and healthcare institutions enable Seven Bridges to drive innovation and stay at the cutting edge of genomics and bioinformatics</p>
+
+  
+</article>
+<figure class="md:col-span-4">
+  <figcaption>Related Work</figcaption>
+  
+  
+  <section class="">
+	
+	
+	
+	<div class="card w-full bg-white h-96">
+  
+  <figure class="">
+    
+
+<picture><source type="image/webp" srcset="/assets/content/images/H5920zlTgI-400.webp 400w, /assets/content/images/H5920zlTgI-600.webp 600w, /assets/content/images/H5920zlTgI-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Seven Bridges Logo.png" src="/assets/content/images/H5920zlTgI-400.jpeg" width="800" height="420" srcset="/assets/content/images/H5920zlTgI-400.jpeg 400w, /assets/content/images/H5920zlTgI-600.jpeg 600w, /assets/content/images/H5920zlTgI-800.jpeg 800w" sizes="100vw"></picture>
+
+
+  </figure>
+  <div class="card-body p-4 text-left">
+    
+    
+<section>
+  
+  <a class="link link-hover text-sm font-thin leading-none" href="/roles/product-design-lead/">Product Design Lead</a>
+  
+  
+</section>
+
+    
+    <h2 class="card-title leading-tight ">Next-Generation Genomic Sequencing Analysis</h2>
+    
+    
+
+    
+
+<a class="link link-hover text-sm font-thin leading-none"
+  href="/organizations/seven-bridges">Seven Bridges</a>
+
+
+    
+    
+    <div class="card-actions bottom-0 right-0 absolute">
+      <a class="btn btn-ghost btn-sm" href="/projects/sbg-sequencing-platform/">read more</a>
+    </div>
+    
+  </div>
+</div>
+	
+	
+</section>
+</figure>
+
+    </main>
+    <!-- FOOTER -->
+    
+    
+
+
+
+<footer class="px-6 pb-12 pt-12">
+  <!-- AVATAR -->
+  <!-- CTA -->
+  <section class="footer prose max-w-none col-span-12 py-8">
+    <h2 class="text-4xl leading-none font-black mb-2">If you are looking
+      for a human-experience designer, please do say hello - I look forward to hearing about your company and project.</h2>
+  </section>
+  <!-- SOCIAL -->
+  <nav class="grid grid-flow-col gap-2 max-w-96">
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://github.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/NOccPpbU8A-400.webp 400w, /assets/content/images/logos/NOccPpbU8A-600.webp 600w, /assets/content/images/logos/NOccPpbU8A-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/NOccPpbU8A-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/NOccPpbU8A-400.jpeg 400w, /assets/content/images/logos/NOccPpbU8A-600.jpeg 600w, /assets/content/images/logos/NOccPpbU8A-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://linkedin.com/rslebo"><picture><source type="image/webp" srcset="/assets/content/images/logos/sqL-28BedY-400.webp 400w, /assets/content/images/logos/sqL-28BedY-600.webp 600w, /assets/content/images/logos/sqL-28BedY-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/sqL-28BedY-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/sqL-28BedY-400.jpeg 400w, /assets/content/images/logos/sqL-28BedY-600.jpeg 600w, /assets/content/images/logos/sqL-28BedY-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.threads.net/@dataink.io"><picture><source type="image/webp" srcset="/assets/content/images/logos/YFKqEgno60-400.webp 400w, /assets/content/images/logos/YFKqEgno60-600.webp 600w, /assets/content/images/logos/YFKqEgno60-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/YFKqEgno60-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/YFKqEgno60-400.jpeg 400w, /assets/content/images/logos/YFKqEgno60-600.jpeg 600w, /assets/content/images/logos/YFKqEgno60-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://dribbble.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/541fP1wsJY-400.webp 400w, /assets/content/images/logos/541fP1wsJY-600.webp 600w, /assets/content/images/logos/541fP1wsJY-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/541fP1wsJY-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/541fP1wsJY-400.jpeg 400w, /assets/content/images/logos/541fP1wsJY-600.jpeg 600w, /assets/content/images/logos/541fP1wsJY-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://mastodon.design/@datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/KYygGjB8cD-400.webp 400w, /assets/content/images/logos/KYygGjB8cD-600.webp 600w, /assets/content/images/logos/KYygGjB8cD-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/KYygGjB8cD-400.jpeg" width="800" height="860" srcset="/assets/content/images/logos/KYygGjB8cD-400.jpeg 400w, /assets/content/images/logos/KYygGjB8cD-600.jpeg 600w, /assets/content/images/logos/KYygGjB8cD-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://behance.net/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/8ssiLGlscj-400.webp 400w, /assets/content/images/logos/8ssiLGlscj-600.webp 600w, /assets/content/images/logos/8ssiLGlscj-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/8ssiLGlscj-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/8ssiLGlscj-400.jpeg 400w, /assets/content/images/logos/8ssiLGlscj-600.jpeg 600w, /assets/content/images/logos/8ssiLGlscj-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.flickr.com/photos/twosixseven/"><picture><source type="image/webp" srcset="/assets/content/images/logos/bYXzbeSC9_-400.webp 400w, /assets/content/images/logos/bYXzbeSC9_-600.webp 600w, /assets/content/images/logos/bYXzbeSC9_-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/bYXzbeSC9_-400.jpeg" width="800" height="371" srcset="/assets/content/images/logos/bYXzbeSC9_-400.jpeg 400w, /assets/content/images/logos/bYXzbeSC9_-600.jpeg 600w, /assets/content/images/logos/bYXzbeSC9_-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.instagram.com/dataink.io/"><picture><source type="image/webp" srcset="/assets/content/images/logos/BsSOIvMnA2-400.webp 400w, /assets/content/images/logos/BsSOIvMnA2-600.webp 600w, /assets/content/images/logos/BsSOIvMnA2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/BsSOIvMnA2-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/BsSOIvMnA2-400.jpeg 400w, /assets/content/images/logos/BsSOIvMnA2-600.jpeg 600w, /assets/content/images/logos/BsSOIvMnA2-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+  </nav>
+</footer>
+  </body>
+
+</html>
