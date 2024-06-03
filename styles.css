@@ -3299,10 +3299,6 @@ picture.logo img {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .gap-12 {
   gap: 3rem;
 }
