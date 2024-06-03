@@ -3796,6 +3796,14 @@ picture.logo img {
     grid-column: span 8 / span 8;
   }
 
+  .md\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .md\:row-start-1 {
+    grid-row-start: 1;
+  }
+
   .md\:flex {
     display: flex;
   }
