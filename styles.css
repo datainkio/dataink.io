@@ -2962,6 +2962,10 @@ picture.logo img {
   height: 24rem;
 }
 
+.max-h-\[724px\] {
+  max-height: 724px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3110,6 +3114,11 @@ picture.logo img {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .object-center {
