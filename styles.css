@@ -2118,6 +2118,10 @@ picture.logo img {
     --btn-color: var(--fallback-p);
   }
 
+  .btn-neutral {
+    --btn-color: var(--fallback-n);
+  }
+
   .prose :where(code):not(:where([class~="not-prose"] *, pre *)) {
     background-color: var(--fallback-b3,oklch(var(--b3)/1));
   }
@@ -2176,6 +2180,16 @@ picture.logo img {
   .btn-primary {
     --btn-color: var(--p);
   }
+
+  .btn-neutral {
+    --btn-color: var(--n);
+  }
+}
+
+.btn-neutral {
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+  outline-color: var(--fallback-n,oklch(var(--n)/1));
 }
 
 .btn.glass {
@@ -3028,6 +3042,18 @@ picture.logo img {
   width: 100%;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
 .max-w-96 {
   max-width: 24rem;
 }
@@ -3100,6 +3126,11 @@ picture.logo img {
 
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-base-100 {
