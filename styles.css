@@ -3613,10 +3613,6 @@ picture.logo img {
     --tw-bg-opacity: 1;
     background-color: rgb(100 116 139 / var(--tw-bg-opacity));
   }
-
-  .lg\:text-2xl {
-    font-size: 1.563rem;
-  }
 }
 
 @media (min-width: 1280px) {
