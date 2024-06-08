@@ -2935,10 +2935,6 @@ picture.logo img {
   grid-column: span 9 / span 9;
 }
 
-.col-span-full {
-  grid-column: 1 / -1;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -3080,20 +3076,12 @@ picture.logo img {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .justify-center {
   justify-content: center;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-2 {
@@ -3283,10 +3271,6 @@ picture.logo img {
   font-size: 3.052rem;
 }
 
-.text-6xl {
-  font-size: 5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -3364,6 +3348,10 @@ picture.logo img {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .opacity-50 {
@@ -3595,6 +3583,10 @@ picture.logo img {
     font-size: 1.563rem;
   }
 
+  .md\:text-6xl {
+    font-size: 5rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
   }
@@ -3619,6 +3611,10 @@ picture.logo img {
   .xl\:bg-slate-600 {
     --tw-bg-opacity: 1;
     background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  }
+
+  .xl\:text-6xl {
+    font-size: 5rem;
   }
 
   .xl\:text-8xl {
