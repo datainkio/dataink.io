@@ -559,7 +559,7 @@ h1 {
   margin-bottom: 2rem;
   font-size: 2.441rem;
   font-weight: 900;
-  line-height: .8;
+  line-height: .95;
 }
 
 @media (min-width: 640px) {
@@ -3329,19 +3329,11 @@ picture.logo img {
 }
 
 .leading-none {
-  line-height: .8;
+  line-height: .95;
 }
 
 .leading-tight {
   line-height: 1.25;
-}
-
-.leading-4 {
-  line-height: 1rem;
-}
-
-.leading-snug {
-  line-height: 1.375;
 }
 
 .text-black {
