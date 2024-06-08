@@ -3336,6 +3336,14 @@ picture.logo img {
   line-height: 1.25;
 }
 
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
