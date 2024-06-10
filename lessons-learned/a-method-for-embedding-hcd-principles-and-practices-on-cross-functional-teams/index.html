@@ -1,0 +1,247 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title>Lessons Learned: A Method for Embedding HCD Principles and Practices on Cross-Functional Teams</title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  <script src="/_assets/scripts/flavor.js" defer></script>
+
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+
+
+<meta property="og:url" content="https://dataink.io" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Russell Lebo" />
+<meta property="og:image" content="https://dataink.io/assets/images/opengraph-default.jpg" />
+<meta property="og:description"
+  content="I am a full-stack experience designer working with teams to build digital human-centered tools." />
+<meta property="og:site_name" content="Russell Lebo - Full-Stack Experience Designer" />
+<meta property="article:author" content="Russell Lebo" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="#site_twitter" />
+<meta name="twitter:creator" content="#creator_twitter" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQX1Z8XSWY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-GQX1Z8XSWY');
+</script>
+
+  <body class="">
+    <!-- A11Y -->
+    <section id="skip" tabindex=" -2" class="sr-only">
+      
+<a href="#body">body</a>
+<a href="#related">related work</a>
+
+      </section>
+    <!-- NAVIGATION -->
+    <div class="navbar bg-none">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a href="/projects/">Work</a>
+        </li>
+        
+        <li>
+          <a href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a href="/recognition/">Recognition</a>
+        </li>
+        
+      </ul>
+    </div>
+    <a href="/" class="btn btn-ghost text-xl">Russ Lebo</a>
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
+      
+      <li>
+        <a href="/projects/">Work</a>
+      </li>
+      
+      <li>
+        <a href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a href="/recognition/">Recognition</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+
+  </div>
+  <div class="navbar-end">
+
+  </div>
+</div>
+    <!-- CONTENT -->
+    <main tabindex=" -1" class="p-12 md:grid md:grid-cols-12 md:gap-8">
+      
+<h1 class="md:col-span-12">A Method for Embedding HCD Principles and Practices on Cross-Functional Teams</h1>
+
+      
+<article id="body" class="prose md:col-span-8">
+  <p>Cross-functional teams often experience a phenomenon akin to the game of operator. In this game, a message is passed through multiple people and gradually distorts, mirroring the communication challenges in product development. While each team member's unique perspective is essential, this diversity can also lead to increasing &quot;noise&quot; that obscures the original vision, resulting in products that may not address the initial problems or questions.<br>
+Misinterpretation or miscommunication can significantly impact the project, especially when these issues arise early in the workflow. A real-world example of this is a project undertaken for the DEA. The relationship with the client was tense, and during a casual conversation, the client mentioned wanting to &quot;see the menu&quot; for the new site. The account owner, eager to improve relations, redirected the team's focus to delivering the navigation system.<br>
+Creating an effective navigation system is a complex process that begins with user research to understand needs and expectations. Information architects then strategically structure content based on these insights. Designers create responsive designs, and researchers ensure these designs are user-friendly. Developers write the necessary code, and experts review the product to meet federal accessibility requirements.<br>
+However, the directive was clear: &quot;Stop what you're doing and build the menu.&quot; This led to halting work on other features, skipping key research steps, and rushing through design and development without proper testing or accessibility considerations. The result was a subpar product, born from a misunderstanding. The client actually wanted reassurance about the information architecture's coherence, not just a visual menu.<br>
+A robust peer review process could have prevented this issue. Peer review allows for:<br>
+- **Clarification**: Ensuring that client requests are thoroughly understood and accurately interpreted.<br>
+- **Alignment**: Maintaining the original vision and objectives throughout the project.<br>
+- **Quality Assurance**: Catching potential issues early in the process before they compound.<br>
+- **Collaboration**: Leveraging diverse perspectives constructively, rather than allowing them to create noise.<br>
+By incorporating peer reviews, creative directors and business managers can significantly reduce the risk of the &quot;operator effect,&quot; ensuring that digital products and services remain aligned with the initial vision and effectively solve the problems they were designed to address. This approach not only enhances the final product but also fosters better client relationships and more efficient workflows.<br>
+Because I am a big process nerd, I developed a collection of strategies and tactics that cross-functional teams can apply to maintain their alignment towards a single north star. They define a workflow that begins when new direction or insight is received by a cross-functional team and continues through production.<br>
+<figure class="NaNrecDx6T2UyXcD1AxI"><picture><source type="image/webp" srcset="/assets/content/images/NiAC8j_Q6x-400.webp 400w, /assets/content/images/NiAC8j_Q6x-600.webp 600w, /assets/content/images/NiAC8j_Q6x-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Internal Workflow.png" src="/assets/content/images/NiAC8j_Q6x-400.jpeg" width="800" height="171" srcset="/assets/content/images/NiAC8j_Q6x-400.jpeg 400w, /assets/content/images/NiAC8j_Q6x-600.jpeg 600w, /assets/content/images/NiAC8j_Q6x-800.jpeg 800w" sizes="100vw"></picture></figure><br>
+Work begins with the project manager receiving input from the client or stakeholders. They first gather any existing information or insights from the project’s knowledge base and any tickets for possibly related work. This material is collected into a new user story and the story gets assigned an owner. <br>
+The job of the story owner is to ensure the outcome aligns with project goals and supports the team’s shared values. Towards that end they are responsible for seeking out and coordinating contributions from across the team. I strongly suggest that tickets follow a template that references a set of domains agreed upon by the entire team. It is the responsibility of the story owner to coordinate with the different team members to establish the scope of their work, even if a team member’s contribution is little more than, “Looks good. No impact.”<br>
+<figure class="NaNreclLSRclM65Hgfwo"><picture><source type="image/webp" srcset="/assets/content/images/vghcqgYMDN-400.webp 400w, /assets/content/images/vghcqgYMDN-600.webp 600w, /assets/content/images/vghcqgYMDN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Definition Sprint Detail" src="/assets/content/images/vghcqgYMDN-400.jpeg" width="800" height="287" srcset="/assets/content/images/vghcqgYMDN-400.jpeg 400w, /assets/content/images/vghcqgYMDN-600.jpeg 600w, /assets/content/images/vghcqgYMDN-800.jpeg 800w" sizes="100vw"></picture></figure><br>
+Next up I’ll share more about the story refinement process.</p>
+
+</article>
+<figure id="related" class="md:col-span-4">
+  <figcaption>Related Work</figcaption>
+  
+  
+  <section class="">
+	
+</section>
+</figure>
+
+    </main>
+    <!-- FOOTER -->
+    
+    
+
+
+
+<footer class="px-6 pb-12 pt-12">
+  <!-- AVATAR -->
+  <!-- CTA -->
+  <section class="footer prose max-w-none col-span-12 py-8">
+    <h2 class="text-4xl leading-none font-black mb-2">If you are looking
+      for a human-experience designer, please do say hello - I look forward to hearing about your company and project.</h2>
+  </section>
+  <!-- SOCIAL -->
+  <nav id="social" class="grid grid-flow-col gap-2 max-w-96">
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://github.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/bBDw7XTd-W-400.webp 400w, /assets/content/images/logos/bBDw7XTd-W-600.webp 600w, /assets/content/images/logos/bBDw7XTd-W-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/bBDw7XTd-W-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/bBDw7XTd-W-400.jpeg 400w, /assets/content/images/logos/bBDw7XTd-W-600.jpeg 600w, /assets/content/images/logos/bBDw7XTd-W-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://linkedin.com/rslebo"><picture><source type="image/webp" srcset="/assets/content/images/logos/4TlMVxZfqO-400.webp 400w, /assets/content/images/logos/4TlMVxZfqO-600.webp 600w, /assets/content/images/logos/4TlMVxZfqO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/4TlMVxZfqO-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/4TlMVxZfqO-400.jpeg 400w, /assets/content/images/logos/4TlMVxZfqO-600.jpeg 600w, /assets/content/images/logos/4TlMVxZfqO-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.threads.net/@dataink.io"><picture><source type="image/webp" srcset="/assets/content/images/logos/nC_03YDo1o-400.webp 400w, /assets/content/images/logos/nC_03YDo1o-600.webp 600w, /assets/content/images/logos/nC_03YDo1o-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/nC_03YDo1o-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/nC_03YDo1o-400.jpeg 400w, /assets/content/images/logos/nC_03YDo1o-600.jpeg 600w, /assets/content/images/logos/nC_03YDo1o-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://dribbble.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/QkN7dgDx7I-400.webp 400w, /assets/content/images/logos/QkN7dgDx7I-600.webp 600w, /assets/content/images/logos/QkN7dgDx7I-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/QkN7dgDx7I-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/QkN7dgDx7I-400.jpeg 400w, /assets/content/images/logos/QkN7dgDx7I-600.jpeg 600w, /assets/content/images/logos/QkN7dgDx7I-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://mastodon.design/@datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/-1vIuEEQIr-400.webp 400w, /assets/content/images/logos/-1vIuEEQIr-600.webp 600w, /assets/content/images/logos/-1vIuEEQIr-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/-1vIuEEQIr-400.jpeg" width="800" height="860" srcset="/assets/content/images/logos/-1vIuEEQIr-400.jpeg 400w, /assets/content/images/logos/-1vIuEEQIr-600.jpeg 600w, /assets/content/images/logos/-1vIuEEQIr-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://behance.net/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/logos/tGIwKpVC3V-400.webp 400w, /assets/content/images/logos/tGIwKpVC3V-600.webp 600w, /assets/content/images/logos/tGIwKpVC3V-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/tGIwKpVC3V-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/tGIwKpVC3V-400.jpeg 400w, /assets/content/images/logos/tGIwKpVC3V-600.jpeg 600w, /assets/content/images/logos/tGIwKpVC3V-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.flickr.com/photos/twosixseven/"><picture><source type="image/webp" srcset="/assets/content/images/logos/083WefOQex-400.webp 400w, /assets/content/images/logos/083WefOQex-600.webp 600w, /assets/content/images/logos/083WefOQex-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/083WefOQex-400.jpeg" width="800" height="371" srcset="/assets/content/images/logos/083WefOQex-400.jpeg 400w, /assets/content/images/logos/083WefOQex-600.jpeg 600w, /assets/content/images/logos/083WefOQex-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.instagram.com/dataink.io/"><picture><source type="image/webp" srcset="/assets/content/images/logos/wTwcQiFLmy-400.webp 400w, /assets/content/images/logos/wTwcQiFLmy-600.webp 600w, /assets/content/images/logos/wTwcQiFLmy-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/logos/wTwcQiFLmy-400.jpeg" width="800" height="800" srcset="/assets/content/images/logos/wTwcQiFLmy-400.jpeg 400w, /assets/content/images/logos/wTwcQiFLmy-600.jpeg 600w, /assets/content/images/logos/wTwcQiFLmy-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+  </nav>
+</footer>
+  </body>
+
+</html>
