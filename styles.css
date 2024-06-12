@@ -3272,10 +3272,6 @@ picture.logo img {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font {
   font-family: Josefin Sans, sans-serif;
 }
@@ -3525,10 +3521,6 @@ picture.logo img {
     margin-bottom: 0px;
   }
 
-  .md\:block {
-    display: block;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -3583,17 +3575,8 @@ picture.logo img {
     background-color: rgb(148 163 184 / var(--tw-bg-opacity));
   }
 
-  .md\:object-center {
-    -o-object-position: center;
-       object-position: center;
-  }
-
   .md\:text-left {
     text-align: left;
-  }
-
-  .md\:text-center {
-    text-align: center;
   }
 
   .md\:text-2xl {
