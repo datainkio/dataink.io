@@ -3264,6 +3264,14 @@ picture.logo img {
   padding-top: 1rem;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3299,6 +3307,10 @@ picture.logo img {
 
 .text-xl {
   font-size: 1.25rem;
+}
+
+.text-8xl {
+  font-size: 8rem;
 }
 
 .font-black {
@@ -3589,6 +3601,10 @@ picture.logo img {
 
   .md\:text-xl {
     font-size: 1.25rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.441rem;
   }
 }
 
