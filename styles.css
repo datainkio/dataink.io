@@ -2960,6 +2960,11 @@ picture.logo img {
   margin: 0px;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -3029,6 +3034,10 @@ picture.logo img {
   height: 24rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-\[724px\] {
   max-height: 724px;
 }
@@ -3059,6 +3068,11 @@ picture.logo img {
 
 .w-full {
   width: 100%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-96 {
@@ -3099,6 +3113,18 @@ picture.logo img {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -3256,20 +3282,16 @@ picture.logo img {
   padding-left: 0px;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
 }
 
 .text-left {
@@ -3280,12 +3302,12 @@ picture.logo img {
   text-align: center;
 }
 
-.font {
-  font-family: Josefin Sans, sans-serif;
+.align-middle {
+  vertical-align: middle;
 }
 
-.text-2xl {
-  font-size: 1.563rem;
+.font {
+  font-family: Josefin Sans, sans-serif;
 }
 
 .text-4xl {
@@ -3294,6 +3316,10 @@ picture.logo img {
 
 .text-5xl {
   font-size: 3.052rem;
+}
+
+.text-8xl {
+  font-size: 8rem;
 }
 
 .text-lg {
@@ -3307,10 +3333,6 @@ picture.logo img {
 
 .text-xl {
   font-size: 1.25rem;
-}
-
-.text-8xl {
-  font-size: 8rem;
 }
 
 .font-black {
@@ -3546,10 +3568,6 @@ picture.logo img {
     width: fit-content;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:max-w-none {
     max-width: none;
   }
@@ -3564,6 +3582,10 @@ picture.logo img {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:flex-wrap {
@@ -3595,16 +3617,8 @@ picture.logo img {
     font-size: 1.563rem;
   }
 
-  .md\:text-6xl {
-    font-size: 5rem;
-  }
-
   .md\:text-xl {
     font-size: 1.25rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.441rem;
   }
 }
 
@@ -3631,9 +3645,5 @@ picture.logo img {
 
   .xl\:text-6xl {
     font-size: 5rem;
-  }
-
-  .xl\:text-8xl {
-    font-size: 8rem;
   }
 }
