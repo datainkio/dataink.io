@@ -1,0 +1,324 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title>Lessons Learned: What do design systems, woodworking, and Adam Savage have in common?</title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  <script src="/_assets/scripts/flavor.js" defer></script>
+
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+
+
+<meta property="og:url" content="/lessons-learned/what-do-design-systems-woodworking-and-adam-savage-have-in-common/" />
+<meta property="og:site_name" content="dataink.io" />
+<meta property="og:title" content="What do design systems, woodworking, and Adam Savage have in common?" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/static/hair.png " />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="#site_twitter" />
+<meta name="twitter:creator" content="#creator_twitter" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
+	<!-- End Google Tag Manager -->
+
+  <body class="">
+    <!-- GTM -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <!-- A11Y -->
+    <section id="skip" tabindex=" -2" class="sr-only">
+      
+<a href="#body">body</a>
+<a href="#related">related work</a>
+
+      </section>
+    <!-- NAVIGATION -->
+    <div class="navbar bg-none">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a href="/projects/">Work</a>
+        </li>
+        
+        <li>
+          <a href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a href="/recognition/">Recognition</a>
+        </li>
+        
+      </ul>
+    </div>
+    <a href="/" class="btn btn-ghost text-xl">Russ Lebo</a>
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
+      
+      <li>
+        <a href="/projects/">Work</a>
+      </li>
+      
+      <li>
+        <a href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a href="/recognition/">Recognition</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+
+  </div>
+  <div class="navbar-end">
+
+  </div>
+</div>
+    <!-- CONTENT -->
+    <main tabindex=" -1" class="p-12 md:grid md:grid-cols-12 md:gap-8">
+      
+<h1 class="md:col-span-12">What do design systems, woodworking, and Adam Savage have in common?</h1>
+
+      
+<article id="body" class="prose md:col-span-8">
+  <p>Engaging in passion projects is crucial for maintaining creativity, and occasionally, these projects offer valuable insights applicable to other domains. This was the recent case when I helped a friend revitalize an old woodworking shop in the Maryland woods. The experience provided profound insights into experience design, both as a practice and philosophy, and led me to deeply consider the concept of “first order retrievability.” While this idea is rooted in physical spaces, it offers significant insights for designing digital products and services. For creative directors and business managers, understanding and implementing first order retrievability can enhance user experience, streamline workflows, and boost productivity.</p>
+<h2><strong>The Workshop</strong></h2>
+<p>In 2023 and 2024 I worked with a friend to help him restore an old woodworking shop he had recently adopted. Filled with equipment, tools, and material that had once belonged to a Baltimore cabinet maker, the building had sat largely unused in the Baltimore countryside for a decade or more. <br>
+<div class="w-full">
+      <button class="picture object-contain" onclick="modal_rec5pXU2LBPVRIpDj.showModal()"><picture><source type="image/webp" srcset="/assets/content/images/cache/1GNqqmXiE5-400.webp 400w, /assets/content/images/cache/1GNqqmXiE5-600.webp 600w, /assets/content/images/cache/1GNqqmXiE5-800.webp 800w" sizes="100vw"><img alt="Thumbnail for The shop" src="/assets/content/images/cache/1GNqqmXiE5-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/1GNqqmXiE5-400.jpeg 400w, /assets/content/images/cache/1GNqqmXiE5-600.jpeg 600w, /assets/content/images/cache/1GNqqmXiE5-800.jpeg 800w" sizes="100vw"></picture></button>
+      <dialog id="modal_rec5pXU2LBPVRIpDj" class="modal">
+      <figure class="modal-box w-11/12 max-w-none shadow-none" id="rec5pXU2LBPVRIpDj">
+      <picture class="p-4"><source type="image/webp" srcset="/assets/content/images/cache/1GNqqmXiE5-400.webp 400w, /assets/content/images/cache/1GNqqmXiE5-600.webp 600w, /assets/content/images/cache/1GNqqmXiE5-800.webp 800w" sizes="100vw"><img class="w-full"  alt="Thumbnail for The shop" src="/assets/content/images/cache/1GNqqmXiE5-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/1GNqqmXiE5-400.jpeg 400w, /assets/content/images/cache/1GNqqmXiE5-600.jpeg 600w, /assets/content/images/cache/1GNqqmXiE5-800.jpeg 800w" sizes="100vw"></picture>
+      <figcaption class="md:col-span-2">The building had a definite "murder cabin" vibe when I saw it for the first time.
+</figcaption>
+      </figure>
+      <form method="dialog" class="modal-backdrop"><button>close</button></form>
+      </dialog>
+    </div><div class="w-full">
+      <button class="picture object-contain" onclick="modal_recx3ZSxp9wp2VAkz.showModal()"><picture><source type="image/webp" srcset="/assets/content/images/cache/fqMt9kOBiz-400.webp 400w, /assets/content/images/cache/fqMt9kOBiz-600.webp 600w, /assets/content/images/cache/fqMt9kOBiz-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Entrance" src="/assets/content/images/cache/fqMt9kOBiz-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/fqMt9kOBiz-400.jpeg 400w, /assets/content/images/cache/fqMt9kOBiz-600.jpeg 600w, /assets/content/images/cache/fqMt9kOBiz-800.jpeg 800w" sizes="100vw"></picture></button>
+      <dialog id="modal_recx3ZSxp9wp2VAkz" class="modal">
+      <figure class="modal-box w-11/12 max-w-none shadow-none" id="recx3ZSxp9wp2VAkz">
+      <picture class="p-4"><source type="image/webp" srcset="/assets/content/images/cache/fqMt9kOBiz-400.webp 400w, /assets/content/images/cache/fqMt9kOBiz-600.webp 600w, /assets/content/images/cache/fqMt9kOBiz-800.webp 800w" sizes="100vw"><img class="w-full"  alt="Thumbnail for Entrance" src="/assets/content/images/cache/fqMt9kOBiz-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/fqMt9kOBiz-400.jpeg 400w, /assets/content/images/cache/fqMt9kOBiz-600.jpeg 600w, /assets/content/images/cache/fqMt9kOBiz-800.jpeg 800w" sizes="100vw"></picture>
+      <figcaption class="md:col-span-2">No electric light, but a whole bunch of mouse poop. This room would eventually become the finishing area.
+</figcaption>
+      </figure>
+      <form method="dialog" class="modal-backdrop"><button>close</button></form>
+      </dialog>
+    </div><div class="w-full">
+      <button class="picture object-contain" onclick="modal_rec5BrsqM0UR0u7MA.showModal()"><picture><source type="image/webp" srcset="/assets/content/images/cache/sFXnuvXzwG-400.webp 400w, /assets/content/images/cache/sFXnuvXzwG-600.webp 600w, /assets/content/images/cache/sFXnuvXzwG-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Interior" src="/assets/content/images/cache/sFXnuvXzwG-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/sFXnuvXzwG-400.jpeg 400w, /assets/content/images/cache/sFXnuvXzwG-600.jpeg 600w, /assets/content/images/cache/sFXnuvXzwG-800.jpeg 800w" sizes="100vw"></picture></button>
+      <dialog id="modal_rec5BrsqM0UR0u7MA" class="modal">
+      <figure class="modal-box w-11/12 max-w-none shadow-none" id="rec5BrsqM0UR0u7MA">
+      <picture class="p-4"><source type="image/webp" srcset="/assets/content/images/cache/sFXnuvXzwG-400.webp 400w, /assets/content/images/cache/sFXnuvXzwG-600.webp 600w, /assets/content/images/cache/sFXnuvXzwG-800.webp 800w" sizes="100vw"><img class="w-full"  alt="Thumbnail for Interior" src="/assets/content/images/cache/sFXnuvXzwG-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/sFXnuvXzwG-400.jpeg 400w, /assets/content/images/cache/sFXnuvXzwG-600.jpeg 600w, /assets/content/images/cache/sFXnuvXzwG-800.jpeg 800w" sizes="100vw"></picture>
+      <figcaption class="md:col-span-2">The second room had become a dumping ground for all those things that did not serve an immediate purpose but might. Someday.
+</figcaption>
+      </figure>
+      <form method="dialog" class="modal-backdrop"><button>close</button></form>
+      </dialog>
+    </div><br>
+Our task was to turn the building into a functional woodworking shop again. To do so we would create everything a typical shop needs: a lumber storage area, a workbench, tool storage, stationary machine area, and a finishing area. It would have ample space to move between the bench and walls, and to provide the necessary clearance to be able to use long, wide boards and panels. Most important of all, it would allow a person to dive deep into a task without losing concentration or inspiration by requiring them to constantly negotiate with the space itself.<br>
+<div class="w-full">
+      <button class="picture object-contain" onclick="modal_rec2emVgsFJP42qtm.showModal()"><picture><source type="image/webp" srcset="/assets/content/images/cache/9zKUS-NxXa-400.webp 400w, /assets/content/images/cache/9zKUS-NxXa-600.webp 600w, /assets/content/images/cache/9zKUS-NxXa-800.webp 800w" sizes="100vw"><img alt="Thumbnail for The workroom" src="/assets/content/images/cache/9zKUS-NxXa-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/9zKUS-NxXa-400.jpeg 400w, /assets/content/images/cache/9zKUS-NxXa-600.jpeg 600w, /assets/content/images/cache/9zKUS-NxXa-800.jpeg 800w" sizes="100vw"></picture></button>
+      <dialog id="modal_rec2emVgsFJP42qtm" class="modal">
+      <figure class="modal-box w-11/12 max-w-none shadow-none" id="rec2emVgsFJP42qtm">
+      <picture class="p-4"><source type="image/webp" srcset="/assets/content/images/cache/9zKUS-NxXa-400.webp 400w, /assets/content/images/cache/9zKUS-NxXa-600.webp 600w, /assets/content/images/cache/9zKUS-NxXa-800.webp 800w" sizes="100vw"><img class="w-full"  alt="Thumbnail for The workroom" src="/assets/content/images/cache/9zKUS-NxXa-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/9zKUS-NxXa-400.jpeg 400w, /assets/content/images/cache/9zKUS-NxXa-600.jpeg 600w, /assets/content/images/cache/9zKUS-NxXa-800.jpeg 800w" sizes="100vw"></picture>
+      <figcaption class="md:col-span-2">There is a table saw under there. I promise.
+</figcaption>
+      </figure>
+      <form method="dialog" class="modal-backdrop"><button>close</button></form>
+      </dialog>
+    </div>​​<div class="w-full">
+      <button class="picture object-contain" onclick="modal_recYSyEP6PldJzuT1.showModal()"><picture><source type="image/webp" srcset="/assets/content/images/cache/bdD7FgNAGe-400.webp 400w, /assets/content/images/cache/bdD7FgNAGe-600.webp 600w, /assets/content/images/cache/bdD7FgNAGe-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Progress" src="/assets/content/images/cache/bdD7FgNAGe-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/bdD7FgNAGe-400.jpeg 400w, /assets/content/images/cache/bdD7FgNAGe-600.jpeg 600w, /assets/content/images/cache/bdD7FgNAGe-800.jpeg 800w" sizes="100vw"></picture></button>
+      <dialog id="modal_recYSyEP6PldJzuT1" class="modal">
+      <figure class="modal-box w-11/12 max-w-none shadow-none" id="recYSyEP6PldJzuT1">
+      <picture class="p-4"><source type="image/webp" srcset="/assets/content/images/cache/bdD7FgNAGe-400.webp 400w, /assets/content/images/cache/bdD7FgNAGe-600.webp 600w, /assets/content/images/cache/bdD7FgNAGe-800.webp 800w" sizes="100vw"><img class="w-full"  alt="Thumbnail for Progress" src="/assets/content/images/cache/bdD7FgNAGe-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/bdD7FgNAGe-400.jpeg 400w, /assets/content/images/cache/bdD7FgNAGe-600.jpeg 600w, /assets/content/images/cache/bdD7FgNAGe-800.jpeg 800w" sizes="100vw"></picture>
+      <figcaption class="md:col-span-2">By this point we had cleared out all of the material that had accumulated on every horizontal surface and begun focusing on storage. In the center sit the table saw and workbench. On the far right raw raw stock is hung off the floor. On the left are the beginnings of tool storage.
+</figcaption>
+      </figure>
+      <form method="dialog" class="modal-backdrop"><button>close</button></form>
+      </dialog>
+    </div></p>
+<h2><strong>Understanding First Order Retrievability</strong></h2>
+<p>Adam Savage, renowned for “Mythbusters” and his expertise as a maker, introduces “first order retrievability,” a principle vital for any workspace. First order retrievability involves arranging tools, materials, and resources so they are immediately accessible and visible without moving other items. In Savage’s workspace, this means placing frequently used tools on pegboards, in clearly labeled drawers, or on open shelves for quick identification and retrieval. This setup minimizes workflow interruptions, maintains a tidy workspace, and ensures everything is ready for use without unnecessary delays.<br>
+While this idea is rooted in physical spaces like woodworking shops, it offers significant insights for designing digital products and services. For creative directors and business managers, understanding and implementing first order retrievability can enhance user experience, streamline workflows, and boost productivity.</p>
+<h2><strong>Applying First Order Retrievability to Digital Products</strong></h2>
+<p>In Savage’s meticulously organized shop, every tool has a designated place that’s easily reachable. Let’s draw parallels to digital product design:<br>
+<strong>Tool Placement</strong>: Just as a carpenter’s saw and hammer are placed within arm’s reach, the most critical functions in a piece of software are immediately visible on the main interface. For example, in design software like Adobe Photoshop, essential tools (brush, eraser, selection tool) are prominently displayed on the toolbar. Similarly, in a digital workspace like Slack, primary communication channels and tools are always accessible from the sidebar.<br>
+<strong>Labeling and Identification</strong>: Clear labeling is crucial in both physical and digital spaces. In woodworking, labels on drawers and bins prevent wasted time. Similarly, clear icons and labels in software interfaces guide users swiftly to their desired actions.<br>
+<strong>Efficiency and Flow</strong>: An organized shop supports a smooth workflow, reducing the friction caused by searching for tools. Digital products should mimic this efficiency, ensuring that users can maintain their flow without interruption. For instance, features like autosave and version history in document editing software like Google Docs help maintain productivity by reducing the risk of lost work and enabling easy access to previous versions.</p>
+<h2><strong>French Cleats and Design Systems: A Similarity</strong></h2>
+<p>A particularly illustrative example from Savage’s workshop is the use of French cleats. French cleats are a system of interlocking wall-mounted cleats that allow for flexible and secure tool storage. Tools can be easily hung, rearranged, and accessed as needed, all while maintaining a clean and organized space.<br>
+<div class="w-full">
+      <button class="picture object-contain" onclick="modal_recoq6UzgNyVx3yAP.showModal()"><picture><source type="image/webp" srcset="/assets/content/images/cache/L4xlmKL3t6-400.webp 400w, /assets/content/images/cache/L4xlmKL3t6-600.webp 600w, /assets/content/images/cache/L4xlmKL3t6-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Router and bit organization" src="/assets/content/images/cache/L4xlmKL3t6-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/L4xlmKL3t6-400.jpeg 400w, /assets/content/images/cache/L4xlmKL3t6-600.jpeg 600w, /assets/content/images/cache/L4xlmKL3t6-800.jpeg 800w" sizes="100vw"></picture></button>
+      <dialog id="modal_recoq6UzgNyVx3yAP" class="modal">
+      <figure class="modal-box w-11/12 max-w-none shadow-none" id="recoq6UzgNyVx3yAP">
+      <picture class="p-4"><source type="image/webp" srcset="/assets/content/images/cache/L4xlmKL3t6-400.webp 400w, /assets/content/images/cache/L4xlmKL3t6-600.webp 600w, /assets/content/images/cache/L4xlmKL3t6-800.webp 800w" sizes="100vw"><img class="w-full"  alt="Thumbnail for Router and bit organization" src="/assets/content/images/cache/L4xlmKL3t6-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/L4xlmKL3t6-400.jpeg 400w, /assets/content/images/cache/L4xlmKL3t6-600.jpeg 600w, /assets/content/images/cache/L4xlmKL3t6-800.jpeg 800w" sizes="100vw"></picture>
+      <figcaption class="md:col-span-2">We abandoned the factory storage cases for the bits and created a more accessible custom solution using french cleats.
+</figcaption>
+      </figure>
+      <form method="dialog" class="modal-backdrop"><button>close</button></form>
+      </dialog>
+    </div><div class="w-full">
+      <button class="picture object-contain" onclick="modal_rec4geV64ZLcNAEyr.showModal()"><picture><source type="image/webp" srcset="/assets/content/images/cache/73L_vH9ytU-400.webp 400w, /assets/content/images/cache/73L_vH9ytU-600.webp 600w, /assets/content/images/cache/73L_vH9ytU-800.webp 800w" sizes="100vw"><img alt="Thumbnail for French cleat all the things" src="/assets/content/images/cache/73L_vH9ytU-400.jpeg" width="800" height="629" srcset="/assets/content/images/cache/73L_vH9ytU-400.jpeg 400w, /assets/content/images/cache/73L_vH9ytU-600.jpeg 600w, /assets/content/images/cache/73L_vH9ytU-800.jpeg 800w" sizes="100vw"></picture></button>
+      <dialog id="modal_rec4geV64ZLcNAEyr" class="modal">
+      <figure class="modal-box w-11/12 max-w-none shadow-none" id="rec4geV64ZLcNAEyr">
+      <picture class="p-4"><source type="image/webp" srcset="/assets/content/images/cache/73L_vH9ytU-400.webp 400w, /assets/content/images/cache/73L_vH9ytU-600.webp 600w, /assets/content/images/cache/73L_vH9ytU-800.webp 800w" sizes="100vw"><img class="w-full"  alt="Thumbnail for French cleat all the things" src="/assets/content/images/cache/73L_vH9ytU-400.jpeg" width="800" height="629" srcset="/assets/content/images/cache/73L_vH9ytU-400.jpeg 400w, /assets/content/images/cache/73L_vH9ytU-600.jpeg 600w, /assets/content/images/cache/73L_vH9ytU-800.jpeg 800w" sizes="100vw"></picture>
+      <figcaption class="md:col-span-2">Flexible, scalable, and easily adaptable.
+</figcaption>
+      </figure>
+      <form method="dialog" class="modal-backdrop"><button>close</button></form>
+      </dialog>
+    </div><br>
+Similarly, in the digital world, a design system functions as the French cleat of UI/UX design. A design system is a comprehensive set of guidelines, components, and standards that ensures consistency and coherence across a digital product or suite of products. Here’s how they are analogous:<br>
+<strong>Modular and Flexible</strong>: Just as French cleats allow for the modular arrangement of tools, a design system provides a flexible framework that can be adapted and expanded. For example, Google’s Material Design is a design system that offers a cohesive set of design principles and components that can be used across various applications, ensuring a uniform user experience.<br>
+<strong>Consistency and Efficiency</strong>: Both French cleats and design systems enhance consistency and efficiency. In a workshop, tools are always stored in the same place, making them easy to find. In digital design, a consistent set of UI components ensures that users can intuitively navigate and interact with the product, reducing the learning curve and improving usability.<br>
+<strong>Ease of Maintenance</strong>: The ease with which French cleats allow for reorganization and maintenance is mirrored in the way design systems facilitate updates and scalability. When a new tool (or design component) is introduced, it can be seamlessly integrated into the existing system without disrupting the overall organization.</p>
+<h2><strong>Conclusion</strong></h2>
+<p>Adam Savage’s concept of first order retrievability is a powerful framework that extends beyond the physical realm into the digital world. By prioritizing accessibility, visibility, and organization, creative directors and business managers can design digital products and services that enhance user experience and efficiency. Just as a well-organized woodworking shop promotes productivity and creativity, a digital workspace designed with first order retrievability in mind can significantly improve how users interact with and benefit from technology. The similarity between French cleats and design systems further underscores the importance of modularity, consistency, and ease of maintenance in creating efficient and user-friendly environments. In a competitive market, this approach not only meets but anticipates user needs, setting the stage for more intuitive, effective, and satisfying digital experiences.</p>
+
+</article>
+<figure id="related" class="md:col-span-4">
+  <figcaption>Related Work</figcaption>
+  
+  
+  <section class="">
+	
+</section>
+</figure>
+
+    </main>
+    <!-- FOOTER -->
+    
+    
+
+
+
+<footer class="px-6 pb-12 pt-12">
+  <!-- AVATAR -->
+  <!-- CTA -->
+  <section class="footer prose max-w-none col-span-12 py-8">
+    <h2 class="text-4xl leading-none font-black mb-2">If you are looking
+      for a human-experience designer, please do say hello – I look forward to hearing about your company and project.</h2>
+  </section>
+  <!-- SOCIAL -->
+  <nav id="social" class="grid grid-flow-col gap-2 max-w-96">
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://github.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tDLlmK3lbz-400.webp 400w, /assets/content/images/cache/logos/tDLlmK3lbz-600.webp 600w, /assets/content/images/cache/logos/tDLlmK3lbz-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tDLlmK3lbz-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tDLlmK3lbz-400.jpeg 400w, /assets/content/images/cache/logos/tDLlmK3lbz-600.jpeg 600w, /assets/content/images/cache/logos/tDLlmK3lbz-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://linkedin.com/rslebo"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ffN0x6C27b-400.webp 400w, /assets/content/images/cache/logos/ffN0x6C27b-600.webp 600w, /assets/content/images/cache/logos/ffN0x6C27b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ffN0x6C27b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ffN0x6C27b-400.jpeg 400w, /assets/content/images/cache/logos/ffN0x6C27b-600.jpeg 600w, /assets/content/images/cache/logos/ffN0x6C27b-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.threads.net/@dataink.io"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/vvE3YLitc1-400.webp 400w, /assets/content/images/cache/logos/vvE3YLitc1-600.webp 600w, /assets/content/images/cache/logos/vvE3YLitc1-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/vvE3YLitc1-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/vvE3YLitc1-400.jpeg 400w, /assets/content/images/cache/logos/vvE3YLitc1-600.jpeg 600w, /assets/content/images/cache/logos/vvE3YLitc1-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://dribbble.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WhR6VVhfre-400.webp 400w, /assets/content/images/cache/logos/WhR6VVhfre-600.webp 600w, /assets/content/images/cache/logos/WhR6VVhfre-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WhR6VVhfre-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WhR6VVhfre-400.jpeg 400w, /assets/content/images/cache/logos/WhR6VVhfre-600.jpeg 600w, /assets/content/images/cache/logos/WhR6VVhfre-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://mastodon.design/@datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/-3hAU_ohdj-400.webp 400w, /assets/content/images/cache/logos/-3hAU_ohdj-600.webp 600w, /assets/content/images/cache/logos/-3hAU_ohdj-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/-3hAU_ohdj-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/-3hAU_ohdj-400.jpeg 400w, /assets/content/images/cache/logos/-3hAU_ohdj-600.jpeg 600w, /assets/content/images/cache/logos/-3hAU_ohdj-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://behance.net/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/HuV1CBkSoC-400.webp 400w, /assets/content/images/cache/logos/HuV1CBkSoC-600.webp 600w, /assets/content/images/cache/logos/HuV1CBkSoC-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/HuV1CBkSoC-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/HuV1CBkSoC-400.jpeg 400w, /assets/content/images/cache/logos/HuV1CBkSoC-600.jpeg 600w, /assets/content/images/cache/logos/HuV1CBkSoC-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.flickr.com/photos/twosixseven/"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/yV0pqQzqTa-400.webp 400w, /assets/content/images/cache/logos/yV0pqQzqTa-600.webp 600w, /assets/content/images/cache/logos/yV0pqQzqTa-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/yV0pqQzqTa-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/yV0pqQzqTa-400.jpeg 400w, /assets/content/images/cache/logos/yV0pqQzqTa-600.jpeg 600w, /assets/content/images/cache/logos/yV0pqQzqTa-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.instagram.com/dataink.io/"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VmDrmpUzF8-400.webp 400w, /assets/content/images/cache/logos/VmDrmpUzF8-600.webp 600w, /assets/content/images/cache/logos/VmDrmpUzF8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VmDrmpUzF8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/VmDrmpUzF8-400.jpeg 400w, /assets/content/images/cache/logos/VmDrmpUzF8-600.jpeg 600w, /assets/content/images/cache/logos/VmDrmpUzF8-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+  </nav>
+</footer>
+  </body>
+
+</html>
