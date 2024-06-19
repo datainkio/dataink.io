@@ -3017,6 +3017,10 @@ picture.logo img {
   aspect-ratio: 1 / 1;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -3523,6 +3527,10 @@ picture.logo img {
 
   .md\:row-start-2 {
     grid-row-start: 2;
+  }
+
+  .md\:row-start-1 {
+    grid-row-start: 1;
   }
 
   .md\:mb-0 {
