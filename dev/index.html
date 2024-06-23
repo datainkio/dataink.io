@@ -1,0 +1,1364 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title>Russ Lebo: Full-Stack Experience Designer</title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell S. Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  
+  <!-- Template-defined js -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script> <script src="/assets/js/home.js"></script>
+
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+
+
+<meta property="og:url" content="https://dataink.io" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Russell S. Lebo" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/static/hair.png " />
+<meta property="og:description"
+  content="I am a full-stack experience designer working with teams to build digital human-centered tools." />
+<meta property="og:site_name" content="Russell Lebo - Full-Stack Experience Designer" />
+<meta property="article:author" content="Russell Lebo" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="#site_twitter" />
+<meta name="twitter:creator" content="#creator_twitter" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
+	<!-- End Google Tag Manager -->
+
+  <body class="bg-black">
+    <!-- GTM -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <!-- A11Y -->
+    <section id="skip" tabindex=" -2" class="sr-only">
+      
+<a href="#audiences">audiences</a>
+<a href="#work">projects</a>
+<a href="#impact">impact</a>
+<a href="#lessons_learned">lessons learned</a>
+
+      </section>
+    <!-- NAVIGATION -->
+    <div class="navbar bg-none absolute">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a href="/projects/">Work</a>
+        </li>
+        
+        <li>
+          <a href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a href="/recognition/">Recognition</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="navbar-center hidden lg:flex"></div>
+  <div class="navbar-end">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
+      
+      <li>
+        <a href="/projects/">Work</a>
+      </li>
+      
+      <li>
+        <a href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a href="/recognition/">Recognition</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+    <!-- CONTENT -->
+    <main tabindex=" -1" class="px-0 grid grid-cols-12">
+      
+      
+<!-- TITLE -->
+<section id="title" class="prose max-w-none flex snap-y col-span-full grid grid-cols-subgrid p-12 h-dvh">
+	<h1 class="text-5xl text-white my-auto col-span-full">Hi there.</h1>
+</section>
+<!-- INTRO -->
+<section id="intro" class="prose max-w-none flex snap-y col-span-full grid grid-cols-subgrid p-12">
+	<div class="my-auto col-span-full">
+		<h2 class="prose text-4xl leading-none font-black mb-8 text-neutral-50 col-span-full text-balance bleurg">I am an experience designer</h2>
+		<p class="font-thin text-neutral-50 prose">I specialize in crafting user experiences that are intuitive, engaging, and impactful. My role involves understanding the needs and behaviors of users to create seamless and enjoyable interactions across digital and physical platforms. By employing design thinking and user-centered design principles, I focus on enhancing usability, accessibility, and overall satisfaction. My process includes research, prototyping, testing, and iterating on designs to ensure they meet both user needs and business goals. </p>
+	</div>
+</section>
+<!-- ORGANIZATIONS -->
+<section id="organizations" class="prose max-w-none flex snap-y col-span-full grid grid-cols-subgrid p-12">
+	<div class="my-auto col-span-full grid grid-cols-subgrid">
+		<h2 class="prose text-4xl leading-none font-black mb-8 text-neutral-50 col-span-full text-balance"><a class="link link-hover font-black text-white hover:text-orange-600"
+				href="/organizations/">I collaborate with amazing organizations and people</a> delivering <a class="link link-hover font-black text-white hover:text-orange-600"
+				href="/projects/">digital services and products</a></h2>
+		<figure class="col-span-full columns-2">
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/abn-amro">ABN Amro</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/bixal">Bixal</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/bluecadet">Bluecadet</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/california-milk-processor-board">California Milk Processor Board</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/children-s-hospital-boston">Children’s Hospital Boston</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/chubb">Chubb</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/coca-cola">Coca Cola</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/columbia-sportswear">Columbia Sportswear</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/cuna">CUNA</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/dea">DEA</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/enquos">Enquos</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/faberge">Faberge</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/getty-center">Getty Center</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/greater-philadelphia-tourism-and-marketing-corporation">Greater Philadelphia Tourism and Marketing Corporation</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/gsa">GSA</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/harvard-university">Harvard University</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/hbo">HBO</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/hill-holliday">Hill Holliday</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/howard-revis">Howard+Revis</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/ibm-interactive">IBM Interactive</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/ica-boston">ICA Boston</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/james-zabiela">James Zabiela</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/ll-bean">LL Bean</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/lucian-perkins">Lucian Perkins</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/mica">MICA</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/museum-of-the-american-revolution">Museum of the American Revolution</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/national-museum-of-wildlife-art">National Museum of Wildlife Art</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/national-park-service">National Park Service</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/norwegian-cruise-line">Norwegian Cruise Line</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/philadelphia-mural-arts-program">Philadelphia Mural Arts Program</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/publix-supermarkets">Publix Supermarkets</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/pulitzer-center-for-crisis-reporting">Pulitzer Center for Crisis Reporting</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/qvc">QVC</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/seven-bridges">Seven Bridges</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/small-business-administration">Small Business Administration </a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/sotheby-s">Sotheby’s</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/stanford-human-rights-clinic">Stanford Human Rights Clinic</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/the-medici-archive">The Medici Archive</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/tiffany-and-co">Tiffany &amp; Co.</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/transistor-studios">Transistor Studios</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/usaid">USAID</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/usda">USDA</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/white-house-communications">White House Communications</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/wimbledon-championships">Wimbledon Championships</a>
+			
+			<a class="link link-hover link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600 organization"
+  href="/organizations/yahoo">Yahoo</a>
+			
+		</figure>
+	</div>
+</section>
+<!-- WORK -->
+<section id="work" class="prose max-w-none flex snap-y col-span-full grid grid-cols-subgrid p-12">
+	<div class="my-auto col-span-full grid grid-cols-subgrid">
+		<h2 class="prose text-4xl leading-none font-black mb-8 text-neutral-50 col-span-full text-balance">Together, we produce <a class="link link-hover font-black text-white hover:text-orange-600"
+				href="/recognition/">award-winning work</a> that solves real human needs</h2>
+		<figure class="col-span-full">
+			
+			
+			
+			<a href="/projects/cityforward/" class="card no-underline col-span-4">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/5mnHWIO4Qm-400.webp 400w, /assets/content/images/cache/5mnHWIO4Qm-600.webp 600w, /assets/content/images/cache/5mnHWIO4Qm-800.webp 800w" sizes="100vw"><img alt="Thumbnail for CarePlex" src="/assets/content/images/cache/5mnHWIO4Qm-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/5mnHWIO4Qm-400.jpeg 400w, /assets/content/images/cache/5mnHWIO4Qm-600.jpeg 600w, /assets/content/images/cache/5mnHWIO4Qm-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">Smart Decisions, Smart Cities</h3>
+					<p class="prose text-balance font-thin text-neutral-50">A Webby Award-winning platform enabling city officials, researchers, academics, and citizens globally to interact with city data and engage in ongoing public dialogue.</p>
+				</div>
+			</a>
+			
+			
+			
+			
+			<a href="/projects/lincoln-memorial-interactive/" class="card no-underline col-span-4">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/Kxxy1EHtQz-400.webp 400w, /assets/content/images/cache/Kxxy1EHtQz-600.webp 600w, /assets/content/images/cache/Kxxy1EHtQz-800.webp 800w" sizes="100vw"><img alt="Thumbnail for The Lincoln Memorial" src="/assets/content/images/cache/Kxxy1EHtQz-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/Kxxy1EHtQz-400.jpeg 400w, /assets/content/images/cache/Kxxy1EHtQz-600.jpeg 600w, /assets/content/images/cache/Kxxy1EHtQz-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">Improving Access to a National Memorial</h3>
+					<p class="prose text-balance font-thin text-neutral-50">Bluecadet&#39;s interactive website for the Lincoln Memorial, commissioned by the National Park Service, offers an accessible and engaging virtual experience, blending thoughtful design with historical reverence.</p>
+				</div>
+			</a>
+			
+			
+			
+			
+			<a href="/projects/digital-transformation-for-public-health/" class="card no-underline col-span-4">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/4mwVCVCciU-400.webp 400w, /assets/content/images/cache/4mwVCVCciU-600.webp 600w, /assets/content/images/cache/4mwVCVCciU-800.webp 800w" sizes="100vw"><img alt="Thumbnail for USDA" src="/assets/content/images/cache/4mwVCVCciU-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/4mwVCVCciU-400.jpeg 400w, /assets/content/images/cache/4mwVCVCciU-600.jpeg 600w, /assets/content/images/cache/4mwVCVCciU-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">Digital Transformation for Public Health</h3>
+					<p class="prose text-balance font-thin text-neutral-50">Ensuring public health through user-friendly design, innovative research, and a robust digital presence during the pandemic.</p>
+				</div>
+			</a>
+			
+			
+			
+			
+			<a href="/projects/careplex/" class="card no-underline col-span-4">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/5mnHWIO4Qm-400.webp 400w, /assets/content/images/cache/5mnHWIO4Qm-600.webp 600w, /assets/content/images/cache/5mnHWIO4Qm-800.webp 800w" sizes="100vw"><img alt="Thumbnail for CarePlex" src="/assets/content/images/cache/5mnHWIO4Qm-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/5mnHWIO4Qm-400.jpeg 400w, /assets/content/images/cache/5mnHWIO4Qm-600.jpeg 600w, /assets/content/images/cache/5mnHWIO4Qm-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">A Trusted Advisor for Doctors and Caregivers</h3>
+					<p class="prose text-balance font-thin text-neutral-50">IBM&#39;s CarePlex, developed with Boston Children’s Hospital, leverages Watson AI to enhance global healthcare by providing dynamic medical records, personalized care, and a secure space for medical collaboration.</p>
+				</div>
+			</a>
+			
+			
+			
+			
+			<a href="/projects/bixal-redesign/" class="card no-underline col-span-4">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/kDmYsHsYRB-400.webp 400w, /assets/content/images/cache/kDmYsHsYRB-600.webp 600w, /assets/content/images/cache/kDmYsHsYRB-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Bixal Logo Full.svg" src="/assets/content/images/cache/kDmYsHsYRB-400.jpeg" width="800" height="420" srcset="/assets/content/images/cache/kDmYsHsYRB-400.jpeg 400w, /assets/content/images/cache/kDmYsHsYRB-600.jpeg 600w, /assets/content/images/cache/kDmYsHsYRB-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">Rebranding Civic Tech</h3>
+					<p class="prose text-balance font-thin text-neutral-50">Directed the transformation of Bixal’s online presence during a time of heavy churn within the company. Played the roles of product owner, project manager, scrum master, lead designer, lead content strategist, and papa bear when needed.</p>
+				</div>
+			</a>
+			
+			
+			
+			
+			<a href="/projects/sba-gov/" class="card no-underline col-span-4">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/8jdjKJLt23-400.webp 400w, /assets/content/images/cache/8jdjKJLt23-600.webp 600w, /assets/content/images/cache/8jdjKJLt23-800.webp 800w" sizes="100vw"><img alt="Thumbnail for SBA logo" src="/assets/content/images/cache/8jdjKJLt23-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/8jdjKJLt23-400.jpeg 400w, /assets/content/images/cache/8jdjKJLt23-600.jpeg 600w, /assets/content/images/cache/8jdjKJLt23-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">Supporting American Small Businesses</h3>
+					<p class="prose text-balance font-thin text-neutral-50">We transformed SBA.gov into a user-centric, accessible platform, increasing engagement by 801% in 2020 through extensive user research and human-centered design, better supporting entrepreneurs and small business owners.</p>
+				</div>
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</figure>
+	</div>
+</section>
+<!-- IMPACT -->
+<section id="impact" class="prose max-w-none flex snap-y col-span-full grid grid-cols-subgrid p-12">
+	<div class="my-auto col-span-full">
+		<a href="/recognition/" class="col-span-full">
+			<figure id="recognition" class="flex flex-wrap">
+				<figcaption class="col-span-full text-white text-2xl font-thin divider divider-neutral w-full">Recognition</figcaption>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<picture class="logo p-4 w-24 h-24 mx-auto my-0"><source type="image/webp" srcset="/assets/content/images/cache/e1kEXUCgFp-200.webp 200w" sizes="100vw"><img class=""  alt="Thumbnail for SXSW" src="/assets/content/images/cache/e1kEXUCgFp-200.jpeg" width="200" height="200"></picture>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<picture class="logo p-4 w-24 h-24 mx-auto my-0"><source type="image/webp" srcset="/assets/content/images/cache/Q83SjucDd1-200.webp 200w" sizes="100vw"><img class=""  alt="Thumbnail for Webby" src="/assets/content/images/cache/Q83SjucDd1-200.jpeg" width="200" height="200"></picture>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<picture class="logo p-4 w-24 h-24 mx-auto my-0"><source type="image/webp" srcset="/assets/content/images/cache/AbuGP1C7F9-201.webp 201w" sizes="100vw"><img class=""  alt="Thumbnail for CommArts" src="/assets/content/images/cache/AbuGP1C7F9-201.jpeg" width="201" height="200"></picture>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<picture class="logo p-4 w-24 h-24 mx-auto my-0"><source type="image/webp" srcset="/assets/content/images/cache/YLm2Y5Ndrb-201.webp 201w" sizes="100vw"><img class=""  alt="Thumbnail for HOW" src="/assets/content/images/cache/YLm2Y5Ndrb-201.jpeg" width="201" height="201"></picture>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<picture class="logo p-4 w-24 h-24 mx-auto my-0"><source type="image/webp" srcset="/assets/content/images/cache/DJr89Ci38i-201.webp 201w" sizes="100vw"><img class=""  alt="Thumbnail for AAM" src="/assets/content/images/cache/DJr89Ci38i-201.jpeg" width="201" height="201"></picture>
+				
+				
+				
+				<picture class="logo p-4 w-24 h-24 mx-auto my-0"><source type="image/webp" srcset="/assets/content/images/cache/Zd6pUS_ZrD-200.webp 200w" sizes="100vw"><img class=""  alt="Thumbnail for Adobe" src="/assets/content/images/cache/Zd6pUS_ZrD-200.jpeg" width="200" height="201"></picture>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<picture class="logo p-4 w-24 h-24 mx-auto my-0"><source type="image/webp" srcset="/assets/content/images/cache/0cGT7y74SH-190.webp 190w" sizes="100vw"><img class=""  alt="Thumbnail for Emmy" src="/assets/content/images/cache/0cGT7y74SH-190.jpeg" width="190" height="200"></picture>
+				
+				
+				
+				
+				
+				<picture class="logo p-4 w-24 h-24 mx-auto my-0"><source type="image/webp" srcset="/assets/content/images/cache/ThhevakR4s-201.webp 201w" sizes="100vw"><img class=""  alt="Thumbnail for MITx" src="/assets/content/images/cache/ThhevakR4s-201.jpeg" width="201" height="201"></picture>
+				
+				
+				
+				<picture class="logo p-4 w-24 h-24 mx-auto my-0"><source type="image/webp" srcset="/assets/content/images/cache/pMMlE6cHwz-201.webp 201w" sizes="100vw"><img class=""  alt="Thumbnail for AWS" src="/assets/content/images/cache/pMMlE6cHwz-201.jpeg" width="201" height="200"></picture>
+				
+				
+				
+				
+				
+				
+			</figure>
+		</a>
+		<figure id="metrics" class="col-span-full">
+			<figcaption class="col-span-full text-white text-2xl font-thin divider divider-neutral">Results</figcaption>
+			<div class="columns-2">
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/forms-gov/">
+				<div class="stat-title text-white">Form Submissions</div>
+				<div class="stat-value text-white">107 Billion</div>
+				<div class="stat-desc text-white text-balance">Annual federal form submission impacted by my collaboration with Forms.gov.
+</div>
+			</a>
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/digital-transformation-for-public-health/">
+				<div class="stat-title text-white">Cases of Foodborn Illness</div>
+				<div class="stat-value text-white">7 Million</div>
+				<div class="stat-desc text-white text-balance">Annual reductions in cases of foodborne illnesses following my redesign of fsis.usda.gov
+</div>
+			</a>
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/columbia-omniheat/">
+				<div class="stat-title text-white">Sales</div>
+				<div class="stat-value text-white">$190 Million</div>
+				<div class="stat-desc text-white text-balance">Increase in sales for Columbia Sportswear following the launch of the website I developed for the Omni Heat campaign.
+</div>
+			</a>
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/sba-gov/">
+				<div class="stat-title text-white">Daily Visitors</div>
+				<div class="stat-value text-white">320,000</div>
+				<div class="stat-desc text-white text-balance">Daily visitors to sba.gov when I finished the project
+</div>
+			</a>
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/made-in-america/">
+				<div class="stat-title text-white">Waivers &amp; Exemptions</div>
+				<div class="stat-value text-white">$4.2B</div>
+				<div class="stat-desc text-white text-balance">Waivers and exemptions following the launch of my madeinamerica.gov project
+</div>
+			</a>
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/forms-gov/">
+				<div class="stat-title text-white">Taxpayer Burden</div>
+				<div class="stat-value text-white">$1.43B</div>
+				<div class="stat-desc text-white text-balance">The total reduction in annual taxpayer burden when my testing tool for Forms.gov produces just a 1% improvement in completion rates.
+</div>
+			</a>
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/dea-outreach/">
+				<div class="stat-title text-white">Weekly Visitors</div>
+				<div class="stat-value text-white">235,000</div>
+				<div class="stat-desc text-white text-balance">Weekly visitors to my redesign of dea.gov and its outreach sites
+</div>
+			</a>
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/united-states-web-design-system/">
+				<div class="stat-title text-white">People</div>
+				<div class="stat-value text-white">26 Million</div>
+				<div class="stat-desc text-white text-balance">People impacted daily by the USWDS
+</div>
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/sba-gov/">
+				<div class="stat-title text-white">Site Traffic</div>
+				<div class="stat-value text-white">800%</div>
+				<div class="stat-desc text-white text-balance">Our efforts on SBA.gov led to an extraordinary increase in site traffic and user engagement. In the first half of 2020, the site saw an 801% increase in visitor numbers year-over-year, demonstrating the effectiveness of our user-centered design and content strategy.
+</div>
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/openpediatrics/">
+				<div class="stat-title text-white">Video Views</div>
+				<div class="stat-value text-white">16M</div>
+				<div class="stat-desc text-white text-balance">With videos viewed over 16 million times, the OPENPediatrics platform demonstrates the effectiveness of multimedia in engaging healthcare providers and enhancing their learning experience.
+</div>
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+			
+			<a class="stat no-underline link link-hover h-min" href="/projects/museum-of-the-american-revolution/">
+				<div class="stat-title text-white">Visitors</div>
+				<div class="stat-value text-white">1 Million</div>
+				<div class="stat-desc text-white text-balance">The Museum of the American Revolution opened on April 19, 2017, marking the 242nd anniversary of the first battles of the Revolution. By 2021, it celebrated its one-millionth visitor, underscoring the museum&#39;s significance and the impact of its digital and physical presences in educating the public about the American Revolution.
+</div>
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		</figure>
+	</div>
+</section>
+<!-- LESSONS LEARNED -->
+<section id="lessons_learned" class="prose max-w-none flex snap-y col-span-full grid grid-cols-subgrid p-12">
+	<div class="my-auto col-span-full grid grid-cols-subgrid">
+		<h2 class="prose text-4xl leading-none font-black mb-8 text-neutral-50 col-span-full text-balance">I also think a lot about design culture and how to develop it within teams and organizations. I even <a href="/lessons-learned/" class="link link-hover text-balance lowercase block text-xl leading-none font-thin text-neutral-50 hover:text-orange-600">write about it a bit.</a></h2>
+		<figure class="col-span-full">
+			
+			
+			
+			<a href="/lessons-learned/what-do-design-systems-and-adam-savage-have-in-common/" class="card no-underline col-span-3">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/BovCqjN-cT-400.webp 400w, /assets/content/images/cache/BovCqjN-cT-600.webp 600w, /assets/content/images/cache/BovCqjN-cT-800.webp 800w" sizes="100vw"><img alt="Thumbnail for French cleat all the things" src="/assets/content/images/cache/BovCqjN-cT-400.jpeg" width="800" height="629" srcset="/assets/content/images/cache/BovCqjN-cT-400.jpeg 400w, /assets/content/images/cache/BovCqjN-cT-600.jpeg 600w, /assets/content/images/cache/BovCqjN-cT-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">What do design systems and Adam Savage have in common?</h3>
+				</div>
+			</a>
+			
+			
+			
+			
+			<a href="/lessons-learned/a-method-for-embedding-hcd-principles-and-practices-on-cross-functional-teams/" class="card no-underline col-span-3">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/2SAPoI4UxE-400.webp 400w, /assets/content/images/cache/2SAPoI4UxE-600.webp 600w, /assets/content/images/cache/2SAPoI4UxE-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Peer Review.png" src="/assets/content/images/cache/2SAPoI4UxE-400.jpeg" width="800" height="393" srcset="/assets/content/images/cache/2SAPoI4UxE-400.jpeg 400w, /assets/content/images/cache/2SAPoI4UxE-600.jpeg 600w, /assets/content/images/cache/2SAPoI4UxE-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">A Method for Embedding HCD Principles and Practices on Cross-Functional Teams</h3>
+				</div>
+			</a>
+			
+			
+			
+			
+			<a href="/lessons-learned/a-case-for-integrating-peer-review-into-experience-design/" class="card no-underline col-span-3">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/aDZu_mFDNW-400.webp 400w, /assets/content/images/cache/aDZu_mFDNW-600.webp 600w, /assets/content/images/cache/aDZu_mFDNW-800.webp 800w" sizes="100vw"><img alt="Thumbnail for QAT &amp; UAT == BFF" src="/assets/content/images/cache/aDZu_mFDNW-400.jpeg" width="800" height="537" srcset="/assets/content/images/cache/aDZu_mFDNW-400.jpeg 400w, /assets/content/images/cache/aDZu_mFDNW-600.jpeg 600w, /assets/content/images/cache/aDZu_mFDNW-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">A Case for Integrating Peer Review into Experience Design</h3>
+				</div>
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/lessons-learned/targeting-tangibility-with-the-minimum-testable-product/" class="card no-underline col-span-3">
+				
+				<div class="h-64">
+					<picture><source type="image/webp" srcset="/assets/content/images/cache/FjFqlzAxPE-400.webp 400w, /assets/content/images/cache/FjFqlzAxPE-600.webp 600w, /assets/content/images/cache/FjFqlzAxPE-800.webp 800w" sizes="100vw"><img alt="Thumbnail for Blockframing &amp; Collaboration" src="/assets/content/images/cache/FjFqlzAxPE-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/FjFqlzAxPE-400.jpeg 400w, /assets/content/images/cache/FjFqlzAxPE-600.jpeg 600w, /assets/content/images/cache/FjFqlzAxPE-800.jpeg 800w" sizes="100vw"></picture>
+				</div>
+				<div class="card-body p-0">
+					<h3 class="card-title leading-none text-white font-thin text-2xl">Targeting Tangibility with the Minimum Testable Product</h3>
+				</div>
+			</a>
+			
+			
+			
+			
+			
+			
+			<a href="/lessons-learned/" class="btn btn-outline border-white rounded-full text-white col-span-full w-full mt-12">Lessons Learned</a>	
+		</figure>
+	</div>
+</section>
+
+    </main>
+    <!-- FOOTER -->
+    
+    
+
+<footer class="px-6 pb-12 pt-12 ">
+  <!-- AVATAR -->
+  <!-- CTA -->
+  <section class="footer prose max-w-none col-span-12 py-8">
+    <h2 class="text-4xl leading-none font-black mb-2 prose text-4xl leading-none font-black mb-8 text-neutral-50 col-span-full text-balance">If you are looking
+      for a human-experience designer, please do say hello – I look forward to hearing about your company and project.</h2>
+  </section>
+  <!-- SOCIAL -->
+  <nav id="social" class="grid grid-flow-col gap-2 max-w-96">
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://github.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/NcSlck6LpR-400.webp 400w, /assets/content/images/cache/logos/NcSlck6LpR-600.webp 600w, /assets/content/images/cache/logos/NcSlck6LpR-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/NcSlck6LpR-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/NcSlck6LpR-400.jpeg 400w, /assets/content/images/cache/logos/NcSlck6LpR-600.jpeg 600w, /assets/content/images/cache/logos/NcSlck6LpR-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://linkedin.com/rslebo"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/KRGC1n0D_g-400.webp 400w, /assets/content/images/cache/logos/KRGC1n0D_g-600.webp 600w, /assets/content/images/cache/logos/KRGC1n0D_g-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/KRGC1n0D_g-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/KRGC1n0D_g-400.jpeg 400w, /assets/content/images/cache/logos/KRGC1n0D_g-600.jpeg 600w, /assets/content/images/cache/logos/KRGC1n0D_g-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.threads.net/@dataink.io"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5VAbDSd7cr-400.webp 400w, /assets/content/images/cache/logos/5VAbDSd7cr-600.webp 600w, /assets/content/images/cache/logos/5VAbDSd7cr-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5VAbDSd7cr-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5VAbDSd7cr-400.jpeg 400w, /assets/content/images/cache/logos/5VAbDSd7cr-600.jpeg 600w, /assets/content/images/cache/logos/5VAbDSd7cr-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://dribbble.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/GMGEqSBVwe-400.webp 400w, /assets/content/images/cache/logos/GMGEqSBVwe-600.webp 600w, /assets/content/images/cache/logos/GMGEqSBVwe-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/GMGEqSBVwe-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/GMGEqSBVwe-400.jpeg 400w, /assets/content/images/cache/logos/GMGEqSBVwe-600.jpeg 600w, /assets/content/images/cache/logos/GMGEqSBVwe-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://mastodon.design/@datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/sNjLZJ0IQ--400.webp 400w, /assets/content/images/cache/logos/sNjLZJ0IQ--600.webp 600w, /assets/content/images/cache/logos/sNjLZJ0IQ--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/sNjLZJ0IQ--400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/sNjLZJ0IQ--400.jpeg 400w, /assets/content/images/cache/logos/sNjLZJ0IQ--600.jpeg 600w, /assets/content/images/cache/logos/sNjLZJ0IQ--800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://behance.net/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/iFBwZNjo6G-400.webp 400w, /assets/content/images/cache/logos/iFBwZNjo6G-600.webp 600w, /assets/content/images/cache/logos/iFBwZNjo6G-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/iFBwZNjo6G-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/iFBwZNjo6G-400.jpeg 400w, /assets/content/images/cache/logos/iFBwZNjo6G-600.jpeg 600w, /assets/content/images/cache/logos/iFBwZNjo6G-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.flickr.com/photos/twosixseven/"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dj12SNSM0y-400.webp 400w, /assets/content/images/cache/logos/dj12SNSM0y-600.webp 600w, /assets/content/images/cache/logos/dj12SNSM0y-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dj12SNSM0y-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/dj12SNSM0y-400.jpeg 400w, /assets/content/images/cache/logos/dj12SNSM0y-600.jpeg 600w, /assets/content/images/cache/logos/dj12SNSM0y-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.instagram.com/dataink.io/"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/-_MWF3mopr-400.webp 400w, /assets/content/images/cache/logos/-_MWF3mopr-600.webp 600w, /assets/content/images/cache/logos/-_MWF3mopr-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/-_MWF3mopr-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/-_MWF3mopr-400.jpeg 400w, /assets/content/images/cache/logos/-_MWF3mopr-600.jpeg 600w, /assets/content/images/cache/logos/-_MWF3mopr-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+  </nav>
+</footer>
+  </body>
+
+</html>
