@@ -3148,6 +3148,10 @@ picture.logo img {
   height: min-content;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .max-h-\[724px\] {
   max-height: 724px;
 }
@@ -3182,6 +3186,10 @@ picture.logo img {
 
 .w-full {
   width: 100%;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .max-w-96 {
@@ -3705,6 +3713,14 @@ picture.logo img {
     display: grid;
   }
 
+  .sm\:h-24 {
+    height: 6rem;
+  }
+
+  .sm\:w-24 {
+    width: 6rem;
+  }
+
   .sm\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -3790,6 +3806,11 @@ picture.logo img {
     margin-bottom: auto;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3804,6 +3825,14 @@ picture.logo img {
 
   .md\:h-48 {
     height: 12rem;
+  }
+
+  .md\:h-28 {
+    height: 7rem;
+  }
+
+  .md\:w-28 {
+    width: 7rem;
   }
 
   .md\:max-w-none {
