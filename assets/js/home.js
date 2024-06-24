@@ -1,56 +1,55 @@
+/**
+ * Define the presentation of the homepage.
+ * - Assign intro sequences to key blocks
+ * - Assign scrollTo behaviors to buttons
+ */
 document.addEventListener("DOMContentLoaded", (event) => {
   let dur = 1; // base value for animation duration (in seconds)
   let y_delta = 50; // vertical origin of elements
-  let pos = "-=.75"; // offset (in seconds) of animation relative to the previous
+  let pos = "-=.25"; // offset (in seconds) of animation relative to the previous
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-  /** INTRO */
-  let intro = gsap.timeline({
-    scrollTrigger: {
-      trigger: '#intro h2',
-      start: 'top center',
-    }
-  });
-  intro.from('#intro h2', {duration: dur, y: y_delta, autoAlpha: 0})
-  .from('#intro p', {duration: dur, y: y_delta, autoAlpha: 0}, pos)
+  /** TITLE */
+  let intro = gsap.timeline({});
+  intro.add(gsap.from("h1", {duration: dur, y:y_delta, autoAlpha: 0}));
+  intro.add(gsap.from("#title p", {duration: dur, y:y_delta, autoAlpha: 0}), pos);
+  intro.add(gsap.from("#title .hacky", {duration: dur, y:y_delta, autoAlpha: 0}), pos);
 
-  /** ORGANIZATIONS */
-  let organizations = gsap.timeline({
-    scrollTrigger: {
-      trigger: '#organizations h2',
-      start: 'top center',
-    }
+  const more_work = document.getElementById("more_work");
+
+  more_work.addEventListener("click", () => {
+    gsap.to(window, {duration: 1, scrollTo:{y:"#work"}});
   });
-  organizations.from('#organizations h2', {duration: dur, y:y_delta, autoAlpha: 0})
-  .from("#organizations figure", {duration: dur, y:y_delta, autoAlpha: 0}, pos)
 
   /** WORK */
-  let work = gsap.timeline({
-    scrollTrigger: {
-      trigger: '#work h2',
-      start: 'top center'
-    }
-  });
-  work.from('#work h2', {duration: dur, y:y_delta, autoAlpha: 0});
-  const projects = gsap.utils.toArray('#work figure .card');
+  const projects = gsap.utils.toArray('#work .card');
   projects.forEach(p => {
     gsap.from(p, {
       scrollTrigger: {
         trigger: p,
-        start: 'top center'
+        start: 'center bottom'
       }, 
     autoAlpha: 0,
   y: y_delta})
   })
 
   /** RECOGNITION */
-  let recognition = gsap.timeline({
+  gsap.from('#recognition figcaption', {
     scrollTrigger: {
       trigger: '#recognition figcaption',
-      start: 'top center'
+      start: 'bottom bottom'
+    },
+    duration: dur, 
+    y:y_delta, 
+    autoAlpha: 0
+  });
+
+  let recognition = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#recognition',
+      start: 'bottom bottom'
     }
   });
-  recognition.from('#recognition figcaption', {duration: dur, y:y_delta, autoAlpha: 0});
   const awards = gsap.utils.toArray('#recognition picture');
   awards.forEach(p => {
     recognition.add(gsap.from(p, {autoAlpha: 0, duration: dur*.1}));
@@ -60,18 +59,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.from('#metrics figcaption', {
     scrollTrigger: {
       trigger: '#metrics figcaption',
-      start: 'top center'
+      start: 'bottom bottom'
     },
-    autoAlpha: 0,
-    y: y_delta,
-    duration: dur
-  })
+    duration: dur, 
+    y:y_delta, 
+    autoAlpha: 0
+  });
   const metrics = gsap.utils.toArray('#metrics .stat');
   metrics.forEach(stat => {
     gsap.from(stat, {
       scrollTrigger: {
         trigger: stat,
-        start: 'top center'
+        start: 'bottom bottom'
       },
       autoAlpha: 0,
       y: y_delta,
@@ -80,21 +79,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
   })
 
   /** LESSONS LEARNED */
-  gsap.from('#lessons_learned h2', {
+  gsap.from('#lessons_learned figcaption', {
     scrollTrigger: {
-      trigger: '#lessons_learned h2',
-      start: 'top center'
+      trigger: '#lessons_learned figcaption',
+      start: 'bottom bottom'
     },
     autoAlpha: 0,
     y: y_delta,
     duration: dur
   });
-  const lessons = gsap.utils.toArray('#lessons_learned figure a');
+  const lessons = gsap.utils.toArray('#lessons_learned .card');
   lessons.forEach(lesson => {
     gsap.from(lesson, {
       scrollTrigger: {
         trigger: lesson,
-        start: 'top center'
+        start: 'center bottom'
       }, 
     autoAlpha: 0,
   y: y_delta})
