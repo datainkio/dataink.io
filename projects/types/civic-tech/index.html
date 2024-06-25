@@ -1,0 +1,1026 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title>{{ type.Slug }}</title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell S. Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  
+  <!-- Template-defined js -->
+  
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+
+
+<meta property="og:url" content="https://dataink.io" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Russell S. Lebo" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/static/hair.png " />
+<meta property="og:description"
+  content="I am a full-stack experience designer working with teams to build digital human-centered tools." />
+<meta property="og:site_name" content="Russell Lebo - Full-Stack Experience Designer" />
+<meta property="article:author" content="Russell Lebo" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="#site_twitter" />
+<meta name="twitter:creator" content="#creator_twitter" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
+	<!-- End Google Tag Manager -->
+
+  <body class="bg-black">
+    <!-- GTM -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <!-- A11Y -->
+    <section id="skip" tabindex=" -2" class="sr-only">
+    
+<a href="#introduction">introduction</a>
+<a href="#projects">projects</a>
+
+    </section>
+  </section>
+    <!-- NAVIGATION -->
+    <div class="navbar bg-black absolute">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a href="/projects/">Work</a>
+        </li>
+        
+        <li>
+          <a href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a href="/recognition/">Recognition</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    
+
+  </div>
+  <div class="navbar-center hidden lg:flex"></div>
+  <div class="navbar-end">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+      
+      <li>
+        <a href="/projects/">Work</a>
+      </li>
+      
+      <li>
+        <a href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a href="/recognition/">Recognition</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+    <!-- CONTENT -->
+    <main tabindex=" -1" class="py-12">
+      <article>
+        
+<section class="px-8">
+<h1 class="text-4xl sm:text-6xl text-neutral-50"><a href="/projects/">Work</a> / Civic Tech</h1>
+<p id="introduction" class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">
+  I have contributed to civic tech projects by designing platforms that enhance public access to information and promote community engagement. Notable projects include the CityForward platform, which democratizes access to urban data for city officials, researchers, and citizens to support data-driven decision-making and community action. Additionally, I worked on the USDA FSIS website redesign to improve public health information dissemination and collaborated on the development of the OPENPediatrics platform to facilitate global sharing of pediatric care best practices, promoting knowledge sharing and improved healthcare outcomes.
+</p>
+</section>
+
+        
+<figure id="projects" class="p-4 sm:p-12">
+  <figcaption class="divider divider-primary prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50"?>Projects</figcaption>
+  
+  
+  
+  
+
+<div class="sm:grid sm:grid-cols-12 my-8 gap-8">
+  <picture class="col-span-4"><source type="image/webp" srcset="/assets/content/images/cache/DVhKkIQhll-400.webp 400w, /assets/content/images/cache/DVhKkIQhll-600.webp 600w, /assets/content/images/cache/DVhKkIQhll-800.webp 800w" sizes="100vw"><img class=""  alt="Thumbnail for USDA" src="/assets/content/images/cache/DVhKkIQhll-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/DVhKkIQhll-400.jpeg 400w, /assets/content/images/cache/DVhKkIQhll-600.jpeg 600w, /assets/content/images/cache/DVhKkIQhll-800.jpeg 800w" sizes="100vw"></picture>
+  <div class="sm:col-span-6 mb-8 p-4">
+    <h3 class="leading-none text-white font-medium text-2xl my-0 col-span-full">Digital Transformation for Public Health</h3>
+    <p class="prose prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty my-2 col-span-6">Ensuring public health through user-friendly design, innovative research, and a robust digital presence during the pandemic.</p>
+    <div class="sm:grid sm:grid-cols-2">
+      
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/design-manager-federal-projects/">Design Manager, Federal Projects</a></li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/usda">USDA</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/bixal">Bixal</a></li>
+		
+	</ul>
+</figure>
+
+</div>
+
+<!-- ACTIITIES -->
+
+<figure class="py-2">
+<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<ul class="list-none pl-0">
+	
+	<li class="text-primary font-light inline-block">Experience Design, </li>
+	
+	<li class="text-primary font-light inline-block">Data Analysis &amp; Visualization, </li>
+	
+	<li class="text-primary font-light inline-block">Human-Centered Research, </li>
+	
+	<li class="text-primary font-light inline-block">Content Strategy, </li>
+	
+	<li class="text-primary font-light inline-block">Natural Language Processing, </li>
+	
+	<li class="text-primary font-light inline-block">Market Research, </li>
+	
+	<li class="text-primary font-light inline-block">Knowledge Management, </li>
+	
+	<li class="text-primary font-light inline-block">Agile Design, </li>
+	
+	<li class="text-primary font-light inline-block">Information Architecture</li>
+	
+</ul>
+</figure>
+
+
+<!-- RECOGNITION -->
+
+    </div>
+    <a href="/projects/digital-transformation-for-public-health/" class="btn btn-circle btn-primary w-24 h-24 text-lg italic  sm:col-start-11 sm:row-start-1 sm:my-auto">Details</a>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+
+<div class="sm:grid sm:grid-cols-12 my-8 gap-8">
+  <picture class="col-span-4"><source type="image/webp" srcset="/assets/content/images/cache/myrJ_9BHNL-400.webp 400w, /assets/content/images/cache/myrJ_9BHNL-600.webp 600w, /assets/content/images/cache/myrJ_9BHNL-800.webp 800w" sizes="100vw"><img class=""  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/myrJ_9BHNL-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/myrJ_9BHNL-400.jpeg 400w, /assets/content/images/cache/myrJ_9BHNL-600.jpeg 600w, /assets/content/images/cache/myrJ_9BHNL-800.jpeg 800w" sizes="100vw"></picture>
+  <div class="sm:col-span-6 mb-8 p-4">
+    <h3 class="leading-none text-white font-medium text-2xl my-0 col-span-full">Improving Access to Government Benefits and Services</h3>
+    <p class="prose prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty my-2 col-span-6">A collaboration with the Office of Evaluation Sciences to improve access to essential services like healthcare and housing through innovative, scientifically validated digital design.</p>
+    <div class="sm:grid sm:grid-cols-2">
+      
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/design-manager-federal-projects/">Design Manager, Federal Projects</a></li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/gsa">GSA</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/bixal">Bixal</a></li>
+		
+	</ul>
+</figure>
+
+</div>
+
+<!-- ACTIITIES -->
+
+<figure class="py-2">
+<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<ul class="list-none pl-0">
+	
+	<li class="text-primary font-light inline-block">Experience Design, </li>
+	
+	<li class="text-primary font-light inline-block">Human-Centered Research, </li>
+	
+	<li class="text-primary font-light inline-block">Accessibility Standards &amp; Best Practices</li>
+	
+</ul>
+</figure>
+
+
+<!-- RECOGNITION -->
+
+    </div>
+    <a href="/projects/forms-gov/" class="btn btn-circle btn-primary w-24 h-24 text-lg italic  sm:col-start-11 sm:row-start-1 sm:my-auto">Details</a>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+
+<div class="sm:grid sm:grid-cols-12 my-8 gap-8">
+  <picture class="col-span-4"><source type="image/webp" srcset="/assets/content/images/cache/myrJ_9BHNL-400.webp 400w, /assets/content/images/cache/myrJ_9BHNL-600.webp 600w, /assets/content/images/cache/myrJ_9BHNL-800.webp 800w" sizes="100vw"><img class=""  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/myrJ_9BHNL-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/myrJ_9BHNL-400.jpeg 400w, /assets/content/images/cache/myrJ_9BHNL-600.jpeg 600w, /assets/content/images/cache/myrJ_9BHNL-800.jpeg 800w" sizes="100vw"></picture>
+  <div class="sm:col-span-6 mb-8 p-4">
+    <h3 class="leading-none text-white font-medium text-2xl my-0 col-span-full">Building Transparency into Federal Decision-Making</h3>
+    <p class="prose prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty my-2 col-span-6">Collaborated with the General Services Administration (GSA) and the White House to increase transparency into the decisions behind $4.2B in waivers and exceptions to import and export policies.</p>
+    <div class="sm:grid sm:grid-cols-2">
+      
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/design-manager-federal-projects/">Design Manager, Federal Projects</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/experience-design-lead/">Experience Design Lead</a></li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/white-house-communications">White House Communications</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/bixal">Bixal</a></li>
+		
+	</ul>
+</figure>
+
+</div>
+
+<!-- ACTIITIES -->
+
+<figure class="py-2">
+<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<ul class="list-none pl-0">
+	
+	<li class="text-primary font-light inline-block">Experience Design, </li>
+	
+	<li class="text-primary font-light inline-block">Interaction Design, </li>
+	
+	<li class="text-primary font-light inline-block">Agile Design, </li>
+	
+	<li class="text-primary font-light inline-block">Information Architecture</li>
+	
+</ul>
+</figure>
+
+
+<!-- RECOGNITION -->
+
+    </div>
+    <a href="/projects/made-in-america/" class="btn btn-circle btn-primary w-24 h-24 text-lg italic  sm:col-start-11 sm:row-start-1 sm:my-auto">Details</a>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+
+<div class="sm:grid sm:grid-cols-12 my-8 gap-8">
+  <picture class="col-span-4"><source type="image/webp" srcset="/assets/content/images/cache/6KIfz-k8xv-400.webp 400w, /assets/content/images/cache/6KIfz-k8xv-600.webp 600w, /assets/content/images/cache/6KIfz-k8xv-800.webp 800w" sizes="100vw"><img class=""  alt="Thumbnail for USAID" src="/assets/content/images/cache/6KIfz-k8xv-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/6KIfz-k8xv-400.jpeg 400w, /assets/content/images/cache/6KIfz-k8xv-600.jpeg 600w, /assets/content/images/cache/6KIfz-k8xv-800.jpeg 800w" sizes="100vw"></picture>
+  <div class="sm:col-span-6 mb-8 p-4">
+    <h3 class="leading-none text-white font-medium text-2xl my-0 col-span-full">USAID &amp; Building Resiliency World-Wide</h3>
+    <p class="prose prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty my-2 col-span-6">Bixal enhanced USAID&#39;s ResilienceLinks platform, improving global crisis response and coordination through user-friendly design and strategic long-term planning, addressing challenges like climate change, conflict, and pandemics.</p>
+    <div class="sm:grid sm:grid-cols-2">
+      
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/design-manager-federal-projects/">Design Manager, Federal Projects</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/experience-design-lead/">Experience Design Lead</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/senior-ux-designer/">Senior UX Designer</a></li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/usaid">USAID</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/bixal">Bixal</a></li>
+		
+	</ul>
+</figure>
+
+</div>
+
+<!-- ACTIITIES -->
+
+<figure class="py-2">
+<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<ul class="list-none pl-0">
+	
+	<li class="text-primary font-light inline-block">Experience Design, </li>
+	
+	<li class="text-primary font-light inline-block">Knowledge Management, </li>
+	
+	<li class="text-primary font-light inline-block">Information Architecture</li>
+	
+</ul>
+</figure>
+
+
+<!-- RECOGNITION -->
+
+    </div>
+    <a href="/projects/resiliencelinks/" class="btn btn-circle btn-primary w-24 h-24 text-lg italic  sm:col-start-11 sm:row-start-1 sm:my-auto">Details</a>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+<div class="sm:grid sm:grid-cols-12 my-8 gap-8">
+  
+  <div class="sm:col-span-6 mb-8 p-4">
+    <h3 class="leading-none text-white font-medium text-2xl my-0 col-span-full">DEA Outreach</h3>
+    <p class="prose prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty my-2 col-span-6">Five projects that transformed the online voice of the nation’s largest law enforcement organization.</p>
+    <div class="sm:grid sm:grid-cols-2">
+      
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/design-manager-federal-projects/">Design Manager, Federal Projects</a></li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/dea">DEA</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/bixal">Bixal</a></li>
+		
+	</ul>
+</figure>
+
+</div>
+
+<!-- ACTIITIES -->
+
+
+<!-- RECOGNITION -->
+
+    </div>
+    <a href="/projects/dea-outreach/" class="btn btn-circle btn-primary w-24 h-24 text-lg italic  sm:col-start-11 sm:row-start-1 sm:my-auto">Details</a>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+
+<div class="sm:grid sm:grid-cols-12 my-8 gap-8">
+  <picture class="col-span-4"><source type="image/webp" srcset="/assets/content/images/cache/wdWP87VhSn-400.webp 400w, /assets/content/images/cache/wdWP87VhSn-600.webp 600w, /assets/content/images/cache/wdWP87VhSn-800.webp 800w" sizes="100vw"><img class=""  alt="Thumbnail for SBA logo" src="/assets/content/images/cache/wdWP87VhSn-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/wdWP87VhSn-400.jpeg 400w, /assets/content/images/cache/wdWP87VhSn-600.jpeg 600w, /assets/content/images/cache/wdWP87VhSn-800.jpeg 800w" sizes="100vw"></picture>
+  <div class="sm:col-span-6 mb-8 p-4">
+    <h3 class="leading-none text-white font-medium text-2xl my-0 col-span-full">Supporting American Small Businesses</h3>
+    <p class="prose prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty my-2 col-span-6">We transformed SBA.gov into a user-centric, accessible platform, increasing engagement by 801% in 2020 through extensive user research and human-centered design, better supporting entrepreneurs and small business owners.</p>
+    <div class="sm:grid sm:grid-cols-2">
+      
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/design-manager-federal-projects/">Design Manager, Federal Projects</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/experience-design-lead/">Experience Design Lead</a></li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/small-business-administration">Small Business Administration </a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/bixal">Bixal</a></li>
+		
+	</ul>
+</figure>
+
+</div>
+
+<!-- ACTIITIES -->
+
+<figure class="py-2">
+<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<ul class="list-none pl-0">
+	
+	<li class="text-primary font-light inline-block">Experience Design, </li>
+	
+	<li class="text-primary font-light inline-block">Market Research, </li>
+	
+	<li class="text-primary font-light inline-block">Content Strategy, </li>
+	
+	<li class="text-primary font-light inline-block">Knowledge Management, </li>
+	
+	<li class="text-primary font-light inline-block">Bilingual Content Strategy, </li>
+	
+	<li class="text-primary font-light inline-block">Accessibility Standards &amp; Best Practices, </li>
+	
+	<li class="text-primary font-light inline-block">Information Architecture</li>
+	
+</ul>
+</figure>
+
+
+<!-- RECOGNITION -->
+
+    </div>
+    <a href="/projects/sba-gov/" class="btn btn-circle btn-primary w-24 h-24 text-lg italic  sm:col-start-11 sm:row-start-1 sm:my-auto">Details</a>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+
+<div class="sm:grid sm:grid-cols-12 my-8 gap-8">
+  <picture class="col-span-4"><source type="image/webp" srcset="/assets/content/images/cache/hjJcwvc3QI-200.webp 200w" sizes="100vw"><img class=""  alt="Thumbnail for USWDS Logo.svg" src="/assets/content/images/cache/hjJcwvc3QI-200.jpeg" width="200" height="189"></picture>
+  <div class="sm:col-span-6 mb-8 p-4">
+    <h3 class="leading-none text-white font-medium text-2xl my-0 col-span-full">United States Web Design System</h3>
+    <p class="prose prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty my-2 col-span-6">As the design manager for federal projects at Bixal, I led USWDS integration and customization to meet specific agency needs, fostering cross-functional collaboration and improving user experience.</p>
+    <div class="sm:grid sm:grid-cols-2">
+      
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/design-manager-federal-projects/">Design Manager, Federal Projects</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/senior-ux-designer/">Senior UX Designer</a></li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/gsa">GSA</a>, </li>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/bixal">Bixal</a></li>
+		
+	</ul>
+</figure>
+
+</div>
+
+<!-- ACTIITIES -->
+
+
+<!-- RECOGNITION -->
+
+    </div>
+    <a href="/projects/united-states-web-design-system/" class="btn btn-circle btn-primary w-24 h-24 text-lg italic  sm:col-start-11 sm:row-start-1 sm:my-auto">Details</a>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+
+<div class="sm:grid sm:grid-cols-12 my-8 gap-8">
+  <picture class="col-span-4"><source type="image/webp" srcset="/assets/content/images/cache/uQ8eEjQzsx-400.webp 400w, /assets/content/images/cache/uQ8eEjQzsx-600.webp 600w, /assets/content/images/cache/uQ8eEjQzsx-800.webp 800w" sizes="100vw"><img class=""  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/uQ8eEjQzsx-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/uQ8eEjQzsx-400.jpeg 400w, /assets/content/images/cache/uQ8eEjQzsx-600.jpeg 600w, /assets/content/images/cache/uQ8eEjQzsx-800.jpeg 800w" sizes="100vw"></picture>
+  <div class="sm:col-span-6 mb-8 p-4">
+    <h3 class="leading-none text-white font-medium text-2xl my-0 col-span-full">Smart Decisions, Smart Cities</h3>
+    <p class="prose prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty my-2 col-span-6">A Webby Award-winning platform enabling city officials, researchers, academics, and citizens globally to interact with city data and engage in ongoing public dialogue.</p>
+    <div class="sm:grid sm:grid-cols-2">
+      
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light" href="/roles/experience-designer/">Experience Designer</a></li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<ul>
+		
+		<li class="inline-block text-primary font-light"><a class="link link-hover text-primary font-light organization"
+  href="/organizations/ibm-interactive">IBM Interactive</a></li>
+		
+	</ul>
+</figure>
+
+</div>
+
+<!-- ACTIITIES -->
+
+<figure class="py-2">
+<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<ul class="list-none pl-0">
+	
+	<li class="text-primary font-light inline-block">Experience Design, </li>
+	
+	<li class="text-primary font-light inline-block">Data Analysis &amp; Visualization, </li>
+	
+	<li class="text-primary font-light inline-block">Knowledge Management, </li>
+	
+	<li class="text-primary font-light inline-block">Development</li>
+	
+</ul>
+</figure>
+
+
+<!-- RECOGNITION -->
+
+<figure class="py-2">
+<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Recognition</figcaption>
+<ul class="list-none">
+	
+	<li><a class="link link-hover flex gap-2 leading-tight text-primary font-light"
+	href="/recognition/webby-awards/corporate-social-responsibility/">
+	
+	<picture class="logo bg-black p-1 w-12 h-12 flex-none not-prose"><source type="image/webp" srcset="/assets/content/images/cache/2EAep9tSo8-200.webp 200w" sizes="100vw"><img class=""  alt="Thumbnail for Webby" src="/assets/content/images/cache/2EAep9tSo8-200.jpeg" width="200" height="200"></picture>
+	
+	<span class="pt-4">
+		Webby Awards:
+		Corporate Social Responsibility
+	</span>
+</a>, </li>
+	
+	<li><a class="link link-hover flex gap-2 leading-tight text-primary font-light"
+	href="/recognition/mitx-innovation-award/visionary/">
+	
+	<picture class="logo bg-black p-1 w-12 h-12 flex-none not-prose"><source type="image/webp" srcset="/assets/content/images/cache/Tcu53t_yv5-201.webp 201w" sizes="100vw"><img class=""  alt="Thumbnail for MITx" src="/assets/content/images/cache/Tcu53t_yv5-201.jpeg" width="201" height="201"></picture>
+	
+	<span class="pt-4">
+		MITX Innovation Award:
+		Visionary
+	</span>
+</a></li>
+	
+</ul>
+</figure>
+
+    </div>
+    <a href="/projects/cityforward/" class="btn btn-circle btn-primary w-24 h-24 text-lg italic  sm:col-start-11 sm:row-start-1 sm:my-auto">Details</a>
+  </div>
+</div>
+
+  
+  
+</figure>
+<figure id="impact" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 px-8">
+  <figcaption class="divider divider-primary prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full">Impact</figcaption>
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/forms-gov/">
+	<div class="stat-title text-white text-wrap leading-tight">Form Submissions</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">107 Billion</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">Annual federal form submission impacted by my collaboration with Forms.gov.
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/digital-transformation-for-public-health/">
+	<div class="stat-title text-white text-wrap leading-tight">Cases of Foodborn Illness</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">7 Million</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">Annual reductions in cases of foodborne illnesses following my redesign of fsis.usda.gov
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/sba-gov/">
+	<div class="stat-title text-white text-wrap leading-tight">Daily Visitors</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">320,000</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">Daily visitors to sba.gov when I finished the project
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/made-in-america/">
+	<div class="stat-title text-white text-wrap leading-tight">Waivers &amp; Exemptions</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">$4.2B</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">Waivers and exemptions following the launch of my madeinamerica.gov project
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/forms-gov/">
+	<div class="stat-title text-white text-wrap leading-tight">Taxpayer Burden</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">$1.43B</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">The total reduction from 1% improvement in completion rates for digital federal forms
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/dea-outreach/">
+	<div class="stat-title text-white text-wrap leading-tight">Weekly Visitors</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">235,000</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">Weekly visitors to my redesign of dea.gov and its outreach sites
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/united-states-web-design-system/">
+	<div class="stat-title text-white text-wrap leading-tight">People</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">26 Million</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">People impacted daily by the USWDS
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/sba-gov/">
+	<div class="stat-title text-white text-wrap leading-tight">Site Traffic</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">800%</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">The Bixal team&#39;s efforts on SBA.gov led to an extraordinary increase in site traffic and user engagement in the first half of 2020
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/sba-gov/">
+	<div class="stat-title text-white text-wrap leading-tight">Languages</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">18</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">Languages supported by sba.gov
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+    
+    <a class="stat no-underline link link-hover h-min p-0 mb-4 hover:bg-neutral-800 p-2" href="/projects/undefined/">
+	<div class="stat-title text-white text-wrap leading-tight">USAID Five-Year Budget</div>
+	<div class="stat-value text-white text-2xl sm:text-4xl">$20 Million</div>
+	<div class="stat-desc prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap text-pretty">USAID&#39;s Feed the Future program increase its five-year budget
+</div>
+</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</figure>
+
+      </article>
+    </main>
+    <!-- FOOTER -->
+    
+    
+
+<footer class="p-4 sm:p-12 ">
+  <!-- AVATAR -->
+  <!-- CTA -->
+  <section class="footer prose max-w-none col-span-12 py-8">
+    <h2 class="text-4xl leading-none font-black mb-2 prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50">If you are looking
+      for a human-experience designer, please do say hello – I look forward to hearing about your company and project.</h2>
+  </section>
+  <!-- SOCIAL -->
+  <nav id="social" class="grid grid-flow-col gap-2 max-w-96">
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://github.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/87G_wWBkBG-400.webp 400w, /assets/content/images/cache/logos/87G_wWBkBG-600.webp 600w, /assets/content/images/cache/logos/87G_wWBkBG-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/87G_wWBkBG-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/87G_wWBkBG-400.jpeg 400w, /assets/content/images/cache/logos/87G_wWBkBG-600.jpeg 600w, /assets/content/images/cache/logos/87G_wWBkBG-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://linkedin.com/rslebo"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/Qo2pUNsxdk-400.webp 400w, /assets/content/images/cache/logos/Qo2pUNsxdk-600.webp 600w, /assets/content/images/cache/logos/Qo2pUNsxdk-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/Qo2pUNsxdk-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/Qo2pUNsxdk-400.jpeg 400w, /assets/content/images/cache/logos/Qo2pUNsxdk-600.jpeg 600w, /assets/content/images/cache/logos/Qo2pUNsxdk-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.threads.net/@dataink.io"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/FTNrQycxJq-400.webp 400w, /assets/content/images/cache/logos/FTNrQycxJq-600.webp 600w, /assets/content/images/cache/logos/FTNrQycxJq-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/FTNrQycxJq-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/FTNrQycxJq-400.jpeg 400w, /assets/content/images/cache/logos/FTNrQycxJq-600.jpeg 600w, /assets/content/images/cache/logos/FTNrQycxJq-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://dribbble.com/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/iQlHK38bGc-400.webp 400w, /assets/content/images/cache/logos/iQlHK38bGc-600.webp 600w, /assets/content/images/cache/logos/iQlHK38bGc-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/iQlHK38bGc-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/iQlHK38bGc-400.jpeg 400w, /assets/content/images/cache/logos/iQlHK38bGc-600.jpeg 600w, /assets/content/images/cache/logos/iQlHK38bGc-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://mastodon.design/@datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/eIL-OElh9Z-400.webp 400w, /assets/content/images/cache/logos/eIL-OElh9Z-600.webp 600w, /assets/content/images/cache/logos/eIL-OElh9Z-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/eIL-OElh9Z-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/eIL-OElh9Z-400.jpeg 400w, /assets/content/images/cache/logos/eIL-OElh9Z-600.jpeg 600w, /assets/content/images/cache/logos/eIL-OElh9Z-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://behance.net/datainkio"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/UIXlypURoI-400.webp 400w, /assets/content/images/cache/logos/UIXlypURoI-600.webp 600w, /assets/content/images/cache/logos/UIXlypURoI-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/UIXlypURoI-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/UIXlypURoI-400.jpeg 400w, /assets/content/images/cache/logos/UIXlypURoI-600.jpeg 600w, /assets/content/images/cache/logos/UIXlypURoI-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.flickr.com/photos/twosixseven/"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/PYGkDSi5w1-400.webp 400w, /assets/content/images/cache/logos/PYGkDSi5w1-600.webp 600w, /assets/content/images/cache/logos/PYGkDSi5w1-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/PYGkDSi5w1-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/PYGkDSi5w1-400.jpeg 400w, /assets/content/images/cache/logos/PYGkDSi5w1-600.jpeg 600w, /assets/content/images/cache/logos/PYGkDSi5w1-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a class="opacity-50 saturate-0 hover:opacity-100 hover:saturate-100"
+      href="https://www.instagram.com/dataink.io/"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/xh1t0NoL4b-400.webp 400w, /assets/content/images/cache/logos/xh1t0NoL4b-600.webp 600w, /assets/content/images/cache/logos/xh1t0NoL4b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/xh1t0NoL4b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/xh1t0NoL4b-400.jpeg 400w, /assets/content/images/cache/logos/xh1t0NoL4b-600.jpeg 600w, /assets/content/images/cache/logos/xh1t0NoL4b-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+  </nav>
+</footer>
+  </body>
+
+</html>
