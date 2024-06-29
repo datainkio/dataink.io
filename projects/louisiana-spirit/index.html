@@ -1,0 +1,503 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title>Louisiana Spirit: Louisiana Spirit</title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell S. Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  
+  <!-- Template-defined js -->
+  
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+
+
+<meta property="og:url" content="https://dataink.io/projects/louisiana-spirit" />
+<meta property="og:site_name" content="dataink.io" />
+<meta property="og:title" content="Louisiana Spirit" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+
+<meta property="og:image" content="https://dataink.io/assets/content/images/cache/4OniMgGaKz-800.webp" />
+<meta property="og:image:alt" content="Louisiana Spirit" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1015" />
+<meta property="og:image:height" content="485" />
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="#site_twitter" />
+<meta name="twitter:creator" content="#creator_twitter" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
+	<!-- End Google Tag Manager -->
+
+  <body class="bg-black">
+    <!-- GTM -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <!-- A11Y -->
+    <section id="skip" tabindex=" -2" class="sr-only">
+    
+<a href="#introduction">introduction</a>
+<a href="#details">details</a>
+<a href="#body">body</a>
+<a href="#nuggets">nuggets</a>
+<a href="#examples">examples</a>
+
+    </section>
+    <!-- NAVIGATION -->
+    <div class="navbar bg-black absolute">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a href="/projects/">Work</a>
+        </li>
+        
+        <li>
+          <a href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a href="/recognition/">Recognition</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    
+
+  </div>
+  <div class="navbar-center hidden lg:flex"></div>
+  <div class="navbar-end">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+      
+      <li>
+        <a href="/projects/">Work</a>
+      </li>
+      
+      <li>
+        <a href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a href="/recognition/">Recognition</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+    <!-- CONTENT -->
+    <main tabindex=" -1" class="py-12">
+      <article>
+        
+<section class="bg-black p-12 pb-20">
+  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
+   
+  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/civic-tech">Civic Tech /</a>
+  
+  <h1 class="text-white font-black text-center md:text-left">Louisiana Spirit</h1>
+  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight"></p>
+  <!-- HERE BE PROJECT METADATA -->
+  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+    
+
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Lead Developer</li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+</div>
+
+<!-- ACTIITIES -->
+
+
+<!-- RECOGNITION -->
+
+    <!-- EXPLORE -->
+    
+  </section>
+</section>
+
+        
+<div class="md:grid md:grid-cols-2 bg-white">
+  <!-- LEAD VIDEO -->
+   
+  <!-- BODY COPY -->
+  <section id="body" class="p-12 prose md:col-start-1">
+    
+  </section>
+  <!-- NUGGETS -->
+  <section id="nuggets" class="prose p-12 md:col-start-1">
+    
+  </section>
+  <!-- IMAGE GALLERIES -->
+  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+    
+      
+      
+<a class="cursor-pointer" onclick="gallery_recIhnibtqymmd3tK.showModal()">
+  <div class="grid grid-cols-4">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/4OniMgGaKz-400.webp 400w, /assets/content/images/cache/4OniMgGaKz-600.webp 600w, /assets/content/images/cache/4OniMgGaKz-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for louisianaspirit.jpg" src="/assets/content/images/cache/4OniMgGaKz-400.jpeg" width="800" height="382" srcset="/assets/content/images/cache/4OniMgGaKz-400.jpeg 400w, /assets/content/images/cache/4OniMgGaKz-600.jpeg 600w, /assets/content/images/cache/4OniMgGaKz-800.jpeg 800w" sizes="100vw"></picture>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+</a>
+<dialog id="gallery_recIhnibtqymmd3tK" class="modal">
+  <div class="modal-box w-9/12 max-w-none shadow-none">
+    <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
+      <!-- TITLE CARD -->
+      <div id="recIhnibtqymmd3tK_title" class="mb-4 p-4 md:carousel-item w-full">
+        <div class="prose m-auto"><h2 class="divider text-xl md:text-2xl">Louisiana Spirit</h2>
+          
+          <p class="prose"></p>
+          
+        </div>
+
+      </div>
+      <!-- IMAGES -->
+      
+      
+      
+      <figure id="recIhnibtqymmd3tK_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
+        <figcaption class="p-4">
+          <h3 class="text-xl">louisianaspirit.jpg</h3>
+          <p class="prose"></p>
+        </figcaption>
+        
+        
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/4OniMgGaKz-400.webp 400w, /assets/content/images/cache/4OniMgGaKz-600.webp 600w, /assets/content/images/cache/4OniMgGaKz-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for louisianaspirit.jpg" src="/assets/content/images/cache/4OniMgGaKz-400.jpeg" width="800" height="382" srcset="/assets/content/images/cache/4OniMgGaKz-400.jpeg 400w, /assets/content/images/cache/4OniMgGaKz-600.jpeg 600w, /assets/content/images/cache/4OniMgGaKz-800.jpeg 800w" sizes="100vw"></picture>
+      </figure>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    <!-- NAVIGATION -->
+    <div class="hidden md:flex justify-center w-full py-2 gap-2">
+      <a href="#recIhnibtqymmd3tK_title" class="btn btn-xs">Intro</a> 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="#recIhnibtqymmd3tK_item1" class="btn btn-xs">1</a> 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+      
+    
+  </section>
+</div>
+
+      </article>
+    </main>
+    <!-- FOOTER -->
+    
+
+
+<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
+  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other Civic Tech</figcaption>
+  
+  
+  
+  
+<a href="/projects/digital-transformation-for-public-health/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/8to-VLreA_-400.webp 400w, /assets/content/images/cache/8to-VLreA_-600.webp 600w, /assets/content/images/cache/8to-VLreA_-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USDA" src="/assets/content/images/cache/8to-VLreA_-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/8to-VLreA_-400.jpeg 400w, /assets/content/images/cache/8to-VLreA_-600.jpeg 600w, /assets/content/images/cache/8to-VLreA_-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Digital Transformation for Public Health</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Ensuring public health through user-friendly design, innovative research, and a robust digital presence during the pandemic.</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/forms-gov/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/ij28wz8fzz-400.webp 400w, /assets/content/images/cache/ij28wz8fzz-600.webp 600w, /assets/content/images/cache/ij28wz8fzz-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/ij28wz8fzz-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/ij28wz8fzz-400.jpeg 400w, /assets/content/images/cache/ij28wz8fzz-600.jpeg 600w, /assets/content/images/cache/ij28wz8fzz-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Improving Access to Government Benefits and Services</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">A collaboration with the Office of Evaluation Sciences to improve access to essential services like healthcare and housing through innovative, scientifically validated digital design.</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/made-in-america/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/ij28wz8fzz-400.webp 400w, /assets/content/images/cache/ij28wz8fzz-600.webp 600w, /assets/content/images/cache/ij28wz8fzz-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/ij28wz8fzz-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/ij28wz8fzz-400.jpeg 400w, /assets/content/images/cache/ij28wz8fzz-600.jpeg 600w, /assets/content/images/cache/ij28wz8fzz-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Building Transparency into Federal Decision-Making</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Collaborated with the General Services Administration (GSA) and the White House to increase transparency into the decisions behind $4.2B in waivers and exceptions to import and export policies.</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/resiliencelinks/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/cOKm_6IxWx-400.webp 400w, /assets/content/images/cache/cOKm_6IxWx-600.webp 600w, /assets/content/images/cache/cOKm_6IxWx-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USAID" src="/assets/content/images/cache/cOKm_6IxWx-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/cOKm_6IxWx-400.jpeg 400w, /assets/content/images/cache/cOKm_6IxWx-600.jpeg 600w, /assets/content/images/cache/cOKm_6IxWx-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">USAID &amp; Building Resiliency World-Wide</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bixal enhanced USAID&#39;s ResilienceLinks platform, improving global crisis response and coordination through user-friendly design and strategic long-term planning, addressing challenges like climate change, conflict, and pandemics.</p>
+  </div>
+</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<a href="/projects/sba-gov/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/ffPCJUrpuu-400.webp 400w, /assets/content/images/cache/ffPCJUrpuu-600.webp 600w, /assets/content/images/cache/ffPCJUrpuu-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for SBA logo" src="/assets/content/images/cache/ffPCJUrpuu-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/ffPCJUrpuu-400.jpeg 400w, /assets/content/images/cache/ffPCJUrpuu-600.jpeg 600w, /assets/content/images/cache/ffPCJUrpuu-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Supporting American Small Businesses</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">We transformed SBA.gov into a user-centric, accessible platform, increasing engagement by 801% in 2020 through extensive user research and human-centered design, better supporting entrepreneurs and small business owners.</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/united-states-web-design-system/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/luy8V5LUha-200.webp 200w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USWDS Logo.svg" src="/assets/content/images/cache/luy8V5LUha-200.jpeg" width="200" height="189"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">United States Web Design System</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">As the design manager for federal projects at Bixal, I led USWDS integration and customization to meet specific agency needs, fostering cross-functional collaboration and improving user experience.</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/cityforward/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/rTabCAyIA4-400.webp 400w, /assets/content/images/cache/rTabCAyIA4-600.webp 600w, /assets/content/images/cache/rTabCAyIA4-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/rTabCAyIA4-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/rTabCAyIA4-400.jpeg 400w, /assets/content/images/cache/rTabCAyIA4-600.jpeg 600w, /assets/content/images/cache/rTabCAyIA4-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Smart Decisions, Smart Cities</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">A Webby Award-winning platform enabling city officials, researchers, academics, and citizens globally to interact with city data and engage in ongoing public dialogue.</p>
+  </div>
+</a>
+  
+  
+  
+  
+</figure>
+
+    
+<footer class="p-4 sm:p-12 bg-black">
+  <!-- AVATAR -->
+  <!-- CTA -->
+  <section class="footer prose max-w-none py-8">
+    <h2 class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50">If you are looking
+      for a human-experience designer, please do say hello – I look forward to hearing about your company and project.</h2>
+  </section>
+  <!-- SOCIAL -->
+  <nav id="social" class="flex flex-row gap-2 max-w-96">
+    
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+  </nav>
+</footer>
+  </body>
+
+</html>

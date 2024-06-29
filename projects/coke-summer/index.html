@@ -1,0 +1,362 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title>Coke Summer: Coke Summer</title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell S. Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  
+  <!-- Template-defined js -->
+  
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+
+
+<meta property="og:url" content="https://dataink.io/projects/coke-summer" />
+<meta property="og:site_name" content="dataink.io" />
+<meta property="og:title" content="Coke Summer" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+
+<meta property="og:image" content="https://dataink.io/assets/content/images/cache/VCGlOvIyIB-800.webp" />
+<meta property="og:image:alt" content="Coke Summer" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="576" />
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="#site_twitter" />
+<meta name="twitter:creator" content="#creator_twitter" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
+	<!-- End Google Tag Manager -->
+
+  <body class="bg-black">
+    <!-- GTM -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <!-- A11Y -->
+    <section id="skip" tabindex=" -2" class="sr-only">
+    
+<a href="#introduction">introduction</a>
+<a href="#details">details</a>
+<a href="#body">body</a>
+<a href="#nuggets">nuggets</a>
+<a href="#examples">examples</a>
+
+    </section>
+    <!-- NAVIGATION -->
+    <div class="navbar bg-black absolute">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a href="/projects/">Work</a>
+        </li>
+        
+        <li>
+          <a href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a href="/recognition/">Recognition</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    
+
+  </div>
+  <div class="navbar-center hidden lg:flex"></div>
+  <div class="navbar-end">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+      
+      <li>
+        <a href="/projects/">Work</a>
+      </li>
+      
+      <li>
+        <a href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a href="/recognition/">Recognition</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+    <!-- CONTENT -->
+    <main tabindex=" -1" class="py-12">
+      <article>
+        
+<section class="bg-black p-12 pb-20">
+  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
+   
+  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/advertising-and-identity">Advertising &amp; Identity /</a>
+  
+  <h1 class="text-white font-black text-center md:text-left">Coke Summer</h1>
+  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight"></p>
+  <!-- HERE BE PROJECT METADATA -->
+  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+    
+
+
+
+<!-- ROLE -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<ul>
+		
+		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Rich Internet Application Developer</li>
+		
+	</ul>
+</figure>
+
+<!-- COMPANY -->
+
+<figure class="py-2">
+	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<ul>
+		
+		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Coca Cola, </li>
+		
+		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">IBM Interactive</li>
+		
+	</ul>
+</figure>
+
+</div>
+
+<!-- ACTIITIES -->
+
+
+<!-- RECOGNITION -->
+
+    <!-- EXPLORE -->
+    
+  </section>
+</section>
+
+        
+<div class="md:grid md:grid-cols-2 bg-white">
+  <!-- LEAD VIDEO -->
+   
+  <!-- BODY COPY -->
+  <section id="body" class="p-12 prose md:col-start-1">
+    
+  </section>
+  <!-- NUGGETS -->
+  <section id="nuggets" class="prose p-12 md:col-start-1">
+    
+  </section>
+  <!-- IMAGE GALLERIES -->
+  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+    
+  </section>
+</div>
+
+      </article>
+    </main>
+    <!-- FOOTER -->
+    
+
+
+<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
+  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other Advertising &amp; Identity</figcaption>
+  
+  
+  
+  
+<a href="/projects/raise-a-mootopian/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/E1qUH7fIKH-400.webp 400w, /assets/content/images/cache/E1qUH7fIKH-600.webp 600w, /assets/content/images/cache/E1qUH7fIKH-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Got Milk?" src="/assets/content/images/cache/E1qUH7fIKH-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/E1qUH7fIKH-400.jpeg 400w, /assets/content/images/cache/E1qUH7fIKH-600.jpeg 600w, /assets/content/images/cache/E1qUH7fIKH-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Raise a Mootopian</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Ever tickled a cow?</p>
+  </div>
+</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<a href="/projects/columbia-omniheat/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/gYqNE53n4O-400.webp 400w, /assets/content/images/cache/gYqNE53n4O-600.webp 600w, /assets/content/images/cache/gYqNE53n4O-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Columbia Sportswear" src="/assets/content/images/cache/gYqNE53n4O-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/gYqNE53n4O-400.jpeg 400w, /assets/content/images/cache/gYqNE53n4O-600.jpeg 600w, /assets/content/images/cache/gYqNE53n4O-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Beautiful People Doing Stupid Things</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Columbia made the smartest jacket in the world and submitted it to the stupidest cold. The Human Snowball. Snow Angel.
+Russian Dunk.</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/publix-at-season-s-peak/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/X22ISKV5yr-400.webp 400w, /assets/content/images/cache/X22ISKV5yr-600.webp 600w, /assets/content/images/cache/X22ISKV5yr-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Publix" src="/assets/content/images/cache/X22ISKV5yr-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/X22ISKV5yr-400.jpeg 400w, /assets/content/images/cache/X22ISKV5yr-600.jpeg 600w, /assets/content/images/cache/X22ISKV5yr-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Publix: At Season&#39;s Peak</h3>
+    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Publix&#39;s “At Season’s Peak” campaign educates consumers on maximizing value by purchasing fresh produce at its peak season, promoting a healthy and cost-effective diet.</p>
+  </div>
+</a>
+  
+  
+  
+  
+</figure>
+
+    
+<footer class="p-4 sm:p-12 bg-black">
+  <!-- AVATAR -->
+  <!-- CTA -->
+  <section class="footer prose max-w-none py-8">
+    <h2 class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50">If you are looking
+      for a human-experience designer, please do say hello – I look forward to hearing about your company and project.</h2>
+  </section>
+  <!-- SOCIAL -->
+  <nav id="social" class="flex flex-row gap-2 max-w-96">
+    
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+  </nav>
+</footer>
+  </body>
+
+</html>
