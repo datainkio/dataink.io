@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
   <!-- HEAD -->
@@ -58,7 +57,8 @@
   <!-- 7 deferred js  -->
   
   <!-- Template-defined js -->
-  
+  <script src="/assets/js/main.js"></script>
+
   <!-- 8 everything else: meta tags, icons, open graph etc.  -->
   <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
 <meta name="robots" content="index,follow" /><!-- All Search Engines -->
@@ -82,7 +82,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:description" content="Brandfeed, developed by Hill Holliday’s Project Beacon team, is a sophisticated dashboard that tracks and analyzes social media campaigns in real-time, optimizing advertising spend and transforming social media strategies." />
 
-<meta property="og:image" content="https://dataink.io/assets/content/images/cache/wbQ0t7SKaE-800.webp" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/cache/PAgrlFX1NZ-800.webp" />
 <meta property="og:image:alt" content="Project Beacon" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1024" />
@@ -111,7 +111,7 @@
 	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
 	<!-- End Google Tag Manager -->
 
-  <body class="bg-black">
+  <body class="project">
     <!-- GTM -->
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
@@ -128,67 +128,73 @@
 
     </section>
     <!-- NAVIGATION -->
-    <div class="navbar bg-black absolute">
+    <div id="primary-nav" class="navbar z-50 px-0 lg:px-12">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
-        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
         
         <li>
-          <a href="/projects/">Work</a>
+          <a class="link-hover href="/projects/">Work</a>
         </li>
         
         <li>
-          <a href="/lessons-learned/">Lessons Learned</a>
+          <a class="link-hover href="/lessons-learned/">Lessons Learned</a>
         </li>
         
         <li>
-          <a href="/recognition/">Recognition</a>
+          <a class="link-hover href="/recognition/">Recognition</a>
         </li>
         
       </ul>
     </div>
     
-    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    <a href="/" class="font-bold text-xl">Russell S. Lebo</a>
     
 
   </div>
   <div class="navbar-center hidden lg:flex"></div>
   <div class="navbar-end">
-    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
       
       <li>
-        <a href="/projects/">Work</a>
+        <a class="link-hover " href="/projects/">Work</a>
       </li>
       
       <li>
-        <a href="/lessons-learned/">Lessons Learned</a>
+        <a class="link-hover " href="/lessons-learned/">Lessons Learned</a>
       </li>
       
       <li>
-        <a href="/recognition/">Recognition</a>
+        <a class="link-hover " href="/recognition/">Recognition</a>
       </li>
       
     </ul>
   </div>
 </div>
     <!-- CONTENT -->
-    <main tabindex=" -1" class="py-12">
-      <article>
+    <main tabindex=" -1" class="">
+      <article class="sm:col-span-full sm:grid sm:grid-cols-subgrid">
         
-<section class="bg-black p-12 pb-20">
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
-   
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/b2b">Business-to-Business /</a>
+<section class="p-12 pb-0">
+  <div class="breadcrumbs">
+    <ul class="place-content-center md:place-content-start">
+      <li><a href="/projects/">Work</a></li>
+       
+      <li><a href="/projects/types/b2b">Business-to-Business</a></li>
+      
+    </ul>
+  </div>
   
-  <h1 class="text-white font-black text-center md:text-left">Project Beacon</h1>
-  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight">Brandfeed, developed by Hill Holliday’s Project Beacon team, is a sophisticated dashboard that tracks and analyzes social media campaigns in real-time, optimizing advertising spend and transforming social media strategies.</p>
+
+  <h1>Project Beacon</h1>
+  <p id="introduction" class="subtitle">Brandfeed, developed by Hill Holliday’s Project Beacon team, is a sophisticated dashboard that tracks and analyzes social media campaigns in real-time, optimizing advertising spend and transforming social media strategies.</p>
   <!-- HERE BE PROJECT METADATA -->
-  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+  <section id="details" class="w-full md:grid md:grid-cols-6 py-12 gap-4">
     
 
 
@@ -196,10 +202,10 @@
 <!-- ROLE -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<figcaption class="">Roles</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Experience Design Lead</li>
+		<li class="inline-block ">Experience Design Lead</li>
 		
 	</ul>
 </figure>
@@ -207,10 +213,10 @@
 <!-- COMPANY -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<figcaption class="">Company/Client</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Hill Holliday</li>
+		<li class="inline-block ">Hill Holliday</li>
 		
 	</ul>
 </figure>
@@ -219,17 +225,17 @@
 
 <!-- ACTIITIES -->
 
-<figure class="py-2 col-span-full">
-<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<figure class="py-2 col-span-2">
+<figcaption class="">Activities</figcaption>
 <ul class="list-none pl-0">
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Experience Design, </li>
+	<li class="inline-block ">Experience Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Data Analysis &amp; Visualization, </li>
+	<li class="inline-block ">Data Analysis &amp; Visualization, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Knowledge Management, </li>
+	<li class="inline-block ">Knowledge Management, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Information Architecture</li>
+	<li class="inline-block ">Information Architecture</li>
 	
 </ul>
 </figure>
@@ -239,17 +245,16 @@
 
     <!-- EXPLORE -->
     
-    <a class="btn btn-outline btn-circle btn-primary w-24 h-24 text-lg italic " href="https://www.hhcc.com/">View⤴</a>
+    <a class="btn content-center btn-circle btn-primary w-24 h-24 text-lg italic block mx-auto col-end-auto " href="https://www.hhcc.com/">View⤴</a>
     
   </section>
 </section>
 
         
-<div class="md:grid md:grid-cols-2 bg-white">
   <!-- LEAD VIDEO -->
    
   <!-- BODY COPY -->
-  <section id="body" class="p-12 prose md:col-start-1">
+  <section id="body" class="description mx-auto p-8 md:p-0 md:pt-8 border-t-2 border-neutral-900">
     
     <p>Brandfeed was a sophisticated dashboard designed by Hill Holliday’s Project Beacon team for social strategists. Brandfeed addressed the need for a tool that could track and analyze the effectiveness of social media campaigns in real-time. The platform primarily targeted Facebook and Twitter campaigns, providing actionable insights to optimize advertising spend.</p>
 <p>The main goal was to create a dashboard that allows social strategists to monitor their social media campaigns effectively, helping them to identify the most efficient allocation of advertising budgets.</p>
@@ -261,32 +266,38 @@ Cross-disciplinary Collaboration</p>
     
   </section>
   <!-- NUGGETS -->
-  <section id="nuggets" class="prose p-12 md:col-start-1">
+  <section id="nuggets" class="prose mx-auto p-8 md:p-0">
     
-      <h2>Distance to Insight</h2>
-      
-        <p>The design of Brandfeed focused on usability and the provision of actionable insights. The interface was crafted to present complex data in an accessible and understandable manner, enabling users to make informed decisions quickly.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Distance to Insight</h2>
+  
+    <p>The design of Brandfeed focused on usability and the provision of actionable insights. The interface was crafted to present complex data in an accessible and understandable manner, enabling users to make informed decisions quickly.</p>
+
+  
+</div>
     
-      <h2>Cross-disciplinary Collaboration</h2>
-      
-        <p>The dashboard facilitated meaningful conversations among cross-disciplinary teams, including creative departments, analytics personnel, and marketing strategists. This collaborative environment ensured a holistic view of social ad performance.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Cross-disciplinary Collaboration</h2>
+  
+    <p>The dashboard facilitated meaningful conversations among cross-disciplinary teams, including creative departments, analytics personnel, and marketing strategists. This collaborative environment ensured a holistic view of social ad performance.</p>
+
+  
+</div>
     
-      <h2>Impact of DataVis on Business</h2>
-      
-        <p>By providing detailed insights into the effectiveness of social media campaigns, Brandfeed helped companies optimize their advertising strategies. The tool allowed for the adjustment of campaigns based on real-time data, leading to more efficient use of advertising dollars.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Impact of DataVis on Business</h2>
+  
+    <p>By providing detailed insights into the effectiveness of social media campaigns, Brandfeed helped companies optimize their advertising strategies. The tool allowed for the adjustment of campaigns based on real-time data, leading to more efficient use of advertising dollars.</p>
+
+  
+</div>
     
   </section>
   <!-- IMAGE GALLERIES -->
-  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+  <section id="examples" class="mx-auto">
     
       
       
@@ -340,7 +351,10 @@ Cross-disciplinary Collaboration</p>
 </div>
 </a>
 <dialog id="gallery_recd9wzhIV5l6BKTw" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="recd9wzhIV5l6BKTw_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -351,7 +365,6 @@ Hil Holliday brought me in to productize Noah’s prototype. Working together wi
 </p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
@@ -452,15 +465,11 @@ Hil Holliday brought me in to productize Noah’s prototype. Working together wi
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
     
   </section>
-</div>
 
       </article>
     </main>
@@ -468,34 +477,34 @@ Hil Holliday brought me in to productize Noah’s prototype. Working together wi
     
 
 
-<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
-  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other Business-to-Business</figcaption>
+<figure id="related" class="p-4 sm:p-12 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <figcaption class="text-3xl sm:text-4xl leading-none font-thin mb-8 col-span-full divider divider-primary">Other Business-to-Business</figcaption>
   
   
   
   
-<a href="/projects/coca-cola-global-digital-marketing-platform/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/coca-cola-global-digital-marketing-platform/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/VCGlOvIyIB-400.webp 400w, /assets/content/images/cache/VCGlOvIyIB-600.webp 600w, /assets/content/images/cache/VCGlOvIyIB-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Coca-Cola" src="/assets/content/images/cache/VCGlOvIyIB-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/VCGlOvIyIB-400.jpeg 400w, /assets/content/images/cache/VCGlOvIyIB-600.jpeg 600w, /assets/content/images/cache/VCGlOvIyIB-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/1A2YTFel-g-400.webp 400w, /assets/content/images/cache/1A2YTFel-g-600.webp 600w, /assets/content/images/cache/1A2YTFel-g-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Coca-Cola" src="/assets/content/images/cache/1A2YTFel-g-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/1A2YTFel-g-400.jpeg 400w, /assets/content/images/cache/1A2YTFel-g-600.jpeg 600w, /assets/content/images/cache/1A2YTFel-g-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Building Design Systems Before Design Systems Were a Thing</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Building design systems before design systems were a thing.</p>
+    <h3 class="card-title">Building Design Systems Before Design Systems Were a Thing</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Building design systems before design systems were a thing.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/yahoo-b2b/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/yahoo-b2b/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/QDOOfwvb4d-400.webp 400w, /assets/content/images/cache/QDOOfwvb4d-600.webp 600w, /assets/content/images/cache/QDOOfwvb4d-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Yahoo" src="/assets/content/images/cache/QDOOfwvb4d-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/QDOOfwvb4d-400.jpeg 400w, /assets/content/images/cache/QDOOfwvb4d-600.jpeg 600w, /assets/content/images/cache/QDOOfwvb4d-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/jCHdFApaxy-400.webp 400w, /assets/content/images/cache/jCHdFApaxy-600.webp 600w, /assets/content/images/cache/jCHdFApaxy-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Yahoo" src="/assets/content/images/cache/jCHdFApaxy-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/jCHdFApaxy-400.jpeg 400w, /assets/content/images/cache/jCHdFApaxy-600.jpeg 600w, /assets/content/images/cache/jCHdFApaxy-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Connecting Businesses to Insights</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Walking the line between information visualization and corporate branding.</p>
+    <h3 class="card-title">Connecting Businesses to Insights</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Walking the line between information visualization and corporate branding.</p>
   </div>
 </a>
   
@@ -515,21 +524,21 @@ Hil Holliday brought me in to productize Noah’s prototype. Working together wi
   <!-- SOCIAL -->
   <nav id="social" class="flex flex-row gap-2 max-w-96">
     
-    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.webp 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.webp 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.jpeg 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.webp 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.webp 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.jpeg 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.webp 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.webp 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.jpeg 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.webp 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.webp 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.jpeg 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.webp 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.webp 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.jpeg 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.webp 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.webp 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.jpeg 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.webp 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.webp 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.jpeg 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.webp 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.webp 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.jpeg 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.jpeg 800w" sizes="100vw"></picture></a>
     
   </nav>
 </footer>

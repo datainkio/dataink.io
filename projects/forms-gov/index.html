@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
   <!-- HEAD -->
@@ -58,7 +57,8 @@
   <!-- 7 deferred js  -->
   
   <!-- Template-defined js -->
-  
+  <script src="/assets/js/main.js"></script>
+
   <!-- 8 everything else: meta tags, icons, open graph etc.  -->
   <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
 <meta name="robots" content="index,follow" /><!-- All Search Engines -->
@@ -82,7 +82,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:description" content="A collaboration with the Office of Evaluation Sciences to improve access to essential services like healthcare and housing through innovative, scientifically validated digital design." />
 
-<meta property="og:image" content="https://dataink.io/assets/content/images/cache/ij28wz8fzz-800.webp" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/cache/DQQsqOxQfv-800.webp" />
 <meta property="og:image:alt" content="Improving Access to Government Benefits and Services" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1024" />
@@ -111,7 +111,7 @@
 	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
 	<!-- End Google Tag Manager -->
 
-  <body class="bg-black">
+  <body class="project">
     <!-- GTM -->
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
@@ -128,67 +128,73 @@
 
     </section>
     <!-- NAVIGATION -->
-    <div class="navbar bg-black absolute">
+    <div id="primary-nav" class="navbar z-50 px-0 lg:px-12">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
-        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
         
         <li>
-          <a href="/projects/">Work</a>
+          <a class="link-hover href="/projects/">Work</a>
         </li>
         
         <li>
-          <a href="/lessons-learned/">Lessons Learned</a>
+          <a class="link-hover href="/lessons-learned/">Lessons Learned</a>
         </li>
         
         <li>
-          <a href="/recognition/">Recognition</a>
+          <a class="link-hover href="/recognition/">Recognition</a>
         </li>
         
       </ul>
     </div>
     
-    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    <a href="/" class="font-bold text-xl">Russell S. Lebo</a>
     
 
   </div>
   <div class="navbar-center hidden lg:flex"></div>
   <div class="navbar-end">
-    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
       
       <li>
-        <a href="/projects/">Work</a>
+        <a class="link-hover " href="/projects/">Work</a>
       </li>
       
       <li>
-        <a href="/lessons-learned/">Lessons Learned</a>
+        <a class="link-hover " href="/lessons-learned/">Lessons Learned</a>
       </li>
       
       <li>
-        <a href="/recognition/">Recognition</a>
+        <a class="link-hover " href="/recognition/">Recognition</a>
       </li>
       
     </ul>
   </div>
 </div>
     <!-- CONTENT -->
-    <main tabindex=" -1" class="py-12">
-      <article>
+    <main tabindex=" -1" class="">
+      <article class="sm:col-span-full sm:grid sm:grid-cols-subgrid">
         
-<section class="bg-black p-12 pb-20">
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
-   
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/civic-tech">Civic Tech /</a>
+<section class="p-12 pb-0">
+  <div class="breadcrumbs">
+    <ul class="place-content-center md:place-content-start">
+      <li><a href="/projects/">Work</a></li>
+       
+      <li><a href="/projects/types/civic-tech">Civic Tech</a></li>
+      
+    </ul>
+  </div>
   
-  <h1 class="text-white font-black text-center md:text-left">Improving Access to Government Benefits and Services</h1>
-  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight">A collaboration with the Office of Evaluation Sciences to improve access to essential services like healthcare and housing through innovative, scientifically validated digital design.</p>
+
+  <h1>Improving Access to Government Benefits and Services</h1>
+  <p id="introduction" class="subtitle">A collaboration with the Office of Evaluation Sciences to improve access to essential services like healthcare and housing through innovative, scientifically validated digital design.</p>
   <!-- HERE BE PROJECT METADATA -->
-  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+  <section id="details" class="w-full md:grid md:grid-cols-6 py-12 gap-4">
     
 
 
@@ -196,10 +202,10 @@
 <!-- ROLE -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<figcaption class="">Roles</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Design Manager, Federal Projects</li>
+		<li class="inline-block ">Design Manager, Federal Projects</li>
 		
 	</ul>
 </figure>
@@ -207,12 +213,12 @@
 <!-- COMPANY -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<figcaption class="">Company/Client</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">GSA, </li>
+		<li class="inline-block ">GSA, </li>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bixal</li>
+		<li class="inline-block ">Bixal</li>
 		
 	</ul>
 </figure>
@@ -221,15 +227,15 @@
 
 <!-- ACTIITIES -->
 
-<figure class="py-2 col-span-full">
-<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<figure class="py-2 col-span-2">
+<figcaption class="">Activities</figcaption>
 <ul class="list-none pl-0">
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Experience Design, </li>
+	<li class="inline-block ">Experience Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Human-Centered Research, </li>
+	<li class="inline-block ">Human-Centered Research, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Accessibility Standards &amp; Best Practices</li>
+	<li class="inline-block ">Accessibility Standards &amp; Best Practices</li>
 	
 </ul>
 </figure>
@@ -239,17 +245,16 @@
 
     <!-- EXPLORE -->
     
-    <a class="btn btn-outline btn-circle btn-primary w-24 h-24 text-lg italic " href="https://oes.gsa.gov/">View⤴</a>
+    <a class="btn content-center btn-circle btn-primary w-24 h-24 text-lg italic block mx-auto col-end-auto " href="https://oes.gsa.gov/">View⤴</a>
     
   </section>
 </section>
 
         
-<div class="md:grid md:grid-cols-2 bg-white">
   <!-- LEAD VIDEO -->
    
   <!-- BODY COPY -->
-  <section id="body" class="p-12 prose md:col-start-1">
+  <section id="body" class="description mx-auto p-8 md:p-0 md:pt-8 border-t-2 border-neutral-900">
     
     <p>The complexity and scale of federal forms significantly impacts American citizens by hindering access to essential government programs, services, and benefits. I worked with the Office of Evaluation Scientists to help them simplify these forms to enhance public access to services like healthcare, housing, and financial aid.<br>
 The collaboration with OES aimed to integrate testing into the form digitization process. It produced three  design proposals that ranged from providing autonomy to researchers through digital interfaces to service-oriented approaches.<br>
@@ -258,60 +263,74 @@ The project demonstrated that it is feasible to design digital forms to improve 
     
   </section>
   <!-- NUGGETS -->
-  <section id="nuggets" class="prose p-12 md:col-start-1">
+  <section id="nuggets" class="prose mx-auto p-8 md:p-0">
     
-      <h2>Ethnographic Research Approach</h2>
-      
-        <p>The project began with an intensive study of the behavioral scientists at OES, utilizing workshops, interviews, and collaborative exercises to understand their perspectives and needs.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Ethnographic Research Approach</h2>
+  
+    <p>The project began with an intensive study of the behavioral scientists at OES, utilizing workshops, interviews, and collaborative exercises to understand their perspectives and needs.</p>
+
+  
+</div>
     
-      <h2>Designing for Researchers&#39; Requirements</h2>
-      
-        <p>The focus was on identifying what was crucial for OES researchers in terms of functionality and scientific validity for their experiments.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Designing for Researchers&#39; Requirements</h2>
+  
+    <p>The focus was on identifying what was crucial for OES researchers in terms of functionality and scientific validity for their experiments.</p>
+
+  
+</div>
     
-      <h2>Experiment Parameters and Variants</h2>
-      
-        <p>The project addressed the need for setting clear experiment parameters, creating form variants, and ensuring randomization to avoid bias in form testing.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Experiment Parameters and Variants</h2>
+  
+    <p>The project addressed the need for setting clear experiment parameters, creating form variants, and ensuring randomization to avoid bias in form testing.</p>
+
+  
+</div>
     
-      <h2>Data Analysis and Distribution</h2>
-      
-        <p>OES required robust data analysis tools and methods to manage large sample sizes and ensure representative distribution in their studies.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Data Analysis and Distribution</h2>
+  
+    <p>OES required robust data analysis tools and methods to manage large sample sizes and ensure representative distribution in their studies.</p>
+
+  
+</div>
     
-      <h2>Scientific Rigor as a Constant</h2>
-      
-        <p>Throughout the project, maintaining scientific rigor was essential, ensuring that the results and conclusions were quantifiable and repeatable.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Scientific Rigor as a Constant</h2>
+  
+    <p>Throughout the project, maintaining scientific rigor was essential, ensuring that the results and conclusions were quantifiable and repeatable.</p>
+
+  
+</div>
     
-      <h2>User and Service Design Solutions</h2>
-      
-        <p>Solutions prioritized researcher autonomy and varied in feature combinations. Some designs focused on digital interfaces, while others involved external contractors for experiment management.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">User and Service Design Solutions</h2>
+  
+    <p>Solutions prioritized researcher autonomy and varied in feature combinations. Some designs focused on digital interfaces, while others involved external contractors for experiment management.</p>
+
+  
+</div>
     
-      <h2>Human-Centered Research Principles</h2>
-      
-        <p>The solutions were based on human-centered research, tailored to meet the specific needs of behavioral scientists, emphasizing the feasibility and practicality of testing digital federal forms.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Human-Centered Research Principles</h2>
+  
+    <p>The solutions were based on human-centered research, tailored to meet the specific needs of behavioral scientists, emphasizing the feasibility and practicality of testing digital federal forms.</p>
+
+  
+</div>
     
   </section>
   <!-- IMAGE GALLERIES -->
-  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+  <section id="examples" class="mx-auto">
     
       
       
@@ -321,13 +340,13 @@ The project demonstrated that it is feasible to design digital forms to improve 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/rGQGJWkoWr-400.webp 400w, /assets/content/images/cache/rGQGJWkoWr-600.webp 600w, /assets/content/images/cache/rGQGJWkoWr-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Starting broad..." src="/assets/content/images/cache/rGQGJWkoWr-400.jpeg" width="800" height="243" srcset="/assets/content/images/cache/rGQGJWkoWr-400.jpeg 400w, /assets/content/images/cache/rGQGJWkoWr-600.jpeg 600w, /assets/content/images/cache/rGQGJWkoWr-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/tqGaz0neDy-400.webp 400w, /assets/content/images/cache/tqGaz0neDy-600.webp 600w, /assets/content/images/cache/tqGaz0neDy-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Starting broad..." src="/assets/content/images/cache/tqGaz0neDy-400.jpeg" width="800" height="243" srcset="/assets/content/images/cache/tqGaz0neDy-400.jpeg 400w, /assets/content/images/cache/tqGaz0neDy-600.jpeg 600w, /assets/content/images/cache/tqGaz0neDy-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/bpSqyfSnRf-400.webp 400w, /assets/content/images/cache/bpSqyfSnRf-600.webp 600w, /assets/content/images/cache/bpSqyfSnRf-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Multivalency" src="/assets/content/images/cache/bpSqyfSnRf-400.jpeg" width="800" height="408" srcset="/assets/content/images/cache/bpSqyfSnRf-400.jpeg 400w, /assets/content/images/cache/bpSqyfSnRf-600.jpeg 600w, /assets/content/images/cache/bpSqyfSnRf-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/iwHTH-WIRS-400.webp 400w, /assets/content/images/cache/iwHTH-WIRS-600.webp 600w, /assets/content/images/cache/iwHTH-WIRS-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Multivalency" src="/assets/content/images/cache/iwHTH-WIRS-400.jpeg" width="800" height="408" srcset="/assets/content/images/cache/iwHTH-WIRS-400.jpeg 400w, /assets/content/images/cache/iwHTH-WIRS-600.jpeg 600w, /assets/content/images/cache/iwHTH-WIRS-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -335,19 +354,22 @@ The project demonstrated that it is feasible to design digital forms to improve 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/riQpWmHtSg-400.webp 400w, /assets/content/images/cache/riQpWmHtSg-600.webp 600w, /assets/content/images/cache/riQpWmHtSg-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for ...and more." src="/assets/content/images/cache/riQpWmHtSg-400.jpeg" width="800" height="463" srcset="/assets/content/images/cache/riQpWmHtSg-400.jpeg 400w, /assets/content/images/cache/riQpWmHtSg-600.jpeg 600w, /assets/content/images/cache/riQpWmHtSg-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/OilJ4AORym-400.webp 400w, /assets/content/images/cache/OilJ4AORym-600.webp 600w, /assets/content/images/cache/OilJ4AORym-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for ...and more." src="/assets/content/images/cache/OilJ4AORym-400.jpeg" width="800" height="463" srcset="/assets/content/images/cache/OilJ4AORym-400.jpeg 400w, /assets/content/images/cache/OilJ4AORym-600.jpeg 600w, /assets/content/images/cache/OilJ4AORym-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/EQ5vTImehC-400.webp 400w, /assets/content/images/cache/EQ5vTImehC-600.webp 600w, /assets/content/images/cache/EQ5vTImehC-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Narrowing in some more..." src="/assets/content/images/cache/EQ5vTImehC-400.jpeg" width="800" height="317" srcset="/assets/content/images/cache/EQ5vTImehC-400.jpeg 400w, /assets/content/images/cache/EQ5vTImehC-600.jpeg 600w, /assets/content/images/cache/EQ5vTImehC-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/2jozMVleUE-400.webp 400w, /assets/content/images/cache/2jozMVleUE-600.webp 600w, /assets/content/images/cache/2jozMVleUE-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Narrowing in some more..." src="/assets/content/images/cache/2jozMVleUE-400.jpeg" width="800" height="317" srcset="/assets/content/images/cache/2jozMVleUE-400.jpeg 400w, /assets/content/images/cache/2jozMVleUE-600.jpeg 600w, /assets/content/images/cache/2jozMVleUE-800.jpeg 800w" sizes="100vw"></picture>
   
   
 </div>
 </a>
 <dialog id="gallery_rectFUASpbcvMW64K" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="rectFUASpbcvMW64K_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -358,63 +380,66 @@ For the <a href="http://Forms.gov">Forms.gov</a> project, they proved invaluable
 </p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
       
       
       <figure id="rectFUASpbcvMW64K_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Building User Stories</h2>
           <h3 class="text-xl">Starting broad...</h3>
           <p class="prose">The basic format of a user story: &quot;As a [member of an audience] I want to [complete a task] so that I can [receive something of value].&quot;
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/rGQGJWkoWr-400.webp 400w, /assets/content/images/cache/rGQGJWkoWr-600.webp 600w, /assets/content/images/cache/rGQGJWkoWr-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Starting broad..." src="/assets/content/images/cache/rGQGJWkoWr-400.jpeg" width="800" height="243" srcset="/assets/content/images/cache/rGQGJWkoWr-400.jpeg 400w, /assets/content/images/cache/rGQGJWkoWr-600.jpeg 600w, /assets/content/images/cache/rGQGJWkoWr-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/tqGaz0neDy-400.webp 400w, /assets/content/images/cache/tqGaz0neDy-600.webp 600w, /assets/content/images/cache/tqGaz0neDy-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Starting broad..." src="/assets/content/images/cache/tqGaz0neDy-400.jpeg" width="800" height="243" srcset="/assets/content/images/cache/tqGaz0neDy-400.jpeg 400w, /assets/content/images/cache/tqGaz0neDy-600.jpeg 600w, /assets/content/images/cache/tqGaz0neDy-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rectFUASpbcvMW64K_item2" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Building User Stories</h2>
           <h3 class="text-xl">Multivalency</h3>
           <p class="prose">When writing user stories, it&#39;s important to account for multivalency. That is, an object can possess multiple identities at once. In the case of OES, we made a distinction between a researcher interested with creating a test and a researcher interested in managing a task. This was critical for understanding how the information needs of a researcher change based on the task at hand.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/bpSqyfSnRf-400.webp 400w, /assets/content/images/cache/bpSqyfSnRf-600.webp 600w, /assets/content/images/cache/bpSqyfSnRf-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Multivalency" src="/assets/content/images/cache/bpSqyfSnRf-400.jpeg" width="800" height="408" srcset="/assets/content/images/cache/bpSqyfSnRf-400.jpeg 400w, /assets/content/images/cache/bpSqyfSnRf-600.jpeg 600w, /assets/content/images/cache/bpSqyfSnRf-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/iwHTH-WIRS-400.webp 400w, /assets/content/images/cache/iwHTH-WIRS-600.webp 600w, /assets/content/images/cache/iwHTH-WIRS-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Multivalency" src="/assets/content/images/cache/iwHTH-WIRS-400.jpeg" width="800" height="408" srcset="/assets/content/images/cache/iwHTH-WIRS-400.jpeg 400w, /assets/content/images/cache/iwHTH-WIRS-600.jpeg 600w, /assets/content/images/cache/iwHTH-WIRS-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rectFUASpbcvMW64K_item3" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Building User Stories</h2>
           <h3 class="text-xl">Narrowing in some more...</h3>
           <p class="prose">Rigorously mapping out user stories in this way makes it easier to see common themes and patterns. In addition to creating consistency in the final product, it gives the team opportunities to streamline the design and development workflow by reducing complexity.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/EQ5vTImehC-400.webp 400w, /assets/content/images/cache/EQ5vTImehC-600.webp 600w, /assets/content/images/cache/EQ5vTImehC-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Narrowing in some more..." src="/assets/content/images/cache/EQ5vTImehC-400.jpeg" width="800" height="317" srcset="/assets/content/images/cache/EQ5vTImehC-400.jpeg 400w, /assets/content/images/cache/EQ5vTImehC-600.jpeg 600w, /assets/content/images/cache/EQ5vTImehC-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/2jozMVleUE-400.webp 400w, /assets/content/images/cache/2jozMVleUE-600.webp 600w, /assets/content/images/cache/2jozMVleUE-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Narrowing in some more..." src="/assets/content/images/cache/2jozMVleUE-400.jpeg" width="800" height="317" srcset="/assets/content/images/cache/2jozMVleUE-400.jpeg 400w, /assets/content/images/cache/2jozMVleUE-600.jpeg 600w, /assets/content/images/cache/2jozMVleUE-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rectFUASpbcvMW64K_item4" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Building User Stories</h2>
           <h3 class="text-xl">...and more.</h3>
           <p class="prose">Narrowing in on the researchers&#39; requirements.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/riQpWmHtSg-400.webp 400w, /assets/content/images/cache/riQpWmHtSg-600.webp 600w, /assets/content/images/cache/riQpWmHtSg-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for ...and more." src="/assets/content/images/cache/riQpWmHtSg-400.jpeg" width="800" height="463" srcset="/assets/content/images/cache/riQpWmHtSg-400.jpeg 400w, /assets/content/images/cache/riQpWmHtSg-600.jpeg 600w, /assets/content/images/cache/riQpWmHtSg-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/OilJ4AORym-400.webp 400w, /assets/content/images/cache/OilJ4AORym-600.webp 600w, /assets/content/images/cache/OilJ4AORym-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for ...and more." src="/assets/content/images/cache/OilJ4AORym-400.jpeg" width="800" height="463" srcset="/assets/content/images/cache/OilJ4AORym-400.jpeg 400w, /assets/content/images/cache/OilJ4AORym-600.jpeg 600w, /assets/content/images/cache/OilJ4AORym-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
@@ -451,9 +476,6 @@ For the <a href="http://Forms.gov">Forms.gov</a> project, they proved invaluable
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
@@ -468,49 +490,52 @@ For the <a href="http://Forms.gov">Forms.gov</a> project, they proved invaluable
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/KrSSxZ-ojK-400.webp 400w, /assets/content/images/cache/KrSSxZ-ojK-600.webp 600w, /assets/content/images/cache/KrSSxZ-ojK-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for OES to the rescue" src="/assets/content/images/cache/KrSSxZ-ojK-400.jpeg" width="800" height="535" srcset="/assets/content/images/cache/KrSSxZ-ojK-400.jpeg 400w, /assets/content/images/cache/KrSSxZ-ojK-600.jpeg 600w, /assets/content/images/cache/KrSSxZ-ojK-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/n-FiS1O-Ml-400.webp 400w, /assets/content/images/cache/n-FiS1O-Ml-600.webp 600w, /assets/content/images/cache/n-FiS1O-Ml-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for OES to the rescue" src="/assets/content/images/cache/n-FiS1O-Ml-400.jpeg" width="800" height="535" srcset="/assets/content/images/cache/n-FiS1O-Ml-400.jpeg 400w, /assets/content/images/cache/n-FiS1O-Ml-600.jpeg 600w, /assets/content/images/cache/n-FiS1O-Ml-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/8JNrjjfRXB-400.webp 400w, /assets/content/images/cache/8JNrjjfRXB-600.webp 600w, /assets/content/images/cache/8JNrjjfRXB-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Developing hypotheses" src="/assets/content/images/cache/8JNrjjfRXB-400.jpeg" width="800" height="379" srcset="/assets/content/images/cache/8JNrjjfRXB-400.jpeg 400w, /assets/content/images/cache/8JNrjjfRXB-600.jpeg 600w, /assets/content/images/cache/8JNrjjfRXB-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/bv6CPZUTEv-400.webp 400w, /assets/content/images/cache/bv6CPZUTEv-600.webp 600w, /assets/content/images/cache/bv6CPZUTEv-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Developing hypotheses" src="/assets/content/images/cache/bv6CPZUTEv-400.jpeg" width="800" height="379" srcset="/assets/content/images/cache/bv6CPZUTEv-400.jpeg 400w, /assets/content/images/cache/bv6CPZUTEv-600.jpeg 600w, /assets/content/images/cache/bv6CPZUTEv-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/kbs-DefMwJ-400.webp 400w, /assets/content/images/cache/kbs-DefMwJ-600.webp 600w, /assets/content/images/cache/kbs-DefMwJ-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Defining the questions" src="/assets/content/images/cache/kbs-DefMwJ-400.jpeg" width="800" height="464" srcset="/assets/content/images/cache/kbs-DefMwJ-400.jpeg 400w, /assets/content/images/cache/kbs-DefMwJ-600.jpeg 600w, /assets/content/images/cache/kbs-DefMwJ-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/6C-JCbu7kU-400.webp 400w, /assets/content/images/cache/6C-JCbu7kU-600.webp 600w, /assets/content/images/cache/6C-JCbu7kU-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Defining the questions" src="/assets/content/images/cache/6C-JCbu7kU-400.jpeg" width="800" height="464" srcset="/assets/content/images/cache/6C-JCbu7kU-400.jpeg 400w, /assets/content/images/cache/6C-JCbu7kU-600.jpeg 600w, /assets/content/images/cache/6C-JCbu7kU-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/tY_xb_Puuj-400.webp 400w, /assets/content/images/cache/tY_xb_Puuj-600.webp 600w, /assets/content/images/cache/tY_xb_Puuj-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Definition &amp; Launch" src="/assets/content/images/cache/tY_xb_Puuj-400.jpeg" width="800" height="1042" srcset="/assets/content/images/cache/tY_xb_Puuj-400.jpeg 400w, /assets/content/images/cache/tY_xb_Puuj-600.jpeg 600w, /assets/content/images/cache/tY_xb_Puuj-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/60AB9Yfdix-400.webp 400w, /assets/content/images/cache/60AB9Yfdix-600.webp 600w, /assets/content/images/cache/60AB9Yfdix-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Definition &amp; Launch" src="/assets/content/images/cache/60AB9Yfdix-400.jpeg" width="800" height="1042" srcset="/assets/content/images/cache/60AB9Yfdix-400.jpeg 400w, /assets/content/images/cache/60AB9Yfdix-600.jpeg 600w, /assets/content/images/cache/60AB9Yfdix-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/5siQXxOP-B-400.webp 400w, /assets/content/images/cache/5siQXxOP-B-600.webp 600w, /assets/content/images/cache/5siQXxOP-B-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Finding the questions" src="/assets/content/images/cache/5siQXxOP-B-400.jpeg" width="800" height="526" srcset="/assets/content/images/cache/5siQXxOP-B-400.jpeg 400w, /assets/content/images/cache/5siQXxOP-B-600.jpeg 600w, /assets/content/images/cache/5siQXxOP-B-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/HWIWMrvtPv-400.webp 400w, /assets/content/images/cache/HWIWMrvtPv-600.webp 600w, /assets/content/images/cache/HWIWMrvtPv-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Finding the questions" src="/assets/content/images/cache/HWIWMrvtPv-400.jpeg" width="800" height="526" srcset="/assets/content/images/cache/HWIWMrvtPv-400.jpeg 400w, /assets/content/images/cache/HWIWMrvtPv-600.jpeg 600w, /assets/content/images/cache/HWIWMrvtPv-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/ncoDxmsglr-400.webp 400w, /assets/content/images/cache/ncoDxmsglr-600.webp 600w, /assets/content/images/cache/ncoDxmsglr-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for OES serves federal agencies" src="/assets/content/images/cache/ncoDxmsglr-400.jpeg" width="800" height="399" srcset="/assets/content/images/cache/ncoDxmsglr-400.jpeg 400w, /assets/content/images/cache/ncoDxmsglr-600.jpeg 600w, /assets/content/images/cache/ncoDxmsglr-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/dyty58dxjb-400.webp 400w, /assets/content/images/cache/dyty58dxjb-600.webp 600w, /assets/content/images/cache/dyty58dxjb-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for OES serves federal agencies" src="/assets/content/images/cache/dyty58dxjb-400.jpeg" width="800" height="399" srcset="/assets/content/images/cache/dyty58dxjb-400.jpeg 400w, /assets/content/images/cache/dyty58dxjb-600.jpeg 600w, /assets/content/images/cache/dyty58dxjb-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/pxGzfT0iVj-400.webp 400w, /assets/content/images/cache/pxGzfT0iVj-600.webp 600w, /assets/content/images/cache/pxGzfT0iVj-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Understanding a digital form" src="/assets/content/images/cache/pxGzfT0iVj-400.jpeg" width="800" height="615" srcset="/assets/content/images/cache/pxGzfT0iVj-400.jpeg 400w, /assets/content/images/cache/pxGzfT0iVj-600.jpeg 600w, /assets/content/images/cache/pxGzfT0iVj-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/JB3gTFN-jA-400.webp 400w, /assets/content/images/cache/JB3gTFN-jA-600.webp 600w, /assets/content/images/cache/JB3gTFN-jA-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Understanding a digital form" src="/assets/content/images/cache/JB3gTFN-jA-400.jpeg" width="800" height="615" srcset="/assets/content/images/cache/JB3gTFN-jA-400.jpeg 400w, /assets/content/images/cache/JB3gTFN-jA-600.jpeg 600w, /assets/content/images/cache/JB3gTFN-jA-800.jpeg 800w" sizes="100vw"></picture>
   
   
 </div>
 </a>
 <dialog id="gallery_rec25sprUggawfrqu" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="rec25sprUggawfrqu_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -520,105 +545,111 @@ For the <a href="http://Forms.gov">Forms.gov</a> project, they proved invaluable
 </p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
       
       
       <figure id="rec25sprUggawfrqu_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OES Workflow</h2>
           <h3 class="text-xl">OES serves federal agencies</h3>
           <p class="prose">OES plays an important role by providing key insights into how people interact with federal services. In order to understand how OES carries out this mission, we focused on a user journey centering on a federal agency that seeks to understand why the response rates for a key digital form are not meeting expectations.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/ncoDxmsglr-400.webp 400w, /assets/content/images/cache/ncoDxmsglr-600.webp 600w, /assets/content/images/cache/ncoDxmsglr-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for OES serves federal agencies" src="/assets/content/images/cache/ncoDxmsglr-400.jpeg" width="800" height="399" srcset="/assets/content/images/cache/ncoDxmsglr-400.jpeg 400w, /assets/content/images/cache/ncoDxmsglr-600.jpeg 600w, /assets/content/images/cache/ncoDxmsglr-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/dyty58dxjb-400.webp 400w, /assets/content/images/cache/dyty58dxjb-600.webp 600w, /assets/content/images/cache/dyty58dxjb-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for OES serves federal agencies" src="/assets/content/images/cache/dyty58dxjb-400.jpeg" width="800" height="399" srcset="/assets/content/images/cache/dyty58dxjb-400.jpeg 400w, /assets/content/images/cache/dyty58dxjb-600.jpeg 600w, /assets/content/images/cache/dyty58dxjb-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec25sprUggawfrqu_item2" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OES Workflow</h2>
           <h3 class="text-xl">OES to the rescue</h3>
           <p class="prose">Adopting the persona of an OES researcher, we defined the key problem to solve and what the value of the outcome would be: &quot;As a researcher with OES, I want to evaluate this form along multiple dimensions so that I can understand how it impacts people&#39;s behavior.&quot;
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/KrSSxZ-ojK-400.webp 400w, /assets/content/images/cache/KrSSxZ-ojK-600.webp 600w, /assets/content/images/cache/KrSSxZ-ojK-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for OES to the rescue" src="/assets/content/images/cache/KrSSxZ-ojK-400.jpeg" width="800" height="535" srcset="/assets/content/images/cache/KrSSxZ-ojK-400.jpeg 400w, /assets/content/images/cache/KrSSxZ-ojK-600.jpeg 600w, /assets/content/images/cache/KrSSxZ-ojK-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/n-FiS1O-Ml-400.webp 400w, /assets/content/images/cache/n-FiS1O-Ml-600.webp 600w, /assets/content/images/cache/n-FiS1O-Ml-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for OES to the rescue" src="/assets/content/images/cache/n-FiS1O-Ml-400.jpeg" width="800" height="535" srcset="/assets/content/images/cache/n-FiS1O-Ml-400.jpeg 400w, /assets/content/images/cache/n-FiS1O-Ml-600.jpeg 600w, /assets/content/images/cache/n-FiS1O-Ml-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec25sprUggawfrqu_item3" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OES Workflow</h2>
           <h3 class="text-xl">Understanding a digital form</h3>
           <p class="prose">The combination of user research with artifact analysis helped us to understand the researchers&#39; information needs by surfacing insights into how researchers integrated digital forms into their testing procedures.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/pxGzfT0iVj-400.webp 400w, /assets/content/images/cache/pxGzfT0iVj-600.webp 600w, /assets/content/images/cache/pxGzfT0iVj-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Understanding a digital form" src="/assets/content/images/cache/pxGzfT0iVj-400.jpeg" width="800" height="615" srcset="/assets/content/images/cache/pxGzfT0iVj-400.jpeg 400w, /assets/content/images/cache/pxGzfT0iVj-600.jpeg 600w, /assets/content/images/cache/pxGzfT0iVj-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/JB3gTFN-jA-400.webp 400w, /assets/content/images/cache/JB3gTFN-jA-600.webp 600w, /assets/content/images/cache/JB3gTFN-jA-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Understanding a digital form" src="/assets/content/images/cache/JB3gTFN-jA-400.jpeg" width="800" height="615" srcset="/assets/content/images/cache/JB3gTFN-jA-400.jpeg 400w, /assets/content/images/cache/JB3gTFN-jA-600.jpeg 600w, /assets/content/images/cache/JB3gTFN-jA-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec25sprUggawfrqu_item4" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OES Workflow</h2>
           <h3 class="text-xl">Finding the questions</h3>
           <p class="prose">In order to quantify why a digital form elicits particular behaviors from users, OES researchers develop specific questions that can be tested.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/5siQXxOP-B-400.webp 400w, /assets/content/images/cache/5siQXxOP-B-600.webp 600w, /assets/content/images/cache/5siQXxOP-B-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Finding the questions" src="/assets/content/images/cache/5siQXxOP-B-400.jpeg" width="800" height="526" srcset="/assets/content/images/cache/5siQXxOP-B-400.jpeg 400w, /assets/content/images/cache/5siQXxOP-B-600.jpeg 600w, /assets/content/images/cache/5siQXxOP-B-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/HWIWMrvtPv-400.webp 400w, /assets/content/images/cache/HWIWMrvtPv-600.webp 600w, /assets/content/images/cache/HWIWMrvtPv-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Finding the questions" src="/assets/content/images/cache/HWIWMrvtPv-400.jpeg" width="800" height="526" srcset="/assets/content/images/cache/HWIWMrvtPv-400.jpeg 400w, /assets/content/images/cache/HWIWMrvtPv-600.jpeg 600w, /assets/content/images/cache/HWIWMrvtPv-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec25sprUggawfrqu_item5" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OES Workflow</h2>
           <h3 class="text-xl">Developing hypotheses</h3>
           <p class="prose">OES researchers&#39; conception of digital forms as the composition of discrete elements is the foundation of their ability to quantify and articulate why people interact with forms in particular ways.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/8JNrjjfRXB-400.webp 400w, /assets/content/images/cache/8JNrjjfRXB-600.webp 600w, /assets/content/images/cache/8JNrjjfRXB-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Developing hypotheses" src="/assets/content/images/cache/8JNrjjfRXB-400.jpeg" width="800" height="379" srcset="/assets/content/images/cache/8JNrjjfRXB-400.jpeg 400w, /assets/content/images/cache/8JNrjjfRXB-600.jpeg 600w, /assets/content/images/cache/8JNrjjfRXB-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/bv6CPZUTEv-400.webp 400w, /assets/content/images/cache/bv6CPZUTEv-600.webp 600w, /assets/content/images/cache/bv6CPZUTEv-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Developing hypotheses" src="/assets/content/images/cache/bv6CPZUTEv-400.jpeg" width="800" height="379" srcset="/assets/content/images/cache/bv6CPZUTEv-400.jpeg 400w, /assets/content/images/cache/bv6CPZUTEv-600.jpeg 600w, /assets/content/images/cache/bv6CPZUTEv-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec25sprUggawfrqu_item6" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OES Workflow</h2>
           <h3 class="text-xl">Defining the questions</h3>
           <p class="prose">The next step after developing a hypotheses is to identify the variables that the test will measure.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/kbs-DefMwJ-400.webp 400w, /assets/content/images/cache/kbs-DefMwJ-600.webp 600w, /assets/content/images/cache/kbs-DefMwJ-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Defining the questions" src="/assets/content/images/cache/kbs-DefMwJ-400.jpeg" width="800" height="464" srcset="/assets/content/images/cache/kbs-DefMwJ-400.jpeg 400w, /assets/content/images/cache/kbs-DefMwJ-600.jpeg 600w, /assets/content/images/cache/kbs-DefMwJ-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/6C-JCbu7kU-400.webp 400w, /assets/content/images/cache/6C-JCbu7kU-600.webp 600w, /assets/content/images/cache/6C-JCbu7kU-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Defining the questions" src="/assets/content/images/cache/6C-JCbu7kU-400.jpeg" width="800" height="464" srcset="/assets/content/images/cache/6C-JCbu7kU-400.jpeg 400w, /assets/content/images/cache/6C-JCbu7kU-600.jpeg 600w, /assets/content/images/cache/6C-JCbu7kU-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec25sprUggawfrqu_item7" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OES Workflow</h2>
           <h3 class="text-xl">Definition &amp; Launch</h3>
           <p class="prose">The design strategy we developed focused on delivering a workflow that integrated seamlessly with their existing software. Rather than requiring researchers to create a form in one location and switch to another to create and manage testing, the tests were defined within the form itself.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/tY_xb_Puuj-400.webp 400w, /assets/content/images/cache/tY_xb_Puuj-600.webp 600w, /assets/content/images/cache/tY_xb_Puuj-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Definition &amp; Launch" src="/assets/content/images/cache/tY_xb_Puuj-400.jpeg" width="800" height="1042" srcset="/assets/content/images/cache/tY_xb_Puuj-400.jpeg 400w, /assets/content/images/cache/tY_xb_Puuj-600.jpeg 600w, /assets/content/images/cache/tY_xb_Puuj-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/60AB9Yfdix-400.webp 400w, /assets/content/images/cache/60AB9Yfdix-600.webp 600w, /assets/content/images/cache/60AB9Yfdix-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Definition &amp; Launch" src="/assets/content/images/cache/60AB9Yfdix-400.jpeg" width="800" height="1042" srcset="/assets/content/images/cache/60AB9Yfdix-400.jpeg 400w, /assets/content/images/cache/60AB9Yfdix-600.jpeg 600w, /assets/content/images/cache/60AB9Yfdix-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
@@ -666,15 +697,11 @@ For the <a href="http://Forms.gov">Forms.gov</a> project, they proved invaluable
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
     
   </section>
-</div>
 
       </article>
     </main>
@@ -682,20 +709,20 @@ For the <a href="http://Forms.gov">Forms.gov</a> project, they proved invaluable
     
 
 
-<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
-  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other Civic Tech</figcaption>
+<figure id="related" class="p-4 sm:p-12 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <figcaption class="text-3xl sm:text-4xl leading-none font-thin mb-8 col-span-full divider divider-primary">Other Civic Tech</figcaption>
   
   
   
   
-<a href="/projects/digital-transformation-for-public-health/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/digital-transformation-for-public-health/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/8to-VLreA_-400.webp 400w, /assets/content/images/cache/8to-VLreA_-600.webp 600w, /assets/content/images/cache/8to-VLreA_-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USDA" src="/assets/content/images/cache/8to-VLreA_-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/8to-VLreA_-400.jpeg 400w, /assets/content/images/cache/8to-VLreA_-600.jpeg 600w, /assets/content/images/cache/8to-VLreA_-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/jwRo2kOX11-400.webp 400w, /assets/content/images/cache/jwRo2kOX11-600.webp 600w, /assets/content/images/cache/jwRo2kOX11-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USDA" src="/assets/content/images/cache/jwRo2kOX11-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/jwRo2kOX11-400.jpeg 400w, /assets/content/images/cache/jwRo2kOX11-600.jpeg 600w, /assets/content/images/cache/jwRo2kOX11-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Digital Transformation for Public Health</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Ensuring public health through user-friendly design, innovative research, and a robust digital presence during the pandemic.</p>
+    <h3 class="card-title">Digital Transformation for Public Health</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Ensuring public health through user-friendly design, innovative research, and a robust digital presence during the pandemic.</p>
   </div>
 </a>
   
@@ -704,28 +731,28 @@ For the <a href="http://Forms.gov">Forms.gov</a> project, they proved invaluable
   
   
   
-<a href="/projects/made-in-america/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/made-in-america/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/ij28wz8fzz-400.webp 400w, /assets/content/images/cache/ij28wz8fzz-600.webp 600w, /assets/content/images/cache/ij28wz8fzz-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/ij28wz8fzz-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/ij28wz8fzz-400.jpeg 400w, /assets/content/images/cache/ij28wz8fzz-600.jpeg 600w, /assets/content/images/cache/ij28wz8fzz-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/DQQsqOxQfv-400.webp 400w, /assets/content/images/cache/DQQsqOxQfv-600.webp 600w, /assets/content/images/cache/DQQsqOxQfv-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/DQQsqOxQfv-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/DQQsqOxQfv-400.jpeg 400w, /assets/content/images/cache/DQQsqOxQfv-600.jpeg 600w, /assets/content/images/cache/DQQsqOxQfv-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Building Transparency into Federal Decision-Making</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Collaborated with the General Services Administration (GSA) and the White House to increase transparency into the decisions behind $4.2B in waivers and exceptions to import and export policies.</p>
+    <h3 class="card-title">Building Transparency into Federal Decision-Making</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Collaborated with the General Services Administration (GSA) and the White House to increase transparency into the decisions behind $4.2B in waivers and exceptions to import and export policies.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/resiliencelinks/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/resiliencelinks/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/cOKm_6IxWx-400.webp 400w, /assets/content/images/cache/cOKm_6IxWx-600.webp 600w, /assets/content/images/cache/cOKm_6IxWx-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USAID" src="/assets/content/images/cache/cOKm_6IxWx-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/cOKm_6IxWx-400.jpeg 400w, /assets/content/images/cache/cOKm_6IxWx-600.jpeg 600w, /assets/content/images/cache/cOKm_6IxWx-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/XgyVGnsC3i-400.webp 400w, /assets/content/images/cache/XgyVGnsC3i-600.webp 600w, /assets/content/images/cache/XgyVGnsC3i-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USAID" src="/assets/content/images/cache/XgyVGnsC3i-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/XgyVGnsC3i-400.jpeg 400w, /assets/content/images/cache/XgyVGnsC3i-600.jpeg 600w, /assets/content/images/cache/XgyVGnsC3i-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">USAID &amp; Building Resiliency World-Wide</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bixal enhanced USAID&#39;s ResilienceLinks platform, improving global crisis response and coordination through user-friendly design and strategic long-term planning, addressing challenges like climate change, conflict, and pandemics.</p>
+    <h3 class="card-title">USAID &amp; Building Resiliency World-Wide</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bixal enhanced USAID&#39;s ResilienceLinks platform, improving global crisis response and coordination through user-friendly design and strategic long-term planning, addressing challenges like climate change, conflict, and pandemics.</p>
   </div>
 </a>
   
@@ -738,42 +765,42 @@ For the <a href="http://Forms.gov">Forms.gov</a> project, they proved invaluable
   
   
   
-<a href="/projects/sba-gov/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/sba-gov/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/ffPCJUrpuu-400.webp 400w, /assets/content/images/cache/ffPCJUrpuu-600.webp 600w, /assets/content/images/cache/ffPCJUrpuu-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for SBA logo" src="/assets/content/images/cache/ffPCJUrpuu-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/ffPCJUrpuu-400.jpeg 400w, /assets/content/images/cache/ffPCJUrpuu-600.jpeg 600w, /assets/content/images/cache/ffPCJUrpuu-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/yDFlz2or6T-400.webp 400w, /assets/content/images/cache/yDFlz2or6T-600.webp 600w, /assets/content/images/cache/yDFlz2or6T-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for SBA logo" src="/assets/content/images/cache/yDFlz2or6T-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/yDFlz2or6T-400.jpeg 400w, /assets/content/images/cache/yDFlz2or6T-600.jpeg 600w, /assets/content/images/cache/yDFlz2or6T-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Supporting American Small Businesses</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">We transformed SBA.gov into a user-centric, accessible platform, increasing engagement by 801% in 2020 through extensive user research and human-centered design, better supporting entrepreneurs and small business owners.</p>
+    <h3 class="card-title">Supporting American Small Businesses</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">We transformed SBA.gov into a user-centric, accessible platform, increasing engagement by 801% in 2020 through extensive user research and human-centered design, better supporting entrepreneurs and small business owners.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/united-states-web-design-system/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/united-states-web-design-system/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/luy8V5LUha-200.webp 200w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USWDS Logo.svg" src="/assets/content/images/cache/luy8V5LUha-200.jpeg" width="200" height="189"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/3l0aXYRiup-200.webp 200w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USWDS Logo.svg" src="/assets/content/images/cache/3l0aXYRiup-200.jpeg" width="200" height="189"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">United States Web Design System</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">As the design manager for federal projects at Bixal, I led USWDS integration and customization to meet specific agency needs, fostering cross-functional collaboration and improving user experience.</p>
+    <h3 class="card-title">United States Web Design System</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">As the design manager for federal projects at Bixal, I led USWDS integration and customization to meet specific agency needs, fostering cross-functional collaboration and improving user experience.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/cityforward/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/cityforward/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/rTabCAyIA4-400.webp 400w, /assets/content/images/cache/rTabCAyIA4-600.webp 600w, /assets/content/images/cache/rTabCAyIA4-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/rTabCAyIA4-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/rTabCAyIA4-400.jpeg 400w, /assets/content/images/cache/rTabCAyIA4-600.jpeg 600w, /assets/content/images/cache/rTabCAyIA4-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/mRiWoZ9HXS-400.webp 400w, /assets/content/images/cache/mRiWoZ9HXS-600.webp 600w, /assets/content/images/cache/mRiWoZ9HXS-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/mRiWoZ9HXS-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/mRiWoZ9HXS-400.jpeg 400w, /assets/content/images/cache/mRiWoZ9HXS-600.jpeg 600w, /assets/content/images/cache/mRiWoZ9HXS-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Smart Decisions, Smart Cities</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">A Webby Award-winning platform enabling city officials, researchers, academics, and citizens globally to interact with city data and engage in ongoing public dialogue.</p>
+    <h3 class="card-title">Smart Decisions, Smart Cities</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">A Webby Award-winning platform enabling city officials, researchers, academics, and citizens globally to interact with city data and engage in ongoing public dialogue.</p>
   </div>
 </a>
   
@@ -793,21 +820,21 @@ For the <a href="http://Forms.gov">Forms.gov</a> project, they proved invaluable
   <!-- SOCIAL -->
   <nav id="social" class="flex flex-row gap-2 max-w-96">
     
-    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.webp 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.webp 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.jpeg 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.webp 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.webp 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.jpeg 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.webp 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.webp 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.jpeg 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.webp 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.webp 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.jpeg 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.webp 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.webp 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.jpeg 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.webp 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.webp 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.jpeg 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.webp 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.webp 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.jpeg 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.webp 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.webp 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.jpeg 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.jpeg 800w" sizes="100vw"></picture></a>
     
   </nav>
 </footer>

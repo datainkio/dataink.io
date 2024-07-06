@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
   <!-- HEAD -->
@@ -58,7 +57,8 @@
   <!-- 7 deferred js  -->
   
   <!-- Template-defined js -->
-  
+  <script src="/assets/js/main.js"></script>
+
   <!-- 8 everything else: meta tags, icons, open graph etc.  -->
   <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
 <meta name="robots" content="index,follow" /><!-- All Search Engines -->
@@ -82,7 +82,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:description" content="Digital media and web design can effectively complement and extend the impact of documentary films, particularly those dealing with critical social and environmental issues. " />
 
-<meta property="og:image" content="https://dataink.io/assets/content/images/cache/oD51UfeVTB-800.webp" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/cache/ZWRBF2DlXP-800.webp" />
 <meta property="og:image:alt" content="They Killed Sister Dorothy" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="917" />
@@ -111,7 +111,7 @@
 	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
 	<!-- End Google Tag Manager -->
 
-  <body class="bg-black">
+  <body class="project">
     <!-- GTM -->
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
@@ -128,67 +128,73 @@
 
     </section>
     <!-- NAVIGATION -->
-    <div class="navbar bg-black absolute">
+    <div id="primary-nav" class="navbar z-50 px-0 lg:px-12">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
-        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
         
         <li>
-          <a href="/projects/">Work</a>
+          <a class="link-hover href="/projects/">Work</a>
         </li>
         
         <li>
-          <a href="/lessons-learned/">Lessons Learned</a>
+          <a class="link-hover href="/lessons-learned/">Lessons Learned</a>
         </li>
         
         <li>
-          <a href="/recognition/">Recognition</a>
+          <a class="link-hover href="/recognition/">Recognition</a>
         </li>
         
       </ul>
     </div>
     
-    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    <a href="/" class="font-bold text-xl">Russell S. Lebo</a>
     
 
   </div>
   <div class="navbar-center hidden lg:flex"></div>
   <div class="navbar-end">
-    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
       
       <li>
-        <a href="/projects/">Work</a>
+        <a class="link-hover " href="/projects/">Work</a>
       </li>
       
       <li>
-        <a href="/lessons-learned/">Lessons Learned</a>
+        <a class="link-hover " href="/lessons-learned/">Lessons Learned</a>
       </li>
       
       <li>
-        <a href="/recognition/">Recognition</a>
+        <a class="link-hover " href="/recognition/">Recognition</a>
       </li>
       
     </ul>
   </div>
 </div>
     <!-- CONTENT -->
-    <main tabindex=" -1" class="py-12">
-      <article>
+    <main tabindex=" -1" class="">
+      <article class="sm:col-span-full sm:grid sm:grid-cols-subgrid">
         
-<section class="bg-black p-12 pb-20">
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
-   
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/experiential">Experiential /</a>
+<section class="p-12 pb-0">
+  <div class="breadcrumbs">
+    <ul class="place-content-center md:place-content-start">
+      <li><a href="/projects/">Work</a></li>
+       
+      <li><a href="/projects/types/experiential">Experiential</a></li>
+      
+    </ul>
+  </div>
   
-  <h1 class="text-white font-black text-center md:text-left">They Killed Sister Dorothy</h1>
-  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight">Digital media and web design can effectively complement and extend the impact of documentary films, particularly those dealing with critical social and environmental issues. </p>
+
+  <h1>They Killed Sister Dorothy</h1>
+  <p id="introduction" class="subtitle">Digital media and web design can effectively complement and extend the impact of documentary films, particularly those dealing with critical social and environmental issues. </p>
   <!-- HERE BE PROJECT METADATA -->
-  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+  <section id="details" class="w-full md:grid md:grid-cols-6 py-12 gap-4">
     
 
 
@@ -196,12 +202,12 @@
 <!-- ROLE -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<figcaption class="">Roles</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Interaction Designer, </li>
+		<li class="inline-block ">Interaction Designer, </li>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Lead Developer</li>
+		<li class="inline-block ">Lead Developer</li>
 		
 	</ul>
 </figure>
@@ -209,12 +215,12 @@
 <!-- COMPANY -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<figcaption class="">Company/Client</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">HBO, </li>
+		<li class="inline-block ">HBO, </li>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bluecadet</li>
+		<li class="inline-block ">Bluecadet</li>
 		
 	</ul>
 </figure>
@@ -223,15 +229,15 @@
 
 <!-- ACTIITIES -->
 
-<figure class="py-2 col-span-full">
-<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<figure class="py-2 col-span-2">
+<figcaption class="">Activities</figcaption>
 <ul class="list-none pl-0">
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Interaction Design, </li>
+	<li class="inline-block ">Interaction Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Experience Design, </li>
+	<li class="inline-block ">Experience Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Development</li>
+	<li class="inline-block ">Development</li>
 	
 </ul>
 </figure>
@@ -240,13 +246,13 @@
 <!-- RECOGNITION -->
 
 <figure class="py-2 col-span-full">
-<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Recognition</figcaption>
+<figcaption class="">Recognition</figcaption>
 <ul class="list-none">
 	
-	<li class="font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">HOW Magazine:
+	<li class="">HOW Magazine:
 		Design Annual, </li>
 	
-	<li class="font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Communication Arts:
+	<li class="">Communication Arts:
 		WebPick of the Day</li>
 	
 </ul>
@@ -254,23 +260,22 @@
 
     <!-- EXPLORE -->
     
-    <a class="btn btn-outline btn-circle btn-primary w-24 h-24 text-lg italic " href="https://youtu.be/2mMZQyFg6VU">Viewâ¤´</a>
+    <a class="btn content-center btn-circle btn-primary w-24 h-24 text-lg italic block mx-auto col-end-auto " href="https://youtu.be/2mMZQyFg6VU">Viewâ¤´</a>
     
   </section>
 </section>
 
         
-<div class="md:grid md:grid-cols-2 bg-white">
   <!-- LEAD VIDEO -->
    
-  <section id="video" class="md:col-start-1">
+  <section id="video" class="mx-auto">
     
     <iframe class="w-full aspect-video" src="https://youtube.com/embed/2mMZQyFg6VU" title="They Killed Sister Dorothy" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe>
     
   </section>
   
   <!-- BODY COPY -->
-  <section id="body" class="p-12 prose md:col-start-1">
+  <section id="body" class="description mx-auto p-8 md:p-0 md:pt-8 border-t-2 border-neutral-900">
     
     <p>Bluecadet created the companion website for a documentary film about Sister Dorothy Stang, an environmental and social activist murdered in the Amazon rainforest. The website aimed to complement the filmâ€™s narrative and deepen public awareness of the environmental and social issues it presented.<br>
 As with all of my experiential work, my task was to ensure that the design framed the content without getting in the way of the story. The architecture, navigation, and flow were all designed to keep the user returning to these questions: Who was this woman? Why was she killed? And what will be done about it?</p>
@@ -285,18 +290,20 @@ The main challenge was to balance the portrayal of the horror of Sister Dorothyâ
     
   </section>
   <!-- NUGGETS -->
-  <section id="nuggets" class="prose p-12 md:col-start-1">
+  <section id="nuggets" class="prose mx-auto p-8 md:p-0">
     
-      <h2>Content Strategy and a Cinematic Experience</h2>
-      
-        <p>The website incorporated clips from the film as background for different sections. This design choice effectively conveyed the atmospheric tension of the story, enhancing the userâ€™s engagement with the content.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Content Strategy and a Cinematic Experience</h2>
+  
+    <p>The website incorporated clips from the film as background for different sections. This design choice effectively conveyed the atmospheric tension of the story, enhancing the userâ€™s engagement with the content.</p>
+
+  
+</div>
     
   </section>
   <!-- IMAGE GALLERIES -->
-  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+  <section id="examples" class="mx-auto">
     
       
       
@@ -306,45 +313,37 @@ The main challenge was to balance the portrayal of the horror of Sister Dorothyâ
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/oD51UfeVTB-400.webp 400w, /assets/content/images/cache/oD51UfeVTB-600.webp 600w, /assets/content/images/cache/oD51UfeVTB-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Sister Dorothy: The Prosecution" src="/assets/content/images/cache/oD51UfeVTB-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/oD51UfeVTB-400.jpeg 400w, /assets/content/images/cache/oD51UfeVTB-600.jpeg 600w, /assets/content/images/cache/oD51UfeVTB-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/ZWRBF2DlXP-400.webp 400w, /assets/content/images/cache/ZWRBF2DlXP-600.webp 600w, /assets/content/images/cache/ZWRBF2DlXP-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Sister Dorothy: The Prosecution" src="/assets/content/images/cache/ZWRBF2DlXP-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/ZWRBF2DlXP-400.jpeg 400w, /assets/content/images/cache/ZWRBF2DlXP-600.jpeg 600w, /assets/content/images/cache/ZWRBF2DlXP-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/lWDXAlKk3y-400.webp 400w, /assets/content/images/cache/lWDXAlKk3y-600.webp 600w, /assets/content/images/cache/lWDXAlKk3y-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Poster for the film, They Killed Sister Dorothy" src="/assets/content/images/cache/lWDXAlKk3y-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/lWDXAlKk3y-400.jpeg 400w, /assets/content/images/cache/lWDXAlKk3y-600.jpeg 600w, /assets/content/images/cache/lWDXAlKk3y-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/feSlale5qu-400.webp 400w, /assets/content/images/cache/feSlale5qu-600.webp 600w, /assets/content/images/cache/feSlale5qu-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Poster for the film, They Killed Sister Dorothy" src="/assets/content/images/cache/feSlale5qu-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/feSlale5qu-400.jpeg 400w, /assets/content/images/cache/feSlale5qu-600.jpeg 600w, /assets/content/images/cache/feSlale5qu-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/XcL-CxQ8jz-400.webp 400w, /assets/content/images/cache/XcL-CxQ8jz-600.webp 600w, /assets/content/images/cache/XcL-CxQ8jz-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A seamless multimedia experience" src="/assets/content/images/cache/XcL-CxQ8jz-400.jpeg" width="800" height="413" srcset="/assets/content/images/cache/XcL-CxQ8jz-400.jpeg 400w, /assets/content/images/cache/XcL-CxQ8jz-600.jpeg 600w, /assets/content/images/cache/XcL-CxQ8jz-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/CCb79CGKNv-400.webp 400w, /assets/content/images/cache/CCb79CGKNv-600.webp 600w, /assets/content/images/cache/CCb79CGKNv-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A seamless multimedia experience" src="/assets/content/images/cache/CCb79CGKNv-400.jpeg" width="800" height="413" srcset="/assets/content/images/cache/CCb79CGKNv-400.jpeg 400w, /assets/content/images/cache/CCb79CGKNv-600.jpeg 600w, /assets/content/images/cache/CCb79CGKNv-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/9EmJVKH4PK-400.webp 400w, /assets/content/images/cache/9EmJVKH4PK-600.webp 600w, /assets/content/images/cache/9EmJVKH4PK-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Highlighting the key players" src="/assets/content/images/cache/9EmJVKH4PK-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/9EmJVKH4PK-400.jpeg 400w, /assets/content/images/cache/9EmJVKH4PK-600.jpeg 600w, /assets/content/images/cache/9EmJVKH4PK-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/w_EX10HXi--400.webp 400w, /assets/content/images/cache/w_EX10HXi--600.webp 600w, /assets/content/images/cache/w_EX10HXi--800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Highlighting the key players" src="/assets/content/images/cache/w_EX10HXi--400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/w_EX10HXi--400.jpeg 400w, /assets/content/images/cache/w_EX10HXi--600.jpeg 600w, /assets/content/images/cache/w_EX10HXi--800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/GUEJ4O0JTY-400.webp 400w, /assets/content/images/cache/GUEJ4O0JTY-600.webp 600w, /assets/content/images/cache/GUEJ4O0JTY-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for The courtroom" src="/assets/content/images/cache/GUEJ4O0JTY-400.jpeg" width="800" height="521" srcset="/assets/content/images/cache/GUEJ4O0JTY-400.jpeg 400w, /assets/content/images/cache/GUEJ4O0JTY-600.jpeg 600w, /assets/content/images/cache/GUEJ4O0JTY-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/5h6pguJn6j-400.webp 400w, /assets/content/images/cache/5h6pguJn6j-600.webp 600w, /assets/content/images/cache/5h6pguJn6j-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for The courtroom" src="/assets/content/images/cache/5h6pguJn6j-400.jpeg" width="800" height="521" srcset="/assets/content/images/cache/5h6pguJn6j-400.jpeg 400w, /assets/content/images/cache/5h6pguJn6j-600.jpeg 600w, /assets/content/images/cache/5h6pguJn6j-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/h9Fy6eb_DZ-400.webp 400w, /assets/content/images/cache/h9Fy6eb_DZ-600.webp 600w, /assets/content/images/cache/h9Fy6eb_DZ-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Telling the larger story of a crime" src="/assets/content/images/cache/h9Fy6eb_DZ-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/h9Fy6eb_DZ-400.jpeg 400w, /assets/content/images/cache/h9Fy6eb_DZ-600.jpeg 600w, /assets/content/images/cache/h9Fy6eb_DZ-800.jpeg 800w" sizes="100vw"></picture>
-  
-  
-  
-  
-  
-  
-  
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/MZ4Q3wxIUm-400.webp 400w, /assets/content/images/cache/MZ4Q3wxIUm-600.webp 600w, /assets/content/images/cache/MZ4Q3wxIUm-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A seamless cinematic experience" src="/assets/content/images/cache/MZ4Q3wxIUm-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/MZ4Q3wxIUm-400.jpeg 400w, /assets/content/images/cache/MZ4Q3wxIUm-600.jpeg 600w, /assets/content/images/cache/MZ4Q3wxIUm-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/o34MpDMkYv-400.webp 400w, /assets/content/images/cache/o34MpDMkYv-600.webp 600w, /assets/content/images/cache/o34MpDMkYv-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Telling the larger story of a crime" src="/assets/content/images/cache/o34MpDMkYv-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/o34MpDMkYv-400.jpeg 400w, /assets/content/images/cache/o34MpDMkYv-600.jpeg 600w, /assets/content/images/cache/o34MpDMkYv-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -352,7 +351,7 @@ The main challenge was to balance the portrayal of the horror of Sister Dorothyâ
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/LHsvzd52No-400.webp 400w, /assets/content/images/cache/LHsvzd52No-600.webp 600w, /assets/content/images/cache/LHsvzd52No-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for The experience strategy involved embedding content throughout the design" src="/assets/content/images/cache/LHsvzd52No-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/LHsvzd52No-400.jpeg 400w, /assets/content/images/cache/LHsvzd52No-600.jpeg 600w, /assets/content/images/cache/LHsvzd52No-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/vS35jLxi7D-400.webp 400w, /assets/content/images/cache/vS35jLxi7D-600.webp 600w, /assets/content/images/cache/vS35jLxi7D-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A seamless cinematic experience" src="/assets/content/images/cache/vS35jLxi7D-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/vS35jLxi7D-400.jpeg 400w, /assets/content/images/cache/vS35jLxi7D-600.jpeg 600w, /assets/content/images/cache/vS35jLxi7D-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -360,25 +359,36 @@ The main challenge was to balance the portrayal of the horror of Sister Dorothyâ
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/sTYFJNG4HA-400.webp 400w, /assets/content/images/cache/sTYFJNG4HA-600.webp 600w, /assets/content/images/cache/sTYFJNG4HA-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Introducing the key themes and players in the film" src="/assets/content/images/cache/sTYFJNG4HA-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/sTYFJNG4HA-400.jpeg 400w, /assets/content/images/cache/sTYFJNG4HA-600.jpeg 600w, /assets/content/images/cache/sTYFJNG4HA-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/muu6Oj8X-j-400.webp 400w, /assets/content/images/cache/muu6Oj8X-j-600.webp 600w, /assets/content/images/cache/muu6Oj8X-j-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for The experience strategy involved embedding content throughout the design" src="/assets/content/images/cache/muu6Oj8X-j-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/muu6Oj8X-j-400.jpeg 400w, /assets/content/images/cache/muu6Oj8X-j-600.jpeg 600w, /assets/content/images/cache/muu6Oj8X-j-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/m-SwBB2u4G-400.webp 400w, /assets/content/images/cache/m-SwBB2u4G-600.webp 600w, /assets/content/images/cache/m-SwBB2u4G-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Introducing the key themes and players from the film" src="/assets/content/images/cache/m-SwBB2u4G-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/m-SwBB2u4G-400.jpeg 400w, /assets/content/images/cache/m-SwBB2u4G-600.jpeg 600w, /assets/content/images/cache/m-SwBB2u4G-800.jpeg 800w" sizes="100vw"></picture>
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/kFPVkzYfNP-400.webp 400w, /assets/content/images/cache/kFPVkzYfNP-600.webp 600w, /assets/content/images/cache/kFPVkzYfNP-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Introducing the key themes and players in the film" src="/assets/content/images/cache/kFPVkzYfNP-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/kFPVkzYfNP-400.jpeg 400w, /assets/content/images/cache/kFPVkzYfNP-600.jpeg 600w, /assets/content/images/cache/kFPVkzYfNP-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/q9Te2a1Wo6-400.webp 400w, /assets/content/images/cache/q9Te2a1Wo6-600.webp 600w, /assets/content/images/cache/q9Te2a1Wo6-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for More than just a release date" src="/assets/content/images/cache/q9Te2a1Wo6-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/q9Te2a1Wo6-400.jpeg 400w, /assets/content/images/cache/q9Te2a1Wo6-600.jpeg 600w, /assets/content/images/cache/q9Te2a1Wo6-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/vc0J8zziEM-400.webp 400w, /assets/content/images/cache/vc0J8zziEM-600.webp 600w, /assets/content/images/cache/vc0J8zziEM-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Introducing the key themes and players from the film" src="/assets/content/images/cache/vc0J8zziEM-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/vc0J8zziEM-400.jpeg 400w, /assets/content/images/cache/vc0J8zziEM-600.jpeg 600w, /assets/content/images/cache/vc0J8zziEM-800.jpeg 800w" sizes="100vw"></picture>
+  
+  
+  
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/Y5YrKsnDgu-400.webp 400w, /assets/content/images/cache/Y5YrKsnDgu-600.webp 600w, /assets/content/images/cache/Y5YrKsnDgu-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for More than just a release date" src="/assets/content/images/cache/Y5YrKsnDgu-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/Y5YrKsnDgu-400.jpeg 400w, /assets/content/images/cache/Y5YrKsnDgu-600.jpeg 600w, /assets/content/images/cache/Y5YrKsnDgu-800.jpeg 800w" sizes="100vw"></picture>
   
   
 </div>
 </a>
 <dialog id="gallery_recvxGN2wYf8RYr9M" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">âœ•</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="recvxGN2wYf8RYr9M_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -387,154 +397,164 @@ The main challenge was to balance the portrayal of the horror of Sister Dorothyâ
           <p class="prose"></p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">Sister Dorothy: The Prosecution</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/oD51UfeVTB-400.webp 400w, /assets/content/images/cache/oD51UfeVTB-600.webp 600w, /assets/content/images/cache/oD51UfeVTB-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Sister Dorothy: The Prosecution" src="/assets/content/images/cache/oD51UfeVTB-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/oD51UfeVTB-400.jpeg 400w, /assets/content/images/cache/oD51UfeVTB-600.jpeg 600w, /assets/content/images/cache/oD51UfeVTB-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/ZWRBF2DlXP-400.webp 400w, /assets/content/images/cache/ZWRBF2DlXP-600.webp 600w, /assets/content/images/cache/ZWRBF2DlXP-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Sister Dorothy: The Prosecution" src="/assets/content/images/cache/ZWRBF2DlXP-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/ZWRBF2DlXP-400.jpeg 400w, /assets/content/images/cache/ZWRBF2DlXP-600.jpeg 600w, /assets/content/images/cache/ZWRBF2DlXP-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item2" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">Poster for the film, They Killed Sister Dorothy</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/lWDXAlKk3y-400.webp 400w, /assets/content/images/cache/lWDXAlKk3y-600.webp 600w, /assets/content/images/cache/lWDXAlKk3y-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Poster for the film, They Killed Sister Dorothy" src="/assets/content/images/cache/lWDXAlKk3y-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/lWDXAlKk3y-400.jpeg 400w, /assets/content/images/cache/lWDXAlKk3y-600.jpeg 600w, /assets/content/images/cache/lWDXAlKk3y-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/feSlale5qu-400.webp 400w, /assets/content/images/cache/feSlale5qu-600.webp 600w, /assets/content/images/cache/feSlale5qu-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Poster for the film, They Killed Sister Dorothy" src="/assets/content/images/cache/feSlale5qu-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/feSlale5qu-400.jpeg 400w, /assets/content/images/cache/feSlale5qu-600.jpeg 600w, /assets/content/images/cache/feSlale5qu-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item3" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">A seamless multimedia experience</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/XcL-CxQ8jz-400.webp 400w, /assets/content/images/cache/XcL-CxQ8jz-600.webp 600w, /assets/content/images/cache/XcL-CxQ8jz-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A seamless multimedia experience" src="/assets/content/images/cache/XcL-CxQ8jz-400.jpeg" width="800" height="413" srcset="/assets/content/images/cache/XcL-CxQ8jz-400.jpeg 400w, /assets/content/images/cache/XcL-CxQ8jz-600.jpeg 600w, /assets/content/images/cache/XcL-CxQ8jz-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/CCb79CGKNv-400.webp 400w, /assets/content/images/cache/CCb79CGKNv-600.webp 600w, /assets/content/images/cache/CCb79CGKNv-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A seamless multimedia experience" src="/assets/content/images/cache/CCb79CGKNv-400.jpeg" width="800" height="413" srcset="/assets/content/images/cache/CCb79CGKNv-400.jpeg 400w, /assets/content/images/cache/CCb79CGKNv-600.jpeg 600w, /assets/content/images/cache/CCb79CGKNv-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item4" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">Highlighting the key players</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/9EmJVKH4PK-400.webp 400w, /assets/content/images/cache/9EmJVKH4PK-600.webp 600w, /assets/content/images/cache/9EmJVKH4PK-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Highlighting the key players" src="/assets/content/images/cache/9EmJVKH4PK-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/9EmJVKH4PK-400.jpeg 400w, /assets/content/images/cache/9EmJVKH4PK-600.jpeg 600w, /assets/content/images/cache/9EmJVKH4PK-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/w_EX10HXi--400.webp 400w, /assets/content/images/cache/w_EX10HXi--600.webp 600w, /assets/content/images/cache/w_EX10HXi--800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Highlighting the key players" src="/assets/content/images/cache/w_EX10HXi--400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/w_EX10HXi--400.jpeg 400w, /assets/content/images/cache/w_EX10HXi--600.jpeg 600w, /assets/content/images/cache/w_EX10HXi--800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item5" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">The courtroom</h3>
           <p class="prose">It was never in question who pulled the trigger and killed Sister Dorothy. The question was who told them to do it.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/GUEJ4O0JTY-400.webp 400w, /assets/content/images/cache/GUEJ4O0JTY-600.webp 600w, /assets/content/images/cache/GUEJ4O0JTY-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for The courtroom" src="/assets/content/images/cache/GUEJ4O0JTY-400.jpeg" width="800" height="521" srcset="/assets/content/images/cache/GUEJ4O0JTY-400.jpeg 400w, /assets/content/images/cache/GUEJ4O0JTY-600.jpeg 600w, /assets/content/images/cache/GUEJ4O0JTY-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/5h6pguJn6j-400.webp 400w, /assets/content/images/cache/5h6pguJn6j-600.webp 600w, /assets/content/images/cache/5h6pguJn6j-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for The courtroom" src="/assets/content/images/cache/5h6pguJn6j-400.jpeg" width="800" height="521" srcset="/assets/content/images/cache/5h6pguJn6j-400.jpeg 400w, /assets/content/images/cache/5h6pguJn6j-600.jpeg 600w, /assets/content/images/cache/5h6pguJn6j-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item6" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">Telling the larger story of a crime</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/h9Fy6eb_DZ-400.webp 400w, /assets/content/images/cache/h9Fy6eb_DZ-600.webp 600w, /assets/content/images/cache/h9Fy6eb_DZ-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Telling the larger story of a crime" src="/assets/content/images/cache/h9Fy6eb_DZ-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/h9Fy6eb_DZ-400.jpeg 400w, /assets/content/images/cache/h9Fy6eb_DZ-600.jpeg 600w, /assets/content/images/cache/h9Fy6eb_DZ-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/o34MpDMkYv-400.webp 400w, /assets/content/images/cache/o34MpDMkYv-600.webp 600w, /assets/content/images/cache/o34MpDMkYv-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Telling the larger story of a crime" src="/assets/content/images/cache/o34MpDMkYv-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/o34MpDMkYv-400.jpeg 400w, /assets/content/images/cache/o34MpDMkYv-600.jpeg 600w, /assets/content/images/cache/o34MpDMkYv-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item7" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">A seamless cinematic experience</h3>
           <p class="prose">The website combined a wealth of information and media to create a rich, memorable experience for visitors.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/MZ4Q3wxIUm-400.webp 400w, /assets/content/images/cache/MZ4Q3wxIUm-600.webp 600w, /assets/content/images/cache/MZ4Q3wxIUm-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A seamless cinematic experience" src="/assets/content/images/cache/MZ4Q3wxIUm-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/MZ4Q3wxIUm-400.jpeg 400w, /assets/content/images/cache/MZ4Q3wxIUm-600.jpeg 600w, /assets/content/images/cache/MZ4Q3wxIUm-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/vS35jLxi7D-400.webp 400w, /assets/content/images/cache/vS35jLxi7D-600.webp 600w, /assets/content/images/cache/vS35jLxi7D-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A seamless cinematic experience" src="/assets/content/images/cache/vS35jLxi7D-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/vS35jLxi7D-400.jpeg 400w, /assets/content/images/cache/vS35jLxi7D-600.jpeg 600w, /assets/content/images/cache/vS35jLxi7D-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item8" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">The experience strategy involved embedding content throughout the design</h3>
           <p class="prose">The design strategy focused on using video content as a key design element.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/LHsvzd52No-400.webp 400w, /assets/content/images/cache/LHsvzd52No-600.webp 600w, /assets/content/images/cache/LHsvzd52No-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for The experience strategy involved embedding content throughout the design" src="/assets/content/images/cache/LHsvzd52No-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/LHsvzd52No-400.jpeg 400w, /assets/content/images/cache/LHsvzd52No-600.jpeg 600w, /assets/content/images/cache/LHsvzd52No-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/muu6Oj8X-j-400.webp 400w, /assets/content/images/cache/muu6Oj8X-j-600.webp 600w, /assets/content/images/cache/muu6Oj8X-j-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for The experience strategy involved embedding content throughout the design" src="/assets/content/images/cache/muu6Oj8X-j-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/muu6Oj8X-j-400.jpeg 400w, /assets/content/images/cache/muu6Oj8X-j-600.jpeg 600w, /assets/content/images/cache/muu6Oj8X-j-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item9" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">Introducing the key themes and players in the film</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/sTYFJNG4HA-400.webp 400w, /assets/content/images/cache/sTYFJNG4HA-600.webp 600w, /assets/content/images/cache/sTYFJNG4HA-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Introducing the key themes and players in the film" src="/assets/content/images/cache/sTYFJNG4HA-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/sTYFJNG4HA-400.jpeg 400w, /assets/content/images/cache/sTYFJNG4HA-600.jpeg 600w, /assets/content/images/cache/sTYFJNG4HA-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/kFPVkzYfNP-400.webp 400w, /assets/content/images/cache/kFPVkzYfNP-600.webp 600w, /assets/content/images/cache/kFPVkzYfNP-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Introducing the key themes and players in the film" src="/assets/content/images/cache/kFPVkzYfNP-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/kFPVkzYfNP-400.jpeg 400w, /assets/content/images/cache/kFPVkzYfNP-600.jpeg 600w, /assets/content/images/cache/kFPVkzYfNP-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item10" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">Introducing the key themes and players from the film</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/m-SwBB2u4G-400.webp 400w, /assets/content/images/cache/m-SwBB2u4G-600.webp 600w, /assets/content/images/cache/m-SwBB2u4G-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Introducing the key themes and players from the film" src="/assets/content/images/cache/m-SwBB2u4G-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/m-SwBB2u4G-400.jpeg 400w, /assets/content/images/cache/m-SwBB2u4G-600.jpeg 600w, /assets/content/images/cache/m-SwBB2u4G-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/vc0J8zziEM-400.webp 400w, /assets/content/images/cache/vc0J8zziEM-600.webp 600w, /assets/content/images/cache/vc0J8zziEM-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Introducing the key themes and players from the film" src="/assets/content/images/cache/vc0J8zziEM-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/vc0J8zziEM-400.jpeg 400w, /assets/content/images/cache/vc0J8zziEM-600.jpeg 600w, /assets/content/images/cache/vc0J8zziEM-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recvxGN2wYf8RYr9M_item11" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>They Killed Sister Dorothy</h2>
           <h3 class="text-xl">More than just a release date</h3>
           <p class="prose">The site succeeded because the design strategy focused on extending the cinematic experience into an interactive form.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/q9Te2a1Wo6-400.webp 400w, /assets/content/images/cache/q9Te2a1Wo6-600.webp 600w, /assets/content/images/cache/q9Te2a1Wo6-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for More than just a release date" src="/assets/content/images/cache/q9Te2a1Wo6-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/q9Te2a1Wo6-400.jpeg 400w, /assets/content/images/cache/q9Te2a1Wo6-600.jpeg 600w, /assets/content/images/cache/q9Te2a1Wo6-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/Y5YrKsnDgu-400.webp 400w, /assets/content/images/cache/Y5YrKsnDgu-600.webp 600w, /assets/content/images/cache/Y5YrKsnDgu-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for More than just a release date" src="/assets/content/images/cache/Y5YrKsnDgu-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/Y5YrKsnDgu-400.jpeg 400w, /assets/content/images/cache/Y5YrKsnDgu-600.jpeg 600w, /assets/content/images/cache/Y5YrKsnDgu-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
@@ -614,15 +634,11 @@ The main challenge was to balance the portrayal of the horror of Sister Dorothyâ
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
     
   </section>
-</div>
 
       </article>
     </main>
@@ -630,34 +646,34 @@ The main challenge was to balance the portrayal of the horror of Sister Dorothyâ
     
 
 
-<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
-  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other Experiential</figcaption>
+<figure id="related" class="p-4 sm:p-12 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <figcaption class="text-3xl sm:text-4xl leading-none font-thin mb-8 col-span-full divider divider-primary">Other Experiential</figcaption>
   
   
   
   
-<a href="/projects/live-hope-love/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/live-hope-love/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/b4f2jvP1Bf-400.webp 400w, /assets/content/images/cache/b4f2jvP1Bf-600.webp 600w, /assets/content/images/cache/b4f2jvP1Bf-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Live Hope Love" src="/assets/content/images/cache/b4f2jvP1Bf-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/b4f2jvP1Bf-400.jpeg 400w, /assets/content/images/cache/b4f2jvP1Bf-600.jpeg 600w, /assets/content/images/cache/b4f2jvP1Bf-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/EUvGNehYw--400.webp 400w, /assets/content/images/cache/EUvGNehYw--600.webp 600w, /assets/content/images/cache/EUvGNehYw--800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Live Hope Love" src="/assets/content/images/cache/EUvGNehYw--400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/EUvGNehYw--400.jpeg 400w, /assets/content/images/cache/EUvGNehYw--600.jpeg 600w, /assets/content/images/cache/EUvGNehYw--800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Live, Hope, Love</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Putting a human face on HIV/AIDS</p>
+    <h3 class="card-title">Live, Hope, Love</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Putting a human face on HIV/AIDS</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/james-zabiela/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/james-zabiela/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/zQVdzOkbky-240.webp 240w" sizes="100vw"><img class="m-0"  alt="Thumbnail for james-zabiela_0.jpg" src="/assets/content/images/cache/zQVdzOkbky-240.jpeg" width="240" height="162"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/XnqLoMrlTg-240.webp 240w" sizes="100vw"><img class="m-0"  alt="Thumbnail for james-zabiela_0.jpg" src="/assets/content/images/cache/XnqLoMrlTg-240.jpeg" width="240" height="162"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Connecting a World-Famous DJ with His Fans</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bluecadet crafted an award-winning website for DJ James Zabiela, reflecting his live performance energy and technological savvy, while fostering strong fan engagement and easy on-the-go updates.</p>
+    <h3 class="card-title">Connecting a World-Famous DJ with His Fans</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bluecadet crafted an award-winning website for DJ James Zabiela, reflecting his live performance energy and technological savvy, while fostering strong fan engagement and easy on-the-go updates.</p>
   </div>
 </a>
   
@@ -666,28 +682,42 @@ The main challenge was to balance the portrayal of the horror of Sister Dorothyâ
   
   
   
-<a href="/projects/lucian-perkins/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/lucian-perkins/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/HPOQmnPwhZ-400.webp 400w, /assets/content/images/cache/HPOQmnPwhZ-600.webp 600w, /assets/content/images/cache/HPOQmnPwhZ-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Lucian Perkins" src="/assets/content/images/cache/HPOQmnPwhZ-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/HPOQmnPwhZ-400.jpeg 400w, /assets/content/images/cache/HPOQmnPwhZ-600.jpeg 600w, /assets/content/images/cache/HPOQmnPwhZ-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/IPgGXE-ZQP-400.webp 400w, /assets/content/images/cache/IPgGXE-ZQP-600.webp 600w, /assets/content/images/cache/IPgGXE-ZQP-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Lucian Perkins" src="/assets/content/images/cache/IPgGXE-ZQP-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/IPgGXE-ZQP-400.jpeg 400w, /assets/content/images/cache/IPgGXE-ZQP-600.jpeg 600w, /assets/content/images/cache/IPgGXE-ZQP-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Lucian Perkins</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Pulitzer-winning Lucian Perkins captures profound empathy in his photos, from war zones to fashion shows. My design framed his work cinematically, inviting exploration while letting the photos speak for themselves.</p>
+    <h3 class="card-title">Lucian Perkins</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Pulitzer-winning Lucian Perkins captures profound empathy in his photos, from war zones to fashion shows. My design framed his work cinematically, inviting exploration while letting the photos speak for themselves.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/robert-lougheed/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/robert-lougheed/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/3wj0dFi1Ie-400.webp 400w, /assets/content/images/cache/3wj0dFi1Ie-600.webp 600w, /assets/content/images/cache/3wj0dFi1Ie-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Robert Lougheed" src="/assets/content/images/cache/3wj0dFi1Ie-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/3wj0dFi1Ie-400.jpeg 400w, /assets/content/images/cache/3wj0dFi1Ie-600.jpeg 600w, /assets/content/images/cache/3wj0dFi1Ie-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/HEqCKfQcRx-400.webp 400w, /assets/content/images/cache/HEqCKfQcRx-600.webp 600w, /assets/content/images/cache/HEqCKfQcRx-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Robert Lougheed" src="/assets/content/images/cache/HEqCKfQcRx-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/HEqCKfQcRx-400.jpeg 400w, /assets/content/images/cache/HEqCKfQcRx-600.jpeg 600w, /assets/content/images/cache/HEqCKfQcRx-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">An Artist&#39;s Process</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bluecadet&#39;s interactive website for Robert Lougheed offers an immersive exploration of his field painting philosophy, creating an engaging digital experience that mirrors his artistic journey and beliefs.</p>
+    <h3 class="card-title">An Artist&#39;s Process</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bluecadet&#39;s interactive website for Robert Lougheed offers an immersive exploration of his field painting philosophy, creating an engaging digital experience that mirrors his artistic journey and beliefs.</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/financial-literacy/" class="card p-0 my-4">
+  
+  <figure class="h-64 md:h-48">
+    
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title">Building Financial Literacy</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bluecadet&#39;s innovative campaign for CUNA used engaging characters and interactive games to promote financial literacy, combining humor and technology to make fair banking practices accessible and fun.</p>
   </div>
 </a>
   
@@ -705,21 +735,21 @@ The main challenge was to balance the portrayal of the horror of Sister Dorothyâ
   <!-- SOCIAL -->
   <nav id="social" class="flex flex-row gap-2 max-w-96">
     
-    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.webp 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.webp 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.jpeg 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.webp 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.webp 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.jpeg 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.webp 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.webp 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.jpeg 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.webp 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.webp 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.jpeg 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.webp 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.webp 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.jpeg 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.webp 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.webp 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.jpeg 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.webp 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.webp 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.jpeg 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.webp 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.webp 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.jpeg 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.jpeg 800w" sizes="100vw"></picture></a>
     
   </nav>
 </footer>

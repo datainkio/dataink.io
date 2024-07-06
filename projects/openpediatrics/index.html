@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
   <!-- HEAD -->
@@ -58,7 +57,8 @@
   <!-- 7 deferred js  -->
   
   <!-- Template-defined js -->
-  
+  <script src="/assets/js/main.js"></script>
+
   <!-- 8 everything else: meta tags, icons, open graph etc.  -->
   <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
 <meta name="robots" content="index,follow" /><!-- All Search Engines -->
@@ -82,7 +82,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:description" content="OPENPediatrics, developed by IBM and Children&#39;s Hospital Boston, is a transformative open-source platform enhancing global pediatric care by sharing best practices through multimedia and fostering a connected medical community." />
 
-<meta property="og:image" content="https://dataink.io/assets/content/images/cache/JB3X-i1bFK-800.webp" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/cache/dC5PuT1dfg-800.webp" />
 <meta property="og:image:alt" content="Democratizing Access to Medical Expertise" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1024" />
@@ -111,7 +111,7 @@
 	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
 	<!-- End Google Tag Manager -->
 
-  <body class="bg-black">
+  <body class="project">
     <!-- GTM -->
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
@@ -128,67 +128,73 @@
 
     </section>
     <!-- NAVIGATION -->
-    <div class="navbar bg-black absolute">
+    <div id="primary-nav" class="navbar z-50 px-0 lg:px-12">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
-        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
         
         <li>
-          <a href="/projects/">Work</a>
+          <a class="link-hover href="/projects/">Work</a>
         </li>
         
         <li>
-          <a href="/lessons-learned/">Lessons Learned</a>
+          <a class="link-hover href="/lessons-learned/">Lessons Learned</a>
         </li>
         
         <li>
-          <a href="/recognition/">Recognition</a>
+          <a class="link-hover href="/recognition/">Recognition</a>
         </li>
         
       </ul>
     </div>
     
-    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    <a href="/" class="font-bold text-xl">Russell S. Lebo</a>
     
 
   </div>
   <div class="navbar-center hidden lg:flex"></div>
   <div class="navbar-end">
-    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
       
       <li>
-        <a href="/projects/">Work</a>
+        <a class="link-hover " href="/projects/">Work</a>
       </li>
       
       <li>
-        <a href="/lessons-learned/">Lessons Learned</a>
+        <a class="link-hover " href="/lessons-learned/">Lessons Learned</a>
       </li>
       
       <li>
-        <a href="/recognition/">Recognition</a>
+        <a class="link-hover " href="/recognition/">Recognition</a>
       </li>
       
     </ul>
   </div>
 </div>
     <!-- CONTENT -->
-    <main tabindex=" -1" class="py-12">
-      <article>
+    <main tabindex=" -1" class="">
+      <article class="sm:col-span-full sm:grid sm:grid-cols-subgrid">
         
-<section class="bg-black p-12 pb-20">
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
-   
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/health-and-science">Health &amp; Science /</a>
+<section class="p-12 pb-0">
+  <div class="breadcrumbs">
+    <ul class="place-content-center md:place-content-start">
+      <li><a href="/projects/">Work</a></li>
+       
+      <li><a href="/projects/types/health-and-science">Health &amp; Science</a></li>
+      
+    </ul>
+  </div>
   
-  <h1 class="text-white font-black text-center md:text-left">Democratizing Access to Medical Expertise</h1>
-  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight">OPENPediatrics, developed by IBM and Children&#39;s Hospital Boston, is a transformative open-source platform enhancing global pediatric care by sharing best practices through multimedia and fostering a connected medical community.</p>
+
+  <h1>Democratizing Access to Medical Expertise</h1>
+  <p id="introduction" class="subtitle">OPENPediatrics, developed by IBM and Children&#39;s Hospital Boston, is a transformative open-source platform enhancing global pediatric care by sharing best practices through multimedia and fostering a connected medical community.</p>
   <!-- HERE BE PROJECT METADATA -->
-  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+  <section id="details" class="w-full md:grid md:grid-cols-6 py-12 gap-4">
     
 
 
@@ -196,12 +202,12 @@
 <!-- ROLE -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<figcaption class="">Roles</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Rich Internet Application Developer, </li>
+		<li class="inline-block ">Rich Internet Application Developer, </li>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Experience Designer</li>
+		<li class="inline-block ">Experience Designer</li>
 		
 	</ul>
 </figure>
@@ -209,12 +215,12 @@
 <!-- COMPANY -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<figcaption class="">Company/Client</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Children’s Hospital Boston, </li>
+		<li class="inline-block ">Children’s Hospital Boston, </li>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">IBM Interactive</li>
+		<li class="inline-block ">IBM Interactive</li>
 		
 	</ul>
 </figure>
@@ -223,19 +229,19 @@
 
 <!-- ACTIITIES -->
 
-<figure class="py-2 col-span-full">
-<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<figure class="py-2 col-span-2">
+<figcaption class="">Activities</figcaption>
 <ul class="list-none pl-0">
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Experience Design, </li>
+	<li class="inline-block ">Experience Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Interaction Design, </li>
+	<li class="inline-block ">Interaction Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Knowledge Management, </li>
+	<li class="inline-block ">Knowledge Management, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Human-Centered Research, </li>
+	<li class="inline-block ">Human-Centered Research, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Information Architecture</li>
+	<li class="inline-block ">Information Architecture</li>
 	
 </ul>
 </figure>
@@ -244,10 +250,10 @@
 <!-- RECOGNITION -->
 
 <figure class="py-2 col-span-full">
-<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Recognition</figcaption>
+<figcaption class="">Recognition</figcaption>
 <ul class="list-none">
 	
-	<li class="font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">MITX Innovation Award:
+	<li class="">MITX Innovation Award:
 		eLearning</li>
 	
 </ul>
@@ -255,17 +261,16 @@
 
     <!-- EXPLORE -->
     
-    <a class="btn btn-outline btn-circle btn-primary w-24 h-24 text-lg italic " href="https://www.openpediatrics.org/">View⤴</a>
+    <a class="btn content-center btn-circle btn-primary w-24 h-24 text-lg italic block mx-auto col-end-auto " href="https://www.openpediatrics.org/">View⤴</a>
     
   </section>
 </section>
 
         
-<div class="md:grid md:grid-cols-2 bg-white">
   <!-- LEAD VIDEO -->
    
   <!-- BODY COPY -->
-  <section id="body" class="p-12 prose md:col-start-1">
+  <section id="body" class="description mx-auto p-8 md:p-0 md:pt-8 border-t-2 border-neutral-900">
     
     <p>OPENPediatrics is a groundbreaking open-source platform developed through a collaboration between IBM and Children’s Hospital Boston. Aimed at addressing the global shortage of medical expertise in pediatric care, OPENPediatrics facilitates the sharing of best practices for treating critically ill children among healthcare providers worldwide.<br>
 The project embodies a significant leap forward in medical education and knowledge dissemination, underscoring the potential of digital platforms to impact healthcare outcomes positively and foster a more interconnected and informed medical community.</p>
@@ -273,60 +278,74 @@ The project embodies a significant leap forward in medical education and knowled
     
   </section>
   <!-- NUGGETS -->
-  <section id="nuggets" class="prose p-12 md:col-start-1">
+  <section id="nuggets" class="prose mx-auto p-8 md:p-0">
     
-      <h2>Global Medical Expertise Bottleneck</h2>
-      
-        <p>The initiative was born out of a critical need to expand access to specialized training in pediatric care, historically confined to a few teaching hospitals, thereby limiting the spread of vital medical knowledge.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Global Medical Expertise Bottleneck</h2>
+  
+    <p>The initiative was born out of a critical need to expand access to specialized training in pediatric care, historically confined to a few teaching hospitals, thereby limiting the spread of vital medical knowledge.</p>
+
+  
+</div>
     
-      <h2>Open-Source and Peer-Reviewed Platform</h2>
-      
-        <p>OPENPediatrics is a not-for-profit, peer-reviewed platform that offers healthcare providers worldwide access to essential information on pediatric care, aiming to democratize medical knowledge and training.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Open-Source and Peer-Reviewed Platform</h2>
+  
+    <p>OPENPediatrics is a not-for-profit, peer-reviewed platform that offers healthcare providers worldwide access to essential information on pediatric care, aiming to democratize medical knowledge and training.</p>
+
+  
+</div>
     
-      <h2>Prototype Development</h2>
-      
-        <p>The prototype, developed in collaboration with medical professionals, proved the project’s feasibility. It focused on three core values: providing data-driven decision-making tools, structured advanced training, and access to a global community of healthcare providers.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Prototype Development</h2>
+  
+    <p>The prototype, developed in collaboration with medical professionals, proved the project’s feasibility. It focused on three core values: providing data-driven decision-making tools, structured advanced training, and access to a global community of healthcare providers.</p>
+
+  
+</div>
     
-      <h2>Information Accessibility</h2>
-      
-        <p>Recognizing the urgency of doctors’ information needs, the platform offers instant access to tools, videos, calculators, and summaries, ensuring healthcare providers can quickly find and apply critical information.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Information Accessibility</h2>
+  
+    <p>Recognizing the urgency of doctors’ information needs, the platform offers instant access to tools, videos, calculators, and summaries, ensuring healthcare providers can quickly find and apply critical information.</p>
+
+  
+</div>
     
-      <h2>Guided Learning and Training</h2>
-      
-        <p>The platform addresses the lack of advanced training resources in many parts of the world by offering structured education programs in various subspecialties, beginning with critical care</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Guided Learning and Training</h2>
+  
+    <p>The platform addresses the lack of advanced training resources in many parts of the world by offering structured education programs in various subspecialties, beginning with critical care</p>
+
+  
+</div>
     
-      <h2>Fostering a Global Community</h2>
-      
-        <p>OPENPediatrics not only facilitates access to information but also promotes a culture of knowledge sharing among healthcare providers. Features like training video commentaries and tool recommendations encourage collaboration and dialogue.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Fostering a Global Community</h2>
+  
+    <p>OPENPediatrics not only facilitates access to information but also promotes a culture of knowledge sharing among healthcare providers. Features like training video commentaries and tool recommendations encourage collaboration and dialogue.</p>
+
+  
+</div>
     
-      <h2>Overcoming barriers to medical expertise</h2>
-      
-        <p>OPENPediatrics exemplifies the transformative power of technology in overcoming traditional barriers to medical education and expertise sharing. By leveraging the collaborative strengths of IBM’s technology and the clinical insights of Children’s Hospital Boston, the platform offers a scalable solution to enhance pediatric care globally.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Overcoming barriers to medical expertise</h2>
+  
+    <p>OPENPediatrics exemplifies the transformative power of technology in overcoming traditional barriers to medical education and expertise sharing. By leveraging the collaborative strengths of IBM’s technology and the clinical insights of Children’s Hospital Boston, the platform offers a scalable solution to enhance pediatric care globally.</p>
+
+  
+</div>
     
   </section>
   <!-- IMAGE GALLERIES -->
-  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+  <section id="examples" class="mx-auto">
     
       
       
@@ -338,31 +357,31 @@ The project embodies a significant leap forward in medical education and knowled
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/pKMD2hMyPM-400.webp 400w, /assets/content/images/cache/pKMD2hMyPM-600.webp 600w, /assets/content/images/cache/pKMD2hMyPM-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Guided Learning Pathways 03" src="/assets/content/images/cache/pKMD2hMyPM-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/pKMD2hMyPM-400.jpeg 400w, /assets/content/images/cache/pKMD2hMyPM-600.jpeg 600w, /assets/content/images/cache/pKMD2hMyPM-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/n5s58lgkGS-400.webp 400w, /assets/content/images/cache/n5s58lgkGS-600.webp 600w, /assets/content/images/cache/n5s58lgkGS-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Guided Learning Pathways 03" src="/assets/content/images/cache/n5s58lgkGS-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/n5s58lgkGS-400.jpeg 400w, /assets/content/images/cache/n5s58lgkGS-600.jpeg 600w, /assets/content/images/cache/n5s58lgkGS-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/nefwsrcguD-400.webp 400w, /assets/content/images/cache/nefwsrcguD-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Information on Demand" src="/assets/content/images/cache/nefwsrcguD-400.jpeg" width="600" height="458" srcset="/assets/content/images/cache/nefwsrcguD-400.jpeg 400w, /assets/content/images/cache/nefwsrcguD-600.jpeg 600w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/sJuXbPRCsX-400.webp 400w, /assets/content/images/cache/sJuXbPRCsX-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Information on Demand" src="/assets/content/images/cache/sJuXbPRCsX-400.jpeg" width="600" height="458" srcset="/assets/content/images/cache/sJuXbPRCsX-400.jpeg 400w, /assets/content/images/cache/sJuXbPRCsX-600.jpeg 600w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/1vjWQGu2OD-400.webp 400w, /assets/content/images/cache/1vjWQGu2OD-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Guided Learning Pathways 01" src="/assets/content/images/cache/1vjWQGu2OD-400.jpeg" width="600" height="464" srcset="/assets/content/images/cache/1vjWQGu2OD-400.jpeg 400w, /assets/content/images/cache/1vjWQGu2OD-600.jpeg 600w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/Vgv2PEs_MI-400.webp 400w, /assets/content/images/cache/Vgv2PEs_MI-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Guided Learning Pathways 01" src="/assets/content/images/cache/Vgv2PEs_MI-400.jpeg" width="600" height="464" srcset="/assets/content/images/cache/Vgv2PEs_MI-400.jpeg 400w, /assets/content/images/cache/Vgv2PEs_MI-600.jpeg 600w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/kvzMd1veQw-400.webp 400w, /assets/content/images/cache/kvzMd1veQw-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Information on Demand 02" src="/assets/content/images/cache/kvzMd1veQw-400.jpeg" width="600" height="460" srcset="/assets/content/images/cache/kvzMd1veQw-400.jpeg 400w, /assets/content/images/cache/kvzMd1veQw-600.jpeg 600w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/yUkbtHFMEP-400.webp 400w, /assets/content/images/cache/yUkbtHFMEP-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Information on Demand 02" src="/assets/content/images/cache/yUkbtHFMEP-400.jpeg" width="600" height="460" srcset="/assets/content/images/cache/yUkbtHFMEP-400.jpeg 400w, /assets/content/images/cache/yUkbtHFMEP-600.jpeg 600w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/5imuFZYK5c-400.webp 400w, /assets/content/images/cache/5imuFZYK5c-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Guided Learning Pathways 02" src="/assets/content/images/cache/5imuFZYK5c-400.jpeg" width="600" height="463" srcset="/assets/content/images/cache/5imuFZYK5c-400.jpeg 400w, /assets/content/images/cache/5imuFZYK5c-600.jpeg 600w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/J4svCcNgnA-400.webp 400w, /assets/content/images/cache/J4svCcNgnA-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Guided Learning Pathways 02" src="/assets/content/images/cache/J4svCcNgnA-400.jpeg" width="600" height="463" srcset="/assets/content/images/cache/J4svCcNgnA-400.jpeg 400w, /assets/content/images/cache/J4svCcNgnA-600.jpeg 600w" sizes="100vw"></picture>
   
   
   
@@ -370,19 +389,22 @@ The project embodies a significant leap forward in medical education and knowled
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/L82MUf2WkG-400.webp 400w, /assets/content/images/cache/L82MUf2WkG-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Information on Demand 01" src="/assets/content/images/cache/L82MUf2WkG-400.jpeg" width="600" height="463" srcset="/assets/content/images/cache/L82MUf2WkG-400.jpeg 400w, /assets/content/images/cache/L82MUf2WkG-600.jpeg 600w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/FUHRi7JEVi-400.webp 400w, /assets/content/images/cache/FUHRi7JEVi-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Information on Demand 01" src="/assets/content/images/cache/FUHRi7JEVi-400.jpeg" width="600" height="463" srcset="/assets/content/images/cache/FUHRi7JEVi-400.jpeg 400w, /assets/content/images/cache/FUHRi7JEVi-600.jpeg 600w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/peMgqbtCfW-400.webp 400w, /assets/content/images/cache/peMgqbtCfW-578.webp 578w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Landing View" src="/assets/content/images/cache/peMgqbtCfW-400.jpeg" width="578" height="445" srcset="/assets/content/images/cache/peMgqbtCfW-400.jpeg 400w, /assets/content/images/cache/peMgqbtCfW-578.jpeg 578w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/6QZzqdYACp-400.webp 400w, /assets/content/images/cache/6QZzqdYACp-578.webp 578w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Landing View" src="/assets/content/images/cache/6QZzqdYACp-400.jpeg" width="578" height="445" srcset="/assets/content/images/cache/6QZzqdYACp-400.jpeg 400w, /assets/content/images/cache/6QZzqdYACp-578.jpeg 578w" sizes="100vw"></picture>
   
   
 </div>
 </a>
 <dialog id="gallery_rec2rOpBBC1ZVc3xg" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="rec2rOpBBC1ZVc3xg_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -391,98 +413,104 @@ The project embodies a significant leap forward in medical education and knowled
           <p class="prose"></p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
       
       
       <figure id="rec2rOpBBC1ZVc3xg_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OPENPediatrics</h2>
           <h3 class="text-xl">Landing View</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/peMgqbtCfW-400.webp 400w, /assets/content/images/cache/peMgqbtCfW-578.webp 578w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Landing View" src="/assets/content/images/cache/peMgqbtCfW-400.jpeg" width="578" height="445" srcset="/assets/content/images/cache/peMgqbtCfW-400.jpeg 400w, /assets/content/images/cache/peMgqbtCfW-578.jpeg 578w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/6QZzqdYACp-400.webp 400w, /assets/content/images/cache/6QZzqdYACp-578.webp 578w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Landing View" src="/assets/content/images/cache/6QZzqdYACp-400.jpeg" width="578" height="445" srcset="/assets/content/images/cache/6QZzqdYACp-400.jpeg 400w, /assets/content/images/cache/6QZzqdYACp-578.jpeg 578w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec2rOpBBC1ZVc3xg_item2" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OPENPediatrics</h2>
           <h3 class="text-xl">Information on Demand 01</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/L82MUf2WkG-400.webp 400w, /assets/content/images/cache/L82MUf2WkG-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Information on Demand 01" src="/assets/content/images/cache/L82MUf2WkG-400.jpeg" width="600" height="463" srcset="/assets/content/images/cache/L82MUf2WkG-400.jpeg 400w, /assets/content/images/cache/L82MUf2WkG-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/FUHRi7JEVi-400.webp 400w, /assets/content/images/cache/FUHRi7JEVi-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Information on Demand 01" src="/assets/content/images/cache/FUHRi7JEVi-400.jpeg" width="600" height="463" srcset="/assets/content/images/cache/FUHRi7JEVi-400.jpeg 400w, /assets/content/images/cache/FUHRi7JEVi-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec2rOpBBC1ZVc3xg_item3" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OPENPediatrics</h2>
           <h3 class="text-xl">Information on Demand 02</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/kvzMd1veQw-400.webp 400w, /assets/content/images/cache/kvzMd1veQw-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Information on Demand 02" src="/assets/content/images/cache/kvzMd1veQw-400.jpeg" width="600" height="460" srcset="/assets/content/images/cache/kvzMd1veQw-400.jpeg 400w, /assets/content/images/cache/kvzMd1veQw-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/yUkbtHFMEP-400.webp 400w, /assets/content/images/cache/yUkbtHFMEP-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Information on Demand 02" src="/assets/content/images/cache/yUkbtHFMEP-400.jpeg" width="600" height="460" srcset="/assets/content/images/cache/yUkbtHFMEP-400.jpeg 400w, /assets/content/images/cache/yUkbtHFMEP-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec2rOpBBC1ZVc3xg_item4" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OPENPediatrics</h2>
           <h3 class="text-xl">Information on Demand</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/nefwsrcguD-400.webp 400w, /assets/content/images/cache/nefwsrcguD-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Information on Demand" src="/assets/content/images/cache/nefwsrcguD-400.jpeg" width="600" height="458" srcset="/assets/content/images/cache/nefwsrcguD-400.jpeg 400w, /assets/content/images/cache/nefwsrcguD-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/sJuXbPRCsX-400.webp 400w, /assets/content/images/cache/sJuXbPRCsX-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Information on Demand" src="/assets/content/images/cache/sJuXbPRCsX-400.jpeg" width="600" height="458" srcset="/assets/content/images/cache/sJuXbPRCsX-400.jpeg 400w, /assets/content/images/cache/sJuXbPRCsX-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec2rOpBBC1ZVc3xg_item5" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OPENPediatrics</h2>
           <h3 class="text-xl">Guided Learning Pathways 01</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/1vjWQGu2OD-400.webp 400w, /assets/content/images/cache/1vjWQGu2OD-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Guided Learning Pathways 01" src="/assets/content/images/cache/1vjWQGu2OD-400.jpeg" width="600" height="464" srcset="/assets/content/images/cache/1vjWQGu2OD-400.jpeg 400w, /assets/content/images/cache/1vjWQGu2OD-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/Vgv2PEs_MI-400.webp 400w, /assets/content/images/cache/Vgv2PEs_MI-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Guided Learning Pathways 01" src="/assets/content/images/cache/Vgv2PEs_MI-400.jpeg" width="600" height="464" srcset="/assets/content/images/cache/Vgv2PEs_MI-400.jpeg 400w, /assets/content/images/cache/Vgv2PEs_MI-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec2rOpBBC1ZVc3xg_item6" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OPENPediatrics</h2>
           <h3 class="text-xl">Guided Learning Pathways 02</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/5imuFZYK5c-400.webp 400w, /assets/content/images/cache/5imuFZYK5c-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Guided Learning Pathways 02" src="/assets/content/images/cache/5imuFZYK5c-400.jpeg" width="600" height="463" srcset="/assets/content/images/cache/5imuFZYK5c-400.jpeg 400w, /assets/content/images/cache/5imuFZYK5c-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/J4svCcNgnA-400.webp 400w, /assets/content/images/cache/J4svCcNgnA-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Guided Learning Pathways 02" src="/assets/content/images/cache/J4svCcNgnA-400.jpeg" width="600" height="463" srcset="/assets/content/images/cache/J4svCcNgnA-400.jpeg 400w, /assets/content/images/cache/J4svCcNgnA-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec2rOpBBC1ZVc3xg_item7" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>OPENPediatrics</h2>
           <h3 class="text-xl">Guided Learning Pathways 03</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/pKMD2hMyPM-400.webp 400w, /assets/content/images/cache/pKMD2hMyPM-600.webp 600w, /assets/content/images/cache/pKMD2hMyPM-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Guided Learning Pathways 03" src="/assets/content/images/cache/pKMD2hMyPM-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/pKMD2hMyPM-400.jpeg 400w, /assets/content/images/cache/pKMD2hMyPM-600.jpeg 600w, /assets/content/images/cache/pKMD2hMyPM-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/n5s58lgkGS-400.webp 400w, /assets/content/images/cache/n5s58lgkGS-600.webp 600w, /assets/content/images/cache/n5s58lgkGS-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Guided Learning Pathways 03" src="/assets/content/images/cache/n5s58lgkGS-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/n5s58lgkGS-400.jpeg 400w, /assets/content/images/cache/n5s58lgkGS-600.jpeg 600w, /assets/content/images/cache/n5s58lgkGS-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
@@ -538,15 +566,11 @@ The project embodies a significant leap forward in medical education and knowled
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
     
   </section>
-</div>
 
       </article>
     </main>
@@ -554,20 +578,20 @@ The project embodies a significant leap forward in medical education and knowled
     
 
 
-<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
-  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other Health &amp; Science</figcaption>
+<figure id="related" class="p-4 sm:p-12 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <figcaption class="text-3xl sm:text-4xl leading-none font-thin mb-8 col-span-full divider divider-primary">Other Health &amp; Science</figcaption>
   
   
   
   
-<a href="/projects/careplex/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/careplex/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/rTabCAyIA4-400.webp 400w, /assets/content/images/cache/rTabCAyIA4-600.webp 600w, /assets/content/images/cache/rTabCAyIA4-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/rTabCAyIA4-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/rTabCAyIA4-400.jpeg 400w, /assets/content/images/cache/rTabCAyIA4-600.jpeg 600w, /assets/content/images/cache/rTabCAyIA4-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/mRiWoZ9HXS-400.webp 400w, /assets/content/images/cache/mRiWoZ9HXS-600.webp 600w, /assets/content/images/cache/mRiWoZ9HXS-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/mRiWoZ9HXS-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/mRiWoZ9HXS-400.jpeg 400w, /assets/content/images/cache/mRiWoZ9HXS-600.jpeg 600w, /assets/content/images/cache/mRiWoZ9HXS-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">A Trusted Advisor for Doctors and Caregivers</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">IBM&#39;s CarePlex, developed with Boston Children’s Hospital, leverages Watson AI to enhance global healthcare by providing dynamic medical records, personalized care, and a secure space for medical collaboration.</p>
+    <h3 class="card-title">A Trusted Advisor for Doctors and Caregivers</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">IBM&#39;s CarePlex, developed with Boston Children’s Hospital, leverages Watson AI to enhance global healthcare by providing dynamic medical records, personalized care, and a secure space for medical collaboration.</p>
   </div>
 </a>
   
@@ -578,28 +602,28 @@ The project embodies a significant leap forward in medical education and knowled
   
   
   
-<a href="/projects/enquos/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/enquos/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/NI7VnsaW0Q-400.webp 400w, /assets/content/images/cache/NI7VnsaW0Q-600.webp 600w, /assets/content/images/cache/NI7VnsaW0Q-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Enquos Background.png" src="/assets/content/images/cache/NI7VnsaW0Q-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/NI7VnsaW0Q-400.jpeg 400w, /assets/content/images/cache/NI7VnsaW0Q-600.jpeg 600w, /assets/content/images/cache/NI7VnsaW0Q-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/Pk0xNsAwhN-400.webp 400w, /assets/content/images/cache/Pk0xNsAwhN-600.webp 600w, /assets/content/images/cache/Pk0xNsAwhN-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Enquos Background.png" src="/assets/content/images/cache/Pk0xNsAwhN-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/Pk0xNsAwhN-400.jpeg 400w, /assets/content/images/cache/Pk0xNsAwhN-600.jpeg 600w, /assets/content/images/cache/Pk0xNsAwhN-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Enquos</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Revolutionizing health information management by transforming raw data into meaningful insights, empowering users to maximize health and connect with experts for proactive wellness.</p>
+    <h3 class="card-title">Enquos</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Revolutionizing health information management by transforming raw data into meaningful insights, empowering users to maximize health and connect with experts for proactive wellness.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/sbg-sequencing-platform/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/sbg-sequencing-platform/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/CJkWTn8NvG-400.webp 400w, /assets/content/images/cache/CJkWTn8NvG-600.webp 600w, /assets/content/images/cache/CJkWTn8NvG-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Seven Bridges Logo.png" src="/assets/content/images/cache/CJkWTn8NvG-400.jpeg" width="800" height="420" srcset="/assets/content/images/cache/CJkWTn8NvG-400.jpeg 400w, /assets/content/images/cache/CJkWTn8NvG-600.jpeg 600w, /assets/content/images/cache/CJkWTn8NvG-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/HtyuTplRis-400.webp 400w, /assets/content/images/cache/HtyuTplRis-600.webp 600w, /assets/content/images/cache/HtyuTplRis-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Seven Bridges Logo.png" src="/assets/content/images/cache/HtyuTplRis-400.jpeg" width="800" height="420" srcset="/assets/content/images/cache/HtyuTplRis-400.jpeg 400w, /assets/content/images/cache/HtyuTplRis-600.jpeg 600w, /assets/content/images/cache/HtyuTplRis-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Next-Generation Genomic Sequencing Analysis</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">The Seven Bridges Genomics Platform accelerates genomics research by providing a central hub for data storage, analysis, and collaboration, supporting rapid discovery and global teamwork.</p>
+    <h3 class="card-title">Next-Generation Genomic Sequencing Analysis</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">The Seven Bridges Genomics Platform accelerates genomics research by providing a central hub for data storage, analysis, and collaboration, supporting rapid discovery and global teamwork.</p>
   </div>
 </a>
   
@@ -617,21 +641,21 @@ The project embodies a significant leap forward in medical education and knowled
   <!-- SOCIAL -->
   <nav id="social" class="flex flex-row gap-2 max-w-96">
     
-    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.webp 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.webp 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.jpeg 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.webp 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.webp 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.jpeg 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.webp 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.webp 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.jpeg 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.webp 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.webp 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.jpeg 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.webp 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.webp 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.jpeg 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.webp 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.webp 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.jpeg 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.webp 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.webp 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.jpeg 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.webp 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.webp 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.jpeg 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.jpeg 800w" sizes="100vw"></picture></a>
     
   </nav>
 </footer>

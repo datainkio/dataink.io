@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
   <!-- HEAD -->
@@ -58,7 +57,8 @@
   <!-- 7 deferred js  -->
   
   <!-- Template-defined js -->
-  
+  <script src="/assets/js/main.js"></script>
+
   <!-- 8 everything else: meta tags, icons, open graph etc.  -->
   <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
 <meta name="robots" content="index,follow" /><!-- All Search Engines -->
@@ -82,7 +82,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:description" content="The Seven Bridges Genomics Platform accelerates genomics research by providing a central hub for data storage, analysis, and collaboration, supporting rapid discovery and global teamwork." />
 
-<meta property="og:image" content="https://dataink.io/assets/content/images/cache/CJkWTn8NvG-800.webp" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/cache/HtyuTplRis-800.webp" />
 <meta property="og:image:alt" content="Next-Generation Genomic Sequencing Analysis" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -111,7 +111,7 @@
 	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
 	<!-- End Google Tag Manager -->
 
-  <body class="bg-black">
+  <body class="project">
     <!-- GTM -->
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
@@ -128,67 +128,73 @@
 
     </section>
     <!-- NAVIGATION -->
-    <div class="navbar bg-black absolute">
+    <div id="primary-nav" class="navbar z-50 px-0 lg:px-12">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
-        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
         
         <li>
-          <a href="/projects/">Work</a>
+          <a class="link-hover href="/projects/">Work</a>
         </li>
         
         <li>
-          <a href="/lessons-learned/">Lessons Learned</a>
+          <a class="link-hover href="/lessons-learned/">Lessons Learned</a>
         </li>
         
         <li>
-          <a href="/recognition/">Recognition</a>
+          <a class="link-hover href="/recognition/">Recognition</a>
         </li>
         
       </ul>
     </div>
     
-    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    <a href="/" class="font-bold text-xl">Russell S. Lebo</a>
     
 
   </div>
   <div class="navbar-center hidden lg:flex"></div>
   <div class="navbar-end">
-    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
       
       <li>
-        <a href="/projects/">Work</a>
+        <a class="link-hover " href="/projects/">Work</a>
       </li>
       
       <li>
-        <a href="/lessons-learned/">Lessons Learned</a>
+        <a class="link-hover " href="/lessons-learned/">Lessons Learned</a>
       </li>
       
       <li>
-        <a href="/recognition/">Recognition</a>
+        <a class="link-hover " href="/recognition/">Recognition</a>
       </li>
       
     </ul>
   </div>
 </div>
     <!-- CONTENT -->
-    <main tabindex=" -1" class="py-12">
-      <article>
+    <main tabindex=" -1" class="">
+      <article class="sm:col-span-full sm:grid sm:grid-cols-subgrid">
         
-<section class="bg-black p-12 pb-20">
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
-   
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/health-and-science">Health &amp; Science /</a>
+<section class="p-12 pb-0">
+  <div class="breadcrumbs">
+    <ul class="place-content-center md:place-content-start">
+      <li><a href="/projects/">Work</a></li>
+       
+      <li><a href="/projects/types/health-and-science">Health &amp; Science</a></li>
+      
+    </ul>
+  </div>
   
-  <h1 class="text-white font-black text-center md:text-left">Next-Generation Genomic Sequencing Analysis</h1>
-  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight">The Seven Bridges Genomics Platform accelerates genomics research by providing a central hub for data storage, analysis, and collaboration, supporting rapid discovery and global teamwork.</p>
+
+  <h1>Next-Generation Genomic Sequencing Analysis</h1>
+  <p id="introduction" class="subtitle">The Seven Bridges Genomics Platform accelerates genomics research by providing a central hub for data storage, analysis, and collaboration, supporting rapid discovery and global teamwork.</p>
   <!-- HERE BE PROJECT METADATA -->
-  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+  <section id="details" class="w-full md:grid md:grid-cols-6 py-12 gap-4">
     
 
 
@@ -196,10 +202,10 @@
 <!-- ROLE -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<figcaption class="">Roles</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Product Design Lead</li>
+		<li class="inline-block ">Product Design Lead</li>
 		
 	</ul>
 </figure>
@@ -207,10 +213,10 @@
 <!-- COMPANY -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<figcaption class="">Company/Client</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Seven Bridges</li>
+		<li class="inline-block ">Seven Bridges</li>
 		
 	</ul>
 </figure>
@@ -223,16 +229,16 @@
 <!-- RECOGNITION -->
 
 <figure class="py-2 col-span-full">
-<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Recognition</figcaption>
+<figcaption class="">Recognition</figcaption>
 <ul class="list-none">
 	
-	<li class="font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Amazon Web Services:
+	<li class="">Amazon Web Services:
 		Big Data &amp; High-Performance Computing (Finalist), </li>
 	
-	<li class="font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Amazon Web Services:
+	<li class="">Amazon Web Services:
 		Life Sciences, </li>
 	
-	<li class="font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bio-IT:
+	<li class="">Bio-IT:
 		Best in Show</li>
 	
 </ul>
@@ -240,38 +246,38 @@
 
     <!-- EXPLORE -->
     
-    <a class="btn btn-outline btn-circle btn-primary w-24 h-24 text-lg italic " href="https://www.sevenbridges.com/">View⤴</a>
+    <a class="btn content-center btn-circle btn-primary w-24 h-24 text-lg italic block mx-auto col-end-auto " href="https://www.sevenbridges.com/">View⤴</a>
     
   </section>
 </section>
 
         
-<div class="md:grid md:grid-cols-2 bg-white">
   <!-- LEAD VIDEO -->
    
   <!-- BODY COPY -->
-  <section id="body" class="p-12 prose md:col-start-1">
+  <section id="body" class="description mx-auto p-8 md:p-0 md:pt-8 border-t-2 border-neutral-900">
     
     <p>The Seven Bridges Genomics Platform resolves the information bottleneck of genomics research by providing a central hub for teams to store, analyze, and jointly interpret their bioinformatic data. The NIH’s National Cancer Institute uses SBG to facilitate research and collaboration on petabyte-scale datasets like The Cancer Genomics Atlas (TCGA) in an environment that supports rapid discovery. Scientists use the Platform to collaborate on their research from anywhere in the world, bringing their questions to the data.</p>
 
     
   </section>
   <!-- NUGGETS -->
-  <section id="nuggets" class="prose p-12 md:col-start-1">
+  <section id="nuggets" class="prose mx-auto p-8 md:p-0">
     
-      <h2>Shortening the distance to insight</h2>
-      
-        <p>As the product designer for SBG, I worked to reduce the distance between data collection and discovery for genomics researchers. I led an eight-person team of interaction designers and front-end developers to build a suite of visualization and data management tools. The suite covers the entirety of the genomics research workflow, from receiving raw data to analysis, to formatting results for publication.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Shortening the distance to insight</h2>
+  
+    <p>As the product designer for SBG, I worked to reduce the distance between data collection and discovery for genomics researchers. I led an eight-person team of interaction designers and front-end developers to build a suite of visualization and data management tools. The suite covers the entirety of the genomics research workflow, from receiving raw data to analysis, to formatting results for publication.</p>
+
+  
+</div>
     
   </section>
   <!-- IMAGE GALLERIES -->
-  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+  <section id="examples" class="mx-auto">
     
   </section>
-</div>
 
       </article>
     </main>
@@ -279,34 +285,34 @@
     
 
 
-<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
-  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other Health &amp; Science</figcaption>
+<figure id="related" class="p-4 sm:p-12 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <figcaption class="text-3xl sm:text-4xl leading-none font-thin mb-8 col-span-full divider divider-primary">Other Health &amp; Science</figcaption>
   
   
   
   
-<a href="/projects/careplex/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/careplex/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/rTabCAyIA4-400.webp 400w, /assets/content/images/cache/rTabCAyIA4-600.webp 600w, /assets/content/images/cache/rTabCAyIA4-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/rTabCAyIA4-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/rTabCAyIA4-400.jpeg 400w, /assets/content/images/cache/rTabCAyIA4-600.jpeg 600w, /assets/content/images/cache/rTabCAyIA4-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/mRiWoZ9HXS-400.webp 400w, /assets/content/images/cache/mRiWoZ9HXS-600.webp 600w, /assets/content/images/cache/mRiWoZ9HXS-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/mRiWoZ9HXS-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/mRiWoZ9HXS-400.jpeg 400w, /assets/content/images/cache/mRiWoZ9HXS-600.jpeg 600w, /assets/content/images/cache/mRiWoZ9HXS-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">A Trusted Advisor for Doctors and Caregivers</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">IBM&#39;s CarePlex, developed with Boston Children’s Hospital, leverages Watson AI to enhance global healthcare by providing dynamic medical records, personalized care, and a secure space for medical collaboration.</p>
+    <h3 class="card-title">A Trusted Advisor for Doctors and Caregivers</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">IBM&#39;s CarePlex, developed with Boston Children’s Hospital, leverages Watson AI to enhance global healthcare by providing dynamic medical records, personalized care, and a secure space for medical collaboration.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/openpediatrics/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/openpediatrics/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/JB3X-i1bFK-400.webp 400w, /assets/content/images/cache/JB3X-i1bFK-600.webp 600w, /assets/content/images/cache/JB3X-i1bFK-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Boston Children's Hospital" src="/assets/content/images/cache/JB3X-i1bFK-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/JB3X-i1bFK-400.jpeg 400w, /assets/content/images/cache/JB3X-i1bFK-600.jpeg 600w, /assets/content/images/cache/JB3X-i1bFK-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/dC5PuT1dfg-400.webp 400w, /assets/content/images/cache/dC5PuT1dfg-600.webp 600w, /assets/content/images/cache/dC5PuT1dfg-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Boston Children's Hospital" src="/assets/content/images/cache/dC5PuT1dfg-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/dC5PuT1dfg-400.jpeg 400w, /assets/content/images/cache/dC5PuT1dfg-600.jpeg 600w, /assets/content/images/cache/dC5PuT1dfg-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Democratizing Access to Medical Expertise</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">OPENPediatrics, developed by IBM and Children&#39;s Hospital Boston, is a transformative open-source platform enhancing global pediatric care by sharing best practices through multimedia and fostering a connected medical community.</p>
+    <h3 class="card-title">Democratizing Access to Medical Expertise</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">OPENPediatrics, developed by IBM and Children&#39;s Hospital Boston, is a transformative open-source platform enhancing global pediatric care by sharing best practices through multimedia and fostering a connected medical community.</p>
   </div>
 </a>
   
@@ -315,14 +321,14 @@
   
   
   
-<a href="/projects/enquos/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/enquos/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/NI7VnsaW0Q-400.webp 400w, /assets/content/images/cache/NI7VnsaW0Q-600.webp 600w, /assets/content/images/cache/NI7VnsaW0Q-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Enquos Background.png" src="/assets/content/images/cache/NI7VnsaW0Q-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/NI7VnsaW0Q-400.jpeg 400w, /assets/content/images/cache/NI7VnsaW0Q-600.jpeg 600w, /assets/content/images/cache/NI7VnsaW0Q-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/Pk0xNsAwhN-400.webp 400w, /assets/content/images/cache/Pk0xNsAwhN-600.webp 600w, /assets/content/images/cache/Pk0xNsAwhN-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Enquos Background.png" src="/assets/content/images/cache/Pk0xNsAwhN-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/Pk0xNsAwhN-400.jpeg 400w, /assets/content/images/cache/Pk0xNsAwhN-600.jpeg 600w, /assets/content/images/cache/Pk0xNsAwhN-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Enquos</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Revolutionizing health information management by transforming raw data into meaningful insights, empowering users to maximize health and connect with experts for proactive wellness.</p>
+    <h3 class="card-title">Enquos</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Revolutionizing health information management by transforming raw data into meaningful insights, empowering users to maximize health and connect with experts for proactive wellness.</p>
   </div>
 </a>
   
@@ -342,21 +348,21 @@
   <!-- SOCIAL -->
   <nav id="social" class="flex flex-row gap-2 max-w-96">
     
-    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.webp 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.webp 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.jpeg 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.webp 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.webp 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.jpeg 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.webp 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.webp 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.jpeg 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.webp 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.webp 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.jpeg 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.webp 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.webp 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.jpeg 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.webp 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.webp 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.jpeg 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.webp 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.webp 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.jpeg 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.webp 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.webp 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.jpeg 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.jpeg 800w" sizes="100vw"></picture></a>
     
   </nav>
 </footer>

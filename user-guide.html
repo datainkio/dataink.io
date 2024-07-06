@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+  
+
+  <!-- 1: charset/http-equiv/viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- 2: title -->
+  <title>: </title>
+
+  <!-- 3 preconnect/async js -->
+  <!-- 4 synchronous js  -->
+  <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+  <!-- include inline base schema application/ld+jso -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.dataink.io#website",
+        "url": "https://www.dataink.io",
+        "name": "Russell S. Lebo",
+        "description": "Full-stack experience designer",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+  <!-- 5 synchronous css / inline css (and fonts) -->
+  <!-- TYPOGRAPHY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet">
+<!-- STYLES -->
+<link rel="stylesheet" href="/styles.css" />
+  <!-- 6 preload -->
+  <!-- general preloads -->
+<!--
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2" as="font" type="font/woff2"
+  crossorigin />
+-->
+<!-- preloads in page data -->
+  <!-- 7 deferred js  -->
+  
+  <!-- Template-defined js -->
+  
+  <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+  <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.1" /><!-- thank you, Zach Leatherman -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<link rel="canonical" href="https://www.dataink.io" /><!-- Helps prevent duplicate content issues -->
+<link rel="author" href="humans.txt" /><!-- Links to information about the author(s) of the document -->
+<link rel="webmention" href="https://webmention.io/dataink.io/webmention" /><!-- accept webmentions -->
+<link rel="pingback" href="https://webmention.io/dataink.io/xmlrpc" /><!-- accept webmentions -->
+  <!-- Mastodon verified site -->
+<link rel="me" href="https://sciences.social/@datainkio" />
+
+<!-- Open Graph meta -->
+
+
+<meta property="og:url" content="https://dataink.io" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Russell S. Lebo" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/static/hair.png " />
+<meta property="og:description"
+  content="I am a full-stack experience designer working with teams to build digital human-centered tools." />
+<meta property="og:site_name" content="Russell Lebo - Full-Stack Experience Designer" />
+<meta property="article:author" content="Russell Lebo" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="#site_twitter" />
+<meta name="twitter:creator" content="#creator_twitter" />
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#FF7F5C" />
+</head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
+	<!-- End Google Tag Manager -->
+
+  <body class="">
+    <!-- GTM -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <!-- A11Y -->
+    <section id="skip" tabindex=" -2" class="sr-only">
+    
+<a href="#introduction">introduction</a>
+<a href="#details">details</a>
+<a href="#body">body</a>
+<a href="#nuggets">nuggets</a>
+<a href="#examples">examples</a>
+
+    </section>
+    <!-- NAVIGATION -->
+    <div id="primary-nav" class="navbar z-50 px-0 lg:px-12">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
+        
+        <li>
+          <a class="link-hover href="/projects/">Work</a>
+        </li>
+        
+        <li>
+          <a class="link-hover href="/lessons-learned/">Lessons Learned</a>
+        </li>
+        
+        <li>
+          <a class="link-hover href="/recognition/">Recognition</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <a href="/" class="font-bold text-xl">Russell S. Lebo</a>
+    
+
+  </div>
+  <div class="navbar-center hidden lg:flex"></div>
+  <div class="navbar-end">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
+      
+      <li>
+        <a class="link-hover " href="/projects/">Work</a>
+      </li>
+      
+      <li>
+        <a class="link-hover " href="/lessons-learned/">Lessons Learned</a>
+      </li>
+      
+      <li>
+        <a class="link-hover " href="/recognition/">Recognition</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+    <!-- CONTENT -->
+    <main tabindex=" -1" class="px-0 sm:grid sm:grid-cols-12 w-full">
+      <article class="sm:col-span-full sm:grid sm:grid-cols-subgrid">
+        
+<section class="p-12 pb-20 col-span-full">
+  <h1 class="font-black text-center md:text-left">User Guide</h1>
+  <p id="introduction" class="subtitle">Insight into how I work and how to get the most out of me.</p>
+</section>
+
+        
+<section id="intro" class="p-4 sm:p-12 col-span-6">
+	<h2 class="">What I Do</h2>
+	<p class="">
+	I am a human-experience designer.</p>
+	<p class="">I team up with user researchers, UI designers, engineers, and accessibility experts to deliver <a href="/projects/" class="link-primary">award-winning digital products and services</a> that answer real human needs.</p>
+	<p class="">My work appears in the questions researchers ask, the strategies that lead designers to solutions, and the human perspective that helps engineers realize what is possible.</p>
+	<p class="">
+		As a design manager for $65.5M in federal contracts, I <a href="/projects/sba-gov/" class="link-primary">connected American entrepeneurs with billions of dollars</a> in funding during COVID, <a href="/projects/digital-transformation-for-public-health/"  class="link-primary">increased food safety</a>, and <a href="/projects/forms-gov/"  class="link-primary">increased equitable acccess to federal benefits and services</a> for millions of Americans.</p>
+	<p class="">
+		As a product design lead, I designed and prototyped IBM's first application of AI to healthcare and gave biologists tools to understands the genetic causes of disease.</p>
+	<p class="">
+		As a developer and interaction designer, I created award-winning cinematic experiences for artists, museums, world-famous DJs, and world-wide brands.</p>
+</section>
+<section id="history" class="p-4 sm:p-12 col-start-7 col-span-5">
+	<ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+  <li>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">1984</time>
+      <div class="text-lg font-black">First Macintosh computer</div>
+      <p>
+      The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh
+      personal computer. It played a pivotal role in establishing desktop publishing as a general
+      office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed
+      in a beige case with integrated carrying handle; it came with a keyboard and single-button
+      mouse.</p>
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-end mb-10">
+      <time class="font-mono italic">1998</time>
+      <div class="text-lg font-black">iMac</div>
+      iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has
+      been the primary part of Apple's consumer desktop offerings since its debut in August 1998,
+      and has evolved through seven distinct forms
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">2001</time>
+      <div class="text-lg font-black">iPod</div>
+      The iPod is a discontinued series of portable media players and multi-purpose mobile devices
+      designed and marketed by Apple Inc. The first version was released on October 23, 2001, about
+      8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450
+      million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At
+      over 20 years, the iPod brand is the oldest to be discontinued by Apple
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-end mb-10">
+      <time class="font-mono italic">2007</time>
+      <div class="text-lg font-black">iPhone</div>
+      iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile
+      operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
+      January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As
+      of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone
+      accounts for 15.6% of global smartphone market share
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">2015</time>
+      <div class="text-lg font-black">Apple Watch</div>
+      The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
+      tracking, health-oriented capabilities, and wireless telecommunication, and integrates with
+      iOS and other Apple products and services
+    </div>
+  </li>
+</ul>
+</section>
+
+      </article>
+    </main>
+    <!-- FOOTER -->
+    
+    
+<footer class="p-4 sm:p-12 bg-black">
+  <!-- AVATAR -->
+  <!-- CTA -->
+  <section class="footer prose max-w-none py-8">
+    <h2 class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50">If you are looking
+      for a human-experience designer, please do say hello – I look forward to hearing about your company and project.</h2>
+  </section>
+  <!-- SOCIAL -->
+  <nav id="social" class="flex flex-row gap-2 max-w-96">
+    
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.webp 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.webp 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.jpeg 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.webp 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.webp 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.jpeg 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.webp 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.webp 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.jpeg 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.webp 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.webp 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.jpeg 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.webp 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.webp 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.jpeg 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.webp 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.webp 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.jpeg 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.webp 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.webp 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.jpeg 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.webp 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.webp 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.jpeg 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.jpeg 800w" sizes="100vw"></picture></a>
+    
+  </nav>
+</footer>
+  </body>
+
+</html>

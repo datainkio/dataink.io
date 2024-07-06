@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
   <!-- HEAD -->
@@ -58,7 +57,8 @@
   <!-- 7 deferred js  -->
   
   <!-- Template-defined js -->
-  
+  <script src="/assets/js/main.js"></script>
+
   <!-- 8 everything else: meta tags, icons, open graph etc.  -->
   <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
 <meta name="robots" content="index,follow" /><!-- All Search Engines -->
@@ -83,7 +83,7 @@
 <meta property="og:description" content="Columbia made the smartest jacket in the world and submitted it to the stupidest cold. The Human Snowball. Snow Angel.
 Russian Dunk." />
 
-<meta property="og:image" content="https://dataink.io/assets/content/images/cache/gYqNE53n4O-800.webp" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/cache/4U15fFZPGj-800.webp" />
 <meta property="og:image:alt" content="Beautiful People Doing Stupid Things" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1024" />
@@ -112,7 +112,7 @@ Russian Dunk." />
 	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
 	<!-- End Google Tag Manager -->
 
-  <body class="bg-black">
+  <body class="project">
     <!-- GTM -->
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
@@ -129,68 +129,74 @@ Russian Dunk." />
 
     </section>
     <!-- NAVIGATION -->
-    <div class="navbar bg-black absolute">
+    <div id="primary-nav" class="navbar z-50 px-0 lg:px-12">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
-        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
         
         <li>
-          <a href="/projects/">Work</a>
+          <a class="link-hover href="/projects/">Work</a>
         </li>
         
         <li>
-          <a href="/lessons-learned/">Lessons Learned</a>
+          <a class="link-hover href="/lessons-learned/">Lessons Learned</a>
         </li>
         
         <li>
-          <a href="/recognition/">Recognition</a>
+          <a class="link-hover href="/recognition/">Recognition</a>
         </li>
         
       </ul>
     </div>
     
-    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    <a href="/" class="font-bold text-xl">Russell S. Lebo</a>
     
 
   </div>
   <div class="navbar-center hidden lg:flex"></div>
   <div class="navbar-end">
-    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
       
       <li>
-        <a href="/projects/">Work</a>
+        <a class="link-hover " href="/projects/">Work</a>
       </li>
       
       <li>
-        <a href="/lessons-learned/">Lessons Learned</a>
+        <a class="link-hover " href="/lessons-learned/">Lessons Learned</a>
       </li>
       
       <li>
-        <a href="/recognition/">Recognition</a>
+        <a class="link-hover " href="/recognition/">Recognition</a>
       </li>
       
     </ul>
   </div>
 </div>
     <!-- CONTENT -->
-    <main tabindex=" -1" class="py-12">
-      <article>
+    <main tabindex=" -1" class="">
+      <article class="sm:col-span-full sm:grid sm:grid-cols-subgrid">
         
-<section class="bg-black p-12 pb-20">
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
-   
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/advertising-and-identity">Advertising &amp; Identity /</a>
+<section class="p-12 pb-0">
+  <div class="breadcrumbs">
+    <ul class="place-content-center md:place-content-start">
+      <li><a href="/projects/">Work</a></li>
+       
+      <li><a href="/projects/types/advertising-and-identity">Advertising &amp; Identity</a></li>
+      
+    </ul>
+  </div>
   
-  <h1 class="text-white font-black text-center md:text-left">Beautiful People Doing Stupid Things</h1>
-  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight">Columbia made the smartest jacket in the world and submitted it to the stupidest cold. The Human Snowball. Snow Angel.
+
+  <h1>Beautiful People Doing Stupid Things</h1>
+  <p id="introduction" class="subtitle">Columbia made the smartest jacket in the world and submitted it to the stupidest cold. The Human Snowball. Snow Angel.
 Russian Dunk.</p>
   <!-- HERE BE PROJECT METADATA -->
-  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+  <section id="details" class="w-full md:grid md:grid-cols-6 py-12 gap-4">
     
 
 
@@ -198,10 +204,10 @@ Russian Dunk.</p>
 <!-- ROLE -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<figcaption class="">Roles</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Lead Developer</li>
+		<li class="inline-block ">Lead Developer</li>
 		
 	</ul>
 </figure>
@@ -209,12 +215,12 @@ Russian Dunk.</p>
 <!-- COMPANY -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<figcaption class="">Company/Client</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Columbia Sportswear, </li>
+		<li class="inline-block ">Columbia Sportswear, </li>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Transistor Studios</li>
+		<li class="inline-block ">Transistor Studios</li>
 		
 	</ul>
 </figure>
@@ -232,11 +238,10 @@ Russian Dunk.</p>
 </section>
 
         
-<div class="md:grid md:grid-cols-2 bg-white">
   <!-- LEAD VIDEO -->
    
   <!-- BODY COPY -->
-  <section id="body" class="p-12 prose md:col-start-1">
+  <section id="body" class="description mx-auto p-8 md:p-0 md:pt-8 border-t-2 border-neutral-900">
     
     <p>As part of the largest and most integrated global marketing campaign in Columbia’s history, the Omni-Heat design emphasized cinematic seamlessness as users navigated through product shots and videos of incredibly attractive people engaging in humorous, exaggerated activities.<br>
 At the heart of the campaign was the website, where Butler, Shine, Stern, and Partners produced a series of hilarious videos featuring Olympic athletes in ridiculous situations. Like laying half-naked in the snow making snow angels. Because why not?</p>
@@ -244,27 +249,31 @@ At the heart of the campaign was the website, where Butler, Shine, Stern, and Pa
     
   </section>
   <!-- NUGGETS -->
-  <section id="nuggets" class="prose p-12 md:col-start-1">
+  <section id="nuggets" class="prose mx-auto p-8 md:p-0">
     
-      <h2>Experience design as part of a multichannel global strategy</h2>
-      
-        <p>To highlight the benefits of this groundbreaking advancement in outdoor apparel, Columbia launched an innovative global ad campaign as revolutionary as Omni-Heat itself. The marketing strategy included print, online, web broadcast, social media, and event marketing, all designed to introduce Omni-Heat to the public in an interactive and engaging manner.<br>
+      <div class="nugget my-12">
+
+  <h2 class="not-prose">Experience design as part of a multichannel global strategy</h2>
+  
+    <p>To highlight the benefits of this groundbreaking advancement in outdoor apparel, Columbia launched an innovative global ad campaign as revolutionary as Omni-Heat itself. The marketing strategy included print, online, web broadcast, social media, and event marketing, all designed to introduce Omni-Heat to the public in an interactive and engaging manner.<br>
 During the 2010 Winter Olympic Games, members of the Canadian Freestyle Ski Team wore custom Columbia Omni-Heat gear, which helped them stay warm and agile, contributing to the first Canadian Olympic gold medal ever won on home soil.<br>
 One of the most memorable elements of the campaign was the Freezer Tour, where consumers were invited to test Omni-Heat products while singing karaoke in The Coldfessional—a large freezer simulating some of the coldest places on earth.</p>
 
-      
-      
+  
+</div>
     
-      <h2>A seamless experience</h2>
-      
-        <p>I integrated the visual designs created by Transistor Studios with Columbia’s content to deliver an experience that framed the absurdity of the situations with equally over-the-top interaction design. This included elements like rotating globes, creeping ice ages, and giant freezers, all contributing to seamless navigation and transition effects that maintained the narrative flow.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">A seamless experience</h2>
+  
+    <p>I integrated the visual designs created by Transistor Studios with Columbia’s content to deliver an experience that framed the absurdity of the situations with equally over-the-top interaction design. This included elements like rotating globes, creeping ice ages, and giant freezers, all contributing to seamless navigation and transition effects that maintained the narrative flow.</p>
+
+  
+</div>
     
   </section>
   <!-- IMAGE GALLERIES -->
-  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+  <section id="examples" class="mx-auto">
     
       
       
@@ -280,39 +289,13 @@ One of the most memorable elements of the campaign was the Freezer Tour, where c
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/w_lB01Ue_t-400.webp 400w, /assets/content/images/cache/w_lB01Ue_t-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Supporting the narrative" src="/assets/content/images/cache/w_lB01Ue_t-400.jpeg" width="600" height="315" srcset="/assets/content/images/cache/w_lB01Ue_t-400.jpeg 400w, /assets/content/images/cache/w_lB01Ue_t-600.jpeg 600w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/FUGWr3lBjB-400.webp 400w, /assets/content/images/cache/FUGWr3lBjB-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Supporting the narrative" src="/assets/content/images/cache/FUGWr3lBjB-400.jpeg" width="600" height="315" srcset="/assets/content/images/cache/FUGWr3lBjB-400.jpeg 400w, /assets/content/images/cache/FUGWr3lBjB-600.jpeg 600w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/Z5yBa1isNd-400.webp 400w, /assets/content/images/cache/Z5yBa1isNd-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for It's true. They did." src="/assets/content/images/cache/Z5yBa1isNd-400.jpeg" width="600" height="317" srcset="/assets/content/images/cache/Z5yBa1isNd-400.jpeg 400w, /assets/content/images/cache/Z5yBa1isNd-600.jpeg 600w" sizes="100vw"></picture>
-  
-  
-  
-  
-  
-  
-  
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/na5oFexZgZ-400.webp 400w, /assets/content/images/cache/na5oFexZgZ-600.webp 600w, /assets/content/images/cache/na5oFexZgZ-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Omniheat in action" src="/assets/content/images/cache/na5oFexZgZ-400.jpeg" width="800" height="443" srcset="/assets/content/images/cache/na5oFexZgZ-400.jpeg 400w, /assets/content/images/cache/na5oFexZgZ-600.jpeg 600w, /assets/content/images/cache/na5oFexZgZ-800.jpeg 800w" sizes="100vw"></picture>
-  
-  
-  
-  
-  
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/CjD8WwLY0h-400.webp 400w, /assets/content/images/cache/CjD8WwLY0h-600.webp 600w, /assets/content/images/cache/CjD8WwLY0h-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Multichannel experience" src="/assets/content/images/cache/CjD8WwLY0h-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/CjD8WwLY0h-400.jpeg 400w, /assets/content/images/cache/CjD8WwLY0h-600.jpeg 600w, /assets/content/images/cache/CjD8WwLY0h-800.jpeg 800w" sizes="100vw"></picture>
-  
-  
-  
-  
-  
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/RQ3Fk2Hu8b-400.webp 400w, /assets/content/images/cache/RQ3Fk2Hu8b-600.webp 600w, /assets/content/images/cache/RQ3Fk2Hu8b-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Omniheat in action" src="/assets/content/images/cache/RQ3Fk2Hu8b-400.jpeg" width="800" height="444" srcset="/assets/content/images/cache/RQ3Fk2Hu8b-400.jpeg 400w, /assets/content/images/cache/RQ3Fk2Hu8b-600.jpeg 600w, /assets/content/images/cache/RQ3Fk2Hu8b-800.jpeg 800w" sizes="100vw"></picture>
-  
-  
-  
-  
-  
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/gHFnzanYUV-400.webp 400w, /assets/content/images/cache/gHFnzanYUV-600.webp 600w, /assets/content/images/cache/gHFnzanYUV-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Discovery" src="/assets/content/images/cache/gHFnzanYUV-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/gHFnzanYUV-400.jpeg 400w, /assets/content/images/cache/gHFnzanYUV-600.jpeg 600w, /assets/content/images/cache/gHFnzanYUV-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/KBGuPBwqRT-400.webp 400w, /assets/content/images/cache/KBGuPBwqRT-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for It's true. They did." src="/assets/content/images/cache/KBGuPBwqRT-400.jpeg" width="600" height="317" srcset="/assets/content/images/cache/KBGuPBwqRT-400.jpeg 400w, /assets/content/images/cache/KBGuPBwqRT-600.jpeg 600w" sizes="100vw"></picture>
   
   
   
@@ -320,27 +303,56 @@ One of the most memorable elements of the campaign was the Freezer Tour, where c
   
   
   
-  
-  
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/BRvkJPNMBD-400.webp 400w, /assets/content/images/cache/BRvkJPNMBD-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for New modes of interacting with content" src="/assets/content/images/cache/BRvkJPNMBD-400.jpeg" width="600" height="315" srcset="/assets/content/images/cache/BRvkJPNMBD-400.jpeg 400w, /assets/content/images/cache/BRvkJPNMBD-600.jpeg 600w" sizes="100vw"></picture>
-  
-  
-  
-  
-  
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/9t16A9r2Jw-400.webp 400w, /assets/content/images/cache/9t16A9r2Jw-600.webp 600w, /assets/content/images/cache/9t16A9r2Jw-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A global campaign" src="/assets/content/images/cache/9t16A9r2Jw-400.jpeg" width="800" height="445" srcset="/assets/content/images/cache/9t16A9r2Jw-400.jpeg 400w, /assets/content/images/cache/9t16A9r2Jw-600.jpeg 600w, /assets/content/images/cache/9t16A9r2Jw-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/gtYiV8Vr-7-400.webp 400w, /assets/content/images/cache/gtYiV8Vr-7-600.webp 600w, /assets/content/images/cache/gtYiV8Vr-7-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Omniheat in action" src="/assets/content/images/cache/gtYiV8Vr-7-400.jpeg" width="800" height="443" srcset="/assets/content/images/cache/gtYiV8Vr-7-400.jpeg 400w, /assets/content/images/cache/gtYiV8Vr-7-600.jpeg 600w, /assets/content/images/cache/gtYiV8Vr-7-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/ySK_sYIIQ3-400.webp 400w, /assets/content/images/cache/ySK_sYIIQ3-600.webp 600w, /assets/content/images/cache/ySK_sYIIQ3-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Beautiful people..." src="/assets/content/images/cache/ySK_sYIIQ3-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/ySK_sYIIQ3-400.jpeg 400w, /assets/content/images/cache/ySK_sYIIQ3-600.jpeg 600w, /assets/content/images/cache/ySK_sYIIQ3-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/djsBXzbjfS-400.webp 400w, /assets/content/images/cache/djsBXzbjfS-600.webp 600w, /assets/content/images/cache/djsBXzbjfS-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Multichannel experience" src="/assets/content/images/cache/djsBXzbjfS-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/djsBXzbjfS-400.jpeg 400w, /assets/content/images/cache/djsBXzbjfS-600.jpeg 600w, /assets/content/images/cache/djsBXzbjfS-800.jpeg 800w" sizes="100vw"></picture>
+  
+  
+  
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/FYls-VLODA-400.webp 400w, /assets/content/images/cache/FYls-VLODA-600.webp 600w, /assets/content/images/cache/FYls-VLODA-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Omniheat in action" src="/assets/content/images/cache/FYls-VLODA-400.jpeg" width="800" height="444" srcset="/assets/content/images/cache/FYls-VLODA-400.jpeg 400w, /assets/content/images/cache/FYls-VLODA-600.jpeg 600w, /assets/content/images/cache/FYls-VLODA-800.jpeg 800w" sizes="100vw"></picture>
+  
+  
+  
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/R9cndxAYMd-400.webp 400w, /assets/content/images/cache/R9cndxAYMd-600.webp 600w, /assets/content/images/cache/R9cndxAYMd-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Discovery" src="/assets/content/images/cache/R9cndxAYMd-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/R9cndxAYMd-400.jpeg 400w, /assets/content/images/cache/R9cndxAYMd-600.jpeg 600w, /assets/content/images/cache/R9cndxAYMd-800.jpeg 800w" sizes="100vw"></picture>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/BUI7E_lmx_-400.webp 400w, /assets/content/images/cache/BUI7E_lmx_-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for New modes of interacting with content" src="/assets/content/images/cache/BUI7E_lmx_-400.jpeg" width="600" height="315" srcset="/assets/content/images/cache/BUI7E_lmx_-400.jpeg 400w, /assets/content/images/cache/BUI7E_lmx_-600.jpeg 600w" sizes="100vw"></picture>
+  
+  
+  
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/b0vVaDwhKu-400.webp 400w, /assets/content/images/cache/b0vVaDwhKu-600.webp 600w, /assets/content/images/cache/b0vVaDwhKu-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A global campaign" src="/assets/content/images/cache/b0vVaDwhKu-400.jpeg" width="800" height="445" srcset="/assets/content/images/cache/b0vVaDwhKu-400.jpeg 400w, /assets/content/images/cache/b0vVaDwhKu-600.jpeg 600w, /assets/content/images/cache/b0vVaDwhKu-800.jpeg 800w" sizes="100vw"></picture>
+  
+  
+  
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/FD6WioeExi-400.webp 400w, /assets/content/images/cache/FD6WioeExi-600.webp 600w, /assets/content/images/cache/FD6WioeExi-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Beautiful people..." src="/assets/content/images/cache/FD6WioeExi-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/FD6WioeExi-400.jpeg 400w, /assets/content/images/cache/FD6WioeExi-600.jpeg 600w, /assets/content/images/cache/FD6WioeExi-800.jpeg 800w" sizes="100vw"></picture>
   
   
 </div>
 </a>
 <dialog id="gallery_rec9av9J5nlasfGhv" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="rec9av9J5nlasfGhv_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -351,133 +363,141 @@ From concepts as involved as the thawing preloader to as simple as an elastic ea
 </p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
       
       
       <figure id="rec9av9J5nlasfGhv_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Cinematic UX</h2>
           <h3 class="text-xl">Supporting the narrative</h3>
           <p class="prose">The design strategy reinforced the narrative of freezing cold at every chance, even when loading assets. Multiple preloading schemes were used. Here, multiple video layers updated as the load progressed. The jacket unzipped and the icy overlay progressively thawed. 
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/w_lB01Ue_t-400.webp 400w, /assets/content/images/cache/w_lB01Ue_t-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Supporting the narrative" src="/assets/content/images/cache/w_lB01Ue_t-400.jpeg" width="600" height="315" srcset="/assets/content/images/cache/w_lB01Ue_t-400.jpeg 400w, /assets/content/images/cache/w_lB01Ue_t-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/FUGWr3lBjB-400.webp 400w, /assets/content/images/cache/FUGWr3lBjB-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Supporting the narrative" src="/assets/content/images/cache/FUGWr3lBjB-400.jpeg" width="600" height="315" srcset="/assets/content/images/cache/FUGWr3lBjB-400.jpeg 400w, /assets/content/images/cache/FUGWr3lBjB-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec9av9J5nlasfGhv_item2" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Cinematic UX</h2>
           <h3 class="text-xl">It&#39;s true. They did.</h3>
           <p class="prose">
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/Z5yBa1isNd-400.webp 400w, /assets/content/images/cache/Z5yBa1isNd-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for It's true. They did." src="/assets/content/images/cache/Z5yBa1isNd-400.jpeg" width="600" height="317" srcset="/assets/content/images/cache/Z5yBa1isNd-400.jpeg 400w, /assets/content/images/cache/Z5yBa1isNd-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/KBGuPBwqRT-400.webp 400w, /assets/content/images/cache/KBGuPBwqRT-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for It's true. They did." src="/assets/content/images/cache/KBGuPBwqRT-400.jpeg" width="600" height="317" srcset="/assets/content/images/cache/KBGuPBwqRT-400.jpeg 400w, /assets/content/images/cache/KBGuPBwqRT-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec9av9J5nlasfGhv_item3" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Cinematic UX</h2>
           <h3 class="text-xl">Omniheat in action</h3>
           <p class="prose">Integrated multimedia content was a core component of the design strategy. 
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/na5oFexZgZ-400.webp 400w, /assets/content/images/cache/na5oFexZgZ-600.webp 600w, /assets/content/images/cache/na5oFexZgZ-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Omniheat in action" src="/assets/content/images/cache/na5oFexZgZ-400.jpeg" width="800" height="443" srcset="/assets/content/images/cache/na5oFexZgZ-400.jpeg 400w, /assets/content/images/cache/na5oFexZgZ-600.jpeg 600w, /assets/content/images/cache/na5oFexZgZ-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/gtYiV8Vr-7-400.webp 400w, /assets/content/images/cache/gtYiV8Vr-7-600.webp 600w, /assets/content/images/cache/gtYiV8Vr-7-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Omniheat in action" src="/assets/content/images/cache/gtYiV8Vr-7-400.jpeg" width="800" height="443" srcset="/assets/content/images/cache/gtYiV8Vr-7-400.jpeg 400w, /assets/content/images/cache/gtYiV8Vr-7-600.jpeg 600w, /assets/content/images/cache/gtYiV8Vr-7-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec9av9J5nlasfGhv_item4" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Cinematic UX</h2>
           <h3 class="text-xl">Multichannel experience</h3>
           <p class="prose">The digital property supported the in-person experience by integrating with an event feed managed by content admins.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/CjD8WwLY0h-400.webp 400w, /assets/content/images/cache/CjD8WwLY0h-600.webp 600w, /assets/content/images/cache/CjD8WwLY0h-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Multichannel experience" src="/assets/content/images/cache/CjD8WwLY0h-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/CjD8WwLY0h-400.jpeg 400w, /assets/content/images/cache/CjD8WwLY0h-600.jpeg 600w, /assets/content/images/cache/CjD8WwLY0h-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/djsBXzbjfS-400.webp 400w, /assets/content/images/cache/djsBXzbjfS-600.webp 600w, /assets/content/images/cache/djsBXzbjfS-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Multichannel experience" src="/assets/content/images/cache/djsBXzbjfS-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/djsBXzbjfS-400.jpeg 400w, /assets/content/images/cache/djsBXzbjfS-600.jpeg 600w, /assets/content/images/cache/djsBXzbjfS-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec9av9J5nlasfGhv_item5" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Cinematic UX</h2>
           <h3 class="text-xl">Omniheat in action</h3>
           <p class="prose">Integrated multimedia content was a core component of the design strategy. 
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/RQ3Fk2Hu8b-400.webp 400w, /assets/content/images/cache/RQ3Fk2Hu8b-600.webp 600w, /assets/content/images/cache/RQ3Fk2Hu8b-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Omniheat in action" src="/assets/content/images/cache/RQ3Fk2Hu8b-400.jpeg" width="800" height="444" srcset="/assets/content/images/cache/RQ3Fk2Hu8b-400.jpeg 400w, /assets/content/images/cache/RQ3Fk2Hu8b-600.jpeg 600w, /assets/content/images/cache/RQ3Fk2Hu8b-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/FYls-VLODA-400.webp 400w, /assets/content/images/cache/FYls-VLODA-600.webp 600w, /assets/content/images/cache/FYls-VLODA-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Omniheat in action" src="/assets/content/images/cache/FYls-VLODA-400.jpeg" width="800" height="444" srcset="/assets/content/images/cache/FYls-VLODA-400.jpeg 400w, /assets/content/images/cache/FYls-VLODA-600.jpeg 600w, /assets/content/images/cache/FYls-VLODA-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec9av9J5nlasfGhv_item6" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Cinematic UX</h2>
           <h3 class="text-xl">Discovery</h3>
           <p class="prose">Multiple modes of navigation increased the number of products visitors encountered by promoting non-linear browsing.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/gHFnzanYUV-400.webp 400w, /assets/content/images/cache/gHFnzanYUV-600.webp 600w, /assets/content/images/cache/gHFnzanYUV-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Discovery" src="/assets/content/images/cache/gHFnzanYUV-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/gHFnzanYUV-400.jpeg 400w, /assets/content/images/cache/gHFnzanYUV-600.jpeg 600w, /assets/content/images/cache/gHFnzanYUV-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/R9cndxAYMd-400.webp 400w, /assets/content/images/cache/R9cndxAYMd-600.webp 600w, /assets/content/images/cache/R9cndxAYMd-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Discovery" src="/assets/content/images/cache/R9cndxAYMd-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/R9cndxAYMd-400.jpeg 400w, /assets/content/images/cache/R9cndxAYMd-600.jpeg 600w, /assets/content/images/cache/R9cndxAYMd-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec9av9J5nlasfGhv_item7" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Cinematic UX</h2>
           <h3 class="text-xl">New modes of interacting with content</h3>
           <p class="prose">One of the greatest things about Flash was how easy it made it to develop designs that moved beyond the page-based model of interaction.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/BRvkJPNMBD-400.webp 400w, /assets/content/images/cache/BRvkJPNMBD-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for New modes of interacting with content" src="/assets/content/images/cache/BRvkJPNMBD-400.jpeg" width="600" height="315" srcset="/assets/content/images/cache/BRvkJPNMBD-400.jpeg 400w, /assets/content/images/cache/BRvkJPNMBD-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/BUI7E_lmx_-400.webp 400w, /assets/content/images/cache/BUI7E_lmx_-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for New modes of interacting with content" src="/assets/content/images/cache/BUI7E_lmx_-400.jpeg" width="600" height="315" srcset="/assets/content/images/cache/BUI7E_lmx_-400.jpeg 400w, /assets/content/images/cache/BUI7E_lmx_-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec9av9J5nlasfGhv_item8" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Cinematic UX</h2>
           <h3 class="text-xl">A global campaign</h3>
           <p class="prose">The interaction design made heavy use of video. The template we developed for the video assets used shared intros and outros to produce a seamless flow from scene to scene. It also streamlined production by allowing designers to use automated workflows when rendering.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/9t16A9r2Jw-400.webp 400w, /assets/content/images/cache/9t16A9r2Jw-600.webp 600w, /assets/content/images/cache/9t16A9r2Jw-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A global campaign" src="/assets/content/images/cache/9t16A9r2Jw-400.jpeg" width="800" height="445" srcset="/assets/content/images/cache/9t16A9r2Jw-400.jpeg 400w, /assets/content/images/cache/9t16A9r2Jw-600.jpeg 600w, /assets/content/images/cache/9t16A9r2Jw-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/b0vVaDwhKu-400.webp 400w, /assets/content/images/cache/b0vVaDwhKu-600.webp 600w, /assets/content/images/cache/b0vVaDwhKu-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A global campaign" src="/assets/content/images/cache/b0vVaDwhKu-400.jpeg" width="800" height="445" srcset="/assets/content/images/cache/b0vVaDwhKu-400.jpeg 400w, /assets/content/images/cache/b0vVaDwhKu-600.jpeg 600w, /assets/content/images/cache/b0vVaDwhKu-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="rec9av9J5nlasfGhv_item9" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Cinematic UX</h2>
           <h3 class="text-xl">Beautiful people...</h3>
           <p class="prose">...doing stupid things.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/ySK_sYIIQ3-400.webp 400w, /assets/content/images/cache/ySK_sYIIQ3-600.webp 600w, /assets/content/images/cache/ySK_sYIIQ3-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Beautiful people..." src="/assets/content/images/cache/ySK_sYIIQ3-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/ySK_sYIIQ3-400.jpeg 400w, /assets/content/images/cache/ySK_sYIIQ3-600.jpeg 600w, /assets/content/images/cache/ySK_sYIIQ3-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/FD6WioeExi-400.webp 400w, /assets/content/images/cache/FD6WioeExi-600.webp 600w, /assets/content/images/cache/FD6WioeExi-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Beautiful people..." src="/assets/content/images/cache/FD6WioeExi-400.jpeg" width="800" height="442" srcset="/assets/content/images/cache/FD6WioeExi-400.jpeg 400w, /assets/content/images/cache/FD6WioeExi-600.jpeg 600w, /assets/content/images/cache/FD6WioeExi-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
@@ -559,15 +579,11 @@ From concepts as involved as the thawing preloader to as simple as an elastic ea
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
     
   </section>
-</div>
 
       </article>
     </main>
@@ -575,20 +591,20 @@ From concepts as involved as the thawing preloader to as simple as an elastic ea
     
 
 
-<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
-  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other Advertising &amp; Identity</figcaption>
+<figure id="related" class="p-4 sm:p-12 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <figcaption class="text-3xl sm:text-4xl leading-none font-thin mb-8 col-span-full divider divider-primary">Other Advertising &amp; Identity</figcaption>
   
   
   
   
-<a href="/projects/raise-a-mootopian/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/raise-a-mootopian/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/E1qUH7fIKH-400.webp 400w, /assets/content/images/cache/E1qUH7fIKH-600.webp 600w, /assets/content/images/cache/E1qUH7fIKH-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Got Milk?" src="/assets/content/images/cache/E1qUH7fIKH-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/E1qUH7fIKH-400.jpeg 400w, /assets/content/images/cache/E1qUH7fIKH-600.jpeg 600w, /assets/content/images/cache/E1qUH7fIKH-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/kB1b6v5ZZR-400.webp 400w, /assets/content/images/cache/kB1b6v5ZZR-600.webp 600w, /assets/content/images/cache/kB1b6v5ZZR-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Got Milk?" src="/assets/content/images/cache/kB1b6v5ZZR-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/kB1b6v5ZZR-400.jpeg 400w, /assets/content/images/cache/kB1b6v5ZZR-600.jpeg 600w, /assets/content/images/cache/kB1b6v5ZZR-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Raise a Mootopian</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Ever tickled a cow?</p>
+    <h3 class="card-title">Raise a Mootopian</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Ever tickled a cow?</p>
   </div>
 </a>
   
@@ -621,14 +637,14 @@ From concepts as involved as the thawing preloader to as simple as an elastic ea
   
   
   
-<a href="/projects/publix-at-season-s-peak/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/publix-at-season-s-peak/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/X22ISKV5yr-400.webp 400w, /assets/content/images/cache/X22ISKV5yr-600.webp 600w, /assets/content/images/cache/X22ISKV5yr-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Publix" src="/assets/content/images/cache/X22ISKV5yr-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/X22ISKV5yr-400.jpeg 400w, /assets/content/images/cache/X22ISKV5yr-600.jpeg 600w, /assets/content/images/cache/X22ISKV5yr-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/nOAfHLfR6H-400.webp 400w, /assets/content/images/cache/nOAfHLfR6H-600.webp 600w, /assets/content/images/cache/nOAfHLfR6H-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Publix" src="/assets/content/images/cache/nOAfHLfR6H-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/nOAfHLfR6H-400.jpeg 400w, /assets/content/images/cache/nOAfHLfR6H-600.jpeg 600w, /assets/content/images/cache/nOAfHLfR6H-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Publix: At Season&#39;s Peak</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Publix&#39;s “At Season’s Peak” campaign educates consumers on maximizing value by purchasing fresh produce at its peak season, promoting a healthy and cost-effective diet.</p>
+    <h3 class="card-title">Publix: At Season&#39;s Peak</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Publix&#39;s “At Season’s Peak” campaign educates consumers on maximizing value by purchasing fresh produce at its peak season, promoting a healthy and cost-effective diet.</p>
   </div>
 </a>
   
@@ -648,21 +664,21 @@ From concepts as involved as the thawing preloader to as simple as an elastic ea
   <!-- SOCIAL -->
   <nav id="social" class="flex flex-row gap-2 max-w-96">
     
-    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.webp 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.webp 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.jpeg 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.webp 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.webp 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.jpeg 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.webp 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.webp 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.jpeg 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.webp 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.webp 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.jpeg 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.webp 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.webp 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.jpeg 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.webp 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.webp 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.jpeg 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.webp 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.webp 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.jpeg 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.webp 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.webp 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.jpeg 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.jpeg 800w" sizes="100vw"></picture></a>
     
   </nav>
 </footer>

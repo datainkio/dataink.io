@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
   <!-- HEAD -->
@@ -58,7 +57,8 @@
   <!-- 7 deferred js  -->
   
   <!-- Template-defined js -->
-  
+  <script src="/assets/js/main.js"></script>
+
   <!-- 8 everything else: meta tags, icons, open graph etc.  -->
   <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
 <meta name="robots" content="index,follow" /><!-- All Search Engines -->
@@ -82,7 +82,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:description" content="Ensuring public health through user-friendly design, innovative research, and a robust digital presence during the pandemic." />
 
-<meta property="og:image" content="https://dataink.io/assets/content/images/cache/8to-VLreA_-800.webp" />
+<meta property="og:image" content="https://dataink.io/assets/content/images/cache/jwRo2kOX11-800.webp" />
 <meta property="og:image:alt" content="Digital Transformation for Public Health" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1024" />
@@ -111,7 +111,7 @@
 	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
 	<!-- End Google Tag Manager -->
 
-  <body class="bg-black">
+  <body class="project">
     <!-- GTM -->
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
@@ -128,67 +128,73 @@
 
     </section>
     <!-- NAVIGATION -->
-    <div class="navbar bg-black absolute">
+    <div id="primary-nav" class="navbar z-50 px-0 lg:px-12">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
-        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
         
         <li>
-          <a href="/projects/">Work</a>
+          <a class="link-hover href="/projects/">Work</a>
         </li>
         
         <li>
-          <a href="/lessons-learned/">Lessons Learned</a>
+          <a class="link-hover href="/lessons-learned/">Lessons Learned</a>
         </li>
         
         <li>
-          <a href="/recognition/">Recognition</a>
+          <a class="link-hover href="/recognition/">Recognition</a>
         </li>
         
       </ul>
     </div>
     
-    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    <a href="/" class="font-bold text-xl">Russell S. Lebo</a>
     
 
   </div>
   <div class="navbar-center hidden lg:flex"></div>
   <div class="navbar-end">
-    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
       
       <li>
-        <a href="/projects/">Work</a>
+        <a class="link-hover " href="/projects/">Work</a>
       </li>
       
       <li>
-        <a href="/lessons-learned/">Lessons Learned</a>
+        <a class="link-hover " href="/lessons-learned/">Lessons Learned</a>
       </li>
       
       <li>
-        <a href="/recognition/">Recognition</a>
+        <a class="link-hover " href="/recognition/">Recognition</a>
       </li>
       
     </ul>
   </div>
 </div>
     <!-- CONTENT -->
-    <main tabindex=" -1" class="py-12">
-      <article>
+    <main tabindex=" -1" class="">
+      <article class="sm:col-span-full sm:grid sm:grid-cols-subgrid">
         
-<section class="bg-black p-12 pb-20">
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
-   
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/civic-tech">Civic Tech /</a>
+<section class="p-12 pb-0">
+  <div class="breadcrumbs">
+    <ul class="place-content-center md:place-content-start">
+      <li><a href="/projects/">Work</a></li>
+       
+      <li><a href="/projects/types/civic-tech">Civic Tech</a></li>
+      
+    </ul>
+  </div>
   
-  <h1 class="text-white font-black text-center md:text-left">Digital Transformation for Public Health</h1>
-  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight">Ensuring public health through user-friendly design, innovative research, and a robust digital presence during the pandemic.</p>
+
+  <h1>Digital Transformation for Public Health</h1>
+  <p id="introduction" class="subtitle">Ensuring public health through user-friendly design, innovative research, and a robust digital presence during the pandemic.</p>
   <!-- HERE BE PROJECT METADATA -->
-  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+  <section id="details" class="w-full md:grid md:grid-cols-6 py-12 gap-4">
     
 
 
@@ -196,10 +202,10 @@
 <!-- ROLE -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<figcaption class="">Roles</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Design Manager, Federal Projects</li>
+		<li class="inline-block ">Design Manager, Federal Projects</li>
 		
 	</ul>
 </figure>
@@ -207,12 +213,12 @@
 <!-- COMPANY -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<figcaption class="">Company/Client</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">USDA, </li>
+		<li class="inline-block ">USDA, </li>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bixal</li>
+		<li class="inline-block ">Bixal</li>
 		
 	</ul>
 </figure>
@@ -221,27 +227,27 @@
 
 <!-- ACTIITIES -->
 
-<figure class="py-2 col-span-full">
-<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<figure class="py-2 col-span-2">
+<figcaption class="">Activities</figcaption>
 <ul class="list-none pl-0">
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Experience Design, </li>
+	<li class="inline-block ">Experience Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Data Analysis &amp; Visualization, </li>
+	<li class="inline-block ">Data Analysis &amp; Visualization, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Human-Centered Research, </li>
+	<li class="inline-block ">Human-Centered Research, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Content Strategy, </li>
+	<li class="inline-block ">Content Strategy, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Natural Language Processing, </li>
+	<li class="inline-block ">Natural Language Processing, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Market Research, </li>
+	<li class="inline-block ">Market Research, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Knowledge Management, </li>
+	<li class="inline-block ">Knowledge Management, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Agile Design, </li>
+	<li class="inline-block ">Agile Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Information Architecture</li>
+	<li class="inline-block ">Information Architecture</li>
 	
 </ul>
 </figure>
@@ -251,17 +257,16 @@
 
     <!-- EXPLORE -->
     
-    <a class="btn btn-outline btn-circle btn-primary w-24 h-24 text-lg italic " href="https://www.fsis.usda.gov/">View⤴</a>
+    <a class="btn content-center btn-circle btn-primary w-24 h-24 text-lg italic block mx-auto col-end-auto " href="https://www.fsis.usda.gov/">View⤴</a>
     
   </section>
 </section>
 
         
-<div class="md:grid md:grid-cols-2 bg-white">
   <!-- LEAD VIDEO -->
    
   <!-- BODY COPY -->
-  <section id="body" class="p-12 prose md:col-start-1">
+  <section id="body" class="description mx-auto p-8 md:p-0 md:pt-8 border-t-2 border-neutral-900">
     
     <p>The project for USDA aimed to revamp the digital presence for the agency’s food safety and inspection service, crucial for safeguarding public health by protecting the food supply. This involved creating a user-friendly and informative website to build public trust and aid policy formulation.<br>
 Despite the limitations imposed by COVID restrictions, the team maintained a strong focus on human-centered research and design, adapting to remote methodologies without losing sight of user needs.</p>
@@ -269,68 +274,319 @@ Despite the limitations imposed by COVID restrictions, the team maintained a str
     
   </section>
   <!-- NUGGETS -->
-  <section id="nuggets" class="prose p-12 md:col-start-1">
+  <section id="nuggets" class="prose mx-auto p-8 md:p-0">
     
-      <h2>The single thread connecting multiple audiences</h2>
-      
-        <p>Landscape analysis gave us a systems-wide view of the audiences. We identified key artifacts in this system. One, in particular, stood out: the Hazard Avoidance and Critical Control Points plan (HAACP). Every audience intersects with a HAACP in some way. Scientists and policymakers define it, food processors need it to operate, FSIS inspectors ensure that plants adhere to it, and consumers are impacted by it when it triggers a recall.<br>
+      <div class="nugget my-12">
+
+<div class="flex columns-lg gap-4">
+
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_recC6N3x6goV5YOKU.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/JlgDimosIp-400.webp 400w, /assets/content/images/cache/JlgDimosIp-600.webp 600w, /assets/content/images/cache/JlgDimosIp-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Food safety as a service" src="/assets/content/images/cache/JlgDimosIp-400.jpeg" width="800" height="302" srcset="/assets/content/images/cache/JlgDimosIp-400.jpeg 400w, /assets/content/images/cache/JlgDimosIp-600.jpeg 600w, /assets/content/images/cache/JlgDimosIp-800.jpeg 800w" sizes="100vw"></picture></button>
+	<dialog id="modal_recC6N3x6goV5YOKU" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">Food safety as a service</h2>
+				<p class="prose">Artifact journeys favor service diagrams. By mapping out the process by which companies obtain licenses we uncovered key relationships in the food safety landscape.
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/JlgDimosIp-400.webp 400w, /assets/content/images/cache/JlgDimosIp-600.webp 600w, /assets/content/images/cache/JlgDimosIp-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Food safety as a service" src="/assets/content/images/cache/JlgDimosIp-400.jpeg" width="800" height="302" srcset="/assets/content/images/cache/JlgDimosIp-400.jpeg 400w, /assets/content/images/cache/JlgDimosIp-600.jpeg 600w, /assets/content/images/cache/JlgDimosIp-800.jpeg 800w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+</div>
+
+  <h2 class="not-prose">The single thread connecting multiple audiences</h2>
+  
+    <p>Landscape analysis gave us a systems-wide view of the audiences. We identified key artifacts in this system. One, in particular, stood out: the Hazard Avoidance and Critical Control Points plan (HAACP). Every audience intersects with a HAACP in some way. Scientists and policymakers define it, food processors need it to operate, FSIS inspectors ensure that plants adhere to it, and consumers are impacted by it when it triggers a recall.<br>
 The lifecycle of a HAACP guided the refinement of our research plan and, as the common thread that connects federal policy with the food on our dinner plate, provided the initial framework for contextual inquiry.</p>
 
-      
-      
+  
+</div>
     
-      <h2>Collaborative design</h2>
-      
-        <p>Collaboration and user feedback were integral to the redesign of the FSIS website, with early sketches and paper prototyping sessions involving clients, stakeholders, and the design team to establish a shared understanding of the project goals.</p>
+      <div class="nugget my-12">
 
-      
-      
+<div class="flex columns-lg gap-4">
+
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_recLdF9q6hpmzUVYD.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/CT5ZWLa5D9-400.webp 400w, /assets/content/images/cache/CT5ZWLa5D9-600.webp 600w, /assets/content/images/cache/CT5ZWLa5D9-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Blockframing &amp; Collaboration" src="/assets/content/images/cache/CT5ZWLa5D9-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/CT5ZWLa5D9-400.jpeg 400w, /assets/content/images/cache/CT5ZWLa5D9-600.jpeg 600w, /assets/content/images/cache/CT5ZWLa5D9-800.jpeg 800w" sizes="100vw"></picture></button>
+	<dialog id="modal_recLdF9q6hpmzUVYD" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">Blockframing &amp; Collaboration</h2>
+				<p class="prose">It pays to get creative with the medium of your collaboration and design methods. Here, the deck of components I created served as the catalyst for many conversations around information architecture, layout, and narrative.
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/CT5ZWLa5D9-400.webp 400w, /assets/content/images/cache/CT5ZWLa5D9-600.webp 600w, /assets/content/images/cache/CT5ZWLa5D9-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Blockframing &amp; Collaboration" src="/assets/content/images/cache/CT5ZWLa5D9-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/CT5ZWLa5D9-400.jpeg 400w, /assets/content/images/cache/CT5ZWLa5D9-600.jpeg 600w, /assets/content/images/cache/CT5ZWLa5D9-800.jpeg 800w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+</div>
+
+  <h2 class="not-prose">Collaborative design</h2>
+  
+    <p>Collaboration and user feedback were integral to the redesign of the FSIS website, with early sketches and paper prototyping sessions involving clients, stakeholders, and the design team to establish a shared understanding of the project goals.</p>
+
+  
+</div>
     
-      <h2>Data-driven decision making</h2>
-      
-        <p>The USDA team relied on quantitative research, web analytics, and testing to inform the content strategy and refine the information architecture.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Data-driven decision making</h2>
+  
+    <p>The USDA team relied on quantitative research, web analytics, and testing to inform the content strategy and refine the information architecture.</p>
+
+  
+</div>
     
-      <h2>Rapid prototyping and iterative design</h2>
-      
-        <p>Emphasizing rapid prototyping and exploration, the USDA team created tangible prototypes for iterative feedback, ranging from Drupal site mockups to paper prototypes of the homepage.</p>
+      <div class="nugget my-12">
 
-      
-      
+<div class="flex columns-lg gap-4">
+
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_rec3Cn8V6b2dYIDsr.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/s_6iwjg8O9-400.webp 400w, /assets/content/images/cache/s_6iwjg8O9-600.webp 600w, /assets/content/images/cache/s_6iwjg8O9-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/s_6iwjg8O9-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/s_6iwjg8O9-400.jpeg 400w, /assets/content/images/cache/s_6iwjg8O9-600.jpeg 600w, /assets/content/images/cache/s_6iwjg8O9-800.jpeg 800w" sizes="100vw"></picture></button>
+	<dialog id="modal_rec3Cn8V6b2dYIDsr" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">Digital prototyping</h2>
+				<p class="prose">Once collaborative paper prototyping with the client was complete, we took our new insights into their goals and expectations went straight into digital prototyping with Drupal.
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/s_6iwjg8O9-400.webp 400w, /assets/content/images/cache/s_6iwjg8O9-600.webp 600w, /assets/content/images/cache/s_6iwjg8O9-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/s_6iwjg8O9-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/s_6iwjg8O9-400.jpeg 400w, /assets/content/images/cache/s_6iwjg8O9-600.jpeg 600w, /assets/content/images/cache/s_6iwjg8O9-800.jpeg 800w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_recU3IKTcANiVYamJ.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/IjEQZIBsW0-400.webp 400w, /assets/content/images/cache/IjEQZIBsW0-600.webp 600w, /assets/content/images/cache/IjEQZIBsW0-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/IjEQZIBsW0-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/IjEQZIBsW0-400.jpeg 400w, /assets/content/images/cache/IjEQZIBsW0-600.jpeg 600w, /assets/content/images/cache/IjEQZIBsW0-800.jpeg 800w" sizes="100vw"></picture></button>
+	<dialog id="modal_recU3IKTcANiVYamJ" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">A shared understanding</h2>
+				<p class="prose">A good digital prototype isn&#39;t just for testing. It&#39;s also a way to provide a cross-functional team with a single voice of authority for content strategy, experience design, and development.
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/IjEQZIBsW0-400.webp 400w, /assets/content/images/cache/IjEQZIBsW0-600.webp 600w, /assets/content/images/cache/IjEQZIBsW0-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/IjEQZIBsW0-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/IjEQZIBsW0-400.jpeg 400w, /assets/content/images/cache/IjEQZIBsW0-600.jpeg 600w, /assets/content/images/cache/IjEQZIBsW0-800.jpeg 800w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_recV9V7OJUsrKdun2.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/I_Kr0gpJRV-400.webp 400w, /assets/content/images/cache/I_Kr0gpJRV-600.webp 600w, /assets/content/images/cache/I_Kr0gpJRV-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Making it tangible" src="/assets/content/images/cache/I_Kr0gpJRV-400.jpeg" width="800" height="497" srcset="/assets/content/images/cache/I_Kr0gpJRV-400.jpeg 400w, /assets/content/images/cache/I_Kr0gpJRV-600.jpeg 600w, /assets/content/images/cache/I_Kr0gpJRV-800.jpeg 800w" sizes="100vw"></picture></button>
+	<dialog id="modal_recV9V7OJUsrKdun2" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">Making it tangible</h2>
+				<p class="prose">Paper prototyping provided both a canvas for collaboration with the client and for evaluating early hypotheses.
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/I_Kr0gpJRV-400.webp 400w, /assets/content/images/cache/I_Kr0gpJRV-600.webp 600w, /assets/content/images/cache/I_Kr0gpJRV-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Making it tangible" src="/assets/content/images/cache/I_Kr0gpJRV-400.jpeg" width="800" height="497" srcset="/assets/content/images/cache/I_Kr0gpJRV-400.jpeg 400w, /assets/content/images/cache/I_Kr0gpJRV-600.jpeg 600w, /assets/content/images/cache/I_Kr0gpJRV-800.jpeg 800w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_recLQPXn3rs2pFqNz.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/-F2W9vMPfF-400.webp 400w, /assets/content/images/cache/-F2W9vMPfF-600.webp 600w, /assets/content/images/cache/-F2W9vMPfF-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/-F2W9vMPfF-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/-F2W9vMPfF-400.jpeg 400w, /assets/content/images/cache/-F2W9vMPfF-600.jpeg 600w, /assets/content/images/cache/-F2W9vMPfF-800.jpeg 800w" sizes="100vw"></picture></button>
+	<dialog id="modal_recLQPXn3rs2pFqNz" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">Live data, real testing</h2>
+				<p class="prose">Using live data in a digital prototype increased the quality of feedback produced from testing at the same time as it streamlined the process of applying - and testing - new insights.
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/-F2W9vMPfF-400.webp 400w, /assets/content/images/cache/-F2W9vMPfF-600.webp 600w, /assets/content/images/cache/-F2W9vMPfF-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/-F2W9vMPfF-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/-F2W9vMPfF-400.jpeg 400w, /assets/content/images/cache/-F2W9vMPfF-600.jpeg 600w, /assets/content/images/cache/-F2W9vMPfF-800.jpeg 800w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+</div>
+
+  <h2 class="not-prose">Rapid prototyping and iterative design</h2>
+  
+    <p>Emphasizing rapid prototyping and exploration, the USDA team created tangible prototypes for iterative feedback, ranging from Drupal site mockups to paper prototypes of the homepage.</p>
+
+  
+</div>
     
-      <h2>Multifaceted information architecture</h2>
-      
-        <p>The USDA team’s landscape analysis and audience research led to an information architecture that balanced educational resources for the general public with specific information for Subject Matter Experts (SMEs).</p>
+      <div class="nugget my-12">
 
-      
-      
+<div class="flex columns-lg gap-4">
+
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_rec2mFD2S8WdwBtMT.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/51JJCyH_QL-400.webp 400w, /assets/content/images/cache/51JJCyH_QL-600.webp 600w, /assets/content/images/cache/51JJCyH_QL-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Laying out the experience strategy" src="/assets/content/images/cache/51JJCyH_QL-400.jpeg" width="800" height="618" srcset="/assets/content/images/cache/51JJCyH_QL-400.jpeg 400w, /assets/content/images/cache/51JJCyH_QL-600.jpeg 600w, /assets/content/images/cache/51JJCyH_QL-800.jpeg 800w" sizes="100vw"></picture></button>
+	<dialog id="modal_rec2mFD2S8WdwBtMT" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">Laying out the experience strategy</h2>
+				<p class="prose">Blockframing established a shared understanding amongst the team about the role that individual pages and sections played within the larger user experience.
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/51JJCyH_QL-400.webp 400w, /assets/content/images/cache/51JJCyH_QL-600.webp 600w, /assets/content/images/cache/51JJCyH_QL-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Laying out the experience strategy" src="/assets/content/images/cache/51JJCyH_QL-400.jpeg" width="800" height="618" srcset="/assets/content/images/cache/51JJCyH_QL-400.jpeg 400w, /assets/content/images/cache/51JJCyH_QL-600.jpeg 600w, /assets/content/images/cache/51JJCyH_QL-800.jpeg 800w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+</div>
+
+  <h2 class="not-prose">Multifaceted information architecture</h2>
+  
+    <p>The USDA team’s landscape analysis and audience research led to an information architecture that balanced educational resources for the general public with specific information for Subject Matter Experts (SMEs).</p>
+
+  
+</div>
     
-      <h2>The value of the artifact journey</h2>
-      
-        <p>The Hazard Analysis and Critical Control Points (HAACP) plan emerged as a key intersecting artifact among various stakeholders for USDA, guiding the research and contextual inquiry.</p>
+      <div class="nugget my-12">
 
-      
-      
+<div class="flex columns-lg gap-4">
+
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_recDfBk8ANEJd9WNy.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/aVwf2olSjG-400.webp 400w, /assets/content/images/cache/aVwf2olSjG-600.webp 600w, /assets/content/images/cache/aVwf2olSjG-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Impression Testing" src="/assets/content/images/cache/aVwf2olSjG-400.jpeg" width="800" height="496" srcset="/assets/content/images/cache/aVwf2olSjG-400.jpeg 400w, /assets/content/images/cache/aVwf2olSjG-600.jpeg 600w, /assets/content/images/cache/aVwf2olSjG-800.jpeg 800w" sizes="100vw"></picture></button>
+	<dialog id="modal_recDfBk8ANEJd9WNy" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">Impression Testing</h2>
+				<p class="prose">We tested hypotheses and evaluated designs through unmoderated impression testing. This gave us the insights we needed to transform a reference source designed for food inspectors to a resource tailored to the information needs of the American public.
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/aVwf2olSjG-400.webp 400w, /assets/content/images/cache/aVwf2olSjG-600.webp 600w, /assets/content/images/cache/aVwf2olSjG-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Impression Testing" src="/assets/content/images/cache/aVwf2olSjG-400.jpeg" width="800" height="496" srcset="/assets/content/images/cache/aVwf2olSjG-400.jpeg 400w, /assets/content/images/cache/aVwf2olSjG-600.jpeg 600w, /assets/content/images/cache/aVwf2olSjG-800.jpeg 800w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+</div>
+
+  <h2 class="not-prose">Impression testing as part of an empirical design strategy</h2>
+  
+    <p>Unmoderated impression testing was invaluable during COVID. Testing the original site gave us a baseline for measuring progress, and continuous testing throughout design supported quantifiable design decisions.</p>
+
+  
+</div>
     
-      <h2>Impression testing as part of an empirical design strategy</h2>
-      
-        <p>Unmoderated impression testing was invaluable during COVID. Testing the original site gave us a baseline for measuring progress, and continuous testing throughout design supported quantifiable design decisions.</p>
+      <div class="nugget my-12">
 
-      
-      
-    
-      <h2>A flexible, resilient toolbox</h2>
-      
-        <p>The team employed a mix of desktop research, fieldwork, and innovative methods like artifact journeys and market data analysis to enhance their understanding of food safety practices and the diverse audiences FSIS serves.</p>
+<div class="flex columns-lg gap-4">
 
-      
-      
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_rec9G71CRyQqP8Lc7.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/tgIVT2gIMz-400.webp 400w, /assets/content/images/cache/tgIVT2gIMz-600.webp 600w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/tgIVT2gIMz-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/tgIVT2gIMz-400.jpeg 400w, /assets/content/images/cache/tgIVT2gIMz-600.jpeg 600w" sizes="100vw"></picture></button>
+	<dialog id="modal_rec9G71CRyQqP8Lc7" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">Emergent stories</h2>
+				<p class="prose">By using a platform like Drupal in combination with real data and a deep understanding of the landscape, we were able to identify new, valuable relationships among the different datasources. In this case, aggregating information about food processing establishments into a single view supported the USDA&#39;s mission to build transparency into the country&#39;s food system. 
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/tgIVT2gIMz-400.webp 400w, /assets/content/images/cache/tgIVT2gIMz-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/tgIVT2gIMz-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/tgIVT2gIMz-400.jpeg 400w, /assets/content/images/cache/tgIVT2gIMz-600.jpeg 600w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+	
+  
+<div class="aspect-video object-cover overflow-hidden mb-4">
+	
+	<button class="picture" onclick="modal_recIfSX6Swqo1bPtx.showModal()"><picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/utTxkWK8AQ-400.webp 400w, /assets/content/images/cache/utTxkWK8AQ-600.webp 600w, /assets/content/images/cache/utTxkWK8AQ-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Paper protyping. Literally." src="/assets/content/images/cache/utTxkWK8AQ-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/utTxkWK8AQ-400.jpeg 400w, /assets/content/images/cache/utTxkWK8AQ-600.jpeg 600w, /assets/content/images/cache/utTxkWK8AQ-800.jpeg 800w" sizes="100vw"></picture></button>
+	<dialog id="modal_recIfSX6Swqo1bPtx" class="modal">
+		<form method="dialog">
+			<button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+		</form>
+		<figure class="modal-box md:grid md:grid-cols-3 md:gap-4">
+			<figcaption class="col-span-1">
+				<h2 class="text-xl m-0">Paper protyping. Literally.</h2>
+				<p class="prose">I am firm believer in the value of collaborative design, especially when it comes to establishing trust between your team and stakeholders. 
+</p>
+			</figcaption>
+			
+			
+			<picture class="md:col-start-2 md:col-span-2 p-4"><source type="image/webp" srcset="/assets/content/images/cache/utTxkWK8AQ-400.webp 400w, /assets/content/images/cache/utTxkWK8AQ-600.webp 600w, /assets/content/images/cache/utTxkWK8AQ-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Paper protyping. Literally." src="/assets/content/images/cache/utTxkWK8AQ-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/utTxkWK8AQ-400.jpeg 400w, /assets/content/images/cache/utTxkWK8AQ-600.jpeg 600w, /assets/content/images/cache/utTxkWK8AQ-800.jpeg 800w" sizes="100vw"></picture>
+		</figure>
+	</dialog>
+</div>
+
+</div>
+
+  <h2 class="not-prose">A flexible, resilient toolbox</h2>
+  
+    <p>The team employed a mix of desktop research, fieldwork, and innovative methods like artifact journeys and market data analysis to enhance their understanding of food safety practices and the diverse audiences FSIS serves.</p>
+
+  
+</div>
     
   </section>
   <!-- IMAGE GALLERIES -->
-  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+  <section id="examples" class="mx-auto">
     
       
       
@@ -350,7 +606,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/GPP0JtcxY5-400.webp 400w, /assets/content/images/cache/GPP0JtcxY5-600.webp 600w, /assets/content/images/cache/GPP0JtcxY5-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/GPP0JtcxY5-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/GPP0JtcxY5-400.jpeg 400w, /assets/content/images/cache/GPP0JtcxY5-600.jpeg 600w, /assets/content/images/cache/GPP0JtcxY5-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/s_6iwjg8O9-400.webp 400w, /assets/content/images/cache/s_6iwjg8O9-600.webp 600w, /assets/content/images/cache/s_6iwjg8O9-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/s_6iwjg8O9-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/s_6iwjg8O9-400.jpeg 400w, /assets/content/images/cache/s_6iwjg8O9-600.jpeg 600w, /assets/content/images/cache/s_6iwjg8O9-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -368,7 +624,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/Up6digf7s9-400.webp 400w, /assets/content/images/cache/Up6digf7s9-600.webp 600w, /assets/content/images/cache/Up6digf7s9-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Blockframing &amp; Ideation" src="/assets/content/images/cache/Up6digf7s9-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/Up6digf7s9-400.jpeg 400w, /assets/content/images/cache/Up6digf7s9-600.jpeg 600w, /assets/content/images/cache/Up6digf7s9-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/NzoqvbMqV7-400.webp 400w, /assets/content/images/cache/NzoqvbMqV7-600.webp 600w, /assets/content/images/cache/NzoqvbMqV7-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Blockframing &amp; Ideation" src="/assets/content/images/cache/NzoqvbMqV7-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/NzoqvbMqV7-400.jpeg 400w, /assets/content/images/cache/NzoqvbMqV7-600.jpeg 600w, /assets/content/images/cache/NzoqvbMqV7-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -376,7 +632,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/SfYXSsa50Y-400.webp 400w, /assets/content/images/cache/SfYXSsa50Y-600.webp 600w, /assets/content/images/cache/SfYXSsa50Y-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Ideation Round 4" src="/assets/content/images/cache/SfYXSsa50Y-400.jpeg" width="800" height="276" srcset="/assets/content/images/cache/SfYXSsa50Y-400.jpeg 400w, /assets/content/images/cache/SfYXSsa50Y-600.jpeg 600w, /assets/content/images/cache/SfYXSsa50Y-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/MUfIcsqi8Y-400.webp 400w, /assets/content/images/cache/MUfIcsqi8Y-600.webp 600w, /assets/content/images/cache/MUfIcsqi8Y-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Ideation Round 4" src="/assets/content/images/cache/MUfIcsqi8Y-400.jpeg" width="800" height="276" srcset="/assets/content/images/cache/MUfIcsqi8Y-400.jpeg 400w, /assets/content/images/cache/MUfIcsqi8Y-600.jpeg 600w, /assets/content/images/cache/MUfIcsqi8Y-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -384,7 +640,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/NoTkvnngZO-400.webp 400w, /assets/content/images/cache/NoTkvnngZO-600.webp 600w, /assets/content/images/cache/NoTkvnngZO-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Blockframing &amp; Collaboration" src="/assets/content/images/cache/NoTkvnngZO-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/NoTkvnngZO-400.jpeg 400w, /assets/content/images/cache/NoTkvnngZO-600.jpeg 600w, /assets/content/images/cache/NoTkvnngZO-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/CT5ZWLa5D9-400.webp 400w, /assets/content/images/cache/CT5ZWLa5D9-600.webp 600w, /assets/content/images/cache/CT5ZWLa5D9-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Blockframing &amp; Collaboration" src="/assets/content/images/cache/CT5ZWLa5D9-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/CT5ZWLa5D9-400.jpeg 400w, /assets/content/images/cache/CT5ZWLa5D9-600.jpeg 600w, /assets/content/images/cache/CT5ZWLa5D9-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -394,7 +650,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/nrR5railhX-400.webp 400w, /assets/content/images/cache/nrR5railhX-600.webp 600w, /assets/content/images/cache/nrR5railhX-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Landscape Analysis" src="/assets/content/images/cache/nrR5railhX-400.jpeg" width="800" height="453" srcset="/assets/content/images/cache/nrR5railhX-400.jpeg 400w, /assets/content/images/cache/nrR5railhX-600.jpeg 600w, /assets/content/images/cache/nrR5railhX-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/ZApDglRmFn-400.webp 400w, /assets/content/images/cache/ZApDglRmFn-600.webp 600w, /assets/content/images/cache/ZApDglRmFn-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Landscape Analysis" src="/assets/content/images/cache/ZApDglRmFn-400.jpeg" width="800" height="453" srcset="/assets/content/images/cache/ZApDglRmFn-400.jpeg 400w, /assets/content/images/cache/ZApDglRmFn-600.jpeg 600w, /assets/content/images/cache/ZApDglRmFn-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -448,7 +704,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/YsnB_eu1gd-400.webp 400w, /assets/content/images/cache/YsnB_eu1gd-600.webp 600w, /assets/content/images/cache/YsnB_eu1gd-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/YsnB_eu1gd-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/YsnB_eu1gd-400.jpeg 400w, /assets/content/images/cache/YsnB_eu1gd-600.jpeg 600w, /assets/content/images/cache/YsnB_eu1gd-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/-F2W9vMPfF-400.webp 400w, /assets/content/images/cache/-F2W9vMPfF-600.webp 600w, /assets/content/images/cache/-F2W9vMPfF-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/-F2W9vMPfF-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/-F2W9vMPfF-400.jpeg 400w, /assets/content/images/cache/-F2W9vMPfF-600.jpeg 600w, /assets/content/images/cache/-F2W9vMPfF-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -458,7 +714,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/aXqvo-5uAG-400.webp 400w, /assets/content/images/cache/aXqvo-5uAG-600.webp 600w, /assets/content/images/cache/aXqvo-5uAG-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/aXqvo-5uAG-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/aXqvo-5uAG-400.jpeg 400w, /assets/content/images/cache/aXqvo-5uAG-600.jpeg 600w, /assets/content/images/cache/aXqvo-5uAG-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/IjEQZIBsW0-400.webp 400w, /assets/content/images/cache/IjEQZIBsW0-600.webp 600w, /assets/content/images/cache/IjEQZIBsW0-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/IjEQZIBsW0-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/IjEQZIBsW0-400.jpeg 400w, /assets/content/images/cache/IjEQZIBsW0-600.jpeg 600w, /assets/content/images/cache/IjEQZIBsW0-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -482,7 +738,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/XO1Xbhe-lJ-400.webp 400w, /assets/content/images/cache/XO1Xbhe-lJ-600.webp 600w, /assets/content/images/cache/XO1Xbhe-lJ-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Content Strategy" src="/assets/content/images/cache/XO1Xbhe-lJ-400.jpeg" width="800" height="764" srcset="/assets/content/images/cache/XO1Xbhe-lJ-400.jpeg 400w, /assets/content/images/cache/XO1Xbhe-lJ-600.jpeg 600w, /assets/content/images/cache/XO1Xbhe-lJ-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/BiA05JKtzP-400.webp 400w, /assets/content/images/cache/BiA05JKtzP-600.webp 600w, /assets/content/images/cache/BiA05JKtzP-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Content Strategy" src="/assets/content/images/cache/BiA05JKtzP-400.jpeg" width="800" height="764" srcset="/assets/content/images/cache/BiA05JKtzP-400.jpeg 400w, /assets/content/images/cache/BiA05JKtzP-600.jpeg 600w, /assets/content/images/cache/BiA05JKtzP-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -504,7 +760,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/y61k4xFvbJ-400.webp 400w, /assets/content/images/cache/y61k4xFvbJ-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/y61k4xFvbJ-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/y61k4xFvbJ-400.jpeg 400w, /assets/content/images/cache/y61k4xFvbJ-600.jpeg 600w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/tgIVT2gIMz-400.webp 400w, /assets/content/images/cache/tgIVT2gIMz-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/tgIVT2gIMz-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/tgIVT2gIMz-400.jpeg 400w, /assets/content/images/cache/tgIVT2gIMz-600.jpeg 600w" sizes="100vw"></picture>
   
   
   
@@ -514,11 +770,13 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/mmSRVq6c7F-400.webp 400w, /assets/content/images/cache/mmSRVq6c7F-600.webp 600w, /assets/content/images/cache/mmSRVq6c7F-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for USDA 01.png" src="/assets/content/images/cache/mmSRVq6c7F-400.jpeg" width="800" height="183" srcset="/assets/content/images/cache/mmSRVq6c7F-400.jpeg 400w, /assets/content/images/cache/mmSRVq6c7F-600.jpeg 600w, /assets/content/images/cache/mmSRVq6c7F-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/JlgDimosIp-400.webp 400w, /assets/content/images/cache/JlgDimosIp-600.webp 600w, /assets/content/images/cache/JlgDimosIp-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Food safety as a service" src="/assets/content/images/cache/JlgDimosIp-400.jpeg" width="800" height="302" srcset="/assets/content/images/cache/JlgDimosIp-400.jpeg 400w, /assets/content/images/cache/JlgDimosIp-600.jpeg 600w, /assets/content/images/cache/JlgDimosIp-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -532,19 +790,19 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/PxhWU7Gi9o-400.webp 400w, /assets/content/images/cache/PxhWU7Gi9o-600.webp 600w, /assets/content/images/cache/PxhWU7Gi9o-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Establishing a baseline for measuring progress" src="/assets/content/images/cache/PxhWU7Gi9o-400.jpeg" width="800" height="715" srcset="/assets/content/images/cache/PxhWU7Gi9o-400.jpeg 400w, /assets/content/images/cache/PxhWU7Gi9o-600.jpeg 600w, /assets/content/images/cache/PxhWU7Gi9o-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/1wNjalIYDK-400.webp 400w, /assets/content/images/cache/1wNjalIYDK-600.webp 600w, /assets/content/images/cache/1wNjalIYDK-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Homepage Hero Detail" src="/assets/content/images/cache/1wNjalIYDK-400.jpeg" width="800" height="957" srcset="/assets/content/images/cache/1wNjalIYDK-400.jpeg 400w, /assets/content/images/cache/1wNjalIYDK-600.jpeg 600w, /assets/content/images/cache/1wNjalIYDK-800.jpeg 800w" sizes="100vw"></picture>
   
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/l3IXrodNo1-400.webp 400w, /assets/content/images/cache/l3IXrodNo1-600.webp 600w, /assets/content/images/cache/l3IXrodNo1-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Establishing a baseline for measuring progress" src="/assets/content/images/cache/l3IXrodNo1-400.jpeg" width="800" height="715" srcset="/assets/content/images/cache/l3IXrodNo1-400.jpeg 400w, /assets/content/images/cache/l3IXrodNo1-600.jpeg 600w, /assets/content/images/cache/l3IXrodNo1-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/DQTZk5HACO-400.webp 400w, /assets/content/images/cache/DQTZk5HACO-600.webp 600w, /assets/content/images/cache/DQTZk5HACO-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Homepage Hero Detail" src="/assets/content/images/cache/DQTZk5HACO-400.jpeg" width="800" height="957" srcset="/assets/content/images/cache/DQTZk5HACO-400.jpeg 400w, /assets/content/images/cache/DQTZk5HACO-600.jpeg 600w, /assets/content/images/cache/DQTZk5HACO-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -612,19 +870,19 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/fmi8oESUNy-400.webp 400w, /assets/content/images/cache/fmi8oESUNy-600.webp 600w, /assets/content/images/cache/fmi8oESUNy-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Paper protyping. Literally." src="/assets/content/images/cache/fmi8oESUNy-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/fmi8oESUNy-400.jpeg 400w, /assets/content/images/cache/fmi8oESUNy-600.jpeg 600w, /assets/content/images/cache/fmi8oESUNy-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/SBJADbVC0r-400.webp 400w, /assets/content/images/cache/SBJADbVC0r-600.webp 600w, /assets/content/images/cache/SBJADbVC0r-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Laying out the experience strategy" src="/assets/content/images/cache/SBJADbVC0r-400.jpeg" width="800" height="618" srcset="/assets/content/images/cache/SBJADbVC0r-400.jpeg 400w, /assets/content/images/cache/SBJADbVC0r-600.jpeg 600w, /assets/content/images/cache/SBJADbVC0r-800.jpeg 800w" sizes="100vw"></picture>
   
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/utTxkWK8AQ-400.webp 400w, /assets/content/images/cache/utTxkWK8AQ-600.webp 600w, /assets/content/images/cache/utTxkWK8AQ-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Paper protyping. Literally." src="/assets/content/images/cache/utTxkWK8AQ-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/utTxkWK8AQ-400.jpeg 400w, /assets/content/images/cache/utTxkWK8AQ-600.jpeg 600w, /assets/content/images/cache/utTxkWK8AQ-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/51JJCyH_QL-400.webp 400w, /assets/content/images/cache/51JJCyH_QL-600.webp 600w, /assets/content/images/cache/51JJCyH_QL-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Laying out the experience strategy" src="/assets/content/images/cache/51JJCyH_QL-400.jpeg" width="800" height="618" srcset="/assets/content/images/cache/51JJCyH_QL-400.jpeg 400w, /assets/content/images/cache/51JJCyH_QL-600.jpeg 600w, /assets/content/images/cache/51JJCyH_QL-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -646,31 +904,40 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/47yLiVm59c-400.webp 400w, /assets/content/images/cache/47yLiVm59c-600.webp 600w, /assets/content/images/cache/47yLiVm59c-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Paper Blockframing &amp; Design Systems" src="/assets/content/images/cache/47yLiVm59c-400.jpeg" width="800" height="495" srcset="/assets/content/images/cache/47yLiVm59c-400.jpeg 400w, /assets/content/images/cache/47yLiVm59c-600.jpeg 600w, /assets/content/images/cache/47yLiVm59c-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/jB0qHSzPeA-400.webp 400w, /assets/content/images/cache/jB0qHSzPeA-600.webp 600w, /assets/content/images/cache/jB0qHSzPeA-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Discovery" src="/assets/content/images/cache/jB0qHSzPeA-400.jpeg" width="800" height="112" srcset="/assets/content/images/cache/jB0qHSzPeA-400.jpeg 400w, /assets/content/images/cache/jB0qHSzPeA-600.jpeg 600w, /assets/content/images/cache/jB0qHSzPeA-800.jpeg 800w" sizes="100vw"></picture>
   
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/DHn2-tbAMV-400.webp 400w, /assets/content/images/cache/DHn2-tbAMV-600.webp 600w, /assets/content/images/cache/DHn2-tbAMV-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Paper Blockframing &amp; Design Systems" src="/assets/content/images/cache/DHn2-tbAMV-400.jpeg" width="800" height="495" srcset="/assets/content/images/cache/DHn2-tbAMV-400.jpeg 400w, /assets/content/images/cache/DHn2-tbAMV-600.jpeg 600w, /assets/content/images/cache/DHn2-tbAMV-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/TqhugBdZNk-400.webp 400w, /assets/content/images/cache/TqhugBdZNk-600.webp 600w, /assets/content/images/cache/TqhugBdZNk-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for It pays to consider your team's UX" src="/assets/content/images/cache/TqhugBdZNk-400.jpeg" width="800" height="1180" srcset="/assets/content/images/cache/TqhugBdZNk-400.jpeg 400w, /assets/content/images/cache/TqhugBdZNk-600.jpeg 600w, /assets/content/images/cache/TqhugBdZNk-800.jpeg 800w" sizes="100vw"></picture>
   
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/w8CapscmQX-400.webp 400w, /assets/content/images/cache/w8CapscmQX-600.webp 600w, /assets/content/images/cache/w8CapscmQX-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Discovery" src="/assets/content/images/cache/w8CapscmQX-400.jpeg" width="800" height="112" srcset="/assets/content/images/cache/w8CapscmQX-400.jpeg 400w, /assets/content/images/cache/w8CapscmQX-600.jpeg 600w, /assets/content/images/cache/w8CapscmQX-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/tz356rVxn1-400.webp 400w, /assets/content/images/cache/tz356rVxn1-600.webp 600w, /assets/content/images/cache/tz356rVxn1-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for User research during COVID" src="/assets/content/images/cache/tz356rVxn1-400.jpeg" width="800" height="857" srcset="/assets/content/images/cache/tz356rVxn1-400.jpeg 400w, /assets/content/images/cache/tz356rVxn1-600.jpeg 600w, /assets/content/images/cache/tz356rVxn1-800.jpeg 800w" sizes="100vw"></picture>
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/zW_sa7I9n2-400.webp 400w, /assets/content/images/cache/zW_sa7I9n2-600.webp 600w, /assets/content/images/cache/zW_sa7I9n2-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for It pays to consider your team's UX" src="/assets/content/images/cache/zW_sa7I9n2-400.jpeg" width="800" height="1180" srcset="/assets/content/images/cache/zW_sa7I9n2-400.jpeg 400w, /assets/content/images/cache/zW_sa7I9n2-600.jpeg 600w, /assets/content/images/cache/zW_sa7I9n2-800.jpeg 800w" sizes="100vw"></picture>
+  
+  
+  
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/2rFjr_LpBb-400.webp 400w, /assets/content/images/cache/2rFjr_LpBb-600.webp 600w, /assets/content/images/cache/2rFjr_LpBb-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for User research during COVID" src="/assets/content/images/cache/2rFjr_LpBb-400.jpeg" width="800" height="857" srcset="/assets/content/images/cache/2rFjr_LpBb-400.jpeg 400w, /assets/content/images/cache/2rFjr_LpBb-600.jpeg 600w, /assets/content/images/cache/2rFjr_LpBb-800.jpeg 800w" sizes="100vw"></picture>
   
   
 </div>
 </a>
 <dialog id="gallery_reclXRr74HYb7n505" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="reclXRr74HYb7n505_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -679,248 +946,289 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
           <p class="prose"></p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
       
       
       <figure id="reclXRr74HYb7n505_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">Digital prototyping</h3>
           <p class="prose">Once collaborative paper prototyping with the client was complete, we took our new insights into their goals and expectations went straight into digital prototyping with Drupal.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/GPP0JtcxY5-400.webp 400w, /assets/content/images/cache/GPP0JtcxY5-600.webp 600w, /assets/content/images/cache/GPP0JtcxY5-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/GPP0JtcxY5-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/GPP0JtcxY5-400.jpeg 400w, /assets/content/images/cache/GPP0JtcxY5-600.jpeg 600w, /assets/content/images/cache/GPP0JtcxY5-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/s_6iwjg8O9-400.webp 400w, /assets/content/images/cache/s_6iwjg8O9-600.webp 600w, /assets/content/images/cache/s_6iwjg8O9-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/s_6iwjg8O9-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/s_6iwjg8O9-400.jpeg 400w, /assets/content/images/cache/s_6iwjg8O9-600.jpeg 600w, /assets/content/images/cache/s_6iwjg8O9-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item2" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">Blockframing &amp; Ideation</h3>
           <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/Up6digf7s9-400.webp 400w, /assets/content/images/cache/Up6digf7s9-600.webp 600w, /assets/content/images/cache/Up6digf7s9-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Blockframing &amp; Ideation" src="/assets/content/images/cache/Up6digf7s9-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/Up6digf7s9-400.jpeg 400w, /assets/content/images/cache/Up6digf7s9-600.jpeg 600w, /assets/content/images/cache/Up6digf7s9-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/NzoqvbMqV7-400.webp 400w, /assets/content/images/cache/NzoqvbMqV7-600.webp 600w, /assets/content/images/cache/NzoqvbMqV7-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Blockframing &amp; Ideation" src="/assets/content/images/cache/NzoqvbMqV7-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/NzoqvbMqV7-400.jpeg 400w, /assets/content/images/cache/NzoqvbMqV7-600.jpeg 600w, /assets/content/images/cache/NzoqvbMqV7-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item3" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">Ideation Round 4</h3>
           <p class="prose">As design continued and the client grew more experienced with the design process, the focus of work shifted away from concrete concepts like page design and towards strategic questions.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/SfYXSsa50Y-400.webp 400w, /assets/content/images/cache/SfYXSsa50Y-600.webp 600w, /assets/content/images/cache/SfYXSsa50Y-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Ideation Round 4" src="/assets/content/images/cache/SfYXSsa50Y-400.jpeg" width="800" height="276" srcset="/assets/content/images/cache/SfYXSsa50Y-400.jpeg 400w, /assets/content/images/cache/SfYXSsa50Y-600.jpeg 600w, /assets/content/images/cache/SfYXSsa50Y-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/MUfIcsqi8Y-400.webp 400w, /assets/content/images/cache/MUfIcsqi8Y-600.webp 600w, /assets/content/images/cache/MUfIcsqi8Y-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Ideation Round 4" src="/assets/content/images/cache/MUfIcsqi8Y-400.jpeg" width="800" height="276" srcset="/assets/content/images/cache/MUfIcsqi8Y-400.jpeg 400w, /assets/content/images/cache/MUfIcsqi8Y-600.jpeg 600w, /assets/content/images/cache/MUfIcsqi8Y-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item4" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">Blockframing &amp; Collaboration</h3>
           <p class="prose">It pays to get creative with the medium of your collaboration and design methods. Here, the deck of components I created served as the catalyst for many conversations around information architecture, layout, and narrative.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/NoTkvnngZO-400.webp 400w, /assets/content/images/cache/NoTkvnngZO-600.webp 600w, /assets/content/images/cache/NoTkvnngZO-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Blockframing &amp; Collaboration" src="/assets/content/images/cache/NoTkvnngZO-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/NoTkvnngZO-400.jpeg 400w, /assets/content/images/cache/NoTkvnngZO-600.jpeg 600w, /assets/content/images/cache/NoTkvnngZO-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/CT5ZWLa5D9-400.webp 400w, /assets/content/images/cache/CT5ZWLa5D9-600.webp 600w, /assets/content/images/cache/CT5ZWLa5D9-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Blockframing &amp; Collaboration" src="/assets/content/images/cache/CT5ZWLa5D9-400.jpeg" width="800" height="1066" srcset="/assets/content/images/cache/CT5ZWLa5D9-400.jpeg 400w, /assets/content/images/cache/CT5ZWLa5D9-600.jpeg 600w, /assets/content/images/cache/CT5ZWLa5D9-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item5" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">Landscape Analysis</h3>
           <p class="prose">Techniques like artifact journey mapping and content modeling gave us a deeper, richer understanding of the different relationships that the site has with its different audiences.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/nrR5railhX-400.webp 400w, /assets/content/images/cache/nrR5railhX-600.webp 600w, /assets/content/images/cache/nrR5railhX-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Landscape Analysis" src="/assets/content/images/cache/nrR5railhX-400.jpeg" width="800" height="453" srcset="/assets/content/images/cache/nrR5railhX-400.jpeg 400w, /assets/content/images/cache/nrR5railhX-600.jpeg 600w, /assets/content/images/cache/nrR5railhX-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/ZApDglRmFn-400.webp 400w, /assets/content/images/cache/ZApDglRmFn-600.webp 600w, /assets/content/images/cache/ZApDglRmFn-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Landscape Analysis" src="/assets/content/images/cache/ZApDglRmFn-400.jpeg" width="800" height="453" srcset="/assets/content/images/cache/ZApDglRmFn-400.jpeg 400w, /assets/content/images/cache/ZApDglRmFn-600.jpeg 600w, /assets/content/images/cache/ZApDglRmFn-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item6" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">Live data, real testing</h3>
           <p class="prose">Using live data in a digital prototype increased the quality of feedback produced from testing at the same time as it streamlined the process of applying - and testing - new insights.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/YsnB_eu1gd-400.webp 400w, /assets/content/images/cache/YsnB_eu1gd-600.webp 600w, /assets/content/images/cache/YsnB_eu1gd-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/YsnB_eu1gd-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/YsnB_eu1gd-400.jpeg 400w, /assets/content/images/cache/YsnB_eu1gd-600.jpeg 600w, /assets/content/images/cache/YsnB_eu1gd-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/-F2W9vMPfF-400.webp 400w, /assets/content/images/cache/-F2W9vMPfF-600.webp 600w, /assets/content/images/cache/-F2W9vMPfF-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/-F2W9vMPfF-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/-F2W9vMPfF-400.jpeg 400w, /assets/content/images/cache/-F2W9vMPfF-600.jpeg 600w, /assets/content/images/cache/-F2W9vMPfF-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item7" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">A shared understanding</h3>
           <p class="prose">A good digital prototype isn&#39;t just for testing. It&#39;s also a way to provide a cross-functional team with a single voice of authority for content strategy, experience design, and development.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/aXqvo-5uAG-400.webp 400w, /assets/content/images/cache/aXqvo-5uAG-600.webp 600w, /assets/content/images/cache/aXqvo-5uAG-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/aXqvo-5uAG-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/aXqvo-5uAG-400.jpeg 400w, /assets/content/images/cache/aXqvo-5uAG-600.jpeg 600w, /assets/content/images/cache/aXqvo-5uAG-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/IjEQZIBsW0-400.webp 400w, /assets/content/images/cache/IjEQZIBsW0-600.webp 600w, /assets/content/images/cache/IjEQZIBsW0-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/IjEQZIBsW0-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/IjEQZIBsW0-400.jpeg 400w, /assets/content/images/cache/IjEQZIBsW0-600.jpeg 600w, /assets/content/images/cache/IjEQZIBsW0-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item8" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">Content Strategy</h3>
           <p class="prose">Even when lorem ipsum was used, the information architecture - baed on production data models - still reflected the relationships among different pieces of content.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/XO1Xbhe-lJ-400.webp 400w, /assets/content/images/cache/XO1Xbhe-lJ-600.webp 600w, /assets/content/images/cache/XO1Xbhe-lJ-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Content Strategy" src="/assets/content/images/cache/XO1Xbhe-lJ-400.jpeg" width="800" height="764" srcset="/assets/content/images/cache/XO1Xbhe-lJ-400.jpeg 400w, /assets/content/images/cache/XO1Xbhe-lJ-600.jpeg 600w, /assets/content/images/cache/XO1Xbhe-lJ-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/BiA05JKtzP-400.webp 400w, /assets/content/images/cache/BiA05JKtzP-600.webp 600w, /assets/content/images/cache/BiA05JKtzP-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Content Strategy" src="/assets/content/images/cache/BiA05JKtzP-400.jpeg" width="800" height="764" srcset="/assets/content/images/cache/BiA05JKtzP-400.jpeg 400w, /assets/content/images/cache/BiA05JKtzP-600.jpeg 600w, /assets/content/images/cache/BiA05JKtzP-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item9" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">Emergent stories</h3>
           <p class="prose">By using a platform like Drupal in combination with real data and a deep understanding of the landscape, we were able to identify new, valuable relationships among the different datasources. In this case, aggregating information about food processing establishments into a single view supported the USDA&#39;s mission to build transparency into the country&#39;s food system. 
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/y61k4xFvbJ-400.webp 400w, /assets/content/images/cache/y61k4xFvbJ-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/y61k4xFvbJ-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/y61k4xFvbJ-400.jpeg 400w, /assets/content/images/cache/y61k4xFvbJ-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/tgIVT2gIMz-400.webp 400w, /assets/content/images/cache/tgIVT2gIMz-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/tgIVT2gIMz-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/tgIVT2gIMz-400.jpeg 400w, /assets/content/images/cache/tgIVT2gIMz-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item10" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
-          <h3 class="text-xl">Establishing a baseline for measuring progress</h3>
-          <p class="prose">Work began with remote, unmoderated impression testing of the current state.
-</p>
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
+          <h3 class="text-xl">USDA 01.png</h3>
+          <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/PxhWU7Gi9o-400.webp 400w, /assets/content/images/cache/PxhWU7Gi9o-600.webp 600w, /assets/content/images/cache/PxhWU7Gi9o-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Establishing a baseline for measuring progress" src="/assets/content/images/cache/PxhWU7Gi9o-400.jpeg" width="800" height="715" srcset="/assets/content/images/cache/PxhWU7Gi9o-400.jpeg 400w, /assets/content/images/cache/PxhWU7Gi9o-600.jpeg 600w, /assets/content/images/cache/PxhWU7Gi9o-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/mmSRVq6c7F-400.webp 400w, /assets/content/images/cache/mmSRVq6c7F-600.webp 600w, /assets/content/images/cache/mmSRVq6c7F-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for USDA 01.png" src="/assets/content/images/cache/mmSRVq6c7F-400.jpeg" width="800" height="183" srcset="/assets/content/images/cache/mmSRVq6c7F-400.jpeg 400w, /assets/content/images/cache/mmSRVq6c7F-600.jpeg 600w, /assets/content/images/cache/mmSRVq6c7F-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item11" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
-          <h3 class="text-xl">Homepage Hero Detail</h3>
-          <p class="prose"></p>
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
+          <h3 class="text-xl">Food safety as a service</h3>
+          <p class="prose">Artifact journeys favor service diagrams. By mapping out the process by which companies obtain licenses we uncovered key relationships in the food safety landscape.
+</p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/1wNjalIYDK-400.webp 400w, /assets/content/images/cache/1wNjalIYDK-600.webp 600w, /assets/content/images/cache/1wNjalIYDK-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Homepage Hero Detail" src="/assets/content/images/cache/1wNjalIYDK-400.jpeg" width="800" height="957" srcset="/assets/content/images/cache/1wNjalIYDK-400.jpeg 400w, /assets/content/images/cache/1wNjalIYDK-600.jpeg 600w, /assets/content/images/cache/1wNjalIYDK-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/JlgDimosIp-400.webp 400w, /assets/content/images/cache/JlgDimosIp-600.webp 600w, /assets/content/images/cache/JlgDimosIp-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Food safety as a service" src="/assets/content/images/cache/JlgDimosIp-400.jpeg" width="800" height="302" srcset="/assets/content/images/cache/JlgDimosIp-400.jpeg 400w, /assets/content/images/cache/JlgDimosIp-600.jpeg 600w, /assets/content/images/cache/JlgDimosIp-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item12" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
-          <h3 class="text-xl">Paper protyping. Literally.</h3>
-          <p class="prose">I am firm believer in the value of collaborative design, especially when it comes to establishing trust between your team and stakeholders. 
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
+          <h3 class="text-xl">Establishing a baseline for measuring progress</h3>
+          <p class="prose">Work began with remote, unmoderated impression testing of the current state.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/fmi8oESUNy-400.webp 400w, /assets/content/images/cache/fmi8oESUNy-600.webp 600w, /assets/content/images/cache/fmi8oESUNy-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Paper protyping. Literally." src="/assets/content/images/cache/fmi8oESUNy-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/fmi8oESUNy-400.jpeg 400w, /assets/content/images/cache/fmi8oESUNy-600.jpeg 600w, /assets/content/images/cache/fmi8oESUNy-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/l3IXrodNo1-400.webp 400w, /assets/content/images/cache/l3IXrodNo1-600.webp 600w, /assets/content/images/cache/l3IXrodNo1-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Establishing a baseline for measuring progress" src="/assets/content/images/cache/l3IXrodNo1-400.jpeg" width="800" height="715" srcset="/assets/content/images/cache/l3IXrodNo1-400.jpeg 400w, /assets/content/images/cache/l3IXrodNo1-600.jpeg 600w, /assets/content/images/cache/l3IXrodNo1-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item13" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
-          <h3 class="text-xl">Laying out the experience strategy</h3>
-          <p class="prose">Blockframing established a shared understanding amongst the team about the role that individual pages and sections played within the larger user experience.
-</p>
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
+          <h3 class="text-xl">Homepage Hero Detail</h3>
+          <p class="prose"></p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/SBJADbVC0r-400.webp 400w, /assets/content/images/cache/SBJADbVC0r-600.webp 600w, /assets/content/images/cache/SBJADbVC0r-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Laying out the experience strategy" src="/assets/content/images/cache/SBJADbVC0r-400.jpeg" width="800" height="618" srcset="/assets/content/images/cache/SBJADbVC0r-400.jpeg 400w, /assets/content/images/cache/SBJADbVC0r-600.jpeg 600w, /assets/content/images/cache/SBJADbVC0r-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/DQTZk5HACO-400.webp 400w, /assets/content/images/cache/DQTZk5HACO-600.webp 600w, /assets/content/images/cache/DQTZk5HACO-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Homepage Hero Detail" src="/assets/content/images/cache/DQTZk5HACO-400.jpeg" width="800" height="957" srcset="/assets/content/images/cache/DQTZk5HACO-400.jpeg 400w, /assets/content/images/cache/DQTZk5HACO-600.jpeg 600w, /assets/content/images/cache/DQTZk5HACO-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item14" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
-          <h3 class="text-xl">Paper Blockframing &amp; Design Systems</h3>
-          <p class="prose">Early blockframing did more than support collaborative design. It also started the conversation around how we implement the federal design system.
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
+          <h3 class="text-xl">Paper protyping. Literally.</h3>
+          <p class="prose">I am firm believer in the value of collaborative design, especially when it comes to establishing trust between your team and stakeholders. 
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/47yLiVm59c-400.webp 400w, /assets/content/images/cache/47yLiVm59c-600.webp 600w, /assets/content/images/cache/47yLiVm59c-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Paper Blockframing &amp; Design Systems" src="/assets/content/images/cache/47yLiVm59c-400.jpeg" width="800" height="495" srcset="/assets/content/images/cache/47yLiVm59c-400.jpeg 400w, /assets/content/images/cache/47yLiVm59c-600.jpeg 600w, /assets/content/images/cache/47yLiVm59c-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/utTxkWK8AQ-400.webp 400w, /assets/content/images/cache/utTxkWK8AQ-600.webp 600w, /assets/content/images/cache/utTxkWK8AQ-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Paper protyping. Literally." src="/assets/content/images/cache/utTxkWK8AQ-400.jpeg" width="800" height="600" srcset="/assets/content/images/cache/utTxkWK8AQ-400.jpeg 400w, /assets/content/images/cache/utTxkWK8AQ-600.jpeg 600w, /assets/content/images/cache/utTxkWK8AQ-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item15" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
-          <h3 class="text-xl">Discovery</h3>
-          <p class="prose">Even something as simple as tracing the journey an egg takes from when it is laid all the way to your breakfast table reveals relationships and patterns you might have missed otherwise.
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
+          <h3 class="text-xl">Laying out the experience strategy</h3>
+          <p class="prose">Blockframing established a shared understanding amongst the team about the role that individual pages and sections played within the larger user experience.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/jB0qHSzPeA-400.webp 400w, /assets/content/images/cache/jB0qHSzPeA-600.webp 600w, /assets/content/images/cache/jB0qHSzPeA-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Discovery" src="/assets/content/images/cache/jB0qHSzPeA-400.jpeg" width="800" height="112" srcset="/assets/content/images/cache/jB0qHSzPeA-400.jpeg 400w, /assets/content/images/cache/jB0qHSzPeA-600.jpeg 600w, /assets/content/images/cache/jB0qHSzPeA-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/51JJCyH_QL-400.webp 400w, /assets/content/images/cache/51JJCyH_QL-600.webp 600w, /assets/content/images/cache/51JJCyH_QL-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Laying out the experience strategy" src="/assets/content/images/cache/51JJCyH_QL-400.jpeg" width="800" height="618" srcset="/assets/content/images/cache/51JJCyH_QL-400.jpeg 400w, /assets/content/images/cache/51JJCyH_QL-600.jpeg 600w, /assets/content/images/cache/51JJCyH_QL-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item16" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
-          <h3 class="text-xl">It pays to consider your team&#39;s UX</h3>
-          <p class="prose">Integrating content management tools into the prototype reduced the cost of iteration for content strategists, promoted exploration, and streamlined documentation.
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
+          <h3 class="text-xl">Paper Blockframing &amp; Design Systems</h3>
+          <p class="prose">Early blockframing did more than support collaborative design. It also started the conversation around how we implement the federal design system.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/TqhugBdZNk-400.webp 400w, /assets/content/images/cache/TqhugBdZNk-600.webp 600w, /assets/content/images/cache/TqhugBdZNk-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for It pays to consider your team's UX" src="/assets/content/images/cache/TqhugBdZNk-400.jpeg" width="800" height="1180" srcset="/assets/content/images/cache/TqhugBdZNk-400.jpeg 400w, /assets/content/images/cache/TqhugBdZNk-600.jpeg 600w, /assets/content/images/cache/TqhugBdZNk-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/DHn2-tbAMV-400.webp 400w, /assets/content/images/cache/DHn2-tbAMV-600.webp 600w, /assets/content/images/cache/DHn2-tbAMV-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Paper Blockframing &amp; Design Systems" src="/assets/content/images/cache/DHn2-tbAMV-400.jpeg" width="800" height="495" srcset="/assets/content/images/cache/DHn2-tbAMV-400.jpeg 400w, /assets/content/images/cache/DHn2-tbAMV-600.jpeg 600w, /assets/content/images/cache/DHn2-tbAMV-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="reclXRr74HYb7n505_item17" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
+          <h3 class="text-xl">Discovery</h3>
+          <p class="prose">Even something as simple as tracing the journey an egg takes from when it is laid all the way to your breakfast table reveals relationships and patterns you might have missed otherwise.
+</p>
+        </figcaption>
+        
+        
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/w8CapscmQX-400.webp 400w, /assets/content/images/cache/w8CapscmQX-600.webp 600w, /assets/content/images/cache/w8CapscmQX-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Discovery" src="/assets/content/images/cache/w8CapscmQX-400.jpeg" width="800" height="112" srcset="/assets/content/images/cache/w8CapscmQX-400.jpeg 400w, /assets/content/images/cache/w8CapscmQX-600.jpeg 600w, /assets/content/images/cache/w8CapscmQX-800.jpeg 800w" sizes="100vw"></picture>
+      </figure>
+      
+      
+      
+      
+      <figure id="reclXRr74HYb7n505_item18" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
+          <h3 class="text-xl">It pays to consider your team&#39;s UX</h3>
+          <p class="prose">Integrating content management tools into the prototype reduced the cost of iteration for content strategists, promoted exploration, and streamlined documentation.
+</p>
+        </figcaption>
+        
+        
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/zW_sa7I9n2-400.webp 400w, /assets/content/images/cache/zW_sa7I9n2-600.webp 600w, /assets/content/images/cache/zW_sa7I9n2-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for It pays to consider your team's UX" src="/assets/content/images/cache/zW_sa7I9n2-400.jpeg" width="800" height="1180" srcset="/assets/content/images/cache/zW_sa7I9n2-400.jpeg 400w, /assets/content/images/cache/zW_sa7I9n2-600.jpeg 600w, /assets/content/images/cache/zW_sa7I9n2-800.jpeg 800w" sizes="100vw"></picture>
+      </figure>
+      
+      
+      
+      
+      <figure id="reclXRr74HYb7n505_item19" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
+        <figcaption class="col-span-1">
+          <h2>USDA</h2>
           <h3 class="text-xl">User research during COVID</h3>
           <p class="prose">We used a rich toolkit of methods to limit the impact that social restrictions had on our ability to conduct research. From market studies to journal articles to basic online surveys, we still managed to build a complete picture of the target audiences that guided content strategy and design.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/tz356rVxn1-400.webp 400w, /assets/content/images/cache/tz356rVxn1-600.webp 600w, /assets/content/images/cache/tz356rVxn1-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for User research during COVID" src="/assets/content/images/cache/tz356rVxn1-400.jpeg" width="800" height="857" srcset="/assets/content/images/cache/tz356rVxn1-400.jpeg 400w, /assets/content/images/cache/tz356rVxn1-600.jpeg 600w, /assets/content/images/cache/tz356rVxn1-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/2rFjr_LpBb-400.webp 400w, /assets/content/images/cache/2rFjr_LpBb-600.webp 600w, /assets/content/images/cache/2rFjr_LpBb-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for User research during COVID" src="/assets/content/images/cache/2rFjr_LpBb-400.jpeg" width="800" height="857" srcset="/assets/content/images/cache/2rFjr_LpBb-400.jpeg 400w, /assets/content/images/cache/2rFjr_LpBb-600.jpeg 600w, /assets/content/images/cache/2rFjr_LpBb-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
-      
-      
-      
-      
       
       
       
@@ -1320,84 +1628,12 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       <a href="#reclXRr74HYb7n505_item10" class="btn btn-xs">10</a> 
       
       
       
       
       <a href="#reclXRr74HYb7n505_item11" class="btn btn-xs">11</a> 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       
       
       
@@ -1448,12 +1684,80 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <a href="#reclXRr74HYb7n505_item14" class="btn btn-xs">14</a> 
       
       
       
       
       <a href="#reclXRr74HYb7n505_item15" class="btn btn-xs">15</a> 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -1467,11 +1771,18 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
       
       
       
+      
+      <a href="#reclXRr74HYb7n505_item18" class="btn btn-xs">18</a> 
+      
+      
+      
+      
+      <a href="#reclXRr74HYb7n505_item19" class="btn btn-xs">19</a> 
+      
+      
+      
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
@@ -1486,7 +1797,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/GPP0JtcxY5-400.webp 400w, /assets/content/images/cache/GPP0JtcxY5-600.webp 600w, /assets/content/images/cache/GPP0JtcxY5-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/GPP0JtcxY5-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/GPP0JtcxY5-400.jpeg 400w, /assets/content/images/cache/GPP0JtcxY5-600.jpeg 600w, /assets/content/images/cache/GPP0JtcxY5-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/s_6iwjg8O9-400.webp 400w, /assets/content/images/cache/s_6iwjg8O9-600.webp 600w, /assets/content/images/cache/s_6iwjg8O9-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/s_6iwjg8O9-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/s_6iwjg8O9-400.jpeg 400w, /assets/content/images/cache/s_6iwjg8O9-600.jpeg 600w, /assets/content/images/cache/s_6iwjg8O9-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -1534,7 +1845,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/YsnB_eu1gd-400.webp 400w, /assets/content/images/cache/YsnB_eu1gd-600.webp 600w, /assets/content/images/cache/YsnB_eu1gd-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/YsnB_eu1gd-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/YsnB_eu1gd-400.jpeg 400w, /assets/content/images/cache/YsnB_eu1gd-600.jpeg 600w, /assets/content/images/cache/YsnB_eu1gd-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/-F2W9vMPfF-400.webp 400w, /assets/content/images/cache/-F2W9vMPfF-600.webp 600w, /assets/content/images/cache/-F2W9vMPfF-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/-F2W9vMPfF-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/-F2W9vMPfF-400.jpeg 400w, /assets/content/images/cache/-F2W9vMPfF-600.jpeg 600w, /assets/content/images/cache/-F2W9vMPfF-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -1544,7 +1855,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/aXqvo-5uAG-400.webp 400w, /assets/content/images/cache/aXqvo-5uAG-600.webp 600w, /assets/content/images/cache/aXqvo-5uAG-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/aXqvo-5uAG-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/aXqvo-5uAG-400.jpeg 400w, /assets/content/images/cache/aXqvo-5uAG-600.jpeg 600w, /assets/content/images/cache/aXqvo-5uAG-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/IjEQZIBsW0-400.webp 400w, /assets/content/images/cache/IjEQZIBsW0-600.webp 600w, /assets/content/images/cache/IjEQZIBsW0-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/IjEQZIBsW0-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/IjEQZIBsW0-400.jpeg 400w, /assets/content/images/cache/IjEQZIBsW0-600.jpeg 600w, /assets/content/images/cache/IjEQZIBsW0-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -1568,7 +1879,7 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/XO1Xbhe-lJ-400.webp 400w, /assets/content/images/cache/XO1Xbhe-lJ-600.webp 600w, /assets/content/images/cache/XO1Xbhe-lJ-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Content Strategy" src="/assets/content/images/cache/XO1Xbhe-lJ-400.jpeg" width="800" height="764" srcset="/assets/content/images/cache/XO1Xbhe-lJ-400.jpeg 400w, /assets/content/images/cache/XO1Xbhe-lJ-600.jpeg 600w, /assets/content/images/cache/XO1Xbhe-lJ-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/BiA05JKtzP-400.webp 400w, /assets/content/images/cache/BiA05JKtzP-600.webp 600w, /assets/content/images/cache/BiA05JKtzP-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Content Strategy" src="/assets/content/images/cache/BiA05JKtzP-400.jpeg" width="800" height="764" srcset="/assets/content/images/cache/BiA05JKtzP-400.jpeg 400w, /assets/content/images/cache/BiA05JKtzP-600.jpeg 600w, /assets/content/images/cache/BiA05JKtzP-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -1590,13 +1901,16 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
-  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/y61k4xFvbJ-400.webp 400w, /assets/content/images/cache/y61k4xFvbJ-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/y61k4xFvbJ-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/y61k4xFvbJ-400.jpeg 400w, /assets/content/images/cache/y61k4xFvbJ-600.jpeg 600w" sizes="100vw"></picture>
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/tgIVT2gIMz-400.webp 400w, /assets/content/images/cache/tgIVT2gIMz-600.webp 600w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/tgIVT2gIMz-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/tgIVT2gIMz-400.jpeg 400w, /assets/content/images/cache/tgIVT2gIMz-600.jpeg 600w" sizes="100vw"></picture>
   
   
 </div>
 </a>
 <dialog id="gallery_recu90w08aTxkkklx" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="recu90w08aTxkkklx_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -1605,77 +1919,81 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
           <p class="prose"></p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
       
       
       <figure id="recu90w08aTxkkklx_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Wiretyping</h2>
           <h3 class="text-xl">Digital prototyping</h3>
           <p class="prose">Once collaborative paper prototyping with the client was complete, we took our new insights into their goals and expectations went straight into digital prototyping with Drupal.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/GPP0JtcxY5-400.webp 400w, /assets/content/images/cache/GPP0JtcxY5-600.webp 600w, /assets/content/images/cache/GPP0JtcxY5-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/GPP0JtcxY5-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/GPP0JtcxY5-400.jpeg 400w, /assets/content/images/cache/GPP0JtcxY5-600.jpeg 600w, /assets/content/images/cache/GPP0JtcxY5-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/s_6iwjg8O9-400.webp 400w, /assets/content/images/cache/s_6iwjg8O9-600.webp 600w, /assets/content/images/cache/s_6iwjg8O9-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Digital prototyping" src="/assets/content/images/cache/s_6iwjg8O9-400.jpeg" width="800" height="674" srcset="/assets/content/images/cache/s_6iwjg8O9-400.jpeg 400w, /assets/content/images/cache/s_6iwjg8O9-600.jpeg 600w, /assets/content/images/cache/s_6iwjg8O9-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recu90w08aTxkkklx_item2" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Wiretyping</h2>
           <h3 class="text-xl">Live data, real testing</h3>
           <p class="prose">Using live data in a digital prototype increased the quality of feedback produced from testing at the same time as it streamlined the process of applying - and testing - new insights.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/YsnB_eu1gd-400.webp 400w, /assets/content/images/cache/YsnB_eu1gd-600.webp 600w, /assets/content/images/cache/YsnB_eu1gd-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/YsnB_eu1gd-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/YsnB_eu1gd-400.jpeg 400w, /assets/content/images/cache/YsnB_eu1gd-600.jpeg 600w, /assets/content/images/cache/YsnB_eu1gd-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/-F2W9vMPfF-400.webp 400w, /assets/content/images/cache/-F2W9vMPfF-600.webp 600w, /assets/content/images/cache/-F2W9vMPfF-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Live data, real testing" src="/assets/content/images/cache/-F2W9vMPfF-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/-F2W9vMPfF-400.jpeg 400w, /assets/content/images/cache/-F2W9vMPfF-600.jpeg 600w, /assets/content/images/cache/-F2W9vMPfF-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recu90w08aTxkkklx_item3" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Wiretyping</h2>
           <h3 class="text-xl">A shared understanding</h3>
           <p class="prose">A good digital prototype isn&#39;t just for testing. It&#39;s also a way to provide a cross-functional team with a single voice of authority for content strategy, experience design, and development.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/aXqvo-5uAG-400.webp 400w, /assets/content/images/cache/aXqvo-5uAG-600.webp 600w, /assets/content/images/cache/aXqvo-5uAG-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/aXqvo-5uAG-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/aXqvo-5uAG-400.jpeg 400w, /assets/content/images/cache/aXqvo-5uAG-600.jpeg 600w, /assets/content/images/cache/aXqvo-5uAG-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/IjEQZIBsW0-400.webp 400w, /assets/content/images/cache/IjEQZIBsW0-600.webp 600w, /assets/content/images/cache/IjEQZIBsW0-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for A shared understanding" src="/assets/content/images/cache/IjEQZIBsW0-400.jpeg" width="800" height="700" srcset="/assets/content/images/cache/IjEQZIBsW0-400.jpeg 400w, /assets/content/images/cache/IjEQZIBsW0-600.jpeg 600w, /assets/content/images/cache/IjEQZIBsW0-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recu90w08aTxkkklx_item4" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Wiretyping</h2>
           <h3 class="text-xl">Content Strategy</h3>
           <p class="prose">Even when lorem ipsum was used, the information architecture - baed on production data models - still reflected the relationships among different pieces of content.
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/XO1Xbhe-lJ-400.webp 400w, /assets/content/images/cache/XO1Xbhe-lJ-600.webp 600w, /assets/content/images/cache/XO1Xbhe-lJ-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Content Strategy" src="/assets/content/images/cache/XO1Xbhe-lJ-400.jpeg" width="800" height="764" srcset="/assets/content/images/cache/XO1Xbhe-lJ-400.jpeg 400w, /assets/content/images/cache/XO1Xbhe-lJ-600.jpeg 600w, /assets/content/images/cache/XO1Xbhe-lJ-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/BiA05JKtzP-400.webp 400w, /assets/content/images/cache/BiA05JKtzP-600.webp 600w, /assets/content/images/cache/BiA05JKtzP-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Content Strategy" src="/assets/content/images/cache/BiA05JKtzP-400.jpeg" width="800" height="764" srcset="/assets/content/images/cache/BiA05JKtzP-400.jpeg 400w, /assets/content/images/cache/BiA05JKtzP-600.jpeg 600w, /assets/content/images/cache/BiA05JKtzP-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recu90w08aTxkkklx_item5" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Wiretyping</h2>
           <h3 class="text-xl">Emergent stories</h3>
           <p class="prose">By using a platform like Drupal in combination with real data and a deep understanding of the landscape, we were able to identify new, valuable relationships among the different datasources. In this case, aggregating information about food processing establishments into a single view supported the USDA&#39;s mission to build transparency into the country&#39;s food system. 
 </p>
         </figcaption>
         
         
-        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/y61k4xFvbJ-400.webp 400w, /assets/content/images/cache/y61k4xFvbJ-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/y61k4xFvbJ-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/y61k4xFvbJ-400.jpeg 400w, /assets/content/images/cache/y61k4xFvbJ-600.jpeg 600w" sizes="100vw"></picture>
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/tgIVT2gIMz-400.webp 400w, /assets/content/images/cache/tgIVT2gIMz-600.webp 600w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Emergent stories" src="/assets/content/images/cache/tgIVT2gIMz-400.jpeg" width="600" height="614" srcset="/assets/content/images/cache/tgIVT2gIMz-400.jpeg 400w, /assets/content/images/cache/tgIVT2gIMz-600.jpeg 600w" sizes="100vw"></picture>
       </figure>
       
       
@@ -1873,9 +2191,6 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
@@ -1897,6 +2212,14 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
   
   
   
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/mmSRVq6c7F-400.webp 400w, /assets/content/images/cache/mmSRVq6c7F-600.webp 600w, /assets/content/images/cache/mmSRVq6c7F-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for USDA 01.png" src="/assets/content/images/cache/mmSRVq6c7F-400.jpeg" width="800" height="183" srcset="/assets/content/images/cache/mmSRVq6c7F-400.jpeg 400w, /assets/content/images/cache/mmSRVq6c7F-600.jpeg 600w, /assets/content/images/cache/mmSRVq6c7F-800.jpeg 800w" sizes="100vw"></picture>
+  
+  
+  
+  
+  
+  <picture class="w-full"><source type="image/webp" srcset="/assets/content/images/cache/JlgDimosIp-400.webp 400w, /assets/content/images/cache/JlgDimosIp-600.webp 600w, /assets/content/images/cache/JlgDimosIp-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Food safety as a service" src="/assets/content/images/cache/JlgDimosIp-400.jpeg" width="800" height="302" srcset="/assets/content/images/cache/JlgDimosIp-400.jpeg 400w, /assets/content/images/cache/JlgDimosIp-600.jpeg 600w, /assets/content/images/cache/JlgDimosIp-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -1922,7 +2245,10 @@ The lifecycle of a HAACP guided the refinement of our research plan and, as the 
 </div>
 </a>
 <dialog id="gallery_rec8dALDOVUJYFdwI" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="rec8dALDOVUJYFdwI_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -1933,12 +2259,36 @@ Enter the artifact journey. Identify an object that people use and follow it as 
 </p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
       
       
+      <figure id="rec8dALDOVUJYFdwI_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
+        <figcaption class="col-span-1">
+          <h2>Artifact Journeys</h2>
+          <h3 class="text-xl">USDA 01.png</h3>
+          <p class="prose"></p>
+        </figcaption>
+        
+        
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/mmSRVq6c7F-400.webp 400w, /assets/content/images/cache/mmSRVq6c7F-600.webp 600w, /assets/content/images/cache/mmSRVq6c7F-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for USDA 01.png" src="/assets/content/images/cache/mmSRVq6c7F-400.jpeg" width="800" height="183" srcset="/assets/content/images/cache/mmSRVq6c7F-400.jpeg 400w, /assets/content/images/cache/mmSRVq6c7F-600.jpeg 600w, /assets/content/images/cache/mmSRVq6c7F-800.jpeg 800w" sizes="100vw"></picture>
+      </figure>
+      
+      
+      
+      
+      <figure id="rec8dALDOVUJYFdwI_item2" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
+        <figcaption class="col-span-1">
+          <h2>Artifact Journeys</h2>
+          <h3 class="text-xl">Food safety as a service</h3>
+          <p class="prose">Artifact journeys favor service diagrams. By mapping out the process by which companies obtain licenses we uncovered key relationships in the food safety landscape.
+</p>
+        </figcaption>
+        
+        
+        <picture class="md:col-span-2"><source type="image/webp" srcset="/assets/content/images/cache/JlgDimosIp-400.webp 400w, /assets/content/images/cache/JlgDimosIp-600.webp 600w, /assets/content/images/cache/JlgDimosIp-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Food safety as a service" src="/assets/content/images/cache/JlgDimosIp-400.jpeg" width="800" height="302" srcset="/assets/content/images/cache/JlgDimosIp-400.jpeg 400w, /assets/content/images/cache/JlgDimosIp-600.jpeg 600w, /assets/content/images/cache/JlgDimosIp-800.jpeg 800w" sizes="100vw"></picture>
+      </figure>
       
       
       
@@ -1985,6 +2335,12 @@ Enter the artifact journey. Identify an object that people use and follow it as 
       
       
       
+      <a href="#rec8dALDOVUJYFdwI_item1" class="btn btn-xs">1</a> 
+      
+      
+      
+      
+      <a href="#rec8dALDOVUJYFdwI_item2" class="btn btn-xs">2</a> 
       
       
       
@@ -2010,15 +2366,11 @@ Enter the artifact journey. Identify an object that people use and follow it as 
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
     
   </section>
-</div>
 
       </article>
     </main>
@@ -2026,50 +2378,50 @@ Enter the artifact journey. Identify an object that people use and follow it as 
     
 
 
-<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
-  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other Civic Tech</figcaption>
+<figure id="related" class="p-4 sm:p-12 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <figcaption class="text-3xl sm:text-4xl leading-none font-thin mb-8 col-span-full divider divider-primary">Other Civic Tech</figcaption>
   
   
   
   
   
   
-<a href="/projects/forms-gov/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/forms-gov/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/ij28wz8fzz-400.webp 400w, /assets/content/images/cache/ij28wz8fzz-600.webp 600w, /assets/content/images/cache/ij28wz8fzz-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/ij28wz8fzz-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/ij28wz8fzz-400.jpeg 400w, /assets/content/images/cache/ij28wz8fzz-600.jpeg 600w, /assets/content/images/cache/ij28wz8fzz-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/DQQsqOxQfv-400.webp 400w, /assets/content/images/cache/DQQsqOxQfv-600.webp 600w, /assets/content/images/cache/DQQsqOxQfv-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/DQQsqOxQfv-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/DQQsqOxQfv-400.jpeg 400w, /assets/content/images/cache/DQQsqOxQfv-600.jpeg 600w, /assets/content/images/cache/DQQsqOxQfv-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Improving Access to Government Benefits and Services</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">A collaboration with the Office of Evaluation Sciences to improve access to essential services like healthcare and housing through innovative, scientifically validated digital design.</p>
+    <h3 class="card-title">Improving Access to Government Benefits and Services</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">A collaboration with the Office of Evaluation Sciences to improve access to essential services like healthcare and housing through innovative, scientifically validated digital design.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/made-in-america/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/made-in-america/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/ij28wz8fzz-400.webp 400w, /assets/content/images/cache/ij28wz8fzz-600.webp 600w, /assets/content/images/cache/ij28wz8fzz-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/ij28wz8fzz-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/ij28wz8fzz-400.jpeg 400w, /assets/content/images/cache/ij28wz8fzz-600.jpeg 600w, /assets/content/images/cache/ij28wz8fzz-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/DQQsqOxQfv-400.webp 400w, /assets/content/images/cache/DQQsqOxQfv-600.webp 600w, /assets/content/images/cache/DQQsqOxQfv-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for GSA.svg" src="/assets/content/images/cache/DQQsqOxQfv-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/DQQsqOxQfv-400.jpeg 400w, /assets/content/images/cache/DQQsqOxQfv-600.jpeg 600w, /assets/content/images/cache/DQQsqOxQfv-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Building Transparency into Federal Decision-Making</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Collaborated with the General Services Administration (GSA) and the White House to increase transparency into the decisions behind $4.2B in waivers and exceptions to import and export policies.</p>
+    <h3 class="card-title">Building Transparency into Federal Decision-Making</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Collaborated with the General Services Administration (GSA) and the White House to increase transparency into the decisions behind $4.2B in waivers and exceptions to import and export policies.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/resiliencelinks/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/resiliencelinks/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/cOKm_6IxWx-400.webp 400w, /assets/content/images/cache/cOKm_6IxWx-600.webp 600w, /assets/content/images/cache/cOKm_6IxWx-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USAID" src="/assets/content/images/cache/cOKm_6IxWx-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/cOKm_6IxWx-400.jpeg 400w, /assets/content/images/cache/cOKm_6IxWx-600.jpeg 600w, /assets/content/images/cache/cOKm_6IxWx-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/XgyVGnsC3i-400.webp 400w, /assets/content/images/cache/XgyVGnsC3i-600.webp 600w, /assets/content/images/cache/XgyVGnsC3i-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USAID" src="/assets/content/images/cache/XgyVGnsC3i-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/XgyVGnsC3i-400.jpeg 400w, /assets/content/images/cache/XgyVGnsC3i-600.jpeg 600w, /assets/content/images/cache/XgyVGnsC3i-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">USAID &amp; Building Resiliency World-Wide</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bixal enhanced USAID&#39;s ResilienceLinks platform, improving global crisis response and coordination through user-friendly design and strategic long-term planning, addressing challenges like climate change, conflict, and pandemics.</p>
+    <h3 class="card-title">USAID &amp; Building Resiliency World-Wide</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bixal enhanced USAID&#39;s ResilienceLinks platform, improving global crisis response and coordination through user-friendly design and strategic long-term planning, addressing challenges like climate change, conflict, and pandemics.</p>
   </div>
 </a>
   
@@ -2082,42 +2434,42 @@ Enter the artifact journey. Identify an object that people use and follow it as 
   
   
   
-<a href="/projects/sba-gov/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/sba-gov/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/ffPCJUrpuu-400.webp 400w, /assets/content/images/cache/ffPCJUrpuu-600.webp 600w, /assets/content/images/cache/ffPCJUrpuu-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for SBA logo" src="/assets/content/images/cache/ffPCJUrpuu-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/ffPCJUrpuu-400.jpeg 400w, /assets/content/images/cache/ffPCJUrpuu-600.jpeg 600w, /assets/content/images/cache/ffPCJUrpuu-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/yDFlz2or6T-400.webp 400w, /assets/content/images/cache/yDFlz2or6T-600.webp 600w, /assets/content/images/cache/yDFlz2or6T-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for SBA logo" src="/assets/content/images/cache/yDFlz2or6T-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/yDFlz2or6T-400.jpeg 400w, /assets/content/images/cache/yDFlz2or6T-600.jpeg 600w, /assets/content/images/cache/yDFlz2or6T-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Supporting American Small Businesses</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">We transformed SBA.gov into a user-centric, accessible platform, increasing engagement by 801% in 2020 through extensive user research and human-centered design, better supporting entrepreneurs and small business owners.</p>
+    <h3 class="card-title">Supporting American Small Businesses</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">We transformed SBA.gov into a user-centric, accessible platform, increasing engagement by 801% in 2020 through extensive user research and human-centered design, better supporting entrepreneurs and small business owners.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/united-states-web-design-system/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/united-states-web-design-system/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/luy8V5LUha-200.webp 200w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USWDS Logo.svg" src="/assets/content/images/cache/luy8V5LUha-200.jpeg" width="200" height="189"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/3l0aXYRiup-200.webp 200w" sizes="100vw"><img class="m-0"  alt="Thumbnail for USWDS Logo.svg" src="/assets/content/images/cache/3l0aXYRiup-200.jpeg" width="200" height="189"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">United States Web Design System</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">As the design manager for federal projects at Bixal, I led USWDS integration and customization to meet specific agency needs, fostering cross-functional collaboration and improving user experience.</p>
+    <h3 class="card-title">United States Web Design System</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">As the design manager for federal projects at Bixal, I led USWDS integration and customization to meet specific agency needs, fostering cross-functional collaboration and improving user experience.</p>
   </div>
 </a>
   
   
   
   
-<a href="/projects/cityforward/" class="card no-underline p-0 my-4 hover:bg-neutral-800">
+<a href="/projects/cityforward/" class="card p-0 my-4">
   
   <figure class="h-64 md:h-48">
-    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/rTabCAyIA4-400.webp 400w, /assets/content/images/cache/rTabCAyIA4-600.webp 600w, /assets/content/images/cache/rTabCAyIA4-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/rTabCAyIA4-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/rTabCAyIA4-400.jpeg 400w, /assets/content/images/cache/rTabCAyIA4-600.jpeg 600w, /assets/content/images/cache/rTabCAyIA4-800.jpeg 800w" sizes="100vw"></picture>
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/mRiWoZ9HXS-400.webp 400w, /assets/content/images/cache/mRiWoZ9HXS-600.webp 600w, /assets/content/images/cache/mRiWoZ9HXS-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for CarePlex" src="/assets/content/images/cache/mRiWoZ9HXS-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/mRiWoZ9HXS-400.jpeg 400w, /assets/content/images/cache/mRiWoZ9HXS-600.jpeg 600w, /assets/content/images/cache/mRiWoZ9HXS-800.jpeg 800w" sizes="100vw"></picture>
   </figure>
   <div class="card-body px-4">
-    <h3 class="card-title leading-none text-white font-medium text-2xl my-0 col-span-full">Smart Decisions, Smart Cities</h3>
-    <p class="prose font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">A Webby Award-winning platform enabling city officials, researchers, academics, and citizens globally to interact with city data and engage in ongoing public dialogue.</p>
+    <h3 class="card-title">Smart Decisions, Smart Cities</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">A Webby Award-winning platform enabling city officials, researchers, academics, and citizens globally to interact with city data and engage in ongoing public dialogue.</p>
   </div>
 </a>
   
@@ -2137,21 +2489,21 @@ Enter the artifact journey. Identify an object that people use and follow it as 
   <!-- SOCIAL -->
   <nav id="social" class="flex flex-row gap-2 max-w-96">
     
-    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.webp 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.webp 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.jpeg 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.webp 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.webp 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.jpeg 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.webp 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.webp 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.jpeg 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.webp 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.webp 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.jpeg 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.webp 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.webp 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.jpeg 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.webp 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.webp 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.jpeg 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.webp 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.webp 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.jpeg 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.webp 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.webp 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.jpeg 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.jpeg 800w" sizes="100vw"></picture></a>
     
   </nav>
 </footer>

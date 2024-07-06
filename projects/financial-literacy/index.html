@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
   <!-- HEAD -->
@@ -58,7 +57,8 @@
   <!-- 7 deferred js  -->
   
   <!-- Template-defined js -->
-  
+  <script src="/assets/js/main.js"></script>
+
   <!-- 8 everything else: meta tags, icons, open graph etc.  -->
   <meta name="description" content="Full stack experience designer and perpetual tinkerer" />
 <meta name="robots" content="index,follow" /><!-- All Search Engines -->
@@ -111,7 +111,7 @@
 	})(window,document,'script','dataLayer','GTM-M2CDZDD7');</script>
 	<!-- End Google Tag Manager -->
 
-  <body class="bg-black">
+  <body class="project">
     <!-- GTM -->
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2CDZDD7"
@@ -128,67 +128,73 @@
 
     </section>
     <!-- NAVIGATION -->
-    <div class="navbar bg-black absolute">
+    <div id="primary-nav" class="navbar z-50 px-0 lg:px-12">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" id="hamburger" aria-label="mobile menu" class="btn btn-ghost lg:hidden">
-        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-neutral-50" fill="none" viewBox="0 0 24 24">
+        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
         
         <li>
-          <a href="/projects/">Work</a>
+          <a class="link-hover href="/projects/">Work</a>
         </li>
         
         <li>
-          <a href="/lessons-learned/">Lessons Learned</a>
+          <a class="link-hover href="/lessons-learned/">Lessons Learned</a>
         </li>
         
         <li>
-          <a href="/recognition/">Recognition</a>
+          <a class="link-hover href="/recognition/">Recognition</a>
         </li>
         
       </ul>
     </div>
     
-    <a href="/" class="btn btn-ghost text-xl text-neutral-50">Russell S. Lebo</a>
+    <a href="/" class="font-bold text-xl">Russell S. Lebo</a>
     
 
   </div>
   <div class="navbar-center hidden lg:flex"></div>
   <div class="navbar-end">
-    <ul class="menu menu-horizontal px-1 hidden lg:flex text-neutral-50">
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
       
       <li>
-        <a href="/projects/">Work</a>
+        <a class="link-hover " href="/projects/">Work</a>
       </li>
       
       <li>
-        <a href="/lessons-learned/">Lessons Learned</a>
+        <a class="link-hover " href="/lessons-learned/">Lessons Learned</a>
       </li>
       
       <li>
-        <a href="/recognition/">Recognition</a>
+        <a class="link-hover " href="/recognition/">Recognition</a>
       </li>
       
     </ul>
   </div>
 </div>
     <!-- CONTENT -->
-    <main tabindex=" -1" class="py-12">
-      <article>
+    <main tabindex=" -1" class="">
+      <article class="sm:col-span-full sm:grid sm:grid-cols-subgrid">
         
-<section class="bg-black p-12 pb-20">
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/">Work /</a>
-   
-  <a class="link-primary link-hover font-medium text-xl sm:text-2xl" href="/projects/types/undefined"> /</a>
+<section class="p-12 pb-0">
+  <div class="breadcrumbs">
+    <ul class="place-content-center md:place-content-start">
+      <li><a href="/projects/">Work</a></li>
+       
+      <li><a href="/projects/types/experiential">Experiential</a></li>
+      
+    </ul>
+  </div>
   
-  <h1 class="text-white font-black text-center md:text-left">Building Financial Literacy</h1>
-  <p id="introduction" class="text-white text-center md:text-left md:text-2xl font-extralight">Bluecadet&#39;s innovative campaign for CUNA used engaging characters and interactive games to promote financial literacy, combining humor and technology to make fair banking practices accessible and fun.</p>
+
+  <h1>Building Financial Literacy</h1>
+  <p id="introduction" class="subtitle">Bluecadet&#39;s innovative campaign for CUNA used engaging characters and interactive games to promote financial literacy, combining humor and technology to make fair banking practices accessible and fun.</p>
   <!-- HERE BE PROJECT METADATA -->
-  <section id="details" class="sm:grid sm:grid-cols-6 py-8 gap-4">
+  <section id="details" class="w-full md:grid md:grid-cols-6 py-12 gap-4">
     
 
 
@@ -196,10 +202,10 @@
 <!-- ROLE -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Roles</figcaption>
+	<figcaption class="">Roles</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Lead Developer</li>
+		<li class="inline-block ">Lead Developer</li>
 		
 	</ul>
 </figure>
@@ -207,12 +213,12 @@
 <!-- COMPANY -->
 
 <figure class="py-2">
-	<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Company/Client</figcaption>
+	<figcaption class="">Company/Client</figcaption>
 	<ul>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">CUNA, </li>
+		<li class="inline-block ">CUNA, </li>
 		
-		<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bluecadet</li>
+		<li class="inline-block ">Bluecadet</li>
 		
 	</ul>
 </figure>
@@ -221,19 +227,19 @@
 
 <!-- ACTIITIES -->
 
-<figure class="py-2 col-span-full">
-<figcaption class="text-slate-400 text-wrap leading-tight text-lg">Activities</figcaption>
+<figure class="py-2 col-span-2">
+<figcaption class="">Activities</figcaption>
 <ul class="list-none pl-0">
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Interaction Design, </li>
+	<li class="inline-block ">Interaction Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Experience Design, </li>
+	<li class="inline-block ">Experience Design, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Development, </li>
+	<li class="inline-block ">Development, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Natural Language Processing, </li>
+	<li class="inline-block ">Natural Language Processing, </li>
 	
-	<li class="inline-block font-thin text-neutral-50 text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Game Design</li>
+	<li class="inline-block ">Game Design</li>
 	
 </ul>
 </figure>
@@ -243,17 +249,16 @@
 
     <!-- EXPLORE -->
     
-    <a class="btn btn-outline btn-circle btn-primary w-24 h-24 text-lg italic " href="https://youtu.be/0jlv2N5kaCM">View⤴</a>
+    <a class="btn content-center btn-circle btn-primary w-24 h-24 text-lg italic block mx-auto col-end-auto " href="https://youtu.be/0jlv2N5kaCM">View⤴</a>
     
   </section>
 </section>
 
         
-<div class="md:grid md:grid-cols-2 bg-white">
   <!-- LEAD VIDEO -->
    
   <!-- BODY COPY -->
-  <section id="body" class="p-12 prose md:col-start-1">
+  <section id="body" class="description mx-auto p-8 md:p-0 md:pt-8 border-t-2 border-neutral-900">
     
     <p>Bluecadet’s innovative approach to promoting financial literacy for the Credit Union National Association (CUNA) featured engaging characters, the Little Guy and the Banker, in a series of interactive games and experiences. The project aimed to educate and engage users on fair banking practices through a playful and technology-driven design.<br>
 The outcome was an engaging and interactive campaign that used humor and technology to educate users on financial literacy. The combination of the Ask the Banker tool and the interactive Little Guy experiences provided a fun and informative way to learn about fair banking practices.<br>
@@ -262,60 +267,74 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
     
   </section>
   <!-- NUGGETS -->
-  <section id="nuggets" class="prose p-12 md:col-start-1">
+  <section id="nuggets" class="prose mx-auto p-8 md:p-0">
     
-      <h2>Characterization of Financial Concepts</h2>
-      
-        <p>The campaign featured two contrasting characters: the Little Guy, representing the virtues of financial planning, transparency, and fairness, and his nemesis, the Banker, symbolizing the opposite traits.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Characterization of Financial Concepts</h2>
+  
+    <p>The campaign featured two contrasting characters: the Little Guy, representing the virtues of financial planning, transparency, and fairness, and his nemesis, the Banker, symbolizing the opposite traits.</p>
+
+  
+</div>
     
-      <h2>Technology Behind the Interaction</h2>
-      
-        <p>The key technology challenge involved creating a language recognition program that could accurately interpret user questions and provide varied responses, ensuring a fresh experience with each interaction.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Technology Behind the Interaction</h2>
+  
+    <p>The key technology challenge involved creating a language recognition program that could accurately interpret user questions and provide varied responses, ensuring a fresh experience with each interaction.</p>
+
+  
+</div>
     
-      <h2>Ask the Banker Interactive</h2>
-      
-        <p>This interactive tool allowed users to ask the Banker any question, receiving obnoxious yet relevant responses. The experience was powered by a custom language recognition program that parsed user inputs and matched them with appropriate responses from a database of over three hundred video clips.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Ask the Banker Interactive</h2>
+  
+    <p>This interactive tool allowed users to ask the Banker any question, receiving obnoxious yet relevant responses. The experience was powered by a custom language recognition program that parsed user inputs and matched them with appropriate responses from a database of over three hundred video clips.</p>
+
+  
+</div>
     
-      <h2>The Little Guy&#39;s Advocate Role</h2>
-      
-        <p>The Little Guy was designed as a relatable everyman figure, advocating for fair banking. Users could engage with this character by dressing him up in various outfits and scenarios, making the experience personalized and interactive.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">The Little Guy&#39;s Advocate Role</h2>
+  
+    <p>The Little Guy was designed as a relatable everyman figure, advocating for fair banking. Users could engage with this character by dressing him up in various outfits and scenarios, making the experience personalized and interactive.</p>
+
+  
+</div>
     
-      <h2>User Engagement and Distribution</h2>
-      
-        <p>Users could download their customized Little Guy creations as desktop wallpapers, share them on Facebook, or send them via email, enhancing the campaign’s reach and engagement.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">User Engagement and Distribution</h2>
+  
+    <p>Users could download their customized Little Guy creations as desktop wallpapers, share them on Facebook, or send them via email, enhancing the campaign’s reach and engagement.</p>
+
+  
+</div>
     
-      <h2>Gamification with Find the Little Guy</h2>
-      
-        <p>A gamified element was introduced with CUNA’s own version of Flat Stanley: a “Find the Little Guy” challenge, where users guessed the location of a life-sized cutout of the Little Guy in different places around Washington D.C. Successful participants were entered into a lottery for CUNA merchandise.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Gamification with Find the Little Guy</h2>
+  
+    <p>A gamified element was introduced with CUNA’s own version of Flat Stanley: a “Find the Little Guy” challenge, where users guessed the location of a life-sized cutout of the Little Guy in different places around Washington D.C. Successful participants were entered into a lottery for CUNA merchandise.</p>
+
+  
+</div>
     
-      <h2>Technical Execution and Challenges</h2>
-      
-        <p>The project involved mapping out the experience and creating assets with an illustrator. A significant technical challenge was managing security issues related to downloading images from the Flash player, a feature then new to Flash technology.</p>
+      <div class="nugget my-12">
 
-      
-      
+  <h2 class="not-prose">Technical Execution and Challenges</h2>
+  
+    <p>The project involved mapping out the experience and creating assets with an illustrator. A significant technical challenge was managing security issues related to downloading images from the Flash player, a feature then new to Flash technology.</p>
+
+  
+</div>
     
   </section>
   <!-- IMAGE GALLERIES -->
-  <section id="examples" class="object-top md:col-start-2 md:row-start-1 md:row-span-2">
+  <section id="examples" class="mx-auto">
     
       
       
@@ -369,7 +388,10 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
 </div>
 </a>
 <dialog id="gallery_recjRXmfHN7ZZr162" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="recjRXmfHN7ZZr162_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -378,7 +400,6 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
           <p class="prose"></p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
@@ -479,9 +500,6 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
@@ -500,7 +518,7 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
   
   
   
-  <picture class="w-full bg-black"><source type="image/webp" srcset="/assets/content/images/cache/3Abphce3H0-400.webp 400w, /assets/content/images/cache/3Abphce3H0-600.webp 600w, /assets/content/images/cache/3Abphce3H0-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Ask the Banker (2).png" src="/assets/content/images/cache/3Abphce3H0-400.jpeg" width="800" height="599" srcset="/assets/content/images/cache/3Abphce3H0-400.jpeg 400w, /assets/content/images/cache/3Abphce3H0-600.jpeg 600w, /assets/content/images/cache/3Abphce3H0-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full bg-black"><source type="image/webp" srcset="/assets/content/images/cache/0hNi5izOn8-400.webp 400w, /assets/content/images/cache/0hNi5izOn8-600.webp 600w, /assets/content/images/cache/0hNi5izOn8-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Ask the Banker (2).png" src="/assets/content/images/cache/0hNi5izOn8-400.jpeg" width="800" height="599" srcset="/assets/content/images/cache/0hNi5izOn8-400.jpeg 400w, /assets/content/images/cache/0hNi5izOn8-600.jpeg 600w, /assets/content/images/cache/0hNi5izOn8-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -520,7 +538,7 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
   
   
   
-  <picture class="w-full bg-black"><source type="image/webp" srcset="/assets/content/images/cache/GQC3_oz1Ix-400.webp 400w, /assets/content/images/cache/GQC3_oz1Ix-600.webp 600w, /assets/content/images/cache/GQC3_oz1Ix-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Ask the Banker (4).png" src="/assets/content/images/cache/GQC3_oz1Ix-400.jpeg" width="800" height="1002" srcset="/assets/content/images/cache/GQC3_oz1Ix-400.jpeg 400w, /assets/content/images/cache/GQC3_oz1Ix-600.jpeg 600w, /assets/content/images/cache/GQC3_oz1Ix-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full bg-black"><source type="image/webp" srcset="/assets/content/images/cache/n_i-trH6O3-400.webp 400w, /assets/content/images/cache/n_i-trH6O3-600.webp 600w, /assets/content/images/cache/n_i-trH6O3-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Ask the Banker (4).png" src="/assets/content/images/cache/n_i-trH6O3-400.jpeg" width="800" height="1002" srcset="/assets/content/images/cache/n_i-trH6O3-400.jpeg 400w, /assets/content/images/cache/n_i-trH6O3-600.jpeg 600w, /assets/content/images/cache/n_i-trH6O3-800.jpeg 800w" sizes="100vw"></picture>
   
   
   
@@ -528,13 +546,16 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
   
   
   
-  <picture class="w-full bg-black"><source type="image/webp" srcset="/assets/content/images/cache/55q432bfzX-400.webp 400w, /assets/content/images/cache/55q432bfzX-600.webp 600w, /assets/content/images/cache/55q432bfzX-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Ask the Banker (1).png" src="/assets/content/images/cache/55q432bfzX-400.jpeg" width="800" height="599" srcset="/assets/content/images/cache/55q432bfzX-400.jpeg 400w, /assets/content/images/cache/55q432bfzX-600.jpeg 600w, /assets/content/images/cache/55q432bfzX-800.jpeg 800w" sizes="100vw"></picture>
+  <picture class="w-full bg-black"><source type="image/webp" srcset="/assets/content/images/cache/3lJwQ5dWfW-400.webp 400w, /assets/content/images/cache/3lJwQ5dWfW-600.webp 600w, /assets/content/images/cache/3lJwQ5dWfW-800.webp 800w" sizes="100vw"><img class="aspect-square object-center object-cover"  alt="Thumbnail for Ask the Banker (1).png" src="/assets/content/images/cache/3lJwQ5dWfW-400.jpeg" width="800" height="599" srcset="/assets/content/images/cache/3lJwQ5dWfW-400.jpeg 400w, /assets/content/images/cache/3lJwQ5dWfW-600.jpeg 600w, /assets/content/images/cache/3lJwQ5dWfW-800.jpeg 800w" sizes="100vw"></picture>
   
   
 </div>
 </a>
 <dialog id="gallery_recZ7dfqEqrXEhHSg" class="modal">
-  <div class="modal-box w-9/12 max-w-none shadow-none">
+  <form method="dialog">
+    <button class="btn btn-sm md:btn-lg btn-circle absolute right-2 top-2">✕</button>
+  </form>
+  <div class="modal-box max-w-none shadow-none">
     <div class="md:carousel md:carousel-center md:max-w-none space-x-4 md:rounded-box ">
       <!-- TITLE CARD -->
       <div id="recZ7dfqEqrXEhHSg_title" class="mb-4 p-4 md:carousel-item w-full">
@@ -544,14 +565,14 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
 </p>
           
         </div>
-
       </div>
       <!-- IMAGES -->
       
       
       
       <figure id="recZ7dfqEqrXEhHSg_item1" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Ask a Banker</h2>
           <h3 class="text-xl">Ask the Banker (2).png</h3>
           <p class="prose"></p>
         </figcaption>
@@ -559,14 +580,15 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
         
         
         
-        <picture class="md:col-span-2 bg-black"><source type="image/webp" srcset="/assets/content/images/cache/3Abphce3H0-400.webp 400w, /assets/content/images/cache/3Abphce3H0-600.webp 600w, /assets/content/images/cache/3Abphce3H0-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Ask the Banker (2).png" src="/assets/content/images/cache/3Abphce3H0-400.jpeg" width="800" height="599" srcset="/assets/content/images/cache/3Abphce3H0-400.jpeg 400w, /assets/content/images/cache/3Abphce3H0-600.jpeg 600w, /assets/content/images/cache/3Abphce3H0-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2 bg-black"><source type="image/webp" srcset="/assets/content/images/cache/0hNi5izOn8-400.webp 400w, /assets/content/images/cache/0hNi5izOn8-600.webp 600w, /assets/content/images/cache/0hNi5izOn8-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Ask the Banker (2).png" src="/assets/content/images/cache/0hNi5izOn8-400.jpeg" width="800" height="599" srcset="/assets/content/images/cache/0hNi5izOn8-400.jpeg 400w, /assets/content/images/cache/0hNi5izOn8-600.jpeg 600w, /assets/content/images/cache/0hNi5izOn8-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recZ7dfqEqrXEhHSg_item2" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Ask a Banker</h2>
           <h3 class="text-xl">Ask the Banker (4).png</h3>
           <p class="prose"></p>
         </figcaption>
@@ -574,14 +596,15 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
         
         
         
-        <picture class="md:col-span-2 bg-black"><source type="image/webp" srcset="/assets/content/images/cache/GQC3_oz1Ix-400.webp 400w, /assets/content/images/cache/GQC3_oz1Ix-600.webp 600w, /assets/content/images/cache/GQC3_oz1Ix-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Ask the Banker (4).png" src="/assets/content/images/cache/GQC3_oz1Ix-400.jpeg" width="800" height="1002" srcset="/assets/content/images/cache/GQC3_oz1Ix-400.jpeg 400w, /assets/content/images/cache/GQC3_oz1Ix-600.jpeg 600w, /assets/content/images/cache/GQC3_oz1Ix-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2 bg-black"><source type="image/webp" srcset="/assets/content/images/cache/n_i-trH6O3-400.webp 400w, /assets/content/images/cache/n_i-trH6O3-600.webp 600w, /assets/content/images/cache/n_i-trH6O3-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Ask the Banker (4).png" src="/assets/content/images/cache/n_i-trH6O3-400.jpeg" width="800" height="1002" srcset="/assets/content/images/cache/n_i-trH6O3-400.jpeg 400w, /assets/content/images/cache/n_i-trH6O3-600.jpeg 600w, /assets/content/images/cache/n_i-trH6O3-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
       
       
       <figure id="recZ7dfqEqrXEhHSg_item3" class="mb-4 md:mb-0 md:carousel-item md:grid md:grid-cols-3 md:gap-4 w-full">
-        <figcaption class="p-4">
+        <figcaption class="col-span-1">
+          <h2>Ask a Banker</h2>
           <h3 class="text-xl">Ask the Banker (1).png</h3>
           <p class="prose"></p>
         </figcaption>
@@ -589,7 +612,7 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
         
         
         
-        <picture class="md:col-span-2 bg-black"><source type="image/webp" srcset="/assets/content/images/cache/55q432bfzX-400.webp 400w, /assets/content/images/cache/55q432bfzX-600.webp 600w, /assets/content/images/cache/55q432bfzX-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Ask the Banker (1).png" src="/assets/content/images/cache/55q432bfzX-400.jpeg" width="800" height="599" srcset="/assets/content/images/cache/55q432bfzX-400.jpeg 400w, /assets/content/images/cache/55q432bfzX-600.jpeg 600w, /assets/content/images/cache/55q432bfzX-800.jpeg 800w" sizes="100vw"></picture>
+        <picture class="md:col-span-2 bg-black"><source type="image/webp" srcset="/assets/content/images/cache/3lJwQ5dWfW-400.webp 400w, /assets/content/images/cache/3lJwQ5dWfW-600.webp 600w, /assets/content/images/cache/3lJwQ5dWfW-800.webp 800w" sizes="100vw"><img class="object-center object-cover object-scale-down max-h-[724px]"  alt="Thumbnail for Ask the Banker (1).png" src="/assets/content/images/cache/3lJwQ5dWfW-400.jpeg" width="800" height="599" srcset="/assets/content/images/cache/3lJwQ5dWfW-400.jpeg 400w, /assets/content/images/cache/3lJwQ5dWfW-600.jpeg 600w, /assets/content/images/cache/3lJwQ5dWfW-800.jpeg 800w" sizes="100vw"></picture>
       </figure>
       
       
@@ -645,15 +668,11 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
       
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>
 
       
     
   </section>
-</div>
 
       </article>
     </main>
@@ -661,8 +680,80 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
     
 
 
-<figure id="related" class="p-4 sm:p-12 bg-black grid grid-cols-4 gap-4">
-  <figcaption class="prose text-3xl sm:text-4xl leading-none font-thin mb-8 text-neutral-50 col-span-full divider divider-primary">Other </figcaption>
+<figure id="related" class="p-4 sm:p-12 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <figcaption class="text-3xl sm:text-4xl leading-none font-thin mb-8 col-span-full divider divider-primary">Other Experiential</figcaption>
+  
+  
+  
+  
+<a href="/projects/live-hope-love/" class="card p-0 my-4">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/EUvGNehYw--400.webp 400w, /assets/content/images/cache/EUvGNehYw--600.webp 600w, /assets/content/images/cache/EUvGNehYw--800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Live Hope Love" src="/assets/content/images/cache/EUvGNehYw--400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/EUvGNehYw--400.jpeg 400w, /assets/content/images/cache/EUvGNehYw--600.jpeg 600w, /assets/content/images/cache/EUvGNehYw--800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title">Live, Hope, Love</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Putting a human face on HIV/AIDS</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/james-zabiela/" class="card p-0 my-4">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/XnqLoMrlTg-240.webp 240w" sizes="100vw"><img class="m-0"  alt="Thumbnail for james-zabiela_0.jpg" src="/assets/content/images/cache/XnqLoMrlTg-240.jpeg" width="240" height="162"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title">Connecting a World-Famous DJ with His Fans</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bluecadet crafted an award-winning website for DJ James Zabiela, reflecting his live performance energy and technological savvy, while fostering strong fan engagement and easy on-the-go updates.</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/they-killed-sister-dorothy/" class="card p-0 my-4">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/ZWRBF2DlXP-400.webp 400w, /assets/content/images/cache/ZWRBF2DlXP-600.webp 600w, /assets/content/images/cache/ZWRBF2DlXP-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Sister Dorothy: The Prosecution" src="/assets/content/images/cache/ZWRBF2DlXP-400.jpeg" width="800" height="425" srcset="/assets/content/images/cache/ZWRBF2DlXP-400.jpeg 400w, /assets/content/images/cache/ZWRBF2DlXP-600.jpeg 600w, /assets/content/images/cache/ZWRBF2DlXP-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title">They Killed Sister Dorothy</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Digital media and web design can effectively complement and extend the impact of documentary films, particularly those dealing with critical social and environmental issues. </p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/lucian-perkins/" class="card p-0 my-4">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/IPgGXE-ZQP-400.webp 400w, /assets/content/images/cache/IPgGXE-ZQP-600.webp 600w, /assets/content/images/cache/IPgGXE-ZQP-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Lucian Perkins" src="/assets/content/images/cache/IPgGXE-ZQP-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/IPgGXE-ZQP-400.jpeg 400w, /assets/content/images/cache/IPgGXE-ZQP-600.jpeg 600w, /assets/content/images/cache/IPgGXE-ZQP-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title">Lucian Perkins</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Pulitzer-winning Lucian Perkins captures profound empathy in his photos, from war zones to fashion shows. My design framed his work cinematically, inviting exploration while letting the photos speak for themselves.</p>
+  </div>
+</a>
+  
+  
+  
+  
+<a href="/projects/robert-lougheed/" class="card p-0 my-4">
+  
+  <figure class="h-64 md:h-48">
+    <picture class="m-0"><source type="image/webp" srcset="/assets/content/images/cache/HEqCKfQcRx-400.webp 400w, /assets/content/images/cache/HEqCKfQcRx-600.webp 600w, /assets/content/images/cache/HEqCKfQcRx-800.webp 800w" sizes="100vw"><img class="m-0"  alt="Thumbnail for Robert Lougheed" src="/assets/content/images/cache/HEqCKfQcRx-400.jpeg" width="800" height="450" srcset="/assets/content/images/cache/HEqCKfQcRx-400.jpeg 400w, /assets/content/images/cache/HEqCKfQcRx-600.jpeg 600w, /assets/content/images/cache/HEqCKfQcRx-800.jpeg 800w" sizes="100vw"></picture>
+  </figure>
+  <div class="card-body px-4">
+    <h3 class="card-title">An Artist&#39;s Process</h3>
+    <p class="prose font-thin text-lg sm:text-xl leading-tight text-wrap prose text-pretty">Bluecadet&#39;s interactive website for Robert Lougheed offers an immersive exploration of his field painting philosophy, creating an engaging digital experience that mirrors his artistic journey and beliefs.</p>
+  </div>
+</a>
+  
+  
   
   
 </figure>
@@ -678,21 +769,21 @@ This case study demonstrates how Bluecadet effectively used character-driven sto
   <!-- SOCIAL -->
   <nav id="social" class="flex flex-row gap-2 max-w-96">
     
-    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.webp 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.webp 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/8K4ONt8eqN-400.jpeg 400w, /assets/content/images/cache/logos/8K4ONt8eqN-600.jpeg 600w, /assets/content/images/cache/logos/8K4ONt8eqN-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://github.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.webp 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.webp 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/1dwSA6pw76-400.jpeg 400w, /assets/content/images/cache/logos/1dwSA6pw76-600.jpeg 600w, /assets/content/images/cache/logos/1dwSA6pw76-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.webp 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.webp 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/zPQTUzQwPO-400.jpeg 400w, /assets/content/images/cache/logos/zPQTUzQwPO-600.jpeg 600w, /assets/content/images/cache/logos/zPQTUzQwPO-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://linkedin.com/rslebo" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.webp 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.webp 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/WGr1DhA6DJ-400.jpeg 400w, /assets/content/images/cache/logos/WGr1DhA6DJ-600.jpeg 600w, /assets/content/images/cache/logos/WGr1DhA6DJ-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.webp 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.webp 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/uYSaSzoCb2-400.jpeg 400w, /assets/content/images/cache/logos/uYSaSzoCb2-600.jpeg 600w, /assets/content/images/cache/logos/uYSaSzoCb2-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.threads.net/@dataink.io" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.webp 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.webp 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/tMxSGZ9-Vl-400.jpeg 400w, /assets/content/images/cache/logos/tMxSGZ9-Vl-600.jpeg 600w, /assets/content/images/cache/logos/tMxSGZ9-Vl-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.webp 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.webp 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/hZgzf_Dol9-400.jpeg 400w, /assets/content/images/cache/logos/hZgzf_Dol9-600.jpeg 600w, /assets/content/images/cache/logos/hZgzf_Dol9-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://dribbble.com/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.webp 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.webp 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/dfKbw8Qm5--400.jpeg 400w, /assets/content/images/cache/logos/dfKbw8Qm5--600.jpeg 600w, /assets/content/images/cache/logos/dfKbw8Qm5--800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.webp 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.webp 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/8ceVs1HQDn-400.jpeg 400w, /assets/content/images/cache/logos/8ceVs1HQDn-600.jpeg 600w, /assets/content/images/cache/logos/8ceVs1HQDn-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://mastodon.design/@datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.webp 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.webp 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg" width="800" height="860" srcset="/assets/content/images/cache/logos/ek0W7JNYMf-400.jpeg 400w, /assets/content/images/cache/logos/ek0W7JNYMf-600.jpeg 600w, /assets/content/images/cache/logos/ek0W7JNYMf-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.webp 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.webp 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/MiN-Ohnr_b-400.jpeg 400w, /assets/content/images/cache/logos/MiN-Ohnr_b-600.jpeg 600w, /assets/content/images/cache/logos/MiN-Ohnr_b-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://behance.net/datainkio" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.webp 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.webp 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/9S0J5vLxr8-400.jpeg 400w, /assets/content/images/cache/logos/9S0J5vLxr8-600.jpeg 600w, /assets/content/images/cache/logos/9S0J5vLxr8-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.webp 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.webp 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/VYq_9zyVSJ-400.jpeg 400w, /assets/content/images/cache/logos/VYq_9zyVSJ-600.jpeg 600w, /assets/content/images/cache/logos/VYq_9zyVSJ-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.flickr.com/photos/twosixseven/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.webp 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.webp 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg" width="800" height="371" srcset="/assets/content/images/cache/logos/M4WXSFR9mb-400.jpeg 400w, /assets/content/images/cache/logos/M4WXSFR9mb-600.jpeg 600w, /assets/content/images/cache/logos/M4WXSFR9mb-800.jpeg 800w" sizes="100vw"></picture></a>
     
-    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.webp 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.webp 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/5OvSHDVhfg-400.jpeg 400w, /assets/content/images/cache/logos/5OvSHDVhfg-600.jpeg 600w, /assets/content/images/cache/logos/5OvSHDVhfg-800.jpeg 800w" sizes="100vw"></picture></a>
+    <a href="https://www.instagram.com/dataink.io/" class="w-28 h-18"><picture><source type="image/webp" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.webp 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.webp 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.webp 800w" sizes="100vw"><img alt="Thumbnail for undefined" src="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg" width="800" height="800" srcset="/assets/content/images/cache/logos/ZrOSZepAXP-400.jpeg 400w, /assets/content/images/cache/logos/ZrOSZepAXP-600.jpeg 600w, /assets/content/images/cache/logos/ZrOSZepAXP-800.jpeg 800w" sizes="100vw"></picture></a>
     
   </nav>
 </footer>
