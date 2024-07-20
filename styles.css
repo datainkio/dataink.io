@@ -612,9 +612,8 @@ h2 {
   text-wrap: pretty;
   text-align: center;
   font-size: 1.125rem;
-  line-height: 1.75rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: .75rem;
 }
 
 h2:hover {
@@ -6200,6 +6199,11 @@ picture.logo img {
 
   .sm\:text-6xl {
     font-size: 5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-xl {
