@@ -550,9 +550,12 @@ html {
   --tab-radius: 0.5rem;
 }
 
-body {
+html {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+body {
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
@@ -4394,10 +4397,6 @@ picture.logo img {
   gap: 0px;
 }
 
-.flex-col-reverse .card-body {
-  justify-content: flex-end;
-}
-
 .modal {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.75;
@@ -5992,10 +5991,6 @@ picture.logo img {
     margin-bottom: 0px;
     margin-inline-start: -1px;
   }
-
-  .sm\:even\:flex-col-reverse:nth-child(even) .card-body {
-    justify-content: flex-end;
-  }
 }
 
 @media (min-width: 768px) {
@@ -6209,10 +6204,6 @@ picture.logo img {
   .sm\:text-xl {
     font-size: 1.25rem;
   }
-
-  .sm\:even\:flex-col-reverse:nth-child(even) {
-    flex-direction: column-reverse;
-  }
 }
 
 @media (min-width: 768px) {
@@ -6288,10 +6279,6 @@ picture.logo img {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
