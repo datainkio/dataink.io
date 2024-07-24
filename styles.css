@@ -577,7 +577,6 @@ h1 {
   text-align: center;
   font-size: 2.441rem;
   font-weight: 900;
-  line-height: 1;
   letter-spacing: -0.025em;
 }
 
@@ -616,7 +615,7 @@ h2 {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 500;
-  line-height: .75rem;
+  line-height: 1.3rem;
 }
 
 h2:hover {
@@ -642,7 +641,7 @@ h3 {
   text-wrap: balance;
   font-size: 1.563rem;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1rem;
 }
 
 h3:hover {
@@ -654,7 +653,7 @@ figcaption {
   margin-top: 0px;
   margin-bottom: 0px;
   text-wrap: balance;
-  line-height: 1.2;
+  line-height: 1.2rem;
   --tw-text-opacity: 1;
   color: rgb(163 163 163 / var(--tw-text-opacity));
 }
@@ -1225,7 +1224,7 @@ p.subtitle {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.2rem;
 }
 
 @media (min-width: 640px) {
@@ -1244,7 +1243,7 @@ p.subtitle {
 p.abstract {
   text-wrap: pretty;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.65rem;
 }
 
 @media (min-width: 640px) {
@@ -1267,7 +1266,7 @@ section.description p {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.2rem;
 }
 
 @media (min-width: 640px) {
@@ -4393,8 +4392,20 @@ picture.logo img {
      object-position: center;
 }
 
-.card-body {
-  gap: 0px;
+/** Set display of card based on its column in the display */
+
+.card.even-column {
+  flex-direction: column-reverse;
+}
+
+.card.even-column .card-body {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-content: flex-end;
+}
+
+.card.current {
+  display: flex;
 }
 
 .modal {
@@ -5129,6 +5140,10 @@ picture.logo img {
   margin-bottom: 0.5rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -5343,6 +5358,10 @@ picture.logo img {
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-2 {
@@ -5670,16 +5689,12 @@ picture.logo img {
   font-style: normal;
 }
 
-.leading-3 {
-  line-height: .75rem;
-}
-
 .leading-none {
-  line-height: 1;
+  line-height: 1rem;
 }
 
 .leading-tight {
-  line-height: 1.2;
+  line-height: 1.2rem;
 }
 
 .tracking-tighter {
@@ -5784,7 +5799,7 @@ picture.logo img {
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
@@ -6120,10 +6135,6 @@ picture.logo img {
     display: grid;
   }
 
-  .sm\:aspect-video {
-    aspect-ratio: 16 / 9;
-  }
-
   .sm\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -6168,11 +6179,6 @@ picture.logo img {
     padding: 3rem;
   }
 
-  .sm\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -6183,22 +6189,12 @@ picture.logo img {
     padding-right: 6rem;
   }
 
-  .sm\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
   .sm\:text-4xl {
     font-size: 2.441rem;
   }
 
   .sm\:text-6xl {
     font-size: 5rem;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .sm\:text-xl {
