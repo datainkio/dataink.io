@@ -15,19 +15,12 @@
 export const SELECTORS = {
   // Layout
   header: "global-header",
-  // Home landing header — role state machine hook (queried via querySelector)
-  homeHeader: "[data-home-header]",
-  homeHGroup: "[data-home-header] hgroup",
-  homeNav: "[data-home-header] nav",
-  // Page-nav list items — stagger targets for the menu reveal
-  pageNavItem: "[data-page-nav-el='item']",
 
   // Section IDs
-  hero: "hero",
   organizations: "organizations",
-  bio: "manifesto",
+  hero: "manifesto",
   process: "process",
-  awards: "recognition",
+  awards: "awards",
   work: "work",
   contact: "contact",
 
@@ -37,10 +30,6 @@ export const SELECTORS = {
 
   overlayView: "overlay-view",
   video: "background",
-};
-
-export const HERO_SELECTORS = {
-  tagline: "tagline",
 };
 
 /**
@@ -57,10 +46,13 @@ export const PROJECT_HEADER_SELECTORS = {
   image: "[data-project-header-image]",
 };
 
-export const BIO_SELECTORS = {
-  elementAttribute: "data-bio-el",
+export const HERO_SELECTORS = {
+  elementAttribute: "data-hero-el",
   header: "header",
   title: "heading",
+  // Opaque legibility band inside the title. SplitText's deepSlice clones it
+  // once per line, so after the split each line holds its own band.
+  band: "band",
   context: "context",
   missionStatement: "mission-statement",
 };

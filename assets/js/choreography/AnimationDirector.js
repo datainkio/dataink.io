@@ -13,8 +13,8 @@ import lumberjack from "/assets/js/utils/lumberjack/index.js";
  * - AnimationBus: Event-driven coordination between sections
  * - ScrollEffectsCoordinator (this.stage): Scroll smoothing, gels, ruler, reduced motion
  * - CardManager: Per-card scroll animations (instantiated before sections)
- * - Section Controllers (SECTION_REGISTRY): Hero, BackgroundVideo, Bio, Process, Awards, Organizations, Work — extend AbstractSection
- * - Managers: GlobalHeaderManager, HomeHeaderManager, WorkHeaderManager, WorkNavManager, ProjectHeaderManager
+ * - Section Controllers (SECTION_REGISTRY): BackgroundVideo, Hero, Process, Awards, Organizations, Work — extend AbstractSection
+ * - Managers: GlobalHeaderManager, WorkHeaderManager, WorkNavManager, ProjectHeaderManager
  * - LandingSequence: Defines animation flow via AnimationBus listeners
  *
  * INITIALIZATION SEQUENCE:
@@ -45,7 +45,6 @@ import { SECTION_REGISTRY } from "/assets/js/choreography/system/registry.js";
 import { EVENTS } from "/assets/js/choreography/config/contracts/events/events.js";
 import CardManager from "/assets/js/choreography/organisms/card/CardManager.js";
 import GlobalHeaderManager from "/assets/js/choreography/managers/GlobalHeaderManager/GlobalHeaderManager.js";
-// import HomeHeaderManager from "/assets/js/choreography/managers/HomeHeaderManager/HomeHeaderManager.js";
 import WorkHeaderManager from "/assets/js/choreography/managers/WorkHeaderManager/WorkHeaderManager.js";
 import WorkNavManager from "/assets/js/choreography/managers/WorkNavManager/WorkNavManager.js";
 // import ProjectHeaderManager from "/assets/js/choreography/managers/ProjectHeaderManager/ProjectHeaderManager.js";
@@ -121,12 +120,6 @@ export default class AnimationDirector {
       reducedMotionHandler: this.stage?.reducedMotion,
     });
 
-    // Initialize home landing header role state machine (loader/hero/menu; home page only)
-    // this.homeHeaderManager = new HomeHeaderManager({
-    //   bus: this.bus,
-    //   reducedMotionHandler: this.stage?.reducedMotion,
-    // });
-
     // Initialize the work section industry-nav drawer (below md) / rail (md+).
     this.workHeaderManager = new WorkHeaderManager({
       bus: this.bus,
@@ -164,7 +157,7 @@ export default class AnimationDirector {
 
   /**
    * Get all section controller instances
-   * @returns {Object} Section controllers (hero, work, biography)
+   * @returns {Object} Section controllers (hero, work, hero)
    */
   getSections() {
     return this.sections;
@@ -223,9 +216,6 @@ export default class AnimationDirector {
 
     this.headerManager?.kill();
     this.headerManager = null;
-
-    // this.homeHeaderManager?.kill();
-    // this.homeHeaderManager = null;
 
     this.workHeaderManager?.kill();
     this.workHeaderManager = null;

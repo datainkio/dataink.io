@@ -1,11 +1,12 @@
 ---
-description: "Hero animations delegator — selects a hero-motion variant (reveal | reduced) and delegates landing/intro/outro timeline building to it. Retains getLastWordBottom() for HeroTriggers. Mirrors AwardsAnimations."
+description: "Hero animations module — builds the intro timeline for the hero section using HERO_INTRO motion defaults."
 status: stable
 tags:
   - choreography
 links:
   - "[[AbstractSectionAnimations|AbstractSectionAnimations]]"
-  - "[[molecules/hero-motion/hero-motion|molecules/hero-motion]]"
   - "[[system/gsap|system/gsap]]"
+  - "[[motion|motion]]"
+  - "[[selectors|selectors]]"
   - "[[timelines|timelines]]"
 ---
