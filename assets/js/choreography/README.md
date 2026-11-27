@@ -79,5 +79,5 @@ Rules every animation follows:
 - [AnimationDirector.md](AnimationDirector.md)
 - [GETTING_STARTED.md](GETTING_STARTED.md)
 - [index.js](index.js)
-- [index.md](dataink.io/frontend/js/choreography/index.md)
+- [index.md](index.md)
 <!-- readme-index:end -->

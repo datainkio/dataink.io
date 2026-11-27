@@ -40,5 +40,5 @@ The smallest motion pieces: each one builds a single GSAP animation from a few o
 - [stagger-reveal/](stagger-reveal/)
 - [text-split-reveal/](text-split-reveal/)
 - [index.js](index.js)
-- [index.md](dataink.io/frontend/js/choreography/atoms/index.md)
+- [index.md](index.md)
 <!-- readme-index:end -->
